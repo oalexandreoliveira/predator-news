@@ -175,6 +175,20 @@ const brandIcon = `<svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true
   <circle class="logo-ping" cx="48" cy="28" r="3.2"/>
 </svg>`;
 
+const radarVisual = `<div class="radar" aria-hidden="true">
+  <span class="radar-field"></span>
+  <span class="radar-ring radar-ring-outer"></span>
+  <span class="radar-ring radar-ring-mid"></span>
+  <span class="radar-ring radar-ring-inner"></span>
+  <span class="radar-cross radar-cross-x"></span>
+  <span class="radar-cross radar-cross-y"></span>
+  <span class="radar-sweep"></span>
+  <span class="radar-target"><i></i><b></b><em></em></span>
+  <span class="radar-blip radar-blip-a"></span>
+  <span class="radar-blip radar-blip-b"></span>
+  <span class="radar-blip radar-blip-c"></span>
+</div>`;
+
 const themeInit = `<script>try{const t=localStorage.getItem('predator-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch{}</script>`;
 const themeScript = `<script>(()=>{const root=document.documentElement,key='predator-theme',btn=document.querySelector('[data-theme-toggle]');const valid=t=>t==='light'||t==='dark';function current(){return valid(root.dataset.theme)?root.dataset.theme:'dark'}function apply(theme){root.dataset.theme=theme;try{localStorage.setItem(key,theme)}catch{}if(btn){btn.setAttribute('aria-pressed',theme==='light');const label=btn.querySelector('[data-theme-label]');if(label)label.textContent=theme==='light'?'Claro':'Escuro';}}if(!valid(root.dataset.theme))apply('dark');else apply(root.dataset.theme);btn?.addEventListener('click',()=>apply(current()==='dark'?'light':'dark'));})();</script>`;
 
@@ -226,7 +240,7 @@ const home = shell({
     <h1>O radar jurídico de quem atua contra <em>abusos bancários.</em></h1>
     <p class="hero-lead">Curadoria técnica sobre consignados, RMC/RCC, fraudes e decisões que afetam aposentados e pensionistas do INSS.</p>
     <a class="button" href="${latestUrl}">Ler a edição atual →</a></div>
-    <aside><span>DESTAQUE · ${escapeHtml(latest.categoria)}</span><div class="radar"></div><h2>${escapeHtml(latest.titulo)}</h2><p>${escapeHtml(latest.resumo)}</p></aside></section>
+    <aside><span>DESTAQUE · ${escapeHtml(latest.categoria)}</span>${radarVisual}<h2>${escapeHtml(latest.titulo)}</h2><p>${escapeHtml(latest.resumo)}</p></aside></section>
     ${renderApplication(latest, { ctaHref: latestUrl, ctaText: "Ler edição completa →" })}
     <section class="archive" id="edicoes"><div class="archive-head"><div><p class="signal">HISTÓRICO</p><h2>Arquivo de edições</h2></div>
     <input id="search" type="search" placeholder="Buscar tema ou edição" aria-label="Buscar no arquivo"></div>
