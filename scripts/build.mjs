@@ -134,7 +134,7 @@ function insightCard(number, label, title, body) {
   </article>`;
 }
 
-function renderApplication(edition) {
+function renderApplication(edition, { ctaHref = "", ctaText = "Ler edição completa →" } = {}) {
   const sections = extractSections(edition.body);
   const tese = pickSection(sections, ["Tese do dia"]);
   const prova = pickSection(sections, ["Prova que não pode faltar"]);
@@ -142,6 +142,10 @@ function renderApplication(edition) {
   const frase = firstBlockquote(pickSection(sections, ["Frase de peça"]));
   const pergunta = pickSection(sections, ["Pergunta da edição", "Pergunta para comentário"]);
   if (!tese && !prova && !risco && !frase && !pergunta) return "";
+
+  const cta = ctaHref
+    ? `<a href="${escapeHtml(ctaHref)}">${escapeHtml(ctaText)}</a>`
+    : "";
 
   return `<section class="application" aria-labelledby="application-title">
     <div class="application-head">
@@ -154,13 +158,22 @@ function renderApplication(edition) {
       ${insightCard("03", "Risco processual", compact(risco, 72), compact(risco, 180))}
     </div>
     ${frase ? `<div class="application-quote"><p class="application-label">Frase de peça</p><blockquote>“${escapeHtml(frase)}”</blockquote></div>` : ""}
-    ${pergunta ? `<div class="application-question"><div><p class="application-label">Pergunta da edição</p><h3>${escapeHtml(compact(pergunta, 190))}</h3></div><a href="#analise-completa">Entenda a resposta editorial →</a></div>` : ""}
+    ${pergunta ? `<div class="application-question"><div><p class="application-label">Pergunta da edição</p><h3>${escapeHtml(compact(pergunta, 190))}</h3></div>${cta}</div>` : ""}
   </section>`;
 }
 
 const dateLabel = (date) => new Intl.DateTimeFormat("pt-BR", {
   day: "2-digit", month: "short", year: "numeric", timeZone: "UTC"
 }).format(new Date(`${date}T00:00:00Z`)).toUpperCase().replace(" DE ", " ");
+
+const brandIcon = `<svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="logo-shell" d="M32 5 55 18.5v27L32 59 9 45.5v-27L32 5Z"/>
+  <path class="logo-cut" d="M12 34 27 43v13L19 40l-7-6Zm40 0L37 43v13l8-16 7-6Z"/>
+  <path class="logo-radar" d="M19 31a13 13 0 0 1 22-9M14 31a18 18 0 0 1 31-13" />
+  <path class="logo-sweep" d="M32 33 46 15" />
+  <circle class="logo-core" cx="32" cy="33" r="4"/>
+  <circle class="logo-ping" cx="48" cy="28" r="3.2"/>
+</svg>`;
 
 const themeInit = `<script>try{const t=localStorage.getItem('predator-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch{}</script>`;
 const themeScript = `<script>(()=>{const root=document.documentElement,key='predator-theme',btn=document.querySelector('[data-theme-toggle]');const valid=t=>t==='light'||t==='dark';function current(){return valid(root.dataset.theme)?root.dataset.theme:'dark'}function apply(theme){root.dataset.theme=theme;try{localStorage.setItem(key,theme)}catch{}if(btn){btn.setAttribute('aria-pressed',theme==='light');const label=btn.querySelector('[data-theme-label]');if(label)label.textContent=theme==='light'?'Claro':'Escuro';}}if(!valid(root.dataset.theme))apply('dark');else apply(root.dataset.theme);btn?.addEventListener('click',()=>apply(current()==='dark'?'light':'dark'));})();</script>`;
@@ -169,7 +182,7 @@ const shell = ({ title, description, content, script = "" }) => `<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}">
 ${themeInit}<link rel="stylesheet" href="${BASE}/assets/style.css"></head><body>
-<header class="site-header"><a class="brand" href="${BASE}/"><span class="brand-mark">PN</span><span><strong>PREDATOR</strong><small>NEWS</small></span></a>
+<header class="site-header"><a class="brand" href="${BASE}/"><span class="brand-mark">${brandIcon}</span><span><strong>PREDATOR</strong><small>NEWS</small></span></a>
 <div class="header-actions"><nav><a href="${BASE}/#edicao-atual">Edição atual</a><a href="${BASE}/#edicoes">Edições</a><a href="${BASE}/#sobre">Sobre</a></nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema" aria-pressed="false"><span data-theme-label>Escuro</span></button></div></header>
 ${content}<footer><span>Predator News</span><p>Conteúdo jurídico informativo. Leitura crítica para decisões melhores.</p></footer>${themeScript}${script}</body></html>`;
 
@@ -193,13 +206,13 @@ for (const edition of editions) {
     content: `<main class="edition-page"><a class="back" href="${BASE}/#edicoes">← Todas as edições</a>
       <div class="edition-kicker">EDIÇÃO ${escapeHtml(edition.numero)} · ${dateLabel(edition.data)} · ${escapeHtml(edition.categoria)}</div>
       <h1>${escapeHtml(edition.titulo)}</h1><p class="edition-summary">${escapeHtml(edition.resumo)}</p>
-      ${renderApplication(edition)}
       <section id="analise-completa" class="edition-body"><p class="signal">ANÁLISE COMPLETA</p>${markdown(edition.body)}</section></main>`,
   });
   await writeFile(join(directory, "index.html"), page);
 }
 
 const latest = editions[0];
+const latestUrl = `${BASE}/edicoes/${latest.slug}/`;
 const categories = [...new Set(editions.map((item) => item.categoria))];
 const cards = editions.map((edition) => `<article class="edition-card" data-category="${escapeHtml(edition.categoria)}" data-search="${escapeHtml(`${edition.titulo} ${edition.resumo} ${edition.categoria}`.toLowerCase())}">
   <div class="edition-number"><span>EDIÇÃO</span><strong>${escapeHtml(edition.numero)}</strong></div>
@@ -212,8 +225,9 @@ const home = shell({
   content: `<main><section class="hero" id="edicao-atual"><div><p class="signal">EDIÇÃO ${escapeHtml(latest.numero)} · ${dateLabel(latest.data)}</p>
     <h1>O radar jurídico de quem atua contra <em>abusos bancários.</em></h1>
     <p class="hero-lead">Curadoria técnica sobre consignados, RMC/RCC, fraudes e decisões que afetam aposentados e pensionistas do INSS.</p>
-    <a class="button" href="${BASE}/edicoes/${latest.slug}/">Ler a edição atual →</a></div>
+    <a class="button" href="${latestUrl}">Ler a edição atual →</a></div>
     <aside><span>DESTAQUE · ${escapeHtml(latest.categoria)}</span><div class="radar"></div><h2>${escapeHtml(latest.titulo)}</h2><p>${escapeHtml(latest.resumo)}</p></aside></section>
+    ${renderApplication(latest, { ctaHref: latestUrl, ctaText: "Ler edição completa →" })}
     <section class="archive" id="edicoes"><div class="archive-head"><div><p class="signal">HISTÓRICO</p><h2>Arquivo de edições</h2></div>
     <input id="search" type="search" placeholder="Buscar tema ou edição" aria-label="Buscar no arquivo"></div>
     <div class="filters"><button class="active" data-filter="Todas">Todas</button>${categories.map((category) => `<button data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("")}</div>
