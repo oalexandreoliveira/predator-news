@@ -157,7 +157,7 @@ function renderApplication(edition, { ctaHref = "", ctaText = "Ler edição comp
       ${insightCard("02", "Prova que não pode faltar", compact(prova, 64), compact(prova, 180))}
       ${insightCard("03", "Risco processual", compact(risco, 72), compact(risco, 180))}
     </div>
-    ${frase ? `<div class="application-quote"><p class="application-label">Frase de peça</p><blockquote>“${escapeHtml(frase)}”</blockquote></div>` : ""}
+    ${frase ? `<div class="application-quote"><div class="application-quote-head"><p class="application-label">Frase de peça</p><button type="button" class="copy-quote" data-copy-quote aria-label="Copiar frase de peça">Copiar frase</button></div><blockquote>“${escapeHtml(frase)}”</blockquote></div>` : ""}
     ${pergunta ? `<div class="application-question"><div><p class="application-label">Pergunta da edição</p><h3>${escapeHtml(compact(pergunta, 190))}</h3></div>${cta}</div>` : ""}
   </section>`;
 }
@@ -217,7 +217,7 @@ for (const edition of editions) {
 const latest = editions[0];
 const latestUrl = `${BASE}/edicoes/${latest.slug}/`;
 const categories = [...new Set(editions.map((item) => item.categoria))];
-const cards = editions.map((edition) => `<article class="edition-card" data-category="${escapeHtml(edition.categoria)}" data-search="${escapeHtml(`${edition.titulo} ${edition.resumo} ${edition.categoria}`.toLowerCase())}">
+const cards = editions.map((edition) => `<article class="edition-card" data-category="${escapeHtml(edition.categoria)}" data-search="${escapeHtml(normalize(`${edition.numero} ${edition.titulo} ${edition.resumo} ${edition.categoria}`))}">
   <div class="edition-number"><span>EDIÇÃO</span><strong>${escapeHtml(edition.numero)}</strong></div>
   <div><div class="edition-meta">${dateLabel(edition.data)} · ${escapeHtml(edition.categoria)}</div><h3>${escapeHtml(edition.titulo)}</h3><p>${escapeHtml(edition.resumo)}</p></div>
   <a class="edition-link" href="${BASE}/edicoes/${edition.slug}/" aria-label="Ler ${escapeHtml(edition.titulo)}">→</a></article>`).join("\n");
@@ -236,7 +236,7 @@ const home = shell({
     <div class="filters"><button class="active" data-filter="Todas">Todas</button>${categories.map((category) => `<button data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("")}</div>
     <div id="edition-list">${cards}</div><p id="empty" hidden>Nenhuma edição encontrada.</p></section>
     <section class="about" id="sobre"><p class="signal">MANIFESTO EDITORIAL</p><h2>Informação detectada.<br>Tese preparada.</h2><p>O Predator News transforma fatos dispersos em leitura técnica, risco processual, prova estratégica e linguagem aproveitável.</p></section></main>`,
-  script: `<script>let filter='Todas';const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty');function apply(){const term=q.value.toLowerCase().trim();let count=0;cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show;if(show)count++});empty.hidden=count>0}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));apply()}));</script>`,
+  script: `<script>let filter='Todas';const normalizeSearch=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty');function apply(){const term=normalizeSearch(q.value);let count=0;cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show;if(show)count++});empty.hidden=count>0}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));apply()}));document.querySelectorAll('[data-copy-quote]').forEach(button=>button.addEventListener('click',async()=>{const quote=button.closest('.application-quote')?.querySelector('blockquote')?.textContent?.trim();if(!quote)return;try{await navigator.clipboard.writeText(quote);const original=button.textContent;button.textContent='Copiado';button.classList.add('copied');setTimeout(()=>{button.textContent=original;button.classList.remove('copied')},1800)}catch{button.textContent='Não foi possível copiar'}}));</script>`,
 });
 await writeFile(join(DIST, "index.html"), home);
 console.log(`Predator News: ${editions.length} edição(ões) gerada(s).`);
