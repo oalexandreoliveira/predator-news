@@ -3,6 +3,12 @@ name: Publicar no GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - "content/**"
+      - "scripts/**"
+      - "src/**"
+      - "package.json"
+      - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -15,27 +21,32 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build-and-deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Baixar o site
+      - name: Baixar o projeto
         uses: actions/checkout@v4
 
-      - name: Preparar os arquivos
-        run: |
-          mkdir _site
-          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' ./ _site/
+      - name: Preparar o Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Gerar páginas a partir dos arquivos Markdown
+        env:
+          BASE_PATH: /predator-news
+        run: npm run build
 
       - name: Configurar o GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Enviar o site
+      - name: Enviar o site gerado
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: ./dist
 
       - name: Publicar
         id: deployment
