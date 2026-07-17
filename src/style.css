@@ -72,11 +72,32 @@ html[data-theme="light"] .logo-core{fill:#edf3ee}
 .hero h1 em{color:var(--signal);font-style:italic}
 .hero-lead{max-width:680px;color:var(--muted-strong);font-size:18px;line-height:1.75}
 .button{display:inline-flex;margin-top:24px;padding:17px 24px;background:var(--signal);color:var(--signal-ink);font-size:11px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}
-.hero aside{min-height:500px;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;border:1px solid color-mix(in srgb,var(--signal) 30%,transparent);background:linear-gradient(color-mix(in srgb,var(--surface) 75%,transparent),color-mix(in srgb,var(--surface) 96%,transparent))}
-.hero aside>span{color:var(--signal);font-size:9px;font-weight:900;letter-spacing:.12em}
-.hero aside h2{margin:18px 0 10px;font:400 34px/1.12 Georgia,serif}
-.hero aside p{color:var(--muted);line-height:1.6}
-.radar{width:210px;height:210px;margin:auto;border:1px solid color-mix(in srgb,var(--signal) 25%,transparent);border-radius:50%;background:radial-gradient(circle,transparent 32%,color-mix(in srgb,var(--signal) 12%,transparent) 33% 34%,transparent 35% 65%,color-mix(in srgb,var(--signal) 12%,transparent) 66% 67%,transparent 68%),conic-gradient(transparent 80%,color-mix(in srgb,var(--signal) 25%,transparent))}
+.hero aside{min-height:500px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;border:1px solid color-mix(in srgb,var(--signal) 30%,transparent);background:radial-gradient(circle at 65% 22%,color-mix(in srgb,var(--signal) 12%,transparent),transparent 34%),linear-gradient(color-mix(in srgb,var(--surface) 75%,transparent),color-mix(in srgb,var(--surface) 96%,transparent))}
+.hero aside>span{position:relative;z-index:2;color:var(--signal);font-size:9px;font-weight:900;letter-spacing:.12em}
+.hero aside h2{position:relative;z-index:2;margin:18px 0 10px;font:400 34px/1.12 Georgia,serif}
+.hero aside p{position:relative;z-index:2;color:var(--muted);line-height:1.6}
+
+.radar{position:relative;z-index:1;width:min(82vw,260px);height:min(82vw,260px);margin:28px auto 32px;border:1px solid color-mix(in srgb,var(--signal) 34%,transparent);border-radius:50%;background:radial-gradient(circle,transparent 0 22%,color-mix(in srgb,var(--signal) 10%,transparent) 23% 23.6%,transparent 24% 45%,color-mix(in srgb,var(--signal) 13%,transparent) 46% 46.7%,transparent 47% 69%,color-mix(in srgb,var(--signal) 20%,transparent) 70% 71%,transparent 72%),radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--signal) 7%,transparent),transparent 68%);box-shadow:0 0 0 1px color-mix(in srgb,var(--signal) 10%,transparent),0 0 48px color-mix(in srgb,var(--signal) 14%,transparent),inset 0 0 42px rgba(0,0,0,.55);isolation:isolate}
+.radar::before{content:"";position:absolute;inset:-18px;border-radius:50%;background:repeating-conic-gradient(from 0deg,color-mix(in srgb,var(--signal) 22%,transparent) 0deg 1deg,transparent 1deg 4deg);opacity:.55;mask:radial-gradient(circle,transparent 69%,#000 70% 75%,transparent 76%)}
+.radar::after{content:"";position:absolute;inset:-48px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--signal) 12%,transparent) 0 1px,transparent 1.7px);background-size:14px 14px;opacity:.38;animation:radarField 9s linear infinite;z-index:-1}
+.radar-field{position:absolute;inset:-38px;border-radius:50%;background:linear-gradient(90deg,transparent 49.7%,color-mix(in srgb,var(--signal) 20%,transparent) 50%,transparent 50.3%),linear-gradient(0deg,transparent 49.7%,color-mix(in srgb,var(--signal) 20%,transparent) 50%,transparent 50.3%);opacity:.55}
+.radar-ring{position:absolute;inset:0;margin:auto;border:1px solid color-mix(in srgb,var(--signal) 24%,transparent);border-radius:50%;box-shadow:inset 0 0 16px color-mix(in srgb,var(--signal) 5%,transparent)}
+.radar-ring-outer{width:100%;height:100%}
+.radar-ring-mid{width:64%;height:64%;opacity:.72}
+.radar-ring-inner{width:32%;height:32%;opacity:.5}
+.radar-cross{position:absolute;left:50%;top:50%;background:color-mix(in srgb,var(--signal) 20%,transparent);transform-origin:center;opacity:.45}
+.radar-cross-x{width:100%;height:1px;transform:translate(-50%,-50%)}
+.radar-cross-y{width:1px;height:100%;transform:translate(-50%,-50%)}
+.radar-sweep{position:absolute;inset:-1px;border-radius:50%;background:conic-gradient(from -52deg,transparent 0 306deg,color-mix(in srgb,var(--signal) 8%,transparent) 318deg,color-mix(in srgb,var(--signal) 44%,transparent) 349deg,color-mix(in srgb,var(--signal) 88%,transparent) 358deg,transparent 360deg);filter:drop-shadow(0 0 12px color-mix(in srgb,var(--signal) 55%,transparent));animation:radarSweep 5.6s linear infinite;mix-blend-mode:screen}
+.radar-target{position:absolute;left:70%;top:29%;width:14px;height:14px;display:block;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal),0 0 32px color-mix(in srgb,var(--signal) 60%,transparent);animation:targetBlink 2.8s ease-in-out infinite}
+.radar-target i,.radar-target b,.radar-target em{position:absolute;inset:-24px;border:1px solid color-mix(in srgb,var(--signal) 48%,transparent);border-radius:50%;content:"";animation:radarPulse 2.8s ease-out infinite}.radar-target b{animation-delay:.65s}.radar-target em{animation-delay:1.3s}
+.radar-blip{position:absolute;width:4px;height:4px;border-radius:50%;background:color-mix(in srgb,var(--signal) 75%,transparent);box-shadow:0 0 10px color-mix(in srgb,var(--signal) 50%,transparent);opacity:.7;animation:blipFloat 4s ease-in-out infinite}.radar-blip-a{left:29%;top:35%;animation-delay:.2s}.radar-blip-b{left:80%;top:55%;animation-delay:1.3s}.radar-blip-c{left:43%;top:75%;animation-delay:2s}
+html[data-theme="light"] .radar{background:radial-gradient(circle,transparent 0 22%,rgba(31,122,34,.12) 23% 23.6%,transparent 24% 45%,rgba(31,122,34,.14) 46% 46.7%,transparent 47% 69%,rgba(31,122,34,.22) 70% 71%,transparent 72%),radial-gradient(circle at 50% 50%,rgba(31,122,34,.08),transparent 68%)}
+@keyframes radarSweep{to{transform:rotate(360deg)}}
+@keyframes radarPulse{0%{transform:scale(.1);opacity:.9}72%{opacity:.18}100%{transform:scale(2.75);opacity:0}}
+@keyframes targetBlink{0%,100%{transform:scale(.86);filter:saturate(1)}50%{transform:scale(1.18);filter:saturate(1.6)}}
+@keyframes blipFloat{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:.9;transform:scale(1.45)}}
+@keyframes radarField{to{background-position:28px 28px}}
 
 .application{padding:110px max(5vw,calc((100vw - 1280px)/2));background:var(--bg);border-top:1px solid var(--line)}
 .application-head{display:grid;grid-template-columns:1fr minmax(250px,390px);gap:70px;align-items:end;padding-bottom:46px;border-bottom:1px solid var(--line)}
@@ -130,6 +151,7 @@ html[data-theme="light"] .logo-core{fill:#edf3ee}
 
 footer{display:flex;justify-content:space-between;gap:30px;padding:45px max(5vw,calc((100vw - 1280px)/2));border-top:1px solid var(--line);color:var(--muted);font-size:11px}
 
+@media(prefers-reduced-motion:reduce){.radar::after,.radar-sweep,.radar-target,.radar-target i,.radar-target b,.radar-target em,.radar-blip{animation:none}}
 @media(max-width:900px){.application-head{grid-template-columns:1fr;gap:24px}.application-grid{grid-template-columns:1fr}.application-card{border-right:0;border-bottom:1px solid var(--line)}.application-card:last-child{border-bottom:0}.application-question{align-items:flex-start;flex-direction:column}}
-@media(max-width:800px){.site-header nav{display:none}.header-actions{gap:10px}.hero{grid-template-columns:1fr;padding-top:65px}.hero aside{min-height:470px}.archive-head{align-items:stretch;flex-direction:column}.edition-card{grid-template-columns:74px 1fr}.edition-link{grid-column:2}.archive{padding-top:80px}.about{padding-top:90px}.filters{flex-wrap:nowrap;overflow-x:auto}.filters button{flex:none}.application{padding-top:80px;padding-bottom:80px}.application-quote{padding-left:24px}}
+@media(max-width:800px){.site-header nav{display:none}.header-actions{gap:10px}.hero{grid-template-columns:1fr;padding-top:65px}.hero aside{min-height:470px}.radar{width:min(76vw,240px);height:min(76vw,240px)}.archive-head{align-items:stretch;flex-direction:column}.edition-card{grid-template-columns:74px 1fr}.edition-link{grid-column:2}.archive{padding-top:80px}.about{padding-top:90px}.filters{flex-wrap:nowrap;overflow-x:auto}.filters button{flex:none}.application{padding-top:80px;padding-bottom:80px}.application-quote{padding-left:24px}}
 @media(max-width:520px){.hero h1{font-size:48px}.hero aside h2{font-size:28px}.edition-card{grid-template-columns:1fr;padding:28px 0}.edition-number{height:auto;flex-direction:row;border:0}.edition-link{grid-column:auto}.edition-page{padding-top:65px}.application-head h2{font-size:42px}.application-card{padding-left:0;padding-right:0}.application-question{margin-left:-24px;margin-right:-24px}footer{flex-direction:column}}
