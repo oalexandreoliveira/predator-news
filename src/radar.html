@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radar Jurídico — Animação</title>
+<style>
+  html,body{margin:0;padding:0;width:100%;height:100%;background:transparent;overflow:hidden}
+  #radar{width:100%;height:100%;display:block}
+</style>
+</head>
+<body>
+<canvas id="radar"></canvas>
+<script>
+'use strict';
+/* ============================================================
+   RADAR JURÍDICO — animação de varredura fiel a um radar real.
+   A varredura gira; ao passar sobre um ponto, ele acende com um
+   "ping" (ondas concêntricas) e vai apagando até a próxima volta
+   (persistência de fósforo, como em radares analógicos).
+
+   Personalização via URL (todos opcionais):
+     ?velocidade=6        segundos por volta (padrão 6)
+     ?cor=8be25f          cor base em hex, sem # (padrão verde do site)
+     ?fundo=escuro        'transparente' (padrão) ou 'escuro'
+     ?aleatorio=1         pontos pequenos reaparecem em posições novas
+     ?destaque=1          ponto principal com anéis (padrão 1; 0 desliga)
+   ============================================================ */
+const qs = new URLSearchParams(location.search);
+const CONFIG = {
+  segundosPorVolta: parseFloat(qs.get('velocidade') ?? '6'),
+  cor: '#' + (qs.get('cor') ?? '8be25f').replace('#',''),
+  fundoEscuro: (qs.get('fundo') ?? 'transparente') === 'escuro',
+  aleatorio: qs.get('aleatorio') === '1',
+  comDestaque: qs.get('destaque') !== '0',
+  trilhaGraus: 80,          // comprimento da cauda luminosa da varredura
+  decaimento: 2.6,          // segundos para o brilho do ponto cair ~63%
+};
+
+const canvas = document.getElementById('radar');
+const ctx = canvas.getContext('2d');
+let W = 0, H = 0, CX = 0, CY = 0, R = 0, DPR = 1;
+
+/* ---------- cor base → variações ---------- */
+function hexRgb(h){
+  const n = parseInt(h.slice(1), 16);
+  return [n >> 16 & 255, n >> 8 & 255, n & 255];
+}
+const [CR, CG, CB] = hexRgb(CONFIG.cor);
+const cor = (a) => `rgba(${CR},${CG},${CB},${a})`;
+const corClara = (a) => `rgba(${Math.min(CR+90,255)},${Math.min(CG+70,255)},${Math.min(CB+90,255)},${a})`;
+
+/* ---------- alvos ----------
+   angulo em graus (0 = topo, sentido horário), raio 0..1, tam = px base */
+const alvos = [
+  { angulo:  42, raio: .58, tam: 5.5, destaque: CONFIG.comDestaque }, // ponto principal (como na imagem 1)
+  { angulo: 205, raio: .55, tam: 2.2 },
+  { angulo: 233, raio: .78, tam: 2.0 },
+  { angulo: 258, raio: .38, tam: 2.4 },
+  { angulo: 130, raio: .82, tam: 2.0 },
+  { angulo: 155, raio: .48, tam: 2.2 },
+  { angulo: 322, raio: .70, tam: 2.0 },
+  { angulo:  95, raio: .30, tam: 1.8 },
+];
+for (const a of alvos){ a.brilho = a.destaque ? .9 : 0; a.rad = (a.angulo - 90) * Math.PI / 180; }
+
+let ondas = [];   // pings: {x, y, t0, forte}
+
+/* ---------- dimensionamento ---------- */
+function dimensionar(){
+  DPR = Math.min(devicePixelRatio || 1, 2);
+  W = canvas.clientWidth; H = canvas.clientHeight;
+  canvas.width = W * DPR; canvas.height = H * DPR;
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  CX = W / 2; CY = H / 2;
+  R = Math.min(W, H) * .44;
+}
+addEventListener('resize', dimensionar);
+dimensionar();
+
+/* ---------- camadas estáticas ---------- */
+function desenharFundo(){
+  if (CONFIG.fundoEscuro){
+    const g = ctx.createRadialGradient(CX, CY, 0, CX, CY, Math.max(W,H) * .7);
+    g.addColorStop(0, '#0c120c');
+    g.addColorStop(1, '#050705');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+  }
+  // grade de pontos discreta (como na imagem de referência)
+  ctx.fillStyle = cor(.05);
+  const passo = Math.max(26, R / 9);
+  for (let x = passo/2; x < W; x += passo)
+    for (let y = passo/2; y < H; y += passo)
+      ctx.fillRect(x, y, 1, 1);
+}
+
+function desenharGrade(){
+  // vidro do radar (leve preenchimento radial)
+  const vidro = ctx.createRadialGradient(CX, CY, 0, CX, CY, R);
+  vidro.addColorStop(0, cor(.05));
+  vidro.addColorStop(.85, cor(.02));
+  vidro.addColorStop(1, cor(.06));
+  ctx.fillStyle = vidro;
+  ctx.beginPath(); ctx.arc(CX, CY, R, 0, Math.PI*2); ctx.fill();
+
+  // anéis concêntricos
+  ctx.lineWidth = 1;
+  for (let i = 1; i <= 4; i++){
+    ctx.strokeStyle = cor(i === 4 ? .30 : .13);
+    ctx.beginPath(); ctx.arc(CX, CY, R * i / 4, 0, Math.PI*2); ctx.stroke();
+  }
+  // aro externo duplo
+  ctx.strokeStyle = cor(.38); ctx.lineWidth = 1.6;
+  ctx.beginPath(); ctx.arc(CX, CY, R + 6, 0, Math.PI*2); ctx.stroke();
+
+  // marcações de grau no aro (a cada 6°, maiores a cada 30°)
+  for (let d = 0; d < 360; d += 6){
+    const a = (d - 90) * Math.PI / 180;
+    const grande = d % 30 === 0;
+    const r1 = R + 10, r2 = R + (grande ? 20 : 15);
+    ctx.strokeStyle = cor(grande ? .35 : .16);
+    ctx.lineWidth = grande ? 1.4 : 1;
+    ctx.beginPath();
+    ctx.moveTo(CX + Math.cos(a) * r1, CY + Math.sin(a) * r1);
+    ctx.lineTo(CX + Math.cos(a) * r2, CY + Math.sin(a) * r2);
+    ctx.stroke();
+  }
+  // cruz central
+  ctx.strokeStyle = cor(.10); ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(CX - R, CY); ctx.lineTo(CX + R, CY);
+  ctx.moveTo(CX, CY - R); ctx.lineTo(CX, CY + R);
+  ctx.stroke();
+}
+
+/* ---------- varredura ---------- */
+function desenharVarredura(ang){
+  ctx.save();
+  ctx.beginPath(); ctx.arc(CX, CY, R, 0, Math.PI*2); ctx.clip();
+
+  const trilha = CONFIG.trilhaGraus * Math.PI / 180;
+  if (ctx.createConicGradient){
+    const g = ctx.createConicGradient(ang - trilha, CX, CY);
+    const fim = trilha / (Math.PI * 2);
+    g.addColorStop(0, cor(0));
+    g.addColorStop(fim * .75, cor(.10));
+    g.addColorStop(fim * .97, cor(.32));
+    g.addColorStop(fim, cor(0));
+    g.addColorStop(1, cor(0));
+    ctx.fillStyle = g;
+    ctx.fillRect(CX - R, CY - R, R*2, R*2);
+  } else {
+    // fallback: fatias com alpha decrescente
+    const n = 26;
+    for (let i = 0; i < n; i++){
+      const a1 = ang - trilha * (i+1)/n, a2 = ang - trilha * i/n;
+      ctx.fillStyle = cor(.30 * (1 - i/n));
+      ctx.beginPath(); ctx.moveTo(CX, CY);
+      ctx.arc(CX, CY, R, a1, a2); ctx.closePath(); ctx.fill();
+    }
+  }
+  // linha da frente da varredura
+  const lg = ctx.createLinearGradient(CX, CY, CX + Math.cos(ang) * R, CY + Math.sin(ang) * R);
+  lg.addColorStop(0, corClara(.05));
+  lg.addColorStop(1, corClara(.85));
+  ctx.strokeStyle = lg; ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(CX, CY);
+  ctx.lineTo(CX + Math.cos(ang) * R, CY + Math.sin(ang) * R);
+  ctx.stroke();
+  ctx.restore();
+}
+
+/* ---------- alvos e pings ---------- */
+function posAlvo(a){
+  return [CX + Math.cos(a.rad) * R * a.raio, CY + Math.sin(a.rad) * R * a.raio];
+}
+
+function desenharAlvos(agora){
+  for (const a of alvos){
+    if (a.brilho < .01) continue;
+    const [x, y] = posAlvo(a);
+    const b = a.brilho;
+    const tam = a.tam * (a.destaque ? 1.6 : 1);
+
+    // halo
+    const halo = ctx.createRadialGradient(x, y, 0, x, y, tam * 7);
+    halo.addColorStop(0, cor(.50 * b));
+    halo.addColorStop(1, cor(0));
+    ctx.fillStyle = halo;
+    ctx.beginPath(); ctx.arc(x, y, tam * 7, 0, Math.PI*2); ctx.fill();
+
+    // núcleo
+    ctx.fillStyle = corClara(Math.min(1, .25 + b));
+    ctx.beginPath(); ctx.arc(x, y, tam, 0, Math.PI*2); ctx.fill();
+
+    // anéis do ponto em destaque (como na imagem principal)
+    if (a.destaque){
+      ctx.lineWidth = 1.2;
+      for (let i = 1; i <= 3; i++){
+        ctx.strokeStyle = cor(b * (.55 - i * .13));
+        ctx.beginPath(); ctx.arc(x, y, tam + i * tam * 1.7, 0, Math.PI*2); ctx.stroke();
+      }
+    }
+  }
+  // ondas de ping (expansão + fade)
+  ondas = ondas.filter(o => agora - o.t0 < 1.4);
+  for (const o of ondas){
+    const p = (agora - o.t0) / 1.4;
+    if (p < 0) continue;                        // ping com atraso ainda não começou
+    const raio = 6 + p * (o.forte ? 46 : 28);
+    ctx.strokeStyle = cor((1 - p) * (o.forte ? .55 : .35));
+    ctx.lineWidth = o.forte ? 1.8 : 1.2;
+    ctx.beginPath(); ctx.arc(o.x, o.y, raio, 0, Math.PI*2); ctx.stroke();
+  }
+}
+
+/* ---------- detecção: a varredura cruzou o alvo? ---------- */
+function normalizar(a){ a %= Math.PI * 2; return a < 0 ? a + Math.PI * 2 : a; }
+
+function detectar(angAnterior, angAtual, agora){
+  const varrido = normalizar(angAtual - angAnterior);
+  for (const a of alvos){
+    const dist = normalizar(a.rad - angAnterior);
+    if (dist <= varrido){                       // o feixe passou por cima
+      a.brilho = 1;
+      const [x, y] = posAlvo(a);
+      ondas.push({ x, y, t0: agora, forte: !!a.destaque });
+      if (a.destaque) ondas.push({ x, y, t0: agora + .25, forte: true });
+      if (CONFIG.aleatorio && !a.destaque && Math.random() < .3){
+        a.pendenteRespawn = true;               // reposiciona quando apagar
+      }
+    }
+    // decaimento de fósforo + respawn opcional
+    if (a.pendenteRespawn && a.brilho < .03){
+      a.angulo = Math.random() * 360;
+      a.raio = .25 + Math.random() * .6;
+      a.rad = (a.angulo - 90) * Math.PI / 180;
+      a.pendenteRespawn = false;
+    }
+  }
+}
+
+/* ---------- laço principal ---------- */
+const reduzirMovimento = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let visivel = true;
+new IntersectionObserver(e => { visivel = e[0].isIntersecting; }, { threshold: .05 }).observe(canvas);
+
+let angulo = -Math.PI / 2;                      // começa no topo
+let tPrev = performance.now() / 1000;
+
+function quadro(){
+  requestAnimationFrame(quadro);
+  if (!visivel) { tPrev = performance.now() / 1000; return; }
+
+  const agora = performance.now() / 1000;
+  let dt = Math.min(agora - tPrev, .1);
+  tPrev = agora;
+
+  const angAnterior = angulo;
+  if (!reduzirMovimento){
+    angulo += dt * Math.PI * 2 / CONFIG.segundosPorVolta;
+    detectar(angAnterior, angulo, agora);
+    for (const a of alvos)
+      if (!(a.destaque && reduzirMovimento))
+        a.brilho *= Math.exp(-dt / CONFIG.decaimento);
+  }
+
+  ctx.clearRect(0, 0, W, H);
+  desenharFundo();
+  desenharGrade();
+  if (!reduzirMovimento) desenharVarredura(angulo);
+  desenharAlvos(agora);
+
+  // ponto central
+  ctx.fillStyle = corClara(.8);
+  ctx.beginPath(); ctx.arc(CX, CY, 2.4, 0, Math.PI*2); ctx.fill();
+}
+quadro();
+</script>
+</body>
+</html>
