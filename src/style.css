@@ -110,8 +110,13 @@ html[data-theme="light"] .radar{background:radial-gradient(circle,transparent 0 
 .application-label{margin:0 0 14px;color:var(--signal);font-size:9px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
 .application-card h3{margin:0 0 18px;font:400 26px/1.15 Georgia,serif;letter-spacing:-.03em}
 .application-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.75}
-.application-quote{margin:56px 0 52px;padding:4px 0 4px 40px;border-left:1px solid var(--signal)}
+.application-quote{margin:56px 0 52px;padding:24px 28px 28px;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 58%,transparent)}
+.application-quote-head{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:18px}
+.application-quote-head .application-label{margin:0}
 .application-quote blockquote{margin:0;max-width:990px;color:var(--text);font:400 clamp(26px,4vw,38px)/1.28 Georgia,serif;letter-spacing:-.035em}
+.copy-quote{flex:none;padding:9px 13px;border:1px solid var(--line);border-radius:3px;background:transparent;color:var(--muted-strong);font-size:9px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;transition:border-color .2s ease,color .2s ease,background .2s ease}
+.copy-quote:hover,.copy-quote:focus-visible{border-color:var(--signal);color:var(--signal);outline:none}
+.copy-quote.copied{border-color:var(--signal);background:var(--signal);color:var(--signal-ink)}
 .application-question{display:flex;align-items:end;justify-content:space-between;gap:40px;padding:30px 28px;background:var(--question-bg);color:var(--question-text)}
 .application-question h3{max-width:760px;margin:0;font:400 clamp(22px,3vw,30px)/1.25 Georgia,serif}
 .application-question a{flex:none;color:var(--question-muted);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
@@ -153,5 +158,5 @@ footer{display:flex;justify-content:space-between;gap:30px;padding:45px max(5vw,
 
 @media(prefers-reduced-motion:reduce){.radar::after,.radar-sweep,.radar-target,.radar-target i,.radar-target b,.radar-target em,.radar-blip{animation:none}}
 @media(max-width:900px){.application-head{grid-template-columns:1fr;gap:24px}.application-grid{grid-template-columns:1fr}.application-card{border-right:0;border-bottom:1px solid var(--line)}.application-card:last-child{border-bottom:0}.application-question{align-items:flex-start;flex-direction:column}}
-@media(max-width:800px){.site-header nav{display:none}.header-actions{gap:10px}.hero{grid-template-columns:1fr;padding-top:65px}.hero aside{min-height:470px}.radar{width:min(76vw,240px);height:min(76vw,240px)}.archive-head{align-items:stretch;flex-direction:column}.edition-card{grid-template-columns:74px 1fr}.edition-link{grid-column:2}.archive{padding-top:80px}.about{padding-top:90px}.filters{flex-wrap:nowrap;overflow-x:auto}.filters button{flex:none}.application{padding-top:80px;padding-bottom:80px}.application-quote{padding-left:24px}}
-@media(max-width:520px){.hero h1{font-size:48px}.hero aside h2{font-size:28px}.edition-card{grid-template-columns:1fr;padding:28px 0}.edition-number{height:auto;flex-direction:row;border:0}.edition-link{grid-column:auto}.edition-page{padding-top:65px}.application-head h2{font-size:42px}.application-card{padding-left:0;padding-right:0}.application-question{margin-left:-24px;margin-right:-24px}footer{flex-direction:column}}
+@media(max-width:800px){.site-header nav{display:none}.header-actions{gap:10px}.hero{grid-template-columns:1fr;padding-top:65px}.hero aside{min-height:470px}.radar{width:min(76vw,240px);height:min(76vw,240px)}.archive-head{align-items:stretch;flex-direction:column}.edition-card{grid-template-columns:74px 1fr}.edition-link{grid-column:2}.archive{padding-top:80px}.about{padding-top:90px}.filters{flex-wrap:nowrap;overflow-x:auto}.filters button{flex:none}.application{padding-top:80px;padding-bottom:80px}.application-quote{padding:22px}}
+@media(max-width:520px){.hero h1{font-size:48px}.hero aside h2{font-size:28px}.edition-card{grid-template-columns:1fr;padding:28px 0}.edition-number{height:auto;flex-direction:row;border:0}.edition-link{grid-column:auto}.edition-page{padding-top:65px}.application-head h2{font-size:42px}.application-card{padding-left:0;padding-right:0}.application-quote-head{align-items:flex-start;flex-direction:column}.application-question{margin-left:-24px;margin-right:-24px}footer{flex-direction:column}}
