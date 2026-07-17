@@ -1,6 +1,6 @@
 ---
 titulo: "Conta falsa não prova recebimento do consignado"
-numero: "03"
+numero: "16"
 data: "2026-07-17"
 categoria: "Fraudes bancárias"
 resumo: "PF apura contas abertas com documentos falsos para contratar consignados. A edição destaca prova, consentimento e destino real dos valores."
