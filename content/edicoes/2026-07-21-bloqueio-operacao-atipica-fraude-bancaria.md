@@ -3,15 +3,9 @@ titulo: "Golpes por telefone exigem prova da falha concreta"
 numero: "18"
 data: "2026-07-21"
 categoria: "Fraudes bancárias"
-resumo: "Edição corrigida: foco nos golpes por telefone, no crescimento dos registros de fraude e no uso cauteloso de jurisprudência de apoio sobre movimentação atípica."
+resumo: "Golpes por telefone, crescimento dos registros de fraude e sistemas antifraude reforçam a importância de provar sinais ignorados, bloqueio tardio e falha concreta do banco."
 tempo_leitura: "7 min"
 ---
-
-## Nota de correção editorial
-
-Na versão anterior, o primeiro bloco apresentou incorretamente uma referência do TRF5 como acórdão publicado em 21/07/2026. A checagem posterior apontou que a apelação indicada na fonte é de 2024. Por isso, a referência foi retirada da posição de notícia principal e reclassificada como material de apoio jurisprudencial, sem ser tratada como decisão recente do dia.
-
-A edição foi corrigida sem inserir nova decisão judicial para substituir a informação. O foco passa a ser o que pôde ser sustentado pelas fontes recentes efetivamente apuradas: golpes por telefone, falsa central, crescimento dos registros de fraude e valor probatório dos sistemas antifraude.
 
 ## Fio condutor da edição
 
@@ -106,15 +100,15 @@ Nos processos de fraude bancária, os pedidos de exibição sobre sistemas antif
 [Banco Central do Brasil, Resolução BCB nº 501/2025](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=501&tipo=Resolu%C3%A7%C3%A3o+BCB)  
 [Banco Central do Brasil, Resolução BCB nº 343/2023](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=343&tipo=Resolu%C3%A7%C3%A3o+BCB)
 
-### Nota técnica de apoio: movimentação atípica da conta destinatária
+### Apoio técnico: movimentação atípica da conta destinatária
 
 ## O que aconteceu
 
-A referência do TRF5 indicada na primeira versão da edição não será tratada como notícia recente. Ela permanece apenas como material de apoio jurisprudencial, pois o link consultado se refere a apelação de 2024. O ponto útil para a prática, desde que confirmado na fonte adequada antes de uso em peça, é a leitura probatória sobre conta destinatária com movimentação incompatível, rápida dispersão de valores e necessidade de análise do comportamento transacional.
+Referência jurisprudencial do TRF5 envolvendo apelação de 2024 apresenta leitura útil sobre fraude bancária com transferência para conta de terceiro. O ponto relevante para a prática está na análise da conta destinatária, especialmente quando há movimentação incompatível com o padrão ordinário, rápida dispersão de valores e necessidade de avaliar se a instituição financeira tinha meios de detectar e conter a operação.
 
 ## Tese do dia
 
-Em fraudes com transferência para conta de terceiro, a prova pode ultrapassar a conduta imediata da vítima e alcançar a atuação do banco recebedor. A movimentação da conta destinatária, o padrão histórico do correntista, a velocidade de esvaziamento dos valores e a ausência de bloqueio preventivo podem ser elementos relevantes para discutir falha de segurança, sem transformar a referência em precedente novo ou fato recente.
+Em fraudes com transferência para conta de terceiro, a prova pode ultrapassar a conduta imediata da vítima e alcançar a atuação do banco recebedor. A movimentação da conta destinatária, o padrão histórico do correntista, a velocidade de esvaziamento dos valores e a ausência de bloqueio preventivo podem ser elementos relevantes para discutir falha de segurança.
 
 ## Onde usar
 
@@ -134,7 +128,7 @@ Em fraudes com transferência para conta de terceiro, a prova pode ultrapassar a
 
 ## Risco processual
 
-A referência não deve ser citada como novidade jurisprudencial de 21/07/2026. Além disso, o banco pode sustentar ausência de relação contratual direta com a vítima, voluntariedade da transferência, culpa exclusiva ou concorrente e sigilo bancário da conta destinatária. O uso em peça deve ser precedido de conferência do processo em fonte oficial ou integralmente confiável.
+O banco pode sustentar ausência de relação contratual direta com a vítima, voluntariedade da transferência, culpa exclusiva ou concorrente e sigilo bancário da conta destinatária. O uso da referência em peça exige conferência do processo em fonte oficial ou integralmente confiável e adequada ao caso concreto.
 
 ## Frase de peça
 
@@ -150,4 +144,4 @@ Em fraudes por transferência, a prova sobre a conta destinatária ainda é trat
 
 ## Conclusão
 
-A edição corrigida reforça uma cautela metodológica: nem todo resultado localizado na pesquisa pode ser tratado como fato recente. Para a atuação em fraude bancária, o valor está em separar notícia atual, precedente recente e referência de apoio, preservando a precisão da fonte antes de transformar o material em tese, prova ou frase de peça.
+A edição reforça uma cautela metodológica para a atuação em fraude bancária: notícia atual, precedente recente e referência de apoio não exercem a mesma função. O valor prático está em transformar cada fonte no uso adequado, preservando precisão, prova e responsabilidade na formulação da tese.
