@@ -1,60 +1,23 @@
 ---
-titulo: "Operação atípica exige resposta imediata do banco"
+titulo: "Golpes por telefone exigem prova da falha concreta"
 numero: "18"
 data: "2026-07-21"
 categoria: "Fraudes bancárias"
-resumo: "Decisão publicada em 21/07 reforça que movimentação incompatível com o perfil da conta pode revelar falha de segurança e sustentar pedido de ressarcimento."
-tempo_leitura: "8 min"
+resumo: "Edição corrigida: foco nos golpes por telefone, no crescimento dos registros de fraude e no uso cauteloso de jurisprudência de apoio sobre movimentação atípica."
+tempo_leitura: "7 min"
 ---
+
+## Nota de correção editorial
+
+Na versão anterior, o primeiro bloco apresentou incorretamente uma referência do TRF5 como acórdão publicado em 21/07/2026. A checagem posterior apontou que a apelação indicada na fonte é de 2024. Por isso, a referência foi retirada da posição de notícia principal e reclassificada como material de apoio jurisprudencial, sem ser tratada como decisão recente do dia.
+
+A edição foi corrigida sem inserir nova decisão judicial para substituir a informação. O foco passa a ser o que pôde ser sustentado pelas fontes recentes efetivamente apuradas: golpes por telefone, falsa central, crescimento dos registros de fraude e valor probatório dos sistemas antifraude.
 
 ## Fio condutor da edição
 
-A edição de hoje trata de um ponto que aparece em praticamente toda fraude bancária relevante: a operação não deve ser analisada apenas pelo ato isolado do consumidor. Quando há movimentação incompatível, conta destinatária atípica, golpe por telefone ou transferência via Pix, a pergunta técnica passa a ser outra: o banco tinha meios de perceber o desvio de padrão e reagiu em tempo útil?
+A edição de hoje trata de um ponto comum em fraudes bancárias: a narrativa do golpe precisa ser convertida em prova técnica. Em vez de sustentar responsabilidade automática, a atuação deve demonstrar sinais objetivos ignorados pela instituição financeira, como transações fora do perfil, demora no bloqueio, resposta insuficiente à contestação e ausência de rastreabilidade dos mecanismos antifraude.
 
-### Notícia 1: Conta do fraudador teve movimentação atípica e banco foi condenado
-
-## O que aconteceu
-
-Acórdão do TRF5 publicado em 21/07/2026 manteve condenação do Banco C6 em caso de estelionato envolvendo transferência de R$ 85.500,00 para conta usada por fraudador. A ementa registrou que, antes do golpe, as movimentações diárias da conta destinatária não superavam R$ 200,00; depois do aporte, em pouco mais de duas horas, foram feitas 21 operações entre boletos, TEDs e Pix, praticamente zerando a conta. O tribunal reconheceu falha no sistema de segurança e detecção de fraudes, mas também manteve a repartição dos prejuízos materiais por culpa recíproca das vítimas.
-
-## Tese do dia
-
-Em fraudes com transferência para conta de terceiro, a responsabilidade bancária não deve ser examinada apenas pela conduta da vítima. A movimentação da conta destinatária, o padrão histórico do correntista, a velocidade de esvaziamento dos valores e a ausência de bloqueio preventivo podem demonstrar falha de segurança do banco recebedor, ainda que haja discussão sobre culpa concorrente.
-
-## Onde usar
-
-- Petição inicial em fraude por Pix, TED, boleto ou transferência para conta de terceiro.
-- Pedido de exibição da movimentação da conta destinatária, resguardados dados sensíveis.
-- Reclamação administrativa em que o banco nega responsabilidade por alegar culpa exclusiva da vítima.
-- Réplica contra argumento de que o golpe ocorreu fora do ambiente bancário.
-- Fundamentação para demonstrar fortuito interno, falha de monitoramento e ausência de bloqueio imediato.
-
-## Prova que não pode faltar
-
-- Comprovantes das transferências realizadas pela vítima.
-- Conversas, anúncios, propostas ou contatos utilizados pelo fraudador.
-- Boletim de ocorrência e protocolos de comunicação ao banco.
-- Horário exato das operações e tentativa de bloqueio ou contestação.
-- Pedido de exibição dos logs de segurança, análise antifraude, alertas internos e histórico transacional da conta destinatária.
-- Indícios de que a movimentação recebida era incompatível com o perfil ordinário da conta beneficiária.
-
-## Risco processual
-
-O banco pode sustentar que não havia relação contratual direta com a vítima, que a transferência foi voluntária e que a causa determinante do prejuízo foi a falta de verificação da identidade do terceiro. Também pode haver reconhecimento de culpa concorrente, reduzindo o valor da indenização material, especialmente quando a vítima aderiu a negociação privada sem cautelas mínimas.
-
-## Frase de peça
-
-> A controvérsia não se limita à transferência realizada pela vítima, pois a responsabilidade da instituição financeira também deve ser aferida a partir da movimentação atípica da conta destinatária, da velocidade de dispersão dos valores e da ausência de bloqueio preventivo diante de operações incompatíveis com o perfil transacional ordinário do correntista beneficiário.
-
-## Pergunta da edição
-
-Em ações de fraude por Pix ou TED, até que ponto a prova sobre a conta destinatária deveria ser tratada como elemento central da responsabilidade bancária, e não apenas como dado protegido por sigilo?
-
-## Fonte
-
-[TRF5 via Escavador](https://www.escavador.com/jurisprudencia/acordaos/11481938/apciv-08004888520224058402-trf5-unk-apelacao-civel-apciv-08004888520224058402)
-
-### Notícia 2: Golpes por telefone desafiam bancos e exigem prova da falha concreta
+### Notícia 1: Golpes por telefone desafiam bancos e exigem prova da falha concreta
 
 ## O que aconteceu
 
@@ -62,7 +25,7 @@ Matéria da Broadcast publicada no Investalk em 20/07/2026 destacou a expansão 
 
 ## Tese do dia
 
-No golpe da falsa central, a tese mais forte não é afirmar responsabilidade automática do banco. O caminho mais seguro é demonstrar o conjunto de sinais ignorados: transações fora do perfil, contratação de crédito seguida de transferências, mudança súbita de padrão, ausência de bloqueio, falha de autenticação, demora no atendimento e resposta insuficiente ao pedido de contestação.
+No golpe da falsa central, a tese mais segura não é afirmar responsabilidade automática do banco. O caminho técnico é demonstrar o conjunto de sinais ignorados: transações fora do perfil, contratação de crédito seguida de transferências, mudança súbita de padrão, ausência de bloqueio, falha de autenticação, demora no atendimento e resposta insuficiente ao pedido de contestação.
 
 ## Onde usar
 
@@ -98,7 +61,7 @@ Em casos de falsa central, qual prova costuma ser mais decisiva na prática: o r
 [Investalk/Broadcast Notícias](https://investalk.bb.com.br/radar/epidemia-de-golpes-transforma-telefone-em-arma-para-golpistas-e-desafia-bancos)  
 [STJ](https://www.stj.jus.br/sites/portalp/paginas/comunicacao/noticias/2026/15072026-sem-transacoes-incompativeis-com-perfil-de-cliente--banco-nao-responde-por-golpe-da-falsa-central.aspx)
 
-### Notícia 3: Registros de fraudes crescem e ampliam o valor probatório dos sistemas antifraude
+### Notícia 2: Registros de fraudes crescem e ampliam o valor probatório dos sistemas antifraude
 
 ## O que aconteceu
 
@@ -143,6 +106,48 @@ Nos processos de fraude bancária, os pedidos de exibição sobre sistemas antif
 [Banco Central do Brasil, Resolução BCB nº 501/2025](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=501&tipo=Resolu%C3%A7%C3%A3o+BCB)  
 [Banco Central do Brasil, Resolução BCB nº 343/2023](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=343&tipo=Resolu%C3%A7%C3%A3o+BCB)
 
+### Nota técnica de apoio: movimentação atípica da conta destinatária
+
+## O que aconteceu
+
+A referência do TRF5 indicada na primeira versão da edição não será tratada como notícia recente. Ela permanece apenas como material de apoio jurisprudencial, pois o link consultado se refere a apelação de 2024. O ponto útil para a prática, desde que confirmado na fonte adequada antes de uso em peça, é a leitura probatória sobre conta destinatária com movimentação incompatível, rápida dispersão de valores e necessidade de análise do comportamento transacional.
+
+## Tese do dia
+
+Em fraudes com transferência para conta de terceiro, a prova pode ultrapassar a conduta imediata da vítima e alcançar a atuação do banco recebedor. A movimentação da conta destinatária, o padrão histórico do correntista, a velocidade de esvaziamento dos valores e a ausência de bloqueio preventivo podem ser elementos relevantes para discutir falha de segurança, sem transformar a referência em precedente novo ou fato recente.
+
+## Onde usar
+
+- Construção de pedidos de exibição sobre conta destinatária em fraudes por Pix, TED, boleto ou transferência.
+- Fundamentação complementar sobre dever de monitoramento transacional.
+- Réplica contra defesa baseada exclusivamente em culpa da vítima.
+- Organização da prova sobre tempo de dispersão dos valores e tentativa de bloqueio.
+
+## Prova que não pode faltar
+
+- Comprovantes das transferências realizadas pela vítima.
+- Conversas, anúncios, propostas ou contatos utilizados pelo fraudador.
+- Boletim de ocorrência e protocolos de comunicação ao banco.
+- Horário exato das operações e tentativa de bloqueio ou contestação.
+- Pedido de exibição dos logs de segurança, análise antifraude, alertas internos e histórico transacional da conta destinatária.
+- Indícios de que a movimentação recebida era incompatível com o perfil ordinário da conta beneficiária.
+
+## Risco processual
+
+A referência não deve ser citada como novidade jurisprudencial de 21/07/2026. Além disso, o banco pode sustentar ausência de relação contratual direta com a vítima, voluntariedade da transferência, culpa exclusiva ou concorrente e sigilo bancário da conta destinatária. O uso em peça deve ser precedido de conferência do processo em fonte oficial ou integralmente confiável.
+
+## Frase de peça
+
+> A responsabilidade da instituição financeira deve ser examinada também a partir da movimentação atípica da conta destinatária, da velocidade de dispersão dos valores e da existência ou não de mecanismos eficazes de bloqueio preventivo diante de operações incompatíveis com o perfil transacional ordinário do correntista beneficiário.
+
+## Pergunta da edição
+
+Em fraudes por transferência, a prova sobre a conta destinatária ainda é tratada como ponto secundário ou já deve ser formulada desde a petição inicial como eixo central da responsabilização?
+
+## Fonte
+
+[TRF5 via Escavador, referência de apoio a ser conferida antes de uso em peça](https://www.escavador.com/jurisprudencia/acordaos/11481938/apciv-08004888520224058402-trf5-unk-apelacao-civel-apciv-08004888520224058402)
+
 ## Conclusão
 
-A edição reforça uma diretriz prática: fraude bancária não se prova apenas pela história contada pela vítima ou pelo comprovante da transferência. A prova precisa reconstruir o padrão anterior, o desvio de comportamento, a conta destinatária, os alertas internos, a resposta do banco e a razão pela qual a operação não foi bloqueada quando ainda havia tempo útil para evitar ou reduzir o prejuízo.
+A edição corrigida reforça uma cautela metodológica: nem todo resultado localizado na pesquisa pode ser tratado como fato recente. Para a atuação em fraude bancária, o valor está em separar notícia atual, precedente recente e referência de apoio, preservando a precisão da fonte antes de transformar o material em tese, prova ou frase de peça.
