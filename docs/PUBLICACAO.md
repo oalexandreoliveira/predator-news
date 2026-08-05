@@ -4,6 +4,12 @@
 
 Pesquisa → validação → seleção → numeração → geração do Markdown → validação → commit → GitHub Actions → verificação do site.
 
+A publicação diária ocorre em uma única execução autônoma.
+
+A tarefa não depende de resultados produzidos por outros chats, tarefas ou conversas.
+
+Quando não houver três notícias válidas, a execução termina como `PUBLICAÇÃO INTERROMPIDA`, sem alterações no repositório.
+
 ## 1. Pesquisa e validação
 
 Pesquisar acontecimentos das últimas 24 a 48 horas conforme `docs/EDITORIAL.md`. Reunir de cinco a oito candidatos e confirmar data, fonte direta, natureza do acontecimento e utilidade prática.
