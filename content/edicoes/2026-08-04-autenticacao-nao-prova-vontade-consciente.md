@@ -1,6 +1,6 @@
 ---
 titulo: "Autenticação não prova vontade consciente"
-numero: "27"
+numero: "28"
 data: "2026-08-04"
 categoria: "Fraudes bancárias"
 resumo: "Edição aborda empréstimo contratado durante golpe do falso advogado, inexistência de contrato bancário em fraude e venda casada na concessão de crédito."
