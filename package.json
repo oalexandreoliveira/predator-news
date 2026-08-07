@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "validate:data": "node scripts/data/validate-data.mjs",
-    "test": "node --test --test-isolation=none",
+    "test": "node --test",
     "build": "npm run validate:data && node scripts/build.mjs"
   },
   "dependencies": {
