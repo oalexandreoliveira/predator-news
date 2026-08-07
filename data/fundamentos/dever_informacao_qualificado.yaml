@@ -1,0 +1,7 @@
+slug: dever_informacao_qualificado
+titulo: Dever de informação qualificado
+formulacao: A contratação deve informar de modo claro a natureza do cartão consignado, a forma de amortização e as consequências do desconto mínimo.
+temas: [dever_informacao, consentimento]
+produtos: [rmc, rcc, cartao_credito_consignado]
+base_normativa: ["CDC, art. 6º, III", "CDC, art. 46"]
+status: ativo

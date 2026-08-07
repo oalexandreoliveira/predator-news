@@ -1,0 +1,12 @@
+id: tjpi-0800033-51-2018-8-18-0065
+identificacao: {tribunal: TJPI, processo: 0800033-51.2018.8.18.0065, tipo_decisao: acordao, orgao_julgador: 2ª Câmara Especializada Cível, relator: José Wilson Ferreira de Araújo Júnior, data_julgamento: 2022-03-28, data_publicacao: 2022-03-28}
+titulo: Falta de prova do repasse invalida cartão consignado
+resumo_predator: A instituição não comprovou a entrega dos valores à beneficiária, levando ao reconhecimento da inexistência contratual e à repetição em dobro.
+contexto: {produtos: [rmc, cartao_credito_consignado], temas: [consentimento, prova_contratacao, saque], fatos_relevantes: [desconto_beneficio]}
+provas: []
+teses: [{slug: vicio_consentimento_cartao_consignado, status: acolhida}]
+fundamentos: [saque_unico_indicio_mutuo, autenticidade_nao_equivale_consentimento]
+resultado: {contrato: inexistente, conversao: nao_aplicavel, repeticao_indebito: dobro, dano_moral: nao_informado}
+fonte: {natureza: jurisprudencia_oficial, recuperado_via: portal_tribunal, url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/6322328/public, url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/6322328/public, consultado_em: 2026-08-07}
+autoridade: persuasiva
+status: ativo

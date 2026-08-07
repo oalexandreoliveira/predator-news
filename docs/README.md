@@ -6,6 +6,7 @@
 - [Fluxo de publicação](PUBLICACAO.md)
 - [Manutenção técnica](MANUTENCAO.md)
 - [Relatório de execução](RELATORIO-DE-EXECUCAO.md)
+- [Dados da Inteligência Jurídica](DADOS-INTELIGENCIA-JURIDICA.md)
 
 ## Fontes de verdade
 

@@ -5,9 +5,13 @@ on:
     branches: [main]
     paths:
       - "content/**"
+      - "data/**"
+      - "schemas/**"
       - "scripts/**"
       - "src/**"
+      - "tests/**"
       - "package.json"
+      - "package-lock.json"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -34,6 +38,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Validar dados e executar testes
+        run: npm test
 
       - name: Gerar páginas a partir dos arquivos Markdown
         env:

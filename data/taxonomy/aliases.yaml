@@ -1,0 +1,18 @@
+version: 1
+aliases:
+  produto:
+    reserva_margem_consignavel: rmc
+    cartao_consignado: cartao_credito_consignado
+  tema:
+    vicio_de_vontade: consentimento
+    vicio_de_consentimento: consentimento
+    informacao_adequada: dever_informacao
+  prova:
+    ted: comprovante_transferencia
+    instrumento_contratual: contrato
+  perfil_consumidor:
+    pensionista_inss: aposentado_pensionista
+    aposentado_inss: aposentado_pensionista
+  status_tese:
+    improcedente: rejeitada
+    procedente: acolhida

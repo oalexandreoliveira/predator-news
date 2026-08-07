@@ -1,0 +1,12 @@
+id: tjpi-0836476-91-2023-8-18-0140
+identificacao: {tribunal: TJPI, processo: 0836476-91.2023.8.18.0140, tipo_decisao: decisao_terminativa, orgao_julgador: 3ª Câmara Especializada Cível, relator: Lucicleide Pereira Belo, data_julgamento: 2025-05-28, data_publicacao: 2025-05-28}
+titulo: Uso reiterado e contrato assinado afastam vício
+resumo_predator: Contrato assinado, saques e compras reiteradas foram considerados incompatíveis com a alegação de desconhecimento da modalidade de cartão consignado.
+contexto: {produtos: [rmc, cartao_credito_consignado], temas: [consentimento, uso_cartao, saque], fatos_relevantes: [contrato_claro, uso_reiterado_cartao]}
+provas: [contrato, assinatura, historico_uso]
+teses: [{slug: vicio_consentimento_cartao_consignado, status: rejeitada}]
+fundamentos: [uso_reiterado_cartao_indicio_consentimento, dever_informacao_qualificado]
+resultado: {contrato: mantido, conversao: indeferida, repeticao_indebito: indeferida, dano_moral: indeferido}
+fonte: {natureza: jurisprudencia_oficial, recuperado_via: portal_tribunal, url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/25377554/public, url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/25377554/public, consultado_em: 2026-08-07}
+autoridade: persuasiva
+status: ativo

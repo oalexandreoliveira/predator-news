@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://predator.news/schemas/decision.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "identificacao", "titulo", "resumo_predator", "contexto", "teses", "fundamentos", "resultado", "fonte", "autoridade", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^tj(?:ce|ma|pi)-[0-9]{7}-[0-9]{2}-[0-9]{4}-[0-9]-[0-9]{2}-[0-9]{4}$"},
+    "identificacao": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tribunal", "processo", "tipo_decisao", "orgao_julgador", "relator", "data_julgamento"],
+      "properties": {
+        "tribunal": {"enum": ["TJCE", "TJMA", "TJPI"]},
+        "processo": {"type": "string", "pattern": "^[0-9]{7}-[0-9]{2}\\.[0-9]{4}\\.[0-9]\\.[0-9]{2}\\.[0-9]{4}$"},
+        "tipo_decisao": {"type": "string"}, "orgao_julgador": {"type": "string", "minLength": 2},
+        "relator": {"type": "string", "minLength": 2}, "data_julgamento": {"type": ["string", "null"], "format": "date"},
+        "data_publicacao": {"type": ["string", "null"], "format": "date"}
+      }
+    },
+    "titulo": {"type": "string", "minLength": 10},
+    "resumo_predator": {"type": "string", "minLength": 30},
+    "contexto": {
+      "type": "object", "additionalProperties": false, "required": ["produtos", "temas"],
+      "properties": {
+        "produtos": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "temas": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "perfis_consumidor": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "fatos_relevantes": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "meio_contratacao": {"type": "string"}
+      }
+    },
+    "provas": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "teses": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["slug", "status"], "properties": {"slug": {"type": "string"}, "status": {"type": "string"}}}},
+    "fundamentos": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "resultado": {"type": "object", "additionalProperties": false, "required": ["contrato", "conversao", "repeticao_indebito", "dano_moral"], "properties": {"contrato": {"type": "string"}, "conversao": {"type": "string"}, "repeticao_indebito": {"type": "string"}, "dano_moral": {"type": "string"}}},
+    "fonte": {"type": "object", "additionalProperties": false, "required": ["natureza", "recuperado_via", "url_original", "consultado_em"], "properties": {"natureza": {"type": "string"}, "recuperado_via": {"type": "string"}, "url_original": {"type": "string", "format": "uri", "pattern": "^https://"}, "url_inteiro_teor": {"type": ["string", "null"], "format": "uri"}, "consultado_em": {"type": "string", "format": "date"}}},
+    "autoridade": {"type": "string"}, "status": {"type": "string"}
+  }
+}

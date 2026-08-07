@@ -1,7 +1,11 @@
 import { cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { basename, join } from "node:path";
+import { fileURLToPath } from "node:url";
+import { loadData } from "./data/load-data.mjs";
+import { aggregateFoundation, aggregateThesis, decisionDate } from "./data/aggregate-legal.mjs";
+import { createDecisionSearchText } from "../src/jurisprudencia-filter.mjs";
 
-const ROOT = new URL("..", import.meta.url).pathname.replace(/scripts\/$/, "");
+const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT = join(ROOT, "content", "edicoes");
 const DIST = join(ROOT, "dist");
 const BASE = process.env.BASE_PATH || "/predator-news";
@@ -188,10 +192,139 @@ ${themeInit}<link rel="stylesheet" href="${BASE}/assets/style.css"></head><body>
 <div class="header-actions"><nav><a href="${BASE}/#edicao-atual">Edição atual</a><a href="${BASE}/#edicoes">Edições</a><a href="${BASE}/#sobre">Sobre</a></nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema" aria-pressed="false"><span data-theme-label>Escuro</span></button></div></header>
 ${content}<footer><span>Predator News</span><p>Conteúdo jurídico informativo. Leitura crítica para decisões melhores.</p></footer>${themeScript}${script}</body></html>`;
 
+const legalLabels = new Map(Object.entries({
+  rmc: "RMC", rcc: "RCC", cartao_credito_consignado: "Cartão de crédito consignado",
+  consentimento: "Consentimento", dever_informacao: "Dever de informação", contratacao_digital: "Contratação digital",
+  contratacao_analfabeto: "Contratação de pessoa analfabeta", prova_contratacao: "Prova da contratação",
+  uso_cartao: "Uso do cartão", saque: "Saque", desconto_beneficio: "Desconto em benefício",
+  acolhida: "Acolhida", parcialmente_acolhida: "Parcialmente acolhida", rejeitada: "Rejeitada",
+  nao_enfrentada: "Não enfrentada", prejudicada: "Prejudicada", mantido: "Mantido", anulado: "Anulado",
+  inexistente: "Inexistente", convertido: "Convertido", deferida: "Deferida", indeferida: "Indeferida",
+  nao_aplicavel: "Não aplicável", simples: "Simples", dobro: "Em dobro", mista: "Mista",
+  deferido: "Deferido", indeferido: "Indeferido", acordao: "Acórdão", decisao_monocratica: "Decisão monocrática",
+  decisao_terminativa: "Decisão terminativa", jurisprudencia_oficial: "Jurisprudência oficial",
+  informativo_oficial: "Informativo oficial", persuasiva: "Persuasiva", idoso: "Pessoa idosa",
+  aposentado_pensionista: "Aposentado ou pensionista", analfabeto: "Pessoa analfabeta", hipossuficiente: "Hipossuficiente",
+  fisico: "Físico", digital: "Digital", ausencia_contrato: "Ausência de contrato", contrato_claro: "Contrato claro",
+  contrato_diverso: "Contrato diverso", saque_unico: "Saque único", uso_reiterado_cartao: "Uso reiterado do cartão",
+  contrato: "Contrato", assinatura: "Assinatura",
+  assinatura_rogo: "Assinatura a rogo", testemunhas: "Testemunhas", termo_consentimento: "Termo de consentimento",
+  comprovante_transferencia: "Comprovante de transferência", faturas: "Faturas", historico_uso: "Histórico de uso",
+  pericia_grafotecnica: "Perícia grafotécnica",
+}));
+const humanize = (value = "") => legalLabels.get(String(value)) || String(value).replaceAll("_", " ").replace(/\b\p{L}/gu, (letter) => letter.toUpperCase());
+const known = (value) => value !== null && value !== undefined && value !== "" && value !== "nao_informado";
+const displayDate = (value) => known(value) ? dateLabel(value) : "";
+const pills = (values = []) => values.map((value) => `<span class="legal-pill">${escapeHtml(humanize(value))}</span>`).join("");
+const detailItem = (label, value) => known(value) ? `<div class="legal-detail"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(humanize(value))}</dd></div>` : "";
+const listSection = (title, values = []) => values.length ? `<section class="decision-section"><h2>${escapeHtml(title)}</h2><div class="legal-pills">${pills(values)}</div></section>` : "";
+
+function selectFilter(name, label, values, labels = new Map()) {
+  const options = values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(labels.get(value) || humanize(value))}</option>`).join("");
+  return `<label class="legal-filter"><span>${escapeHtml(label)}</span><select data-decision-filter="${escapeHtml(name)}"><option value="">Todos</option>${options}</select></label>`;
+}
+
+function decisionCard(decision, thesisLabels) {
+  const primaryThesis = decision.teses[0];
+  const date = decision.identificacao.data_julgamento || decision.identificacao.data_publicacao;
+  const filterRecord = {
+    tribunal: decision.identificacao.tribunal,
+    produtos: decision.contexto.produtos,
+    temas: decision.contexto.temas,
+    teses: decision.teses.map((item) => item.slug),
+    statusTese: decision.teses.map((item) => item.status),
+  };
+  const attributes = Object.entries(filterRecord).map(([key, value]) => `data-${key.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)}="${escapeHtml(Array.isArray(value) ? value.join("|") : value)}"`).join(" ");
+  const resultItems = [
+    known(decision.resultado.contrato) ? `<span><small>Contrato</small>${escapeHtml(humanize(decision.resultado.contrato))}</span>` : "",
+    known(decision.resultado.dano_moral) ? `<span><small>Dano moral</small>${escapeHtml(humanize(decision.resultado.dano_moral))}</span>` : "",
+  ].filter(Boolean).join("");
+  return `<article class="legal-card" data-decision-card data-search="${escapeHtml(createDecisionSearchText(decision))}" ${attributes}>
+    <div class="legal-card-meta"><strong>${escapeHtml(decision.identificacao.tribunal)}</strong><span>${escapeHtml(decision.identificacao.orgao_julgador)}</span><time>${escapeHtml(displayDate(date))}</time></div>
+    <h2>${escapeHtml(decision.titulo)}</h2><p>${escapeHtml(decision.resumo_predator)}</p>
+    <div class="legal-pills">${pills([...decision.contexto.produtos, ...decision.contexto.temas])}</div>
+    <div class="legal-thesis"><small>Tese principal</small><strong>${escapeHtml(thesisLabels.get(primaryThesis.slug) || humanize(primaryThesis.slug))}</strong><span data-thesis-status="${escapeHtml(primaryThesis.status)}">${escapeHtml(humanize(primaryThesis.status))}</span></div>
+    ${resultItems ? `<div class="legal-results">${resultItems}</div>` : ""}
+    <a class="legal-card-link" href="${BASE}/jurisprudencia/${escapeHtml(decision.id)}/">Ver decisão →</a>
+  </article>`;
+}
+
+function renderDecisionPage(decision, thesisLabels, foundationLabels) {
+  const identification = decision.identificacao;
+  const sourceUrl = decision.fonte.url_inteiro_teor || decision.fonte.url_original;
+  const thesisItems = decision.teses.map((item) => `<li><a href="${BASE}/teses/${escapeHtml(item.slug)}/"><strong>${escapeHtml(thesisLabels.get(item.slug) || humanize(item.slug))}</strong></a><span>${escapeHtml(humanize(item.status))}</span></li>`).join("");
+  return shell({
+    title: `${decision.titulo} — Predator News`, description: decision.resumo_predator,
+    content: `<main class="decision-page"><a class="back" href="${BASE}/jurisprudencia/">← Jurisprudência</a>
+      <div class="edition-kicker">${escapeHtml(identification.tribunal)} · ${escapeHtml(identification.processo)}</div>
+      <h1>${escapeHtml(decision.titulo)}</h1><p class="decision-editorial-label">RESUMO EDITORIAL PREDATOR</p><p class="edition-summary">${escapeHtml(decision.resumo_predator)}</p>
+      <dl class="decision-identification">${detailItem("Tribunal", identification.tribunal)}${detailItem("Processo", identification.processo)}${detailItem("Tipo de decisão", identification.tipo_decisao)}${detailItem("Órgão julgador", identification.orgao_julgador)}${detailItem("Relator", identification.relator)}${detailItem("Data de julgamento", displayDate(identification.data_julgamento))}${detailItem("Data de publicação", displayDate(identification.data_publicacao))}</dl>
+      ${listSection("Contexto fático", decision.contexto.fatos_relevantes)}
+      ${listSection("Perfil do consumidor", decision.contexto.perfis_consumidor)}
+      ${known(decision.contexto.meio_contratacao) ? `<section class="decision-section"><h2>Meio de contratação</h2><p>${escapeHtml(humanize(decision.contexto.meio_contratacao))}</p></section>` : ""}
+      ${listSection("Provas e elementos probatórios", decision.provas)}
+      <section class="decision-section"><h2>Teses enfrentadas</h2><ul class="decision-relations">${thesisItems}</ul></section>
+      <section class="decision-section"><h2>Fundamentos identificados</h2><div class="legal-pills">${decision.fundamentos.map((slug) => `<a class="legal-pill" href="${BASE}/fundamentos/${escapeHtml(slug)}/">${escapeHtml(foundationLabels.get(slug) || humanize(slug))}</a>`).join("")}</div></section>
+      <section class="decision-section"><h2>Resultados</h2><dl class="decision-results">${detailItem("Contrato", decision.resultado.contrato)}${detailItem("Conversão", decision.resultado.conversao)}${detailItem("Repetição do indébito", decision.resultado.repeticao_indebito)}${detailItem("Dano moral", decision.resultado.dano_moral)}</dl></section>
+      <section class="decision-section"><h2>Natureza e autoridade</h2><dl class="decision-results">${detailItem("Natureza da fonte", decision.fonte.natureza)}${detailItem("Autoridade", decision.autoridade)}</dl></section>
+      <section class="decision-source"><div><p class="signal">FONTE JURÍDICA</p><h2>Consulte a decisão na origem</h2><p>A síntese acima é conteúdo editorial do Predator e não substitui a leitura do documento oficial.</p></div><a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener">${decision.fonte.url_inteiro_teor ? "Acessar inteiro teor" : "Acessar fonte oficial"} ↗</a></section>
+    </main>`,
+  });
+}
+
+function indicators(items) {
+  return `<dl class="entity-indicators">${items.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>`;
+}
+
+function relatedDecisions(decisions, thesisSlug = "") {
+  if (!decisions.length) return `<p class="entity-empty">Nenhuma decisão catalogada utiliza esta relação na amostra atual.</p>`;
+  return `<div class="related-decisions">${decisions.map((decision) => {
+    const thesis = thesisSlug ? decision.teses.find((item) => item.slug === thesisSlug) : null;
+    return `<article><div><span>${escapeHtml(decision.identificacao.tribunal)} · ${escapeHtml(decision.identificacao.processo)}</span><h3>${escapeHtml(decision.titulo)}</h3>${thesis ? `<p>Tese: <strong>${escapeHtml(humanize(thesis.status))}</strong></p>` : ""}</div><a href="${BASE}/jurisprudencia/${escapeHtml(decision.id)}/">Ver decisão →</a></article>`;
+  }).join("")}</div>`;
+}
+
+function renderThesisPage(aggregate) {
+  const { thesis, decisions: related, foundations, tribunals, latestDecision: latestRelated, products, themes, evidence } = aggregate;
+  const latest = latestRelated ? displayDate(decisionDate(latestRelated)) : "Não disponível";
+  return shell({
+    title: `${thesis.titulo} — Teses — Predator News`, description: thesis.sintese,
+    content: `<main class="entity-page"><a class="back" href="${BASE}/teses/">← Banco de Teses</a>
+      <div class="edition-kicker">TESE EM ACOMPANHAMENTO</div><h1>${escapeHtml(thesis.titulo)}</h1>
+      <section class="entity-intro"><div><p class="signal">QUESTÃO JURÍDICA</p><p>${escapeHtml(thesis.questao_juridica)}</p></div><div><p class="signal">SÍNTESE PREDATOR</p><p>${escapeHtml(thesis.sintese)}</p></div></section>
+      ${indicators([["Decisões", String(related.length)],["Tribunais", String(tribunals.length)],["Fundamentos usados", String(foundations.length)],["Última decisão", latest]])}
+      <section class="decision-section"><h2>Escopo da amostra</h2><div class="entity-columns"><div><h3>Produtos</h3><div class="legal-pills">${pills(products)}</div></div><div><h3>Temas identificados</h3><div class="legal-pills">${pills(themes)}</div></div><div><h3>Tribunais representados</h3><div class="legal-pills">${pills(tribunals)}</div></div></div></section>
+      <section class="decision-section"><h2>Fundamentos relacionados</h2><div class="entity-link-grid">${foundations.map((foundation) => `<a href="${BASE}/fundamentos/${escapeHtml(foundation.slug)}/"><strong>${escapeHtml(foundation.titulo)}</strong><span>${escapeHtml(foundation.formulacao)}</span></a>`).join("")}</div></section>
+      ${evidence.length ? `<section class="decision-section"><h2>Provas recorrentes</h2><div class="legal-pills">${evidence.map((item) => `<span class="legal-pill">${escapeHtml(humanize(item.slug))} · ${item.count}</span>`).join("")}</div></section>` : ""}
+      <section class="decision-section"><h2>Decisões relacionadas</h2>${relatedDecisions(related, thesis.slug)}</section>
+      <aside class="sample-note"><strong>Limite da amostra</strong><p>Os indicadores refletem somente as decisões catalogadas no dataset atual e não representam conclusão sobre entendimento consolidado ou posição majoritária.</p></aside>
+    </main>`,
+  });
+}
+
+function renderFoundationPage(aggregate) {
+  const { foundation, decisions: related, theses: relatedTheses, evidence } = aggregate;
+  return shell({
+    title: `${foundation.titulo} — Fundamentos — Predator News`, description: foundation.formulacao,
+    content: `<main class="entity-page"><a class="back" href="${BASE}/fundamentos/">← Banco de Fundamentos</a>
+      <div class="edition-kicker">FUNDAMENTO JURÍDICO</div><h1>${escapeHtml(foundation.titulo)}</h1>
+      <section class="entity-intro"><div><p class="signal">FORMULAÇÃO TÉCNICA</p><p>${escapeHtml(foundation.formulacao)}</p></div></section>
+      ${indicators([["Decisões relacionadas", String(related.length)],["Teses relacionadas", String(relatedTheses.length)]])}
+      <section class="decision-section"><h2>Aplicabilidade</h2><div class="entity-columns"><div><h3>Produtos</h3><div class="legal-pills">${pills(foundation.produtos)}</div></div><div><h3>Temas</h3><div class="legal-pills">${pills(foundation.temas)}</div></div></div></section>
+      ${foundation.base_normativa?.length ? `<section class="decision-section"><h2>Base normativa</h2><ul class="normative-list">${foundation.base_normativa.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>` : ""}
+      ${evidence.length ? `<section class="decision-section"><h2>Provas relacionadas</h2><div class="legal-pills">${evidence.map((item) => `<span class="legal-pill">${escapeHtml(humanize(item.slug))} · ${item.count}</span>`).join("")}</div></section>` : ""}
+      <section class="decision-section"><h2>Teses relacionadas</h2><div class="entity-link-grid">${relatedTheses.map((thesis) => `<a href="${BASE}/teses/${escapeHtml(thesis.slug)}/"><strong>${escapeHtml(thesis.titulo)}</strong><span>${escapeHtml(thesis.questao_juridica)}</span></a>`).join("")}</div></section>
+      <section class="decision-section"><h2>Decisões relacionadas</h2>${relatedDecisions(related)}</section>
+    </main>`,
+  });
+}
+
+const legalData = await loadData(ROOT);
 await rm(DIST, { recursive: true, force: true });
 await mkdir(join(DIST, "assets"), { recursive: true });
 await cp(join(ROOT, "src", "style.css"), join(DIST, "assets", "style.css"));
 await cp(join(ROOT, "src", "radar.html"), join(DIST, "assets", "radar.html"));
+await cp(join(ROOT, "src", "jurisprudencia-filter.mjs"), join(DIST, "assets", "jurisprudencia-filter.mjs"));
 await writeFile(join(DIST, ".nojekyll"), "");
 
 const names = (await readdir(CONTENT)).filter((name) => name.endsWith(".md") && !name.startsWith("_"));
@@ -213,6 +346,76 @@ for (const edition of editions) {
   });
   await writeFile(join(directory, "index.html"), page);
 }
+
+const decisions = legalData.decisions.map(({ value }) => value).sort((a, b) => {
+  const dateA = a.identificacao.data_julgamento || a.identificacao.data_publicacao || "";
+  const dateB = b.identificacao.data_julgamento || b.identificacao.data_publicacao || "";
+  return dateB.localeCompare(dateA) || a.id.localeCompare(b.id);
+});
+const thesisLabels = new Map(legalData.theses.map(({ value }) => [value.slug, value.titulo]));
+const foundationLabels = new Map(legalData.foundations.map(({ value }) => [value.slug, value.titulo]));
+const filterValues = (getter) => [...new Set(decisions.flatMap(getter))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+const tribunals = filterValues((decision) => [decision.identificacao.tribunal]);
+const products = filterValues((decision) => decision.contexto.produtos);
+const themes = filterValues((decision) => decision.contexto.temas);
+const theses = filterValues((decision) => decision.teses.map((item) => item.slug));
+const thesisStatuses = filterValues((decision) => decision.teses.map((item) => item.status));
+const jurisprudenceDirectory = join(DIST, "jurisprudencia");
+await mkdir(jurisprudenceDirectory, { recursive: true });
+
+for (const decision of decisions) {
+  const directory = join(jurisprudenceDirectory, decision.id);
+  await mkdir(directory, { recursive: true });
+  await writeFile(join(directory, "index.html"), renderDecisionPage(decision, thesisLabels, foundationLabels));
+}
+
+const jurisprudencePage = shell({
+  title: "Jurisprudência — Predator News",
+  description: "Decisões selecionadas e estruturadas pelo Predator News para pesquisa em Direito Bancário.",
+  content: `<main class="jurisprudence-page"><section class="legal-hero"><p class="signal">INTELIGÊNCIA JURÍDICA</p><h1>Jurisprudência</h1><p>Decisões selecionadas e estruturadas pelo Predator News para pesquisa em Direito Bancário aplicado a aposentados e pensionistas do INSS.</p></section>
+    <section class="legal-explorer" aria-labelledby="legal-results-title">
+      <div class="legal-search-row"><label><span>Pesquisar jurisprudência</span><input type="search" data-decision-search placeholder="Processo, tribunal, tema ou fundamento"></label><button type="button" data-clear-filters>Limpar filtros</button></div>
+      <div class="legal-filter-grid">${selectFilter("tribunal", "Tribunal", tribunals)}${selectFilter("produto", "Produto", products)}${selectFilter("tema", "Tema", themes)}${selectFilter("tese", "Tese", theses, thesisLabels)}${selectFilter("statusTese", "Resultado da tese", thesisStatuses)}</div>
+      <div class="legal-results-head"><h2 id="legal-results-title">Decisões catalogadas</h2><p aria-live="polite"><strong data-result-count>${decisions.length}</strong> resultado(s)</p></div>
+      <div class="legal-card-list">${decisions.map((decision) => decisionCard(decision, thesisLabels)).join("\n")}</div>
+      <p class="legal-empty" data-decision-empty hidden>Nenhuma decisão corresponde aos critérios informados.</p>
+    </section></main>`,
+  script: `<script type="module">import{matchesDecision}from'${BASE}/assets/jurisprudencia-filter.mjs';const search=document.querySelector('[data-decision-search]'),selects=[...document.querySelectorAll('[data-decision-filter]')],cards=[...document.querySelectorAll('[data-decision-card]')],count=document.querySelector('[data-result-count]'),empty=document.querySelector('[data-decision-empty]');const split=value=>value?value.split('|'):[];function apply(){const filters={query:search.value};selects.forEach(select=>filters[select.dataset.decisionFilter]=select.value);let visible=0;cards.forEach(card=>{const record={search:card.dataset.search,tribunal:card.dataset.tribunal,produtos:split(card.dataset.produtos),temas:split(card.dataset.temas),teses:split(card.dataset.teses),statusTese:split(card.dataset.statusTese)};const show=matchesDecision(record,filters);card.hidden=!show;if(show)visible++});count.textContent=visible;empty.hidden=visible!==0}search.addEventListener('input',apply);selects.forEach(select=>select.addEventListener('change',apply));document.querySelector('[data-clear-filters]').addEventListener('click',()=>{search.value='';selects.forEach(select=>select.value='');apply();search.focus()});</script>`,
+});
+await writeFile(join(jurisprudenceDirectory, "index.html"), jurisprudencePage);
+
+const activeTheses = legalData.theses.map(({ value }) => value).filter((thesis) => thesis.status === "ativo");
+const activeFoundations = legalData.foundations.map(({ value }) => value).filter((foundation) => foundation.status === "ativo");
+const thesisAggregates = activeTheses.map((thesis) => aggregateThesis(thesis, decisions, activeFoundations));
+const foundationAggregates = activeFoundations.map((foundation) => aggregateFoundation(foundation, decisions, activeTheses));
+
+const thesesDirectory = join(DIST, "teses");
+await mkdir(thesesDirectory, { recursive: true });
+for (const aggregate of thesisAggregates) {
+  const directory = join(thesesDirectory, aggregate.thesis.slug);
+  await mkdir(directory, { recursive: true });
+  await writeFile(join(directory, "index.html"), renderThesisPage(aggregate));
+}
+const thesesPage = shell({
+  title: "Banco de Teses — Predator News",
+  description: "Questões jurídicas acompanhadas a partir das decisões catalogadas pelo Predator News.",
+  content: `<main class="jurisprudence-page"><section class="legal-hero"><p class="signal">INTELIGÊNCIA JURÍDICA</p><h1>Banco de Teses</h1><p>Questões jurídicas acompanhadas a partir da amostra de decisões catalogadas pelo Predator News.</p></section><section class="entity-index"><div class="entity-index-grid">${thesisAggregates.map(({ thesis, decisions: related, tribunals: represented, foundations, latestDecision: latest, products, themes: relatedThemes }) => `<article class="entity-card"><p class="signal">TESE EM ACOMPANHAMENTO</p><h2>${escapeHtml(thesis.titulo)}</h2><p>${escapeHtml(thesis.sintese)}</p><div class="legal-pills">${pills([...products, ...relatedThemes])}</div>${indicators([["Decisões", String(related.length)],["Tribunais", String(represented.length)],["Fundamentos", String(foundations.length)],["Última decisão", latest ? displayDate(decisionDate(latest)) : "Não disponível"]])}<a href="${BASE}/teses/${escapeHtml(thesis.slug)}/">Explorar tese →</a></article>`).join("")}</div></section></main>`,
+});
+await writeFile(join(thesesDirectory, "index.html"), thesesPage);
+
+const foundationsDirectory = join(DIST, "fundamentos");
+await mkdir(foundationsDirectory, { recursive: true });
+for (const aggregate of foundationAggregates) {
+  const directory = join(foundationsDirectory, aggregate.foundation.slug);
+  await mkdir(directory, { recursive: true });
+  await writeFile(join(directory, "index.html"), renderFoundationPage(aggregate));
+}
+const foundationsPage = shell({
+  title: "Banco de Fundamentos — Predator News",
+  description: "Razões jurídicas e probatórias identificadas no acervo do Predator News.",
+  content: `<main class="jurisprudence-page"><section class="legal-hero"><p class="signal">INTELIGÊNCIA JURÍDICA</p><h1>Banco de Fundamentos</h1><p>Razões jurídicas e probatórias reutilizáveis identificadas no acervo catalogado.</p></section><section class="entity-index"><div class="entity-index-grid">${foundationAggregates.map(({ foundation, decisions: related, theses: relatedTheses }) => `<article class="entity-card"><p class="signal">FUNDAMENTO</p><h2>${escapeHtml(foundation.titulo)}</h2><p>${escapeHtml(foundation.formulacao)}</p><div class="legal-pills">${pills([...foundation.produtos, ...foundation.temas])}</div>${indicators([["Decisões", String(related.length)],["Teses", String(relatedTheses.length)]])}<a href="${BASE}/fundamentos/${escapeHtml(foundation.slug)}/">Explorar fundamento →</a></article>`).join("")}</div></section></main>`,
+});
+await writeFile(join(foundationsDirectory, "index.html"), foundationsPage);
 
 const latest = editions[0];
 const latestUrl = `${BASE}/edicoes/${latest.slug}/`;

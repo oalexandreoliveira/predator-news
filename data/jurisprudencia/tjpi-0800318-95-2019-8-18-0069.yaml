@@ -1,0 +1,12 @@
+id: tjpi-0800318-95-2019-8-18-0069
+identificacao: {tribunal: TJPI, processo: 0800318-95.2019.8.18.0069, tipo_decisao: acordao, orgao_julgador: 4ª Câmara Especializada Cível, relator: Hilo de Almeida Sousa, data_julgamento: 2022-08-22, data_publicacao: 2022-08-25}
+titulo: Falta de assinatura a rogo invalida contrato de analfabeto
+resumo_predator: O instrumento de consumidor analfabeto não continha assinatura a rogo e duas testemunhas, motivo pelo qual o recurso foi provido e houve condenação por dano moral.
+contexto: {produtos: [cartao_credito_consignado], temas: [consentimento, contratacao_analfabeto, prova_contratacao], perfis_consumidor: [analfabeto], fatos_relevantes: [desconto_beneficio]}
+provas: [contrato]
+teses: [{slug: vicio_consentimento_cartao_consignado, status: acolhida}]
+fundamentos: [autenticidade_nao_equivale_consentimento, dever_informacao_qualificado]
+resultado: {contrato: anulado, conversao: nao_informado, repeticao_indebito: nao_informado, dano_moral: deferido}
+fonte: {natureza: jurisprudencia_oficial, recuperado_via: portal_tribunal, url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/6639704/public, url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/6639704/public, consultado_em: 2026-08-07}
+autoridade: persuasiva
+status: ativo

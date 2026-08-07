@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://predator.news/schemas/thesis.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "titulo", "questao_juridica", "sintese", "produtos", "fundamentos", "status"],
+  "properties": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"},
+    "titulo": {"type": "string", "minLength": 5},
+    "questao_juridica": {"type": "string", "minLength": 20},
+    "sintese": {"type": "string", "minLength": 20},
+    "produtos": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "fundamentos": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"}},
+    "status": {"type": "string"}
+  }
+}

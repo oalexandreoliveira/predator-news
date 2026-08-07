@@ -1,0 +1,27 @@
+id: tjce-0201664-84-2022-8-06-0029
+identificacao:
+  tribunal: TJCE
+  processo: 0201664-84.2022.8.06.0029
+  tipo_decisao: acordao
+  orgao_julgador: 2ª Turma do Núcleo de Justiça 4.0 – Direito Privado 2º Grau
+  relator: Carliete Roque Gonçalves Palácio
+  data_julgamento: 2026-06-30
+  data_publicacao: null
+titulo: Perícia grafotécnica comprova falsificação em cartão consignado
+resumo_predator: A nulidade foi mantida após perícia grafotécnica comprovar falsificação da assinatura, com restituição dos descontos e dano moral fixado em quinhentos reais.
+contexto:
+  produtos: [cartao_credito_consignado]
+  temas: [consentimento, prova_contratacao, desconto_beneficio]
+  fatos_relevantes: [desconto_beneficio]
+provas: [assinatura, pericia_grafotecnica]
+teses: [{slug: vicio_consentimento_cartao_consignado, status: acolhida}]
+fundamentos: [autenticidade_nao_equivale_consentimento]
+resultado: {contrato: anulado, conversao: nao_aplicavel, repeticao_indebito: nao_informado, dano_moral: deferido}
+fonte:
+  natureza: informativo_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www.tjce.jus.br/informativo-jurisprudencia/jurisprudencia/852866/
+  url_inteiro_teor: null
+  consultado_em: 2026-08-07
+autoridade: persuasiva
+status: ativo

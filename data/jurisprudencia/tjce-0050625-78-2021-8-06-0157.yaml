@@ -1,0 +1,28 @@
+id: tjce-0050625-78-2021-8-06-0157
+identificacao:
+  tribunal: TJCE
+  processo: 0050625-78.2021.8.06.0157
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Câmara de Direito Privado
+  relator: José Ricardo Vidal Patrocínio
+  data_julgamento: 2023-03-29
+  data_publicacao: 2023-03-30
+titulo: Instrumento expresso afasta vício de consentimento
+resumo_predator: O tribunal considerou clara a identificação do termo de adesão ao cartão consignado e afastou o vício de consentimento alegado pelo consumidor.
+contexto:
+  produtos: [rmc, cartao_credito_consignado]
+  temas: [consentimento, dever_informacao, prova_contratacao]
+  fatos_relevantes: [contrato_claro]
+  meio_contratacao: fisico
+provas: [contrato, assinatura]
+teses: [{slug: vicio_consentimento_cartao_consignado, status: rejeitada}]
+fundamentos: [dever_informacao_qualificado]
+resultado: {contrato: mantido, conversao: indeferida, repeticao_indebito: indeferida, dano_moral: indeferido}
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://esaj.tjce.jus.br/cjsg/getArquivo.do?cdAcordao=3668447&cdForo=0
+  url_inteiro_teor: https://esaj.tjce.jus.br/cjsg/getArquivo.do?cdAcordao=3668447&cdForo=0
+  consultado_em: 2026-08-07
+autoridade: persuasiva
+status: ativo

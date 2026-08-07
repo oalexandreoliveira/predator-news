@@ -1,0 +1,28 @@
+id: tjma-0818263-04-2023-8-10-0029
+identificacao:
+  tribunal: TJMA
+  processo: 0818263-04.2023.8.10.0029
+  tipo_decisao: acordao
+  orgao_julgador: Quinta Câmara de Direito Privado
+  relator: Sebastião Joaquim Lima Bonfim
+  data_julgamento: null
+  data_publicacao: 2024-05-20
+titulo: Contrato digital diverso não comprova adesão ao cartão consignado
+resumo_predator: O colegiado afastou a prova de adesão porque o contrato digital exibido era diverso do objeto discutido e não observava as formalidades aplicáveis, mas excluiu o dano moral.
+contexto:
+  produtos: [rmc, cartao_credito_consignado]
+  temas: [consentimento, prova_contratacao, contratacao_digital]
+  fatos_relevantes: [contrato_diverso, desconto_beneficio]
+  meio_contratacao: digital
+provas: [contrato]
+teses: [{slug: vicio_consentimento_cartao_consignado, status: acolhida}]
+fundamentos: [autenticidade_nao_equivale_consentimento, dever_informacao_qualificado]
+resultado: {contrato: inexistente, conversao: nao_informado, repeticao_indebito: nao_informado, dano_moral: indeferido}
+fonte:
+  natureza: informativo_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://novogerenciador.tjma.jus.br/storage/arquivos/site_nugepnac/jurisprudencia_camaras_direito_privado_2024_19_03_2025_11_30_23.pdf
+  url_inteiro_teor: null
+  consultado_em: 2026-08-07
+autoridade: persuasiva
+status: ativo

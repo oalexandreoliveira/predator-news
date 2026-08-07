@@ -1,0 +1,12 @@
+id: tjpi-0802076-06-2022-8-18-0037
+identificacao: {tribunal: TJPI, processo: 0802076-06.2022.8.18.0037, tipo_decisao: acordao, orgao_julgador: 3ª Turma Recursal, relator: Antonio Reis de Jesus Nolleto, data_julgamento: 2024-01-11, data_publicacao: 2024-01-11}
+titulo: Ausência de contrato leva à inexistência do cartão consignado
+resumo_predator: A instituição não apresentou prova da contratação impugnada e foram mantidos o cancelamento, a repetição do indébito e o dano moral em favor de consumidor idoso e humilde.
+contexto: {produtos: [cartao_credito_consignado], temas: [consentimento, prova_contratacao, desconto_beneficio], perfis_consumidor: [idoso, hipossuficiente], fatos_relevantes: [ausencia_contrato, desconto_beneficio]}
+provas: []
+teses: [{slug: vicio_consentimento_cartao_consignado, status: acolhida}]
+fundamentos: [hipervulnerabilidade_consumidor_idoso, autenticidade_nao_equivale_consentimento]
+resultado: {contrato: inexistente, conversao: nao_aplicavel, repeticao_indebito: dobro, dano_moral: deferido}
+fonte: {natureza: jurisprudencia_oficial, recuperado_via: portal_tribunal, url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/13968598/public, url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/13968598/public, consultado_em: 2026-08-07}
+autoridade: persuasiva
+status: ativo

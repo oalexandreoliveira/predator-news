@@ -1,0 +1,12 @@
+id: tjpi-0801428-84-2022-8-18-0050
+identificacao: {tribunal: TJPI, processo: 0801428-84.2022.8.18.0050, tipo_decisao: acordao, orgao_julgador: 4ª Câmara Especializada Cível, relator: Antônio Soares dos Santos, data_julgamento: 2025-03-17, data_publicacao: 2025-03-17}
+titulo: Contrato e transferência comprovados afastam vício
+resumo_predator: A apresentação do instrumento contratual e a disponibilização dos valores foram consideradas suficientes para reconhecer a regularidade da contratação e afastar danos materiais e morais.
+contexto: {produtos: [cartao_credito_consignado], temas: [consentimento, prova_contratacao], fatos_relevantes: [contrato_claro]}
+provas: [contrato, comprovante_transferencia]
+teses: [{slug: vicio_consentimento_cartao_consignado, status: rejeitada}]
+fundamentos: [dever_informacao_qualificado]
+resultado: {contrato: mantido, conversao: indeferida, repeticao_indebito: indeferida, dano_moral: indeferido}
+fonte: {natureza: jurisprudencia_oficial, recuperado_via: portal_tribunal, url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/22869604/public, url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/22869604/public, consultado_em: 2026-08-07}
+autoridade: persuasiva
+status: ativo

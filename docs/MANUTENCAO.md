@@ -21,6 +21,16 @@ O site é estático e gerado em Node.js, sem framework de front-end.
 - `dist/`: saída gerada pelo build; é recriada do zero.
 - `package.json`: comando de build e metadados do projeto.
 - `.github/workflows/deploy-pages.yml`: pipeline de publicação.
+- `data/`: decisões, teses, fundamentos e taxonomia da Inteligência Jurídica.
+- `schemas/`: contratos JSON Schema dos dados estruturados.
+- `scripts/data/`: carregamento e validação dos dados.
+- `tests/`: testes de integridade estrutural, referencial e de duplicidade.
+
+## Validação da Inteligência Jurídica
+
+O comando `npm run validate:data` valida schemas, taxonomia, aliases, referências e duplicidades. `npm test` executa também cenários negativos. O comando `npm run build` executa a validação antes de recriar `dist/`.
+
+Os dados estruturados geram as listagens `/jurisprudencia/`, `/teses/` e `/fundamentos/`, com páginas individuais em `/jurisprudencia/{decision-id}/`, `/teses/{slug}/` e `/fundamentos/{slug}/`. As relações e contagens das páginas de Teses e Fundamentos são agregadas no build a partir dos registros validados. A Home, o arquivo e as páginas de edição continuam sendo produzidos exclusivamente a partir de `content/edicoes/` e não foram integrados à camada jurídica.
 
 ## Publicação editorial e manutenção técnica
 
