@@ -5,6 +5,8 @@ data: "AAAA-MM-DD"
 categoria: "Categoria dominante"
 resumo: "Resumo curto da edição para exibição na página inicial e no arquivo."
 tempo_leitura: "N min"
+# Opcional: decision-ids explícitos, separados por vírgula. Não inferir por similaridade temática.
+# jurisprudencia: "tjce-0000000-00-0000-8-06-0000"
 ---
 
 ## Fio condutor da edição

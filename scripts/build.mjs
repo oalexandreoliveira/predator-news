@@ -3,6 +3,7 @@ import { basename, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadData } from "./data/load-data.mjs";
 import { aggregateFoundation, aggregateThesis, decisionDate } from "./data/aggregate-legal.mjs";
+import { buildEditorialRelations, editorialLinkTargets, globalMenuLinks, legalHomeMetrics } from "./data/editorial-links.mjs";
 import { createDecisionSearchText } from "../src/jurisprudencia-filter.mjs";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
@@ -183,13 +184,14 @@ const radarVisual = `<iframe class="radar radar-frame" src="${BASE}/assets/radar
 
 const themeInit = `<script>try{const t=localStorage.getItem('predator-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch{}</script>`;
 const themeScript = `<script>(()=>{const root=document.documentElement,key='predator-theme',btn=document.querySelector('[data-theme-toggle]');const valid=t=>t==='light'||t==='dark';function current(){return valid(root.dataset.theme)?root.dataset.theme:'dark'}function apply(theme){root.dataset.theme=theme;try{localStorage.setItem(key,theme)}catch{}if(btn){btn.setAttribute('aria-pressed',theme==='light');const label=btn.querySelector('[data-theme-label]');if(label)label.textContent=theme==='light'?'Claro':'Escuro';}}if(!valid(root.dataset.theme))apply('dark');else apply(root.dataset.theme);btn?.addEventListener('click',()=>apply(current()==='dark'?'light':'dark'));})();</script>`;
+const menu = globalMenuLinks(BASE).map(([label, href]) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`).join("");
 
 const shell = ({ title, description, content, script = "" }) => `<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}">
 ${themeInit}<link rel="stylesheet" href="${BASE}/assets/style.css"></head><body>
 <header class="site-header"><a class="brand" href="${BASE}/"><span class="brand-mark">${brandIcon}</span><span><strong>PREDATOR</strong><small>NEWS</small></span></a>
-<div class="header-actions"><nav><a href="${BASE}/#edicao-atual">Edição atual</a><a href="${BASE}/#edicoes">Edições</a><a href="${BASE}/#sobre">Sobre</a></nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema" aria-pressed="false"><span data-theme-label>Escuro</span></button></div></header>
+<div class="header-actions"><nav class="desktop-nav">${menu}</nav><details class="site-nav"><summary>Navegar</summary><nav>${menu}</nav></details><button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema" aria-pressed="false"><span data-theme-label>Escuro</span></button></div></header>
 ${content}<footer><span>Predator News</span><p>Conteúdo jurídico informativo. Leitura crítica para decisões melhores.</p></footer>${themeScript}${script}</body></html>`;
 
 const legalLabels = new Map(Object.entries({
@@ -255,7 +257,7 @@ function decisionCard(decision, thesisLabels) {
   </article>`;
 }
 
-function renderDecisionPage(decision, thesisLabels, foundationLabels) {
+function renderDecisionPage(decision, thesisLabels, foundationLabels, relatedEditions = []) {
   const identification = decision.identificacao;
   const sourceUrl = decision.fonte.url_inteiro_teor || decision.fonte.url_original;
   const thesisItems = decision.teses.map((item) => `<li><a href="${BASE}/teses/${escapeHtml(item.slug)}/"><strong>${escapeHtml(thesisLabels.get(item.slug) || humanize(item.slug))}</strong></a><span>${escapeHtml(humanize(item.status))}</span></li>`).join("");
@@ -273,9 +275,20 @@ function renderDecisionPage(decision, thesisLabels, foundationLabels) {
       <section class="decision-section"><h2>Fundamentos identificados</h2><div class="legal-pills">${decision.fundamentos.map((slug) => `<a class="legal-pill" href="${BASE}/fundamentos/${escapeHtml(slug)}/">${escapeHtml(foundationLabels.get(slug) || humanize(slug))}</a>`).join("")}</div></section>
       <section class="decision-section"><h2>Resultados</h2><dl class="decision-results">${detailItem("Contrato", decision.resultado.contrato, humanize)}${detailItem("Conversão", decision.resultado.conversao, humanize)}${detailItem("Repetição do indébito", decision.resultado.repeticao_indebito, humanize)}${detailItem("Dano moral", decision.resultado.dano_moral, humanize)}</dl></section>
       <section class="decision-section"><h2>Natureza e autoridade</h2><dl class="decision-results">${detailItem("Natureza da fonte", decision.fonte.natureza, humanize)}${detailItem("Autoridade", decision.autoridade, humanize)}</dl></section>
+      ${relatedEditions.length ? `<section class="decision-section"><h2>Análises editoriais relacionadas</h2><div class="editorial-edition-links">${relatedEditions.map((edition) => `<a href="${escapeHtml(editorialLinkTargets(BASE, edition, decision).edition)}"><span>Analisada na edição nº ${escapeHtml(edition.numero)}</span><strong>${escapeHtml(edition.titulo)}</strong></a>`).join("")}</div></section>` : ""}
       <section class="decision-source"><div><p class="signal">FONTE JURÍDICA</p><h2>Consulte a decisão na origem</h2><p>A síntese acima é conteúdo editorial do Predator e não substitui a leitura do documento oficial.</p></div><a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener">${decision.fonte.url_inteiro_teor ? "Acessar inteiro teor" : "Acessar fonte oficial"} ↗</a></section>
     </main>`,
   });
+}
+
+function renderEditionLegalLinks(edition, decisionsById, thesisLabels) {
+  if (!edition.jurisprudencia.length) return "";
+  return `<aside class="edition-intelligence" aria-labelledby="edition-intelligence-title"><div><p class="signal">INTELIGÊNCIA JURÍDICA</p><h2 id="edition-intelligence-title">Decisões relacionadas à análise</h2></div><div class="edition-intelligence-list">${edition.jurisprudencia.map((decisionId) => {
+    const decision = decisionsById.get(decisionId);
+    const thesis = decision.teses[0];
+    const targets = editorialLinkTargets(BASE, edition, decision);
+    return `<article><div><strong>${escapeHtml(decision.identificacao.tribunal)}</strong><span>${escapeHtml(humanize(decision.contexto.produtos[0]))} · ${escapeHtml(humanize(decision.contexto.temas[0]))}</span><p>${escapeHtml(thesisLabels.get(thesis.slug) || humanize(thesis.slug))}</p></div><div class="edition-intelligence-actions"><a href="${escapeHtml(targets.decision)}">Analisar decisão →</a><a href="${escapeHtml(targets.thesis)}">Explorar tese →</a></div></article>`;
+  }).join("")}</div></aside>`;
 }
 
 function indicators(items) {
@@ -339,6 +352,18 @@ for (const name of names) editions.push(parseEdition(await readFile(join(CONTENT
 editions.sort((a, b) => b.data.localeCompare(a.data));
 if (!editions.length) throw new Error("Nenhuma edição encontrada");
 
+const decisions = legalData.decisions.map(({ value }) => value).sort((a, b) => {
+  const dateA = a.identificacao.data_julgamento || a.identificacao.data_publicacao || "";
+  const dateB = b.identificacao.data_julgamento || b.identificacao.data_publicacao || "";
+  return dateB.localeCompare(dateA) || a.id.localeCompare(b.id);
+});
+const activeTheses = legalData.theses.map(({ value }) => value).filter((thesis) => thesis.status === "ativo");
+const activeFoundations = legalData.foundations.map(({ value }) => value).filter((foundation) => foundation.status === "ativo");
+const thesisLabels = new Map(legalData.theses.map(({ value }) => [value.slug, value.titulo]));
+const foundationLabels = new Map(legalData.foundations.map(({ value }) => [value.slug, value.titulo]));
+const decisionsById = new Map(decisions.map((decision) => [decision.id, decision]));
+const editionsByDecision = buildEditorialRelations(editions, decisions);
+
 for (const edition of editions) {
   const directory = join(DIST, "edicoes", edition.slug);
   await mkdir(directory, { recursive: true });
@@ -348,18 +373,12 @@ for (const edition of editions) {
     content: `<main class="edition-page"><a class="back" href="${BASE}/#edicoes">← Todas as edições</a>
       <div class="edition-kicker">EDIÇÃO ${escapeHtml(edition.numero)} · ${dateLabel(edition.data)} · ${escapeHtml(edition.categoria)}</div>
       <h1>${escapeHtml(edition.titulo)}</h1><p class="edition-summary">${escapeHtml(edition.resumo)}</p>
+      ${renderEditionLegalLinks(edition, decisionsById, thesisLabels)}
       <section id="analise-completa" class="edition-body"><p class="signal">ANÁLISE COMPLETA</p>${markdown(edition.body)}</section></main>`,
   });
   await writeFile(join(directory, "index.html"), page);
 }
 
-const decisions = legalData.decisions.map(({ value }) => value).sort((a, b) => {
-  const dateA = a.identificacao.data_julgamento || a.identificacao.data_publicacao || "";
-  const dateB = b.identificacao.data_julgamento || b.identificacao.data_publicacao || "";
-  return dateB.localeCompare(dateA) || a.id.localeCompare(b.id);
-});
-const thesisLabels = new Map(legalData.theses.map(({ value }) => [value.slug, value.titulo]));
-const foundationLabels = new Map(legalData.foundations.map(({ value }) => [value.slug, value.titulo]));
 const filterValues = (getter) => [...new Set(decisions.flatMap(getter))].sort((a, b) => a.localeCompare(b, "pt-BR"));
 const tribunals = filterValues((decision) => [decision.identificacao.tribunal]);
 const products = filterValues((decision) => decision.contexto.produtos);
@@ -372,7 +391,7 @@ await mkdir(jurisprudenceDirectory, { recursive: true });
 for (const decision of decisions) {
   const directory = join(jurisprudenceDirectory, decision.id);
   await mkdir(directory, { recursive: true });
-  await writeFile(join(directory, "index.html"), renderDecisionPage(decision, thesisLabels, foundationLabels));
+  await writeFile(join(directory, "index.html"), renderDecisionPage(decision, thesisLabels, foundationLabels, editionsByDecision.get(decision.id)));
 }
 
 const jurisprudencePage = shell({
@@ -390,8 +409,6 @@ const jurisprudencePage = shell({
 });
 await writeFile(join(jurisprudenceDirectory, "index.html"), jurisprudencePage);
 
-const activeTheses = legalData.theses.map(({ value }) => value).filter((thesis) => thesis.status === "ativo");
-const activeFoundations = legalData.foundations.map(({ value }) => value).filter((foundation) => foundation.status === "ativo");
 const thesisAggregates = activeTheses.map((thesis) => aggregateThesis(thesis, decisions, activeFoundations));
 const foundationAggregates = activeFoundations.map((foundation) => aggregateFoundation(foundation, decisions, activeTheses));
 
@@ -425,6 +442,7 @@ await writeFile(join(foundationsDirectory, "index.html"), foundationsPage);
 
 const latest = editions[0];
 const latestUrl = `${BASE}/edicoes/${latest.slug}/`;
+const homeMetrics = legalHomeMetrics(decisions, activeTheses, activeFoundations);
 const categories = [...new Set(editions.map((item) => item.categoria))];
 const cards = editions.map((edition) => `<article class="edition-card" data-category="${escapeHtml(edition.categoria)}" data-search="${escapeHtml(normalize(`${edition.numero} ${edition.titulo} ${edition.resumo} ${edition.categoria}`))}">
   <div class="edition-number"><span>EDIÇÃO</span><strong>${escapeHtml(edition.numero)}</strong></div>
@@ -440,6 +458,7 @@ const home = shell({
     <a class="button" href="${latestUrl}">Ler a edição atual →</a></div>
     <aside><span>DESTAQUE · ${escapeHtml(latest.categoria)}</span>${radarVisual}<h2>${escapeHtml(latest.titulo)}</h2><p>${escapeHtml(latest.resumo)}</p></aside></section>
     ${renderApplication(latest, { ctaHref: latestUrl, ctaText: "Ler edição completa →" })}
+    <section class="home-intelligence" aria-labelledby="home-intelligence-title"><div><p class="signal">INTELIGÊNCIA PREDATOR</p><h2 id="home-intelligence-title">O acervo jurídico em perspectiva</h2><p>Explore decisões estruturadas e os argumentos jurídicos relacionados, sem sair do fluxo editorial.</p></div><dl><div><dt>Decisões catalogadas</dt><dd>${homeMetrics.decisions}</dd></div><div><dt>Tese em acompanhamento</dt><dd>${homeMetrics.theses}</dd></div><div><dt>Fundamentos</dt><dd>${homeMetrics.foundations}</dd></div></dl><a href="${BASE}/jurisprudencia/">Explorar jurisprudência →</a></section>
     <section class="archive" id="edicoes"><div class="archive-head"><div><p class="signal">HISTÓRICO</p><h2>Arquivo de edições</h2></div>
     <input id="search" type="search" placeholder="Buscar tema ou edição" aria-label="Buscar no arquivo"></div>
     <div class="filters"><button class="active" data-filter="Todas">Todas</button>${categories.map((category) => `<button data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("")}</div>

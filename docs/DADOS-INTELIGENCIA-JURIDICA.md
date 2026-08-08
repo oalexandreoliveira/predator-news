@@ -2,7 +2,7 @@
 
 ## Escopo atual
 
-Esta camada implementa a infraestrutura do EP01, o dataset piloto DATASET-001, as páginas de Jurisprudência do EP02 e os bancos de Teses e Fundamentos do EP03 e EP04. Não existe integração com as edições.
+Esta camada implementa a infraestrutura do EP01, o dataset piloto DATASET-001, as páginas de Jurisprudência do EP02, os bancos de Teses e Fundamentos do EP03 e EP04 e a integração editorial do EP05.
 
 ## Organização
 
@@ -28,6 +28,12 @@ O build valida os dados antes de gerar o site. Um erro de schema, taxonomia, ref
 Após a validação, o build gera `/jurisprudencia/`, `/teses/` e `/fundamentos/`, além de uma página individual para cada entidade ativa. Busca, filtros, contagens, relações inversas e indicadores são derivados dos registros validados; nenhum índice jurídico paralelo é mantido manualmente.
 
 As relações decisão → tese e decisão → fundamento partem das decisões. A relação fundamento → tese parte do catálogo de teses. Nas páginas de tese, os fundamentos exibidos são apenas aqueles efetivamente usados pelas decisões relacionadas na amostra atual. Entidades sem decisões permanecem navegáveis e exibem contagem zero, sem inferências.
+
+## Integração editorial
+
+Uma edição pode declarar decision-ids no campo opcional `jurisprudencia` do front matter, separados por vírgula. O build valida cada referência e deriva a navegação reversa decisão → edição; a relação nunca é duplicada nos registros jurídicos.
+
+Somente correspondências editoriais confirmadas devem ser registradas. Similaridade de tema, produto ou texto não cria relação automaticamente. No acervo atual, nenhuma das 28 edições possui número de processo ou fonte coincidente com o DATASET-001; por isso, o EP05 não introduz vínculos retroativos sem comprovação.
 
 ## Rastreabilidade
 
