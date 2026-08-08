@@ -1,0 +1,3 @@
+version: 1
+default_parameters: {}
+unordered_filters: [tribunais, produtos, temas, termos]

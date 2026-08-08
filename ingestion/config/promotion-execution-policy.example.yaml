@@ -1,0 +1,19 @@
+version: 1
+allowed_capabilities:
+  - validate_authorization
+  - canonical_write_local
+  - commit_local
+required_approvals: 1
+authorization_authenticity_mechanism: protected_github_pr_injected_evidence
+authorization_repository: oalexandreoliveira/predator-news
+authorization_base_branch: main
+authorization_use: single_use
+technical_review_required: true
+preimage_retention_days: 7
+lock_stale_seconds: 3600
+canonical_root: data/jurisprudencia
+local_commit_requires_capability: true
+push_allowed: false
+open_pr_by_executor_allowed: false
+merge_allowed: false
+publication_allowed: false

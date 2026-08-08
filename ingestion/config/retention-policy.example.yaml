@@ -1,0 +1,4 @@
+version: 1
+synthetic_snapshot_days: null
+real_snapshot_days: null
+real_snapshots_enabled: false

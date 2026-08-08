@@ -1,0 +1,8 @@
+version: 1
+dataset: DATASET-002
+model: single_human_authorizer
+authorizers:
+  - github_login: oalexandreoliveira
+    role: final_authorizer
+    status: active
+    scope: first_promotion

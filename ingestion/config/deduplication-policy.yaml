@@ -1,0 +1,4 @@
+version: 1
+exact: [canonical_id, tribunal_cnj_decision_date_chamber]
+probable: [tribunal_cnj_without_same_decision_unit]
+insufficient: [missing_valid_cnj, missing_decision_metadata]

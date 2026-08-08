@@ -1,0 +1,10 @@
+version: 1
+batch_limit: 10
+simulated_retention_days: 1
+cache_ttl_seconds: 3600
+rerun_policy: resume_confirmed
+dual_approval_required: false
+incompatible_roles:
+  - [package_preparer, final_authorizer]
+probable_resolution_policy: human_required
+required_authorizer_count: 1

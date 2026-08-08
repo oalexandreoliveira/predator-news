@@ -1,0 +1,21 @@
+[
+  {
+    "candidate_id":"cand-synthetic-clean","synthetic":true,
+    "sections":{"summary":"Operação sintética RMC com consentimento e contrato digital.","proof":"Instrumento contratual sintético presente.","profile":"Consumidor sintético idoso."},
+    "signals":{"produto":[{"value":"rmc","section":"summary","excerpt":"RMC","confidence":0.95}],"tema":[{"value":"consentimento","section":"summary","excerpt":"consentimento","confidence":0.9}],"prova":[{"value":"contrato","section":"proof","excerpt":"Instrumento contratual","confidence":0.85}],"perfil_consumidor":[{"value":"idoso","section":"profile","excerpt":"idoso","confidence":0.8}],"meio_contratacao":[{"value":"digital","section":"summary","excerpt":"digital","confidence":1}]}
+  },
+  {
+    "candidate_id":"cand-synthetic-abstain","synthetic":true,
+    "sections":{"summary":"Texto sintético sem indicação de produto."},"signals":{}
+  },
+  {
+    "candidate_id":"cand-synthetic-contradictory","synthetic":true,
+    "sections":{"summary":"O texto sintético menciona consentimento e dever de informação."},
+    "signals":{"tema":[{"value":"consentimento","section":"summary","excerpt":"consentimento","confidence":0.7},{"value":"dever_informacao","section":"summary","excerpt":"dever de informação","confidence":0.7}]}
+  },
+  {
+    "candidate_id":"cand-synthetic-unsupported","synthetic":true,
+    "sections":{"summary":"O texto sintético usa categoria experimental alfa."},
+    "signals":{"tema":[{"value":"categoria_experimental_alfa","section":"summary","excerpt":"categoria experimental alfa","confidence":0.6}]}
+  }
+]
