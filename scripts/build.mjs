@@ -212,11 +212,17 @@ const legalLabels = new Map(Object.entries({
   comprovante_transferencia: "Comprovante de transferência", faturas: "Faturas", historico_uso: "Histórico de uso",
   pericia_grafotecnica: "Perícia grafotécnica",
 }));
-const humanize = (value = "") => legalLabels.get(String(value)) || String(value).replaceAll("_", " ").replace(/\b\p{L}/gu, (letter) => letter.toUpperCase());
+const sentenceCase = (value = "") => {
+  const text = String(value).replaceAll("_", " ");
+  return text ? text[0].toLocaleUpperCase("pt-BR") + text.slice(1) : text;
+};
+const humanize = (value = "") => legalLabels.get(String(value)) || sentenceCase(value);
 const known = (value) => value !== null && value !== undefined && value !== "" && value !== "nao_informado";
-const displayDate = (value) => known(value) ? dateLabel(value) : "";
+const displayDate = (value) => known(value) ? new Intl.DateTimeFormat("pt-BR", {
+  day: "2-digit", month: "short", year: "numeric", timeZone: "UTC",
+}).format(new Date(`${value}T00:00:00Z`)).replaceAll(" de ", " ") : "";
 const pills = (values = []) => values.map((value) => `<span class="legal-pill">${escapeHtml(humanize(value))}</span>`).join("");
-const detailItem = (label, value) => known(value) ? `<div class="legal-detail"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(humanize(value))}</dd></div>` : "";
+const detailItem = (label, value, formatter = String) => known(value) ? `<div class="legal-detail"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(formatter(value))}</dd></div>` : "";
 const listSection = (title, values = []) => values.length ? `<section class="decision-section"><h2>${escapeHtml(title)}</h2><div class="legal-pills">${pills(values)}</div></section>` : "";
 
 function selectFilter(name, label, values, labels = new Map()) {
@@ -258,15 +264,15 @@ function renderDecisionPage(decision, thesisLabels, foundationLabels) {
     content: `<main class="decision-page"><a class="back" href="${BASE}/jurisprudencia/">← Jurisprudência</a>
       <div class="edition-kicker">${escapeHtml(identification.tribunal)} · ${escapeHtml(identification.processo)}</div>
       <h1>${escapeHtml(decision.titulo)}</h1><p class="decision-editorial-label">RESUMO EDITORIAL PREDATOR</p><p class="edition-summary">${escapeHtml(decision.resumo_predator)}</p>
-      <dl class="decision-identification">${detailItem("Tribunal", identification.tribunal)}${detailItem("Processo", identification.processo)}${detailItem("Tipo de decisão", identification.tipo_decisao)}${detailItem("Órgão julgador", identification.orgao_julgador)}${detailItem("Relator", identification.relator)}${detailItem("Data de julgamento", displayDate(identification.data_julgamento))}${detailItem("Data de publicação", displayDate(identification.data_publicacao))}</dl>
+      <dl class="decision-identification">${detailItem("Tribunal", identification.tribunal)}${detailItem("Processo", identification.processo)}${detailItem("Tipo de decisão", identification.tipo_decisao, humanize)}${detailItem("Órgão julgador", identification.orgao_julgador)}${detailItem("Relator", identification.relator)}${detailItem("Data de julgamento", displayDate(identification.data_julgamento))}${detailItem("Data de publicação", displayDate(identification.data_publicacao))}</dl>
       ${listSection("Contexto fático", decision.contexto.fatos_relevantes)}
       ${listSection("Perfil do consumidor", decision.contexto.perfis_consumidor)}
       ${known(decision.contexto.meio_contratacao) ? `<section class="decision-section"><h2>Meio de contratação</h2><p>${escapeHtml(humanize(decision.contexto.meio_contratacao))}</p></section>` : ""}
       ${listSection("Provas e elementos probatórios", decision.provas)}
       <section class="decision-section"><h2>Teses enfrentadas</h2><ul class="decision-relations">${thesisItems}</ul></section>
       <section class="decision-section"><h2>Fundamentos identificados</h2><div class="legal-pills">${decision.fundamentos.map((slug) => `<a class="legal-pill" href="${BASE}/fundamentos/${escapeHtml(slug)}/">${escapeHtml(foundationLabels.get(slug) || humanize(slug))}</a>`).join("")}</div></section>
-      <section class="decision-section"><h2>Resultados</h2><dl class="decision-results">${detailItem("Contrato", decision.resultado.contrato)}${detailItem("Conversão", decision.resultado.conversao)}${detailItem("Repetição do indébito", decision.resultado.repeticao_indebito)}${detailItem("Dano moral", decision.resultado.dano_moral)}</dl></section>
-      <section class="decision-section"><h2>Natureza e autoridade</h2><dl class="decision-results">${detailItem("Natureza da fonte", decision.fonte.natureza)}${detailItem("Autoridade", decision.autoridade)}</dl></section>
+      <section class="decision-section"><h2>Resultados</h2><dl class="decision-results">${detailItem("Contrato", decision.resultado.contrato, humanize)}${detailItem("Conversão", decision.resultado.conversao, humanize)}${detailItem("Repetição do indébito", decision.resultado.repeticao_indebito, humanize)}${detailItem("Dano moral", decision.resultado.dano_moral, humanize)}</dl></section>
+      <section class="decision-section"><h2>Natureza e autoridade</h2><dl class="decision-results">${detailItem("Natureza da fonte", decision.fonte.natureza, humanize)}${detailItem("Autoridade", decision.autoridade, humanize)}</dl></section>
       <section class="decision-source"><div><p class="signal">FONTE JURÍDICA</p><h2>Consulte a decisão na origem</h2><p>A síntese acima é conteúdo editorial do Predator e não substitui a leitura do documento oficial.</p></div><a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener">${decision.fonte.url_inteiro_teor ? "Acessar inteiro teor" : "Acessar fonte oficial"} ↗</a></section>
     </main>`,
   });
