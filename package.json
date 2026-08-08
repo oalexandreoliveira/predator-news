@@ -4,7 +4,13 @@
   "type": "module",
   "scripts": {
     "validate:data": "node scripts/data/validate-data.mjs",
-    "test": "node --test",
+    "validate:ingestion": "node scripts/ingestion/validate-schemas.mjs",
+    "simulate:ingestion": "node scripts/ingestion/run-simulated.mjs",
+    "simulate:review": "node scripts/ingestion/run-simulated-review.mjs",
+    "simulate:promotion": "node scripts/ingestion/run-simulated-promotion.mjs",
+    "simulate:readiness": "node scripts/ingestion/run-dataset-002-dry-run.mjs",
+    "simulate:controlled-promotion": "node scripts/ingestion/run-controlled-promotion.mjs",
+    "test": "node scripts/test.mjs",
     "build": "npm run validate:data && node scripts/build.mjs"
   },
   "dependencies": {

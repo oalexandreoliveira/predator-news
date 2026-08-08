@@ -1,0 +1,3 @@
+version: 1
+default_ttl_seconds: null
+forced_refresh_requires_reason: true

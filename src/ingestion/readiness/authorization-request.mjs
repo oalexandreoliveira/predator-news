@@ -1,0 +1,2 @@
+import { hashValue } from '../promotion/proposal-contract.mjs';
+export function createAuthorizationRequest({packageHash,scope,requiredRoles,risks,rollbackPlanId,validUntil}){const base={authorization_requested:true,promotion_authorized:false,package_hash:packageHash,scope:[...scope],required_roles:[...requiredRoles],risks:[...risks],rollback_plan_id:rollbackPlanId,valid_until:validUntil};return{request_id:`authorization-request-${hashValue(base).replace(':','-')}`,...base};}

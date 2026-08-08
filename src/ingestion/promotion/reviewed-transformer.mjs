@@ -1,0 +1,12 @@
+import { assertProposalEnvelope, hashValue, PromotionBlockedError } from './proposal-contract.mjs';
+const allowed = new Set(['identificacao.tribunal','identificacao.processo','identificacao.tipo_decisao','identificacao.orgao_julgador','identificacao.relator','identificacao.data_julgamento','identificacao.data_publicacao','titulo','resumo_predator','contexto.produtos','contexto.temas','contexto.perfis_consumidor','contexto.fatos_relevantes','contexto.meio_contratacao','provas','teses','fundamentos','resultado.contrato','resultado.conversao','resultado.repeticao_indebito','resultado.dano_moral','fonte.natureza','fonte.recuperado_via','fonte.url_original','fonte.url_inteiro_teor','fonte.consultado_em','autoridade','status']);
+const setPath = (object, path, value) => { const parts = path.split('.'); let target = object; for (const part of parts.slice(0,-1)) target = target[part] ??= {}; target[parts.at(-1)] = structuredClone(value); };
+export function transformReviewedArtifact(artifact, versions, policy, { outputPath, now = () => new Date().toISOString() } = {}) {
+  const payload = {};
+  for (const field of artifact.field_decisions) { if (!allowed.has(field.canonical_path)) throw new PromotionBlockedError('unreviewed_field', `/field_decisions/${field.canonical_path}`, 'path is not explicitly mappable'); if (!('human_value' in field)) throw new PromotionBlockedError('forbidden_inference', `/field_decisions/${field.canonical_path}`, 'human value absent'); setPath(payload, field.canonical_path, field.human_value); }
+  if (!payload.identificacao?.tribunal || !payload.identificacao?.processo) throw new PromotionBlockedError('forbidden_inference', '/identificacao', 'decision identity must be reviewed');
+  const decisionId = `${payload.identificacao.tribunal.toLowerCase()}-${payload.identificacao.processo.replaceAll('.', '-')}`; const orderedPayload = { id: decisionId, ...payload };
+  const transformIdentity = hashValue({ artifact, versions, policy }); const proposal = { proposal_id: `proposal-${transformIdentity.replace(':','-')}`, canonical: false, publishable: false, promotion_status: 'proposed', source_review_id: `${artifact.candidate_id}:v${artifact.review_version}`, transform_identity: transformIdentity, payload: orderedPayload };
+  assertProposalEnvelope(proposal, outputPath); return { proposal, generated_at: now() };
+}
+export const promotionMappedPaths = () => [...allowed].sort();

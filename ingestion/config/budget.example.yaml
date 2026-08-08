@@ -1,0 +1,16 @@
+version: 1
+period: null
+monthly_limit: null
+hard_stop: null
+operation_costs:
+  search: null
+  page: null
+  detail: null
+  full_text: null
+reserve:
+  manual_research: null
+  retries: null
+  publisher_future: null
+alerts:
+  warning_percent: 70
+  critical_percent: 90

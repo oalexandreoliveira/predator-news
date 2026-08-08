@@ -1,0 +1,4 @@
+version: 1
+authorized_roles: [legal_reviewer]
+reason_codes: [evidence_requires_correction, insufficient_evidence, unsupported_value, taxonomy_changed, return_for_reclassification]
+required_checklist: [source_checked, evidence_checked, taxonomy_checked, result_fields_checked]

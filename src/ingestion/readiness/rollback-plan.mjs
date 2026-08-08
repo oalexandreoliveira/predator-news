@@ -1,0 +1,2 @@
+import { hashValue } from '../promotion/proposal-contract.mjs';
+export function createRollbackPlan(plan){const operations=[...plan.operations].reverse().map(op=>({path:op.path,operation:'remove_added_file',expected_current_hash:op.new_hash,expected_after_hash:null,precondition:'simulation_only'}));return{rollback_plan_id:`rollback-${hashValue({plan_id:plan.plan_id,operations}).replace(':','-')}`,promotion_plan_id:plan.plan_id,operations,post_validation:['working_tree_clean','planned_files_absent']};}

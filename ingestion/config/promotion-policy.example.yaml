@@ -1,0 +1,5 @@
+version: 1
+proposal_extension: .proposal.json
+promotion_authorized: false
+require_current_versions: true
+allow_partial_independent_items: true

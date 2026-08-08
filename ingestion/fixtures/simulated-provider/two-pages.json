@@ -1,0 +1,30 @@
+{
+  "fixture_version": 1,
+  "pages": [
+    {
+      "cursor": null,
+      "next_cursor": "cursor-page-2",
+      "items": [
+        {"record_id":"sim-exact","decision_unit_id":"tjce-0050625-78-2021-8-06-0157","tribunal":"TJCE","process":"0050625-78.2021.8.06.0157","decision_date":"2023-03-29","chamber":"1ª Câmara de Direito Privado"},
+        {"record_id":"sim-new-a","decision_unit_id":"sim-unit-a","tribunal":"TJXX","process":"1234567-03.2025.8.90.0001","decision_date":"2025-02-10","chamber":"Câmara Sintética A"},
+        {"record_id":"sim-new-a-repeat","decision_unit_id":"sim-unit-a","tribunal":"TJXX","process":"1234567-03.2025.8.90.0001","decision_date":"2025-02-10","chamber":"Câmara Sintética A"}
+      ]
+    },
+    {
+      "cursor": "cursor-page-2",
+      "next_cursor": null,
+      "items": [
+        {"record_id":"sim-probable-1","decision_unit_id":"sim-unit-p1","tribunal":"TJPI","process":"0800033-51.2018.8.18.0065","decision_date":"2026-01-10","chamber":"Câmara Sintética B"},
+        {"record_id":"sim-probable-2","decision_unit_id":"sim-unit-p2","tribunal":"TJPI","process":"0800033-51.2018.8.18.0065","decision_date":"2026-02-10","chamber":"Câmara Sintética C"},
+        {"record_id":"sim-invalid","tribunal":"TJXX","process":"1234567-00.2025.8.99.0001","decision_date":"2025-01-01","chamber":"Câmara Sintética"},
+        {"record_id":"sim-insufficient","tribunal":"TJXX","process":"2345678-72.2025.8.90.0001","decision_date":null,"chamber":null}
+      ]
+    }
+  ],
+  "details": {
+    "sim-new-a":{"synthetic_text":"conteúdo sintético A"},
+    "sim-probable-1":{"synthetic_text":"conteúdo sintético provável 1"},
+    "sim-probable-2":{"synthetic_text":"conteúdo sintético provável 2"},
+    "sim-insufficient":{"synthetic_text":"conteúdo sintético insuficiente"}
+  }
+}

@@ -1,0 +1,4 @@
+version: 1
+confidence_scale: {minimum: 0, maximum: 1}
+classifiable_families: [produto, tema, prova, perfil_consumidor, meio_contratacao]
+human_only: [teses, fundamentos, resultado, resumo_predator, fonte, identificacao, frase_peca]

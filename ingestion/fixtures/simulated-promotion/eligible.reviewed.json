@@ -1,0 +1,14 @@
+{
+  "artifact_kind":"predator_intermediate_reviewed_candidate","publishable":false,
+  "candidate_id":"cand-synthetic-promotion-001","classification_id":"classification-synthetic-promotion-001","batch_id":"batch-synthetic-001",
+  "taxonomy_version":"CURRENT","schema_version":"CURRENT","canonical_index_version":"CURRENT","classification_policy_version":1,"review_version":4,"input_hash":"CURRENT",
+  "review":{"decision":"approve","reviewer_id":"reviewer-synthetic-opaque","occurred_at":"2026-08-08T00:00:00Z","final":true,"checklist_complete":true},
+  "field_decisions":[
+    {"canonical_path":"identificacao.tribunal","human_value":"TJCE"},{"canonical_path":"identificacao.processo","human_value":"7654321-71.2025.8.06.9999"},{"canonical_path":"identificacao.tipo_decisao","human_value":"acordao"},{"canonical_path":"identificacao.orgao_julgador","human_value":"Câmara Sintética de Teste"},{"canonical_path":"identificacao.relator","human_value":"Relatoria Sintética"},{"canonical_path":"identificacao.data_julgamento","human_value":"2025-04-01"},{"canonical_path":"identificacao.data_publicacao","human_value":"2025-04-02"},
+    {"canonical_path":"titulo","human_value":"Decisão integralmente sintética para promoção simulada"},{"canonical_path":"resumo_predator","human_value":"Resumo exclusivamente sintético e explicitamente revisado para validar a promoção isolada."},
+    {"canonical_path":"contexto.produtos","human_value":["rmc"]},{"canonical_path":"contexto.temas","human_value":["consentimento"]},{"canonical_path":"contexto.fatos_relevantes","human_value":["contrato_claro"]},{"canonical_path":"contexto.meio_contratacao","human_value":"digital"},{"canonical_path":"provas","human_value":["contrato"]},
+    {"canonical_path":"teses","human_value":[{"slug":"vicio_consentimento_cartao_consignado","status":"rejeitada"}]},{"canonical_path":"fundamentos","human_value":["dever_informacao_qualificado"]},
+    {"canonical_path":"resultado.contrato","human_value":"mantido"},{"canonical_path":"resultado.conversao","human_value":"indeferida"},{"canonical_path":"resultado.repeticao_indebito","human_value":"indeferida"},{"canonical_path":"resultado.dano_moral","human_value":"indeferido"},
+    {"canonical_path":"fonte.natureza","human_value":"jurisprudencia_oficial"},{"canonical_path":"fonte.recuperado_via","human_value":"portal_tribunal"},{"canonical_path":"fonte.url_original","human_value":"https://example.invalid/synthetic-decision"},{"canonical_path":"fonte.url_inteiro_teor","human_value":null},{"canonical_path":"fonte.consultado_em","human_value":"2026-08-08"},{"canonical_path":"autoridade","human_value":"persuasiva"},{"canonical_path":"status","human_value":"ativo"}
+  ]
+}
