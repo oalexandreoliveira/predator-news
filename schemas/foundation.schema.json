@@ -11,6 +11,7 @@
     "temas": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
     "produtos": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
     "base_normativa": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "frase_peca": {"type": "string", "minLength": 20},
     "status": {"type": "string"}
   }
 }

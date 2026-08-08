@@ -67,3 +67,10 @@ test("slug de fundamento duplicado falha", async () => {
   assert.equal(result.valid, false);
   assert.match(result.errors.join("\n"), /slug de fundamento duplicado/);
 });
+
+test("fundamento aceita Frase de peça opcional curada", async () => {
+  const data = await loadData(root);
+  data.foundations[0].value.frase_peca = "Texto editorial curado exclusivamente para validar o suporte estrutural opcional.";
+  const result = await validateData({ root, data });
+  assert.equal(result.valid, true, result.errors.join("\n"));
+});

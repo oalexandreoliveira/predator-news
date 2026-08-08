@@ -3,8 +3,9 @@ import { basename, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadData } from "./data/load-data.mjs";
 import { aggregateFoundation, aggregateThesis, decisionDate } from "./data/aggregate-legal.mjs";
-import { buildEditorialRelations, editorialLinkTargets, globalMenuLinks, legalHomeMetrics } from "./data/editorial-links.mjs";
+import { buildEditorialRelations, globalMenuLinks, legalHomeMetrics } from "./data/editorial-links.mjs";
 import { createDecisionSearchText } from "../src/jurisprudencia-filter.mjs";
+import { renderDecisionEditionRelations, renderEditorialStatement, renderEditionIntegration } from "../src/editorial-components.mjs";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT = join(ROOT, "content", "edicoes");
@@ -51,6 +52,7 @@ function markdown(source = "") {
   const out = [];
   let paragraph = [];
   let list = false;
+  let section = "";
   const flush = () => {
     if (paragraph.length) out.push(`<p>${inline(paragraph.join(" "))}</p>`);
     paragraph = [];
@@ -59,10 +61,10 @@ function markdown(source = "") {
   for (const raw of lines) {
     const line = raw.trim();
     if (!line) { flush(); closeList(); continue; }
-    if (line.startsWith("### ")) { flush(); closeList(); out.push(`<h3>${inline(line.slice(4))}</h3>`); continue; }
-    if (line.startsWith("## ")) { flush(); closeList(); out.push(`<h2>${inline(line.slice(3))}</h2>`); continue; }
-    if (line.startsWith("# ")) { flush(); closeList(); out.push(`<h1>${inline(line.slice(2))}</h1>`); continue; }
-    if (line.startsWith("> ")) { flush(); closeList(); out.push(`<blockquote>${inline(line.slice(2))}</blockquote>`); continue; }
+    if (line.startsWith("### ")) { flush(); closeList(); section = normalize(line.slice(4)); out.push(`<h3>${inline(line.slice(4))}</h3>`); continue; }
+    if (line.startsWith("## ")) { flush(); closeList(); section = normalize(line.slice(3)); out.push(`<h2>${inline(line.slice(3))}</h2>`); continue; }
+    if (line.startsWith("# ")) { flush(); closeList(); section = normalize(line.slice(2)); out.push(`<h1>${inline(line.slice(2))}</h1>`); continue; }
+    if (line.startsWith("> ")) { flush(); closeList(); out.push(section === "frase de peca" ? renderEditorialStatement(stripMarkdown(line.slice(2)), { showLabel: false }) : `<blockquote>${inline(line.slice(2))}</blockquote>`); continue; }
     if (line.startsWith("- ")) {
       flush();
       if (!list) { out.push("<ul>"); list = true; }
@@ -162,7 +164,7 @@ function renderApplication(edition, { ctaHref = "", ctaText = "Ler edição comp
       ${insightCard("02", "Prova que não pode faltar", compact(prova, 64), compact(prova, 180))}
       ${insightCard("03", "Risco processual", compact(risco, 72), compact(risco, 180))}
     </div>
-    ${frase ? `<div class="application-quote"><div class="application-quote-head"><p class="application-label">Frase de peça</p><button type="button" class="copy-quote" data-copy-quote aria-label="Copiar frase de peça">Copiar frase</button></div><blockquote>“${escapeHtml(frase)}”</blockquote></div>` : ""}
+    ${renderEditorialStatement(frase, { copyButton: true })}
     ${pergunta ? `<div class="application-question"><div><p class="application-label">Pergunta da edição</p><h3>${escapeHtml(compact(pergunta, 190))}</h3></div>${cta}</div>` : ""}
   </section>`;
 }
@@ -275,20 +277,10 @@ function renderDecisionPage(decision, thesisLabels, foundationLabels, relatedEdi
       <section class="decision-section"><h2>Fundamentos identificados</h2><div class="legal-pills">${decision.fundamentos.map((slug) => `<a class="legal-pill" href="${BASE}/fundamentos/${escapeHtml(slug)}/">${escapeHtml(foundationLabels.get(slug) || humanize(slug))}</a>`).join("")}</div></section>
       <section class="decision-section"><h2>Resultados</h2><dl class="decision-results">${detailItem("Contrato", decision.resultado.contrato, humanize)}${detailItem("Conversão", decision.resultado.conversao, humanize)}${detailItem("Repetição do indébito", decision.resultado.repeticao_indebito, humanize)}${detailItem("Dano moral", decision.resultado.dano_moral, humanize)}</dl></section>
       <section class="decision-section"><h2>Natureza e autoridade</h2><dl class="decision-results">${detailItem("Natureza da fonte", decision.fonte.natureza, humanize)}${detailItem("Autoridade", decision.autoridade, humanize)}</dl></section>
-      ${relatedEditions.length ? `<section class="decision-section"><h2>Análises editoriais relacionadas</h2><div class="editorial-edition-links">${relatedEditions.map((edition) => `<a href="${escapeHtml(editorialLinkTargets(BASE, edition, decision).edition)}"><span>Analisada na edição nº ${escapeHtml(edition.numero)}</span><strong>${escapeHtml(edition.titulo)}</strong></a>`).join("")}</div></section>` : ""}
+      ${renderDecisionEditionRelations({ editions: relatedEditions, base: BASE })}
       <section class="decision-source"><div><p class="signal">FONTE JURÍDICA</p><h2>Consulte a decisão na origem</h2><p>A síntese acima é conteúdo editorial do Predator e não substitui a leitura do documento oficial.</p></div><a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener">${decision.fonte.url_inteiro_teor ? "Acessar inteiro teor" : "Acessar fonte oficial"} ↗</a></section>
     </main>`,
   });
-}
-
-function renderEditionLegalLinks(edition, decisionsById, thesisLabels) {
-  if (!edition.jurisprudencia.length) return "";
-  return `<aside class="edition-intelligence" aria-labelledby="edition-intelligence-title"><div><p class="signal">INTELIGÊNCIA JURÍDICA</p><h2 id="edition-intelligence-title">Decisões relacionadas à análise</h2></div><div class="edition-intelligence-list">${edition.jurisprudencia.map((decisionId) => {
-    const decision = decisionsById.get(decisionId);
-    const thesis = decision.teses[0];
-    const targets = editorialLinkTargets(BASE, edition, decision);
-    return `<article><div><strong>${escapeHtml(decision.identificacao.tribunal)}</strong><span>${escapeHtml(humanize(decision.contexto.produtos[0]))} · ${escapeHtml(humanize(decision.contexto.temas[0]))}</span><p>${escapeHtml(thesisLabels.get(thesis.slug) || humanize(thesis.slug))}</p></div><div class="edition-intelligence-actions"><a href="${escapeHtml(targets.decision)}">Analisar decisão →</a><a href="${escapeHtml(targets.thesis)}">Explorar tese →</a></div></article>`;
-  }).join("")}</div></aside>`;
 }
 
 function indicators(items) {
@@ -331,6 +323,7 @@ function renderFoundationPage(aggregate) {
       ${indicators([["Decisões relacionadas", String(related.length)],["Teses relacionadas", String(relatedTheses.length)]])}
       <section class="decision-section"><h2>Aplicabilidade</h2><div class="entity-columns"><div><h3>Produtos</h3><div class="legal-pills">${pills(foundation.produtos)}</div></div><div><h3>Temas</h3><div class="legal-pills">${pills(foundation.temas)}</div></div></div></section>
       ${foundation.base_normativa?.length ? `<section class="decision-section"><h2>Base normativa</h2><ul class="normative-list">${foundation.base_normativa.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>` : ""}
+      ${foundation.frase_peca ? `<section class="decision-section foundation-statement"><h2>Frase de peça</h2>${renderEditorialStatement(foundation.frase_peca, { showLabel: false })}</section>` : ""}
       ${evidence.length ? `<section class="decision-section"><h2>Provas relacionadas</h2><div class="legal-pills">${evidence.map((item) => `<span class="legal-pill">${escapeHtml(humanize(item.slug))} · ${item.count}</span>`).join("")}</div></section>` : ""}
       <section class="decision-section"><h2>Teses relacionadas</h2><div class="entity-link-grid">${relatedTheses.map((thesis) => `<a href="${BASE}/teses/${escapeHtml(thesis.slug)}/"><strong>${escapeHtml(thesis.titulo)}</strong><span>${escapeHtml(thesis.questao_juridica)}</span></a>`).join("")}</div></section>
       <section class="decision-section"><h2>Decisões relacionadas</h2>${relatedDecisions(related)}</section>
@@ -373,7 +366,7 @@ for (const edition of editions) {
     content: `<main class="edition-page"><a class="back" href="${BASE}/#edicoes">← Todas as edições</a>
       <div class="edition-kicker">EDIÇÃO ${escapeHtml(edition.numero)} · ${dateLabel(edition.data)} · ${escapeHtml(edition.categoria)}</div>
       <h1>${escapeHtml(edition.titulo)}</h1><p class="edition-summary">${escapeHtml(edition.resumo)}</p>
-      ${renderEditionLegalLinks(edition, decisionsById, thesisLabels)}
+      ${renderEditionIntegration({ edition, decisionsById, thesisLabels, base: BASE, humanize })}
       <section id="analise-completa" class="edition-body"><p class="signal">ANÁLISE COMPLETA</p>${markdown(edition.body)}</section></main>`,
   });
   await writeFile(join(directory, "index.html"), page);
@@ -464,7 +457,7 @@ const home = shell({
     <div class="filters"><button class="active" data-filter="Todas">Todas</button>${categories.map((category) => `<button data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("")}</div>
     <div id="edition-list">${cards}</div><p id="empty" hidden>Nenhuma edição encontrada.</p></section>
     <section class="about" id="sobre"><p class="signal">MANIFESTO EDITORIAL</p><h2>Informação detectada.<br>Tese preparada.</h2><p>O Predator News transforma fatos dispersos em leitura técnica, risco processual, prova estratégica e linguagem aproveitável.</p></section></main>`,
-  script: `<script>let filter='Todas';const normalizeSearch=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty');function apply(){const term=normalizeSearch(q.value);let count=0;cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show;if(show)count++});empty.hidden=count>0}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));apply()}));document.querySelectorAll('[data-copy-quote]').forEach(button=>button.addEventListener('click',async()=>{const quote=button.closest('.application-quote')?.querySelector('blockquote')?.textContent?.trim();if(!quote)return;try{await navigator.clipboard.writeText(quote);const original=button.textContent;button.textContent='Copiado';button.classList.add('copied');setTimeout(()=>{button.textContent=original;button.classList.remove('copied')},1800)}catch{button.textContent='Não foi possível copiar'}}));</script>`,
+  script: `<script>let filter='Todas';const normalizeSearch=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty');function apply(){const term=normalizeSearch(q.value);let count=0;cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show;if(show)count++});empty.hidden=count>0}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));apply()}));document.querySelectorAll('[data-copy-quote]').forEach(button=>button.addEventListener('click',async()=>{const quote=button.closest('[data-editorial-statement]')?.querySelector('.editorial-statement-text')?.textContent?.trim();if(!quote)return;try{await navigator.clipboard.writeText(quote);const original=button.textContent;button.textContent='Copiado';button.classList.add('copied');setTimeout(()=>{button.textContent=original;button.classList.remove('copied')},1800)}catch{button.textContent='Não foi possível copiar'}}));</script>`,
 });
 await writeFile(join(DIST, "index.html"), home);
 console.log(`Predator News: ${editions.length} edição(ões) gerada(s).`);

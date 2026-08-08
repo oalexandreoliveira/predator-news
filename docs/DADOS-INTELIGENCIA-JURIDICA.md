@@ -29,6 +29,8 @@ Após a validação, o build gera `/jurisprudencia/`, `/teses/` e `/fundamentos/
 
 As relações decisão → tese e decisão → fundamento partem das decisões. A relação fundamento → tese parte do catálogo de teses. Nas páginas de tese, os fundamentos exibidos são apenas aqueles efetivamente usados pelas decisões relacionadas na amostra atual. Entidades sem decisões permanecem navegáveis e exibem contagem zero, sem inferências.
 
+O campo opcional `frase_peca` dos fundamentos suporta redação editorial curada. Quando ausente, a página omite integralmente o componente. Quando presente, o texto é identificado como síntese editorial e nunca como citação literal de decisão judicial. O suporte é obrigatório; o preenchimento depende de curadoria humana.
+
 ## Integração editorial
 
 Uma edição pode declarar decision-ids no campo opcional `jurisprudencia` do front matter, separados por vírgula. O build valida cada referência e deriva a navegação reversa decisão → edição; a relação nunca é duplicada nos registros jurídicos.
