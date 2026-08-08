@@ -1,7 +1,7 @@
 # Pedido formal de autorização — DATASET-002
 
 **Natureza:** solicitação humana não executável; não constitui aceite nem autorização.  
-**Validade:** até 09/08/2026 00:00 UTC.  
+**Validade:** `[DEFINIR APÓS A REMEDIAÇÃO SER INCORPORADA À MAIN]`.  
 **Estado:** `authorization_requested=true`; `promotion_authorized=false`.
 
 ## Pacote e escopo fechado
@@ -15,7 +15,7 @@
 
 ## Decisão humana requerida
 
-Solicitam-se duas decisões futuras de autorizadores finais reais, distintos entre si e distintos do preparador. Nenhuma identidade real, assinatura, aprovação, token ou aceite foi registrada neste ciclo. O executor futuro também deve permanecer separado.
+Solicita-se uma única decisão futura do autorizador humano cadastrado, `oalexandreoliveira`, emitida por PR protegido com base `main` e vinculada ao pacote definitivo, seus hashes e sua lista fechada de arquivos. Nenhuma assinatura, aprovação, token, ciência sobre ressalvas ou aceite foi registrada neste ciclo. O executor futuro deve permanecer separado.
 
 Riscos pendentes: a prova usa somente dados sintéticos; controles produtivos, janela operacional, proteção de branch, backup e autorizações para escrita real ainda não estão definidos. Antes de qualquer promoção, devem ser novamente verificados o hash integral do pacote, o escopo exato, a inexistência do arquivo-alvo e as pré-condições do rollback.
 
