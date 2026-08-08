@@ -48,7 +48,7 @@ const readiness=evaluateReadiness([
   {code:'dry_run',status:'passed'},{code:'technical',status:'passed'},{code:'legal_synthetic_only',status:'passed'},
   {code:'security_isolation',status:'passed'},{code:'governance_segregation',status:'passed'},
   {code:'operational_rollback',status:'passed'}
-],['real_authorizers_missing','production_window_missing']);
+],['real_authorizer_missing','production_window_missing']);
 const authorization=createAuthorizationRequest({packageHash:hashValue({manifest:manifest.manifest_id,plan:promotionPlan.plan_id,rollback:rollbackPlan.rollback_plan_id}),scope:[canonicalPath],requiredRoles:['final_authorizer:oalexandreoliveira-real-pr-required'],risks:['synthetic_only','protected_authorization_pr_missing','technical_review_missing'],rollbackPlanId:rollbackPlan.rollback_plan_id,validUntil:'2026-08-09T00:00:00Z'});
 const remaining=(await readdir(new URL('../../ingestion/dry-runs/',import.meta.url))).filter(name=>name!=='.gitkeep');
 console.log(JSON.stringify({manifest,parameters:policy,run,probable_resolution:probable,funnel:{manifest_items:2,reviewed:2,probable_duplicates:1,probable_resolved:1,proposed:1,planned:1,git_simulated:1,canonically_written:0},promotion_plan:promotionPlan,rollback_plan:rollbackPlan,impact,git_simulation:{...git,residue_count:remaining.length},sandbox,readiness,authorization_request:authorization,dry_run_completed:true,ready_for_authorization:readiness.ready_for_authorization,authorization_requested:true,promotion_authorized:false},null,2));

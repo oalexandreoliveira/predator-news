@@ -13,6 +13,8 @@ test('schemas operacionais compilam e rejeitam documento vazio', async () => {
     const validate = ajv.compile(JSON.parse(await readFile(new URL(file, directory), 'utf8')));
     assert.equal(validate({}), false, file);
   }
+  const readinessSchema = JSON.parse(await readFile(new URL('../../ingestion/schemas/readiness-report.schema.json', import.meta.url), 'utf8'));
+  assert.deepEqual(readinessSchema.properties.decision.enum, ['GO', 'NO_GO']);
 });
 
 test('build não contém artefatos de ingestão', async () => {
@@ -20,4 +22,6 @@ test('build não contém artefatos de ingestão', async () => {
   assert.doesNotMatch(build, /ingestion[\\/](state|cache|batches|reports)/);
   const publicFiles = await readdir(new URL('../../dist/', import.meta.url), { recursive: true });
   assert.equal(publicFiles.some(file => /(^|[\\/])ingestion([\\/]|$)/.test(file)), false);
+  const workflow = await readFile(new URL('../../.github/workflows/deploy-pages.yml', import.meta.url), 'utf8');
+  assert.ok(workflow.indexOf('run: npm run build') < workflow.indexOf('run: npm test'), 'o workflow deve criar dist antes da suíte');
 });

@@ -18,7 +18,7 @@ export function validateFinalAuthorization(authorization,context,{now=()=>new Da
   const approvals=authorization.authorizers?.filter(a=>a.decision==='approve')??[];
   if(authorization.authorizers?.some(a=>a.decision==='deny'))fail('authorization_denied');
   if(approvals.length<context.required_approvals)fail('authorization_approval_missing');
-  if(new Set(approvals.map(a=>a.identity)).size!==approvals.length)fail('dual_approval_missing');
+  if(new Set(approvals.map(a=>a.identity)).size!==approvals.length)fail('authorization_identity_duplicate');
   if(approvals.some(a=>a.synthetic||a.identity===context.preparer||a.identity===context.executor))fail('segregation_violation');
   if(approvals.some(a=>a.identity!==context.registered_authorizer))fail('role_not_allowed');
   if(approvals.some(a=>a.package_digest!==authorization.package_digest))fail('authorization_digest_mismatch');
