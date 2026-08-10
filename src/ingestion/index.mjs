@@ -29,6 +29,7 @@ export * from './promotion/promotion-manifest.mjs';
 export * from './promotion/promotion-sandbox.mjs';
 export * from './promotion/proposal-contract.mjs';
 export * from './promotion/proposal-validator.mjs';
+export * from './promotion/source-integrity-gate.mjs';
 export * from './promotion/reviewed-transformer.mjs';
 export * from './promotion/semantic-diff.mjs';
 export * from './readiness/authorization-request.mjs';
