@@ -1,0 +1,34 @@
+id: tjdft-0713783-94-2024-8-07-0005
+identificacao:
+  tribunal: TJDFT
+  processo: 0713783-94.2024.8.07.0005
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Cível
+  relator: Desembargador Angelo Passareli
+  data_julgamento: 2026-07-30
+  data_publicacao: null
+titulo: Regularidade de cartão consignado com RMC e RCC afasta vício de consentimento
+resumo_predator: A 1ª Turma Cível manteve a improcedência e afastou vício de consentimento em contratos de cartão de crédito consignado nas modalidades RMC e RCC, diante de informação contratual clara, descontos compatíveis e crédito disponibilizado.
+contexto:
+  produtos: [rmc, rcc, cartao_credito_consignado]
+  temas: [consentimento, dever_informacao, prova_contratacao]
+  perfis_consumidor: [idoso, aposentado_pensionista]
+  fatos_relevantes: [contrato_claro, desconto_beneficio]
+  meio_contratacao: nao_informado
+provas: [contrato, comprovante_transferencia]
+teses:
+  - {slug: vicio_consentimento_cartao_consignado, status: rejeitada}
+fundamentos: [dever_informacao_qualificado]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2155686/inteiro-teor/e4dd1375-043b-4a25-b0d3-b88329ad9450
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2155686/inteiro-teor/e4dd1375-043b-4a25-b0d3-b88329ad9450
+  consultado_em: 2026-08-11
+autoridade: persuasiva
+status: ativo
