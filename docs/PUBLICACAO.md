@@ -70,6 +70,8 @@ data: "AAAA-MM-DD"
 categoria: "Categoria dominante"
 resumo: "Resumo curto para a página inicial e o arquivo."
 tempo_leitura: "N min"
+# Opcional, quando houver decisão canônica efetivamente relacionada:
+jurisprudencia: tribunal-processo-normalizado
 ---
 ```
 
@@ -125,12 +127,23 @@ Correções e manutenção usam mensagens próprias e descritivas.
 O workflow `.github/workflows/deploy-pages.yml` é acionado por push na `main` quando há alteração em:
 
 - `content/**`;
+- `data/**`;
+- `schemas/**`;
 - `scripts/**`;
 - `src/**`;
+- `tests/**`;
 - `package.json`;
+- `package-lock.json`;
 - no próprio workflow.
 
-O job usa Node.js 22, executa `npm run build`, envia a pasta `dist` como artefato e publica no GitHub Pages.
+O job usa Node.js 22 e executa `npm run check:release`. Esse gate, antes do upload, realiza:
+
+1. validação estrutural e referencial do acervo;
+2. geração das páginas;
+3. verificação de todos os links internos do HTML gerado;
+4. execução da suíte integral após o build.
+
+Somente depois da aprovação completa o workflow envia a pasta `dist` como artefato e publica no GitHub Pages.
 
 Alterações somente em `docs/**` não acionam automaticamente o deploy, conforme o filtro atual de caminhos.
 

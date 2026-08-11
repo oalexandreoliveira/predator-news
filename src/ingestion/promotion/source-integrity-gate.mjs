@@ -1,7 +1,7 @@
 import { normalizeCnj } from '../normalization.mjs';
 
 const syntheticMarkers = new Set(['sintetico','sintetica','synthetic','fixture','mock','fake','ficticio','ficticia','dummy','teste','testing']);
-const officialDomains = Object.freeze({ TJCE: 'tjce.jus.br', TJMA: 'tjma.jus.br', TJPI: 'tjpi.jus.br' });
+const officialDomains = Object.freeze({ TJCE: 'tjce.jus.br', TJMA: 'tjma.jus.br', TJPI: 'tjpi.jus.br', TJDFT: 'tjdft.jus.br' });
 const fold = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const tokens = value => fold(value).split(/[^a-z0-9]+/).filter(Boolean);
 const containsSyntheticMarker = value => tokens(value).some(token => syntheticMarkers.has(token));

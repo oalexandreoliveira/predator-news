@@ -57,6 +57,8 @@ O DATASET-001 encerrou o primeiro ciclo com:
 - geração estática e build validados;
 - 36 testes aprovados ao final do EP06.1.
 
+Essa distribuição é a fotografia do DATASET-001, não uma allowlist permanente. O manifesto de cada lote pode selecionar outros tribunais, produtos e teses desde que os valores estejam cadastrados, validados e revisados antes da promoção.
+
 Permanecem vinculantes:
 
 1. a separação entre Predator Editorial e Predator Intelligence;
@@ -272,6 +274,7 @@ created_at: 2026-08-08T00:00:00Z
 status: planned
 
 scope:
+  # Exemplo do lote piloto; não é uma lista estrutural fechada.
   tribunais: [TJCE, TJMA, TJPI]
   produtos: [rmc, rcc]
   tese_seed: vicio_consentimento_cartao_consignado

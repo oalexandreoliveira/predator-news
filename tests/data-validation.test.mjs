@@ -9,9 +9,9 @@ const root = resolve(".");
 test("dataset completo é estrutural e referencialmente válido", async () => {
   const result = await validateData({ root });
   assert.equal(result.valid, true, result.errors.join("\n"));
-  assert.ok(result.counts.decisions >= 10 && result.counts.decisions <= 15);
-  assert.equal(result.counts.theses, 1);
-  assert.ok(result.counts.foundations >= 4 && result.counts.foundations <= 6);
+  assert.ok(result.counts.decisions >= 10);
+  assert.ok(result.counts.theses >= 1);
+  assert.ok(result.counts.foundations >= 4);
 });
 
 test("referência de tese inexistente falha", async () => {
@@ -39,6 +39,40 @@ test("tribunal + CNJ duplicado falha mesmo com outro id", async () => {
   const result = await validateData({ root, data });
   assert.equal(result.valid, false);
   assert.match(result.errors.join("\n"), /tribunal \+ CNJ duplicado/);
+});
+
+test("tribunal fora do lote inicial é aceito quando o identificador CNJ é consistente", async () => {
+  const data = await loadData(root);
+  const expanded = structuredClone(data.decisions[0]);
+  expanded.file = "stj-7654321-71-2025-8-06-9999.yaml";
+  expanded.stem = "stj-7654321-71-2025-8-06-9999";
+  expanded.value.id = expanded.stem;
+  expanded.value.identificacao.tribunal = "STJ";
+  expanded.value.identificacao.processo = "7654321-71.2025.8.06.9999";
+  data.decisions.push(expanded);
+  const result = await validateData({ root, data });
+  assert.equal(result.valid, true, result.errors.join("\n"));
+});
+
+test("novas teses e fundamentos podem ser cadastrados sem alterar decisões existentes", async () => {
+  const data = await loadData(root);
+  const foundation = structuredClone(data.foundations[0]);
+  foundation.file = "fundamento_expansao_controlada.yaml";
+  foundation.stem = "fundamento_expansao_controlada";
+  foundation.value.slug = foundation.stem;
+  foundation.value.titulo = "Fundamento adicional para expansão controlada";
+  data.foundations.push(foundation);
+  const thesis = structuredClone(data.theses[0]);
+  thesis.file = "tese_expansao_controlada.yaml";
+  thesis.stem = "tese_expansao_controlada";
+  thesis.value.slug = thesis.stem;
+  thesis.value.titulo = "Tese adicional para expansão controlada";
+  thesis.value.questao_juridica = "A nova tese pode ser cadastrada sem duplicar relações existentes?";
+  thesis.value.sintese = "A nova tese permanece separada e validada até receber decisões relacionadas.";
+  thesis.value.fundamentos = [foundation.value.slug];
+  data.theses.push(thesis);
+  const result = await validateData({ root, data });
+  assert.equal(result.valid, true, result.errors.join("\n"));
 });
 
 test("enum fora da taxonomia falha", async () => {

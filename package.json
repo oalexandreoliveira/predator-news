@@ -11,7 +11,8 @@
     "simulate:readiness": "node scripts/ingestion/run-dataset-002-dry-run.mjs",
     "simulate:controlled-promotion": "node scripts/ingestion/run-controlled-promotion.mjs",
     "test": "node scripts/test.mjs",
-    "build": "npm run validate:data && node scripts/build.mjs"
+    "build": "npm run validate:data && node scripts/build.mjs && node scripts/validate-build-links.mjs",
+    "check:release": "npm run build && npm test"
   },
   "dependencies": {
     "ajv": "^8.20.0",

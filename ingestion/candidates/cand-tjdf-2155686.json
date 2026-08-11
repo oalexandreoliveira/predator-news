@@ -1,0 +1,58 @@
+{
+  "candidate_id": "cand-tjdf-2155686",
+  "batch_id": "dataset-002-real-tjdf-2026-08-11",
+  "status": "needs_review",
+  "synthetic": false,
+  "discovery": {
+    "source": "user_provided",
+    "discovered_at": "2026-08-11T00:00:00-03:00",
+    "query": null
+  },
+  "identity": {
+    "tribunal": "TJDFT",
+    "processo": "0713783-94.2024.8.07.0005",
+    "acordao": "2155686",
+    "tipo_decisao": "acordao",
+    "orgao_julgador": "1ª Turma Cível",
+    "relator": "Desembargador Angelo Passareli",
+    "data_julgamento": "2026-07-30",
+    "data_publicacao": null
+  },
+  "fingerprints": {
+    "pdf_sha256": "sha256:52a2658f1e8c94de4c6e7dfefdac0f465164220f45a8e2feb74e3cc955171896",
+    "pdf_filename": "inteiro-teor-1786475778239.pdf",
+    "page_count": 6
+  },
+  "source": {
+    "natureza": "jurisprudencia_oficial",
+    "recuperado_via": "portal_tjdft",
+    "url_original": "https://jurisdf.tjdft.jus.br/acordaos/2155686/inteiro-teor/e4dd1375-043b-4a25-b0d3-b88329ad9450",
+    "url_inteiro_teor": "https://jurisdf.tjdft.jus.br/acordaos/2155686/inteiro-teor/e4dd1375-043b-4a25-b0d3-b88329ad9450",
+    "consultado_em": "2026-08-11",
+    "verification": "PDF supplied by user; visual first-page and text extraction checked"
+  },
+  "deduplication": {
+    "status": "pending_human_review",
+    "keys": ["TJDFT", "0713783-94.2024.8.07.0005", "2155686"]
+  },
+  "classification": {
+    "suggested_products": ["rmc", "rcc", "cartao_credito_consignado"],
+    "suggested_themes": ["consentimento", "dever_informacao", "prova_contratacao"],
+    "suggested_thesis": {"slug": "vicio_consentimento_cartao_consignado", "status": "rejeitada"},
+    "suggested_foundations": ["dever_informacao_qualificado"],
+    "suggested_result": {
+      "contrato": "mantido",
+      "conversao": "indeferida",
+      "repeticao_indebito": "indeferida",
+      "dano_moral": "indeferido"
+    },
+    "summary": "A 1ª Turma Cível manteve a improcedência e afastou vício de consentimento em contratos de cartão de crédito consignado nas modalidades RMC e RCC, diante de informação contratual clara, descontos compatíveis e crédito disponibilizado."
+  },
+  "review": {
+    "decision": "pending",
+    "reviewer_id": null,
+    "final": false,
+    "checklist_complete": false,
+    "notes": "Candidato real preparado a partir da íntegra; requer revisão jurídica humana, confirmação de duplicidade e aprovação final antes de gerar YAML canônico."
+  }
+}

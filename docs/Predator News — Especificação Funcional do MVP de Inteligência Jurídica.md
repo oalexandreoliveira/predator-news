@@ -412,7 +412,7 @@ Cada card deverá conter:
 
 ## 10.3. Escopo inicial
 
-O MVP deverá começar com uma tese principal:
+O MVP deverá começar com uma tese principal, sem limitar a evolução posterior do Banco de Teses:
 
 `Vício de consentimento no cartão consignado`
 
@@ -662,10 +662,12 @@ Escopo recomendado:
 - 1 tese principal;
 - 4 a 6 fundamentos;
 - aproximadamente 10 a 15 decisões;
-- tribunais inicialmente representados:
+- tribunais inicialmente representados no dataset piloto:
   - TJCE;
   - TJMA;
   - TJPI.
+
+Essa lista descreve a composição inicial da amostra, não uma restrição estrutural. Novos tribunais, teses e fundamentos devem ser aceitos mediante cadastro, validação e revisão compatíveis com o modelo de dados.
 
 A primeira tese será:
 

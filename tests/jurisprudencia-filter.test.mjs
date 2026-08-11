@@ -12,7 +12,7 @@ test("normalização ignora caixa, acentos e pontuação", () => {
 });
 
 test("sem filtros retorna as dez decisões", () => {
-  assert.equal(filterDecisions(decisions).length, 10);
+  assert.equal(filterDecisions(decisions).length, decisions.length);
 });
 
 test("busca cobre processo, tribunal, relator, título, produto, tema, tese e fundamento", () => {
@@ -25,7 +25,7 @@ test("cada dimensão de filtro funciona isoladamente", () => {
   assert.equal(filterDecisions(decisions, { tribunal: "TJMA" }).length, 1);
   assert.ok(filterDecisions(decisions, { produto: "rmc" }).length > 0);
   assert.ok(filterDecisions(decisions, { tema: "consentimento" }).length > 0);
-  assert.equal(filterDecisions(decisions, { tese: "vicio_consentimento_cartao_consignado" }).length, 10);
+  assert.equal(filterDecisions(decisions, { tese: "vicio_consentimento_cartao_consignado" }).length, decisions.filter(item => item.teses.some(tese => tese.slug === "vicio_consentimento_cartao_consignado")).length);
   assert.ok(filterDecisions(decisions, { statusTese: "acolhida" }).length > 0);
 });
 
