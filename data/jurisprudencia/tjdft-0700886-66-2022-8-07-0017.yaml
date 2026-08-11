@@ -1,0 +1,54 @@
+id: tjdft-0700886-66-2022-8-07-0017
+identificacao:
+  tribunal: TJDFT
+  processo: 0700886-66.2022.8.07.0017
+  tipo_decisao: acordao
+  orgao_julgador: 3ª TURMA CÍVEL
+  relator: GISELLE ROCHA RAPOSO
+  data_julgamento: 2026-07-23
+  data_publicacao: 2026-08-06
+titulo: Acórdão TJDFT 0700886-66.2022.8.07.0017
+resumo_predator: DIREITO DO CONSUMIDOR. DIREITO CIVIL. APELAÇÃO CÍVEL. CARTÃO DE
+  CRÉDITO CONSIGNADO COM RESERVA DE MARGEM CONSIGNÁVEL (RMC). APOSENTADA.
+  HIPERVULNERABILIDADE DO CONSUMIDOR. FALHA NO DEVER DE INFORMAÇÃO. AUSÊNCIA DE
+  CLAREZA QUANTO À NATUREZA DO CONTRATO E À DINÂMICA DE AMORTIZAÇÃO DA DÍVIDA.
+  PRÁTICA ABUSIVA. NULIDADE CONTRATUAL. RETORNO AO STATUS QUO ANTE. COMPENSAÇÃO
+  DE VALORES. DANOS MORAIS IN RE IPSA. RECURSO DO RÉU DESPROVIDO. RECURSO DA
+  AUTORA PROVIDO. I. CASO EM EXAME 1. Apelação cível interposta por BANCO BMG
+  S.A. e apelação adesiva interposta por consumidora contra sentença que, em
+  ação declaratória de inexistência de débito cumulada com indenização por danos
+  materiais e morais, reconheceu a abusividade decorrente da omissão de
+  informações quanto à quantidade de parcelas e à dinâmica de pagamento do
+  cartão de crédito consignado com RMC, limitou a cobrança a 84 parcelas e
+  determinou
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2156452/inteiro-teor/1cab2ba4-9bed-4191-a169-62ecffb6c8c0
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2156452/inteiro-teor/1cab2ba4-9bed-4191-a169-62ecffb6c8c0
+  consultado_em: 2026-08-11
+autoridade: persuasiva
+status: ativo

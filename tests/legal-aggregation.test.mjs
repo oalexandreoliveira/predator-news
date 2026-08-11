@@ -38,7 +38,9 @@ test("deriva tribunais únicos", () => {
 });
 
 test("calcula a decisão relacionada mais recente", () => {
-  assert.equal(latestDecision(decisions).id, "tjdft-0713783-94-2024-8-07-0005");
+  const expected = decisions.filter(item => item.identificacao.data_julgamento)
+    .sort((a, b) => b.identificacao.data_julgamento.localeCompare(a.identificacao.data_julgamento))[0];
+  assert.equal(latestDecision(decisions).id, expected.id);
 });
 
 test("agregado da tese contém contagens corretas e sem duplicações", () => {

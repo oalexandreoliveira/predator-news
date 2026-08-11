@@ -1,0 +1,27 @@
+name: Coleta oficial de jurisprudência
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * *'
+permissions:
+  contents: write
+jobs:
+  collect-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run ingest:official
+      - run: npm run validate:data
+      - run: npm run build
+      - name: Publicar alterações coletadas
+        run: |
+          git config user.name "Predator News Bot"
+          git config user.email "predator-news-bot@users.noreply.github.com"
+          git add data/jurisprudencia
+          git diff --cached --quiet || git commit -m "chore(jurisprudencia): publicar acórdãos oficiais coletados"
+          git push

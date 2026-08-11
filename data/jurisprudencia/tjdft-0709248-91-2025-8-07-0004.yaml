@@ -1,0 +1,54 @@
+id: tjdft-0709248-91-2025-8-07-0004
+identificacao:
+  tribunal: TJDFT
+  processo: 0709248-91.2025.8.07.0004
+  tipo_decisao: acordao
+  orgao_julgador: 3ª TURMA CÍVEL
+  relator: GISELLE ROCHA RAPOSO
+  data_julgamento: 2026-07-23
+  data_publicacao: 2026-08-06
+titulo: Acórdão TJDFT 0709248-91.2025.8.07.0004
+resumo_predator: APELAÇÃO. CIVIL. PROCESSO CIVIL. DIREITO DO CONSUMIDOR. AÇÃO
+  DECLARATÓRIA DE NULIDADE DE NEGÓCIO JURÍDICO C/C REPETIÇÃO DE INDÉBITO E
+  INDENIZAÇÃO POR DANOS MORAIS. CARTÃO DE CRÉDITO CONSIGNADO. RESERVA DE MARGEM
+  CONSIGNÁVEL. ALEGADO VÍCIO DE CONSENTIMENTO. DEVER DE INFORMAÇÃO. REVELIA.
+  PRESUNÇÃO RELATIVA. AUSÊNCIA DE PROVA DE ILICITUDE. DANOS MORAIS. REPETIÇÃO DE
+  INDÉBITO. CONVERSÃO CONTRATUAL. IMPOSSIBILIDADE. SENTENÇA DE IMPROCEDÊNCIA
+  MANTIDA. I. CASO EM EXAME 1. Apelação cível interposta pelo autor contra
+  sentença que julgou improcedentes os pedidos formulados na inicial de ação
+  declaratória de nulidade de contrato de cartão de crédito consignado com
+  reserva de margem consignável, cumulada com repetição de indébito e
+  indenização por danos morais. 2. A sentença reconheceu a validade da
+  contratação, afastou os efeitos automáticos da revelia e rejeitou os pedidos
+  indenizatórios e revisio
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2156425/inteiro-teor/6ca38098-d756-449c-a92c-f8b92a38ca9e
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2156425/inteiro-teor/6ca38098-d756-449c-a92c-f8b92a38ca9e
+  consultado_em: 2026-08-11
+autoridade: persuasiva
+status: ativo

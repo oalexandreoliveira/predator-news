@@ -11,6 +11,7 @@
     "simulate:readiness": "node scripts/ingestion/run-dataset-002-dry-run.mjs",
     "simulate:controlled-promotion": "node scripts/ingestion/run-controlled-promotion.mjs",
     "search:official": "node scripts/ingestion/search-official.mjs",
+    "ingest:official": "node scripts/ingestion/publish-official-tjdft.mjs",
     "test": "node scripts/test.mjs",
     "build": "npm run validate:data && node scripts/build.mjs && node scripts/validate-build-links.mjs",
     "check:release": "npm run build && npm test"
