@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "commercial_use": false,
+  "scope": {
+    "tjdft": {
+      "bases": ["acordaos"],
+      "classes": ["APELAÇÃO CÍVEL", "AGRAVO DE INSTRUMENTO", "APELAÇÃO / REMESSA NECESSÁRIA"],
+      "terms": ["cartão de crédito consignado", "RMC", "RCC", "reserva de margem consignável", "dever de informação", "vício de consentimento", "fraude bancária", "seguro prestamista"]
+    },
+    "datajud": {
+      "role": "discovery_and_enrichment_only",
+      "aliases_initial": ["tjdft", "tjce", "tjma", "tjpi"],
+      "must_resolve_to_official_full_text": true
+    }
+  },
+  "publication": {
+    "automatic": true,
+    "requires_official_full_text": true,
+    "requires_source_integrity": true,
+    "requires_deduplication": true
+  }
+}

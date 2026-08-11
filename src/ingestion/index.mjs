@@ -6,6 +6,8 @@ export * from './manifest.mjs';
 export * from './query-fingerprint.mjs';
 export * from './adapters/recovery-adapter.mjs';
 export * from './adapters/simulated-recovery-adapter.mjs';
+export * from './adapters/tjdft-public-api.mjs';
+export * from './adapters/datajud-public-api.mjs';
 export * from './canonical-index.mjs';
 export * from './checkpoint.mjs';
 export * from './deduplication.mjs';
