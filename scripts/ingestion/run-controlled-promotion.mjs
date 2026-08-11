@@ -1,8 +1,15 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { createPromotionReceipt, freezePackage, hashValue } from '../../src/ingestion/index.mjs';
+import Ajv2020 from 'ajv/dist/2020.js';
+import { createPromotionReceipt, freezePackage, hashValue, validateIntermediateArtifact, validateSourceIntegrity } from '../../src/ingestion/index.mjs';
 const root=resolve(new URL('../..',import.meta.url).pathname.replace(/^\/(.:)/,'$1'));
 const paths={manifest:'ingestion/fixtures/simulated-readiness/dataset-002.manifest.json',proposal:'ingestion/fixtures/simulated-promotion/eligible.reviewed.json',readiness_policy:'ingestion/config/readiness-policy.example.yaml',execution_policy:'ingestion/config/promotion-execution-policy.example.yaml',authorizer_registry:'ingestion/config/dataset-002-authorizers.yaml',authorization_schema:'ingestion/schemas/final-authorization.schema.json',technical_review_template:'docs/predator-intelligence/modelo-parecer-tecnico-dataset-002.md',request:'docs/predator-intelligence/pedido-autorizacao-dataset-002.md'};
+const candidate=JSON.parse(await readFile(resolve(root,paths.proposal),'utf8'));
+const manifest=JSON.parse(await readFile(resolve(root,paths.manifest),'utf8'));
+const reviewedSchema=JSON.parse(await readFile(resolve(root,'ingestion/schemas/reviewed-candidate.schema.json'),'utf8'));
+validateIntermediateArtifact(candidate,new Ajv2020().compile(reviewedSchema));
+const sourceIntegrity=validateSourceIntegrity({candidate,manifest});
+if(!sourceIntegrity.valid){console.log(JSON.stringify({dataset:'DATASET-002',decision:'NO_GO',reason:sourceIntegrity.reasons[0],source_integrity:sourceIntegrity,gate_order:['schema','source_integrity','legal_coherence','package_freeze','protected_authorization','final_preflight','canonical_write'],package_freeze:{executed:false},authority:{consulted:false},preflight:{decision:'NO_GO',executed:false,reason:sourceIntegrity.reasons[0]},states:{authorization_validated:false,promotion_authorized:false,promotion_started:false,canonical_write_completed:false},proof:{writes:0,git_operations:0,external_operations:0}},null,2));process.exit(0);}
 const artifacts=Object.fromEntries(await Promise.all(Object.entries(paths).map(async([key,path])=>[key,await readFile(resolve(root,path),'utf8')])));
 const frozen=freezePackage(artifacts);const declaredAuthorizationLocations=['ingestion/authorization-requests'];
 const candidates=(await Promise.all(declaredAuthorizationLocations.map(async directory=>(await readdir(resolve(root,directory))).filter(file=>file.endsWith('.final-authorization.json')).map(file=>`${directory}/${file}`)))).flat();
