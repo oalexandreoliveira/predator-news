@@ -234,7 +234,7 @@ const brandIcon = `<svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true
   <circle class="logo-ping" cx="48" cy="28" r="3.2"/>
 </svg>`;
 
-const radarVisual = `<figure class="hero-radar"><iframe class="radar radar-frame" src="${BASE}/assets/radar.html?velocidade=6&cor=9fe870&fundo=transparente&aleatorio=1&destaque=1" title="Radar jurídico animado" loading="lazy" aria-hidden="true" tabindex="-1">Radar jurídico do Predator News</iframe><figcaption><strong>Radar jurídico</strong><span>Monitoramento editorial de Direito Bancário</span></figcaption></figure>`;
+const radarVisual = `<iframe class="radar radar-frame" src="${BASE}/assets/radar.html?velocidade=6&cor=9fe870&fundo=transparente&aleatorio=1&destaque=1" title="Radar jurídico animado" loading="lazy" aria-hidden="true" tabindex="-1"></iframe>`;
 
 const themeInit = `<script>try{const t=localStorage.getItem('predator-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch{}</script>`;
 const themeScript = `<script>(()=>{const root=document.documentElement,key='predator-theme',btn=document.querySelector('[data-theme-toggle]');const valid=t=>t==='light'||t==='dark';function current(){return valid(root.dataset.theme)?root.dataset.theme:'dark'}function apply(theme){root.dataset.theme=theme;try{localStorage.setItem(key,theme)}catch{}if(btn){btn.setAttribute('aria-pressed',theme==='light');const label=btn.querySelector('[data-theme-label]');if(label)label.textContent=theme==='light'?'Claro':'Escuro';}}if(!valid(root.dataset.theme))apply('dark');else apply(root.dataset.theme);btn?.addEventListener('click',()=>apply(current()==='dark'?'light':'dark'));})();</script>`;
@@ -498,20 +498,19 @@ const cards = editions.map((edition) => `<article class="edition-card" data-cate
 const home = shell({
   title: "Predator News — Direito Bancário no Radar",
   description: "Newsletter jurídica sobre consignados, RMC/RCC, fraudes bancárias e decisões que afetam beneficiários do INSS.",
-  content: `<main><section class="hero" id="edicao-atual"><div class="hero-copy"><p class="signal">EDIÇÃO ${escapeHtml(latest.numero)} · ${dateLabel(latest.data)}</p><p class="hero-category">${escapeHtml(latest.categoria)}</p>
-    <h1>${escapeHtml(latest.titulo)}</h1>
-    <p class="hero-lead">${escapeHtml(latest.resumo)}</p>
+  content: `<main><section class="hero" id="edicao-atual"><div><p class="signal">EDIÇÃO ${escapeHtml(latest.numero)} · ${dateLabel(latest.data)}</p>
+    <h1>O radar jurídico de quem atua contra <em>abusos bancários.</em></h1>
+    <p class="hero-lead">Curadoria técnica sobre consignados, RMC/RCC, fraudes e decisões que afetam aposentados e pensionistas do INSS.</p>
     <a class="button" href="${latestUrl}">Ler a edição atual →</a></div>
-    <aside aria-label="Radar da edição"><p class="hero-manifesto">Informação detectada.<br><em>Tese preparada.</em></p>${radarVisual}</aside></section>
-    ${renderNewsDigest(latest, latestUrl)}
+    <aside><span>DESTAQUE · ${escapeHtml(latest.categoria)}</span>${radarVisual}<h2>${escapeHtml(latest.titulo)}</h2><p>${escapeHtml(latest.resumo)}</p></aside></section>
     ${renderApplication(latest, { ctaHref: latestUrl, ctaText: "Ler edição completa →" })}
     <section class="home-intelligence" aria-labelledby="home-intelligence-title"><div><p class="signal">INTELIGÊNCIA PREDATOR</p><h2 id="home-intelligence-title">O acervo jurídico em perspectiva</h2><p>Explore decisões estruturadas e os argumentos jurídicos relacionados, sem sair do fluxo editorial.</p></div><dl><div><dt>Decisões catalogadas</dt><dd>${homeMetrics.decisions}</dd></div><div><dt>Tese em acompanhamento</dt><dd>${homeMetrics.theses}</dd></div><div><dt>Fundamentos</dt><dd>${homeMetrics.foundations}</dd></div></dl><a href="${BASE}/jurisprudencia/">Explorar jurisprudência →</a></section>
     <section class="archive" id="edicoes"><div class="archive-head"><div><p class="signal">HISTÓRICO</p><h2>Arquivo de edições</h2></div>
     <input id="search" type="search" placeholder="Buscar tema ou edição" aria-label="Buscar no arquivo"></div>
     <div class="filters"><button class="active" data-filter="Todas">Todas</button>${categories.map((category) => `<button data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("")}</div>
-    <div class="archive-results"><p aria-live="polite"><strong data-edition-count>${editions.length}</strong> edição(ões)</p><span>Ordenadas da mais recente para a mais antiga</span></div><div id="edition-list">${cards}</div><p id="empty" role="status" hidden>Nenhuma edição corresponde à busca e ao filtro selecionados.</p></section>
+    <div id="edition-list">${cards}</div><p id="empty" hidden>Nenhuma edição encontrada.</p></section>
     <section class="about" id="sobre"><p class="signal">MANIFESTO EDITORIAL</p><h2>Informação detectada.<br>Tese preparada.</h2><p>O Predator News transforma fatos dispersos em leitura técnica, risco processual, prova estratégica e linguagem aproveitável.</p></section></main>`,
-  script: `<script>let filter='Todas';const normalizeSearch=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty'),countLabel=document.querySelector('[data-edition-count]');buttons.forEach(button=>button.setAttribute('aria-pressed',String(button.classList.contains('active'))));function apply(){const term=normalizeSearch(q.value);let count=0;cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show;if(show)count++});empty.hidden=count>0;countLabel.textContent=count}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});apply()}));</script>`,
+  script: `<script>let filter='Todas';const normalizeSearch=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty');function apply(){const term=normalizeSearch(q.value);cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show});empty.hidden=cards.some(c=>!c.hidden)}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));apply()}));</script>`,
 });
 await writeFile(join(DIST, "index.html"), home);
 console.log(`Predator News: ${editions.length} edição(ões) gerada(s).`);
