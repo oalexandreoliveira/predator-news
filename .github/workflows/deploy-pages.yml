@@ -42,13 +42,10 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
-      - name: Gerar páginas a partir dos arquivos Markdown
+      - name: Validar dados, gerar páginas, verificar links e executar testes
         env:
           BASE_PATH: /predator-news
-        run: npm run build
-
-      - name: Executar a suíte integral após o build
-        run: npm test
+        run: npm run check:release
 
       - name: Configurar o GitHub Pages
         uses: actions/configure-pages@v5

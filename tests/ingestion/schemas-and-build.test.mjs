@@ -23,5 +23,7 @@ test('build não contém artefatos de ingestão', async () => {
   const publicFiles = await readdir(new URL('../../dist/', import.meta.url), { recursive: true });
   assert.equal(publicFiles.some(file => /(^|[\\/])ingestion([\\/]|$)/.test(file)), false);
   const workflow = await readFile(new URL('../../.github/workflows/deploy-pages.yml', import.meta.url), 'utf8');
-  assert.ok(workflow.indexOf('run: npm run build') < workflow.indexOf('run: npm test'), 'o workflow deve criar dist antes da suíte');
+  const packageJson = JSON.parse(await readFile(new URL('../../package.json', import.meta.url), 'utf8'));
+  assert.match(workflow, /run: npm run check:release/, 'o workflow deve executar o gate integral de release');
+  assert.equal(packageJson.scripts['check:release'], 'npm run build && npm test', 'o gate deve criar e validar dist antes da suíte');
 });

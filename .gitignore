@@ -1,5 +1,6 @@
 dist/
 node_modules/
+.worktrees/
 ingestion/state/*
 ingestion/cache/*
 ingestion/batches/*

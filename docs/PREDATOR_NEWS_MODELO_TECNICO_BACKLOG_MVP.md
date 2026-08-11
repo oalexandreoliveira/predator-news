@@ -690,12 +690,12 @@ independentes sem tratamento explícito.
 **Prioridade:** P0\
 **Dependência:** EP01
 
-Criar dataset inicial com:
+Criar o dataset piloto inicial com:
 
 -   10 a 15 decisões reais;
 -   1 tese;
 -   4 a 6 fundamentos;
--   TJCE, TJMA e TJPI.
+-   TJCE, TJMA e TJPI (composição inicial, não limite estrutural).
 
 **Aceite**
 

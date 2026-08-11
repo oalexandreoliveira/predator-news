@@ -5,6 +5,7 @@ data: "2026-07-16"
 categoria: "Cartão consignado"
 resumo: "Edição retroativa analisa a Operação Fugazi, descontos associativos no INSS e o SCR após decisão do STJ."
 tempo_leitura: "8 min"
+jurisprudencia: tjce-0050625-78-2021-8-06-0157
 ---
 
 ## Fio condutor da edição

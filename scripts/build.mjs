@@ -53,18 +53,49 @@ function markdown(source = "") {
   let paragraph = [];
   let list = false;
   let section = "";
+  let newsArticle = false;
+  let contentSection = false;
   const flush = () => {
     if (paragraph.length) out.push(`<p>${inline(paragraph.join(" "))}</p>`);
     paragraph = [];
   };
   const closeList = () => { if (list) out.push("</ul>"); list = false; };
+  const closeContentSection = () => { if (contentSection) out.push("</section>"); contentSection = false; };
+  const closeNewsArticle = () => { closeContentSection(); if (newsArticle) out.push("</article>"); newsArticle = false; };
+  const newsBlockClass = (key) => ({
+    "o que aconteceu": "fact", "tese do dia": "interpretation", "onde usar": "application-use",
+    "prova que nao pode faltar": "evidence", "risco processual": "risk", "frase de peca": "statement",
+    "pergunta da edicao": "question", "pergunta para comentario": "question", fonte: "source",
+  })[key] || "detail";
   for (const raw of lines) {
     const line = raw.trim();
     if (!line) { flush(); closeList(); continue; }
-    if (line.startsWith("### ")) { flush(); closeList(); section = normalize(line.slice(4)); out.push(`<h3>${inline(line.slice(4))}</h3>`); continue; }
-    if (line.startsWith("## ")) { flush(); closeList(); section = normalize(line.slice(3)); out.push(`<h2>${inline(line.slice(3))}</h2>`); continue; }
+    if (line.startsWith("### ")) {
+      flush(); closeList(); closeNewsArticle();
+      const title = line.slice(4);
+      const number = title.match(/^Notícia\s+(\d+)/i)?.[1] || "";
+      newsArticle = true;
+      out.push(`<article class="edition-news"><header class="edition-news-head">${number ? `<span aria-hidden="true">${escapeHtml(number.padStart(2, "0"))}</span>` : ""}<p class="signal">NOTÍCIA ${escapeHtml(number || "SELECIONADA")}</p><h2>${inline(title.replace(/^Notícia\s+\d+\s*:\s*/i, ""))}</h2></header>`);
+      continue;
+    }
+    if (line.startsWith("## ")) {
+      flush(); closeList(); closeContentSection();
+      section = normalize(line.slice(3));
+      if (newsArticle && section !== "fechamento" && section !== "conclusao") {
+        contentSection = true;
+        out.push(`<section class="news-block news-block-${newsBlockClass(section)}"><h3>${inline(line.slice(3))}</h3>`);
+      } else {
+        closeNewsArticle();
+        const sectionClass = section === "fio condutor da edicao"
+          ? "edition-context"
+          : ["fechamento", "conclusao"].includes(section) ? "edition-closing" : "edition-legacy-section";
+        contentSection = true;
+        out.push(`<section class="${sectionClass}"><h2>${inline(line.slice(3))}</h2>`);
+      }
+      continue;
+    }
     if (line.startsWith("# ")) { flush(); closeList(); section = normalize(line.slice(2)); out.push(`<h1>${inline(line.slice(2))}</h1>`); continue; }
-    if (line.startsWith("> ")) { flush(); closeList(); out.push(section === "frase de peca" ? renderEditorialStatement(stripMarkdown(line.slice(2)), { showLabel: false }) : `<blockquote>${inline(line.slice(2))}</blockquote>`); continue; }
+    if (line.startsWith("> ")) { flush(); closeList(); out.push(section === "frase de peca" ? renderEditorialStatement(stripMarkdown(line.slice(2)), { copyButton: true, showLabel: false }) : `<blockquote>${inline(line.slice(2))}</blockquote>`); continue; }
     if (line.startsWith("- ")) {
       flush();
       if (!list) { out.push("<ul>"); list = true; }
@@ -73,7 +104,7 @@ function markdown(source = "") {
     }
     paragraph.push(line);
   }
-  flush(); closeList();
+  flush(); closeList(); closeContentSection(); closeNewsArticle();
   return out.join("\n");
 }
 
@@ -132,6 +163,27 @@ function firstBlockquote(source = "") {
   return match ? match[1].trim() : stripMarkdown(source);
 }
 
+function extractNews(source = "") {
+  const matches = [...source.matchAll(/^###\s+Notícia\s+(\d+)\s*:\s*(.+)$/gmi)];
+  return matches.map((match, index) => {
+    const body = source.slice(match.index + match[0].length, matches[index + 1]?.index ?? source.length);
+    const sections = extractSections(body);
+    const sourceSection = pickSection(sections, ["Fonte"]);
+    const sourceMatch = sourceSection.match(/\[([^\]]+)\]\(https?:\/\/[^)]+\)/);
+    return {
+      number: match[1].padStart(2, "0"), title: match[2].trim(),
+      summary: compact(pickSection(sections, ["O que aconteceu"]), 230),
+      source: sourceMatch?.[1] || "Fonte indicada na edição",
+    };
+  }).slice(0, 3);
+}
+
+function renderNewsDigest(edition, href) {
+  const news = extractNews(edition.body);
+  if (!news.length) return "";
+  return `<section class="news-digest" aria-labelledby="news-digest-title"><div class="section-heading"><div><p class="signal">NOTÍCIAS SELECIONADAS</p><h2 id="news-digest-title">O que aconteceu</h2></div><p>Três acontecimentos conectados pelo fio condutor desta edição.</p></div><div class="news-digest-grid">${news.map((item) => `<article><span class="news-digest-number">${escapeHtml(item.number)}</span><p class="news-digest-category">${escapeHtml(edition.categoria)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p><div><span>${escapeHtml(item.source)}</span><a href="${escapeHtml(href)}#analise-completa" aria-label="Continuar leitura: ${escapeHtml(item.title)}">Continuar →</a></div></article>`).join("")}</div></section>`;
+}
+
 function insightCard(number, label, title, body) {
   return `<article class="application-card">
     <span class="application-number">${number}</span>
@@ -182,10 +234,11 @@ const brandIcon = `<svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true
   <circle class="logo-ping" cx="48" cy="28" r="3.2"/>
 </svg>`;
 
-const radarVisual = `<iframe class="radar radar-frame" src="${BASE}/assets/radar.html?velocidade=6&cor=9fe870&fundo=transparente&aleatorio=1&destaque=1" title="Radar jurídico animado" loading="lazy" aria-hidden="true" tabindex="-1"></iframe>`;
+const radarVisual = `<figure class="hero-radar"><iframe class="radar radar-frame" src="${BASE}/assets/radar.html?velocidade=6&cor=9fe870&fundo=transparente&aleatorio=1&destaque=1" title="Radar jurídico animado" loading="lazy" aria-hidden="true" tabindex="-1">Radar jurídico do Predator News</iframe><figcaption><strong>Radar jurídico</strong><span>Monitoramento editorial de Direito Bancário</span></figcaption></figure>`;
 
 const themeInit = `<script>try{const t=localStorage.getItem('predator-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch{}</script>`;
 const themeScript = `<script>(()=>{const root=document.documentElement,key='predator-theme',btn=document.querySelector('[data-theme-toggle]');const valid=t=>t==='light'||t==='dark';function current(){return valid(root.dataset.theme)?root.dataset.theme:'dark'}function apply(theme){root.dataset.theme=theme;try{localStorage.setItem(key,theme)}catch{}if(btn){btn.setAttribute('aria-pressed',theme==='light');const label=btn.querySelector('[data-theme-label]');if(label)label.textContent=theme==='light'?'Claro':'Escuro';}}if(!valid(root.dataset.theme))apply('dark');else apply(root.dataset.theme);btn?.addEventListener('click',()=>apply(current()==='dark'?'light':'dark'));})();</script>`;
+const interactionScript = `<script>(()=>{document.querySelectorAll('[data-copy-quote]').forEach(button=>button.addEventListener('click',async()=>{const quote=button.closest('[data-editorial-statement]')?.querySelector('.editorial-statement-text')?.textContent?.trim();if(!quote)return;try{await navigator.clipboard.writeText(quote);const original=button.textContent;button.textContent='Copiado';button.classList.add('copied');setTimeout(()=>{button.textContent=original;button.classList.remove('copied')},1800)}catch{button.textContent='Não foi possível copiar'}}));})();</script>`;
 const menu = globalMenuLinks(BASE).map(([label, href]) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`).join("");
 
 const shell = ({ title, description, content, script = "" }) => `<!doctype html>
@@ -194,7 +247,7 @@ const shell = ({ title, description, content, script = "" }) => `<!doctype html>
 ${themeInit}<link rel="stylesheet" href="${BASE}/assets/style.css"></head><body>
 <header class="site-header"><a class="brand" href="${BASE}/"><span class="brand-mark">${brandIcon}</span><span><strong>PREDATOR</strong><small>NEWS</small></span></a>
 <div class="header-actions"><nav class="desktop-nav">${menu}</nav><details class="site-nav"><summary>Navegar</summary><nav>${menu}</nav></details><button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema" aria-pressed="false"><span data-theme-label>Escuro</span></button></div></header>
-${content}<footer><span>Predator News</span><p>Conteúdo jurídico informativo. Leitura crítica para decisões melhores.</p></footer>${themeScript}${script}</body></html>`;
+${content}<footer><span>Predator News</span><p>Conteúdo jurídico informativo. Leitura crítica para decisões melhores.</p></footer>${themeScript}${interactionScript}${script}</body></html>`;
 
 const legalLabels = new Map(Object.entries({
   rmc: "RMC", rcc: "RCC", cartao_credito_consignado: "Cartão de crédito consignado",
@@ -367,7 +420,7 @@ for (const edition of editions) {
       <div class="edition-kicker">EDIÇÃO ${escapeHtml(edition.numero)} · ${dateLabel(edition.data)} · ${escapeHtml(edition.categoria)}</div>
       <h1>${escapeHtml(edition.titulo)}</h1><p class="edition-summary">${escapeHtml(edition.resumo)}</p>
       ${renderEditionIntegration({ edition, decisionsById, thesisLabels, base: BASE, humanize })}
-      <section id="analise-completa" class="edition-body"><p class="signal">ANÁLISE COMPLETA</p>${markdown(edition.body)}</section></main>`,
+      <section id="analise-completa" class="edition-body" aria-labelledby="analysis-title"><div class="edition-body-heading"><p class="signal">ANÁLISE COMPLETA</p><h2 id="analysis-title">Da notícia à aplicação profissional</h2><p>Fato, interpretação, consequência jurídica e uso prático em uma sequência contínua.</p></div>${markdown(edition.body)}</section></main>`,
   });
   await writeFile(join(directory, "index.html"), page);
 }
@@ -445,19 +498,20 @@ const cards = editions.map((edition) => `<article class="edition-card" data-cate
 const home = shell({
   title: "Predator News — Direito Bancário no Radar",
   description: "Newsletter jurídica sobre consignados, RMC/RCC, fraudes bancárias e decisões que afetam beneficiários do INSS.",
-  content: `<main><section class="hero" id="edicao-atual"><div><p class="signal">EDIÇÃO ${escapeHtml(latest.numero)} · ${dateLabel(latest.data)}</p>
-    <h1>O radar jurídico de quem atua contra <em>abusos bancários.</em></h1>
-    <p class="hero-lead">Curadoria técnica sobre consignados, RMC/RCC, fraudes e decisões que afetam aposentados e pensionistas do INSS.</p>
+  content: `<main><section class="hero" id="edicao-atual"><div class="hero-copy"><p class="signal">EDIÇÃO ${escapeHtml(latest.numero)} · ${dateLabel(latest.data)}</p><p class="hero-category">${escapeHtml(latest.categoria)}</p>
+    <h1>${escapeHtml(latest.titulo)}</h1>
+    <p class="hero-lead">${escapeHtml(latest.resumo)}</p>
     <a class="button" href="${latestUrl}">Ler a edição atual →</a></div>
-    <aside><span>DESTAQUE · ${escapeHtml(latest.categoria)}</span>${radarVisual}<h2>${escapeHtml(latest.titulo)}</h2><p>${escapeHtml(latest.resumo)}</p></aside></section>
+    <aside aria-label="Radar da edição"><p class="hero-manifesto">Informação detectada.<br><em>Tese preparada.</em></p>${radarVisual}</aside></section>
+    ${renderNewsDigest(latest, latestUrl)}
     ${renderApplication(latest, { ctaHref: latestUrl, ctaText: "Ler edição completa →" })}
     <section class="home-intelligence" aria-labelledby="home-intelligence-title"><div><p class="signal">INTELIGÊNCIA PREDATOR</p><h2 id="home-intelligence-title">O acervo jurídico em perspectiva</h2><p>Explore decisões estruturadas e os argumentos jurídicos relacionados, sem sair do fluxo editorial.</p></div><dl><div><dt>Decisões catalogadas</dt><dd>${homeMetrics.decisions}</dd></div><div><dt>Tese em acompanhamento</dt><dd>${homeMetrics.theses}</dd></div><div><dt>Fundamentos</dt><dd>${homeMetrics.foundations}</dd></div></dl><a href="${BASE}/jurisprudencia/">Explorar jurisprudência →</a></section>
     <section class="archive" id="edicoes"><div class="archive-head"><div><p class="signal">HISTÓRICO</p><h2>Arquivo de edições</h2></div>
     <input id="search" type="search" placeholder="Buscar tema ou edição" aria-label="Buscar no arquivo"></div>
     <div class="filters"><button class="active" data-filter="Todas">Todas</button>${categories.map((category) => `<button data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("")}</div>
-    <div id="edition-list">${cards}</div><p id="empty" hidden>Nenhuma edição encontrada.</p></section>
+    <div class="archive-results"><p aria-live="polite"><strong data-edition-count>${editions.length}</strong> edição(ões)</p><span>Ordenadas da mais recente para a mais antiga</span></div><div id="edition-list">${cards}</div><p id="empty" role="status" hidden>Nenhuma edição corresponde à busca e ao filtro selecionados.</p></section>
     <section class="about" id="sobre"><p class="signal">MANIFESTO EDITORIAL</p><h2>Informação detectada.<br>Tese preparada.</h2><p>O Predator News transforma fatos dispersos em leitura técnica, risco processual, prova estratégica e linguagem aproveitável.</p></section></main>`,
-  script: `<script>let filter='Todas';const normalizeSearch=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty');function apply(){const term=normalizeSearch(q.value);let count=0;cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show;if(show)count++});empty.hidden=count>0}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));apply()}));document.querySelectorAll('[data-copy-quote]').forEach(button=>button.addEventListener('click',async()=>{const quote=button.closest('[data-editorial-statement]')?.querySelector('.editorial-statement-text')?.textContent?.trim();if(!quote)return;try{await navigator.clipboard.writeText(quote);const original=button.textContent;button.textContent='Copiado';button.classList.add('copied');setTimeout(()=>{button.textContent=original;button.classList.remove('copied')},1800)}catch{button.textContent='Não foi possível copiar'}}));</script>`,
+  script: `<script>let filter='Todas';const normalizeSearch=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const q=document.querySelector('#search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.edition-card')],empty=document.querySelector('#empty'),countLabel=document.querySelector('[data-edition-count]');buttons.forEach(button=>button.setAttribute('aria-pressed',String(button.classList.contains('active'))));function apply(){const term=normalizeSearch(q.value);let count=0;cards.forEach(c=>{const show=(filter==='Todas'||c.dataset.category===filter)&&(!term||c.dataset.search.includes(term));c.hidden=!show;if(show)count++});empty.hidden=count>0;countLabel.textContent=count}q?.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});apply()}));</script>`,
 });
 await writeFile(join(DIST, "index.html"), home);
 console.log(`Predator News: ${editions.length} edição(ões) gerada(s).`);

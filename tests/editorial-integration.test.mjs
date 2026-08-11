@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import { buildEditorialRelations, editorialLinkTargets, globalMenuLinks, legalHomeMetrics, parseDecisionReferences } from "../scripts/data/editorial-links.mjs";
 
 const decisions = [{ id: "tjce-0000000-00-2026-8-06-0000" }, { id: "tjpi-1111111-11-2026-8-18-0000" }];
@@ -58,4 +59,12 @@ test("gera navegação Edição → Decisão → Tese e Decisão → Edição", 
     thesis: "/preview/teses/tese-relacionada/",
     edition: "/preview/edicoes/edicao-relacionada/",
   });
+});
+
+test("acervo editorial real referencia uma decisão canônica existente", async () => {
+  const source = await readFile(new URL("../content/edicoes/2026-07-16-cartao-consignado-fugazi.md", import.meta.url), "utf8");
+  const relation = source.match(/^jurisprudencia:\s*([^\r\n]+)$/m)?.[1]?.trim();
+  assert.equal(relation, "tjce-0050625-78-2021-8-06-0157");
+  const canonical = await readFile(new URL(`../data/jurisprudencia/${relation}.yaml`, import.meta.url), "utf8");
+  assert.match(canonical, new RegExp(`^id:\\s*${relation}$`, "m"));
 });
