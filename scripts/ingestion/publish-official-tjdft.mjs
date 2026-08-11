@@ -11,8 +11,8 @@ const fold = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u03
 const today = () => new Date().toISOString().slice(0, 10);
 const excerpt = value => {
   const clean = String(value ?? '').replace(/<[^>]+>/g, ' ').replace(/\\s+/g, ' ').trim();
-  const body = clean.split(/\s+I\.\s+CASO EM EXAME\b/i)[0].trim();
-  const clipped = body.slice(0, 360);
+  const body = clean.split(/\s+(?:I\.|1\.)\s+(?:CASO EM EXAME|No caso|Há duas questões)\b/i)[0].trim();
+  const clipped = body.slice(0, 260);
   const boundary = Math.max(clipped.lastIndexOf('. '), clipped.lastIndexOf('; '), clipped.lastIndexOf(' '));
   return `${(boundary > 140 ? clipped.slice(0, boundary) : clipped).trim()}…`;
 };
