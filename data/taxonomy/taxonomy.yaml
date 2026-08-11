@@ -1,10 +1,10 @@
 version: 1
 families:
   ramo_direito: [civil, consumidor, processual_civil]
-  produto: [rmc, rcc, cartao_credito_consignado]
-  tema: [consentimento, dever_informacao, contratacao_digital, contratacao_analfabeto, prova_contratacao, uso_cartao, saque, desconto_beneficio]
-  prova: [contrato, assinatura, assinatura_rogo, testemunhas, termo_consentimento, comprovante_transferencia, faturas, historico_uso, pericia_grafotecnica]
-  fato_relevante: [ausencia_contrato, contrato_claro, contrato_diverso, saque_unico, uso_reiterado_cartao, desconto_beneficio]
+  produto: [rmc, rcc, cartao_credito_consignado, seguro_prestamista]
+  tema: [consentimento, vicio_consentimento, dever_informacao, contratacao_digital, contratacao_analfabeto, prova_contratacao, uso_cartao, saque, desconto_beneficio, fraude_bancaria, juros_abusivos]
+  prova: [contrato, assinatura, assinatura_rogo, testemunhas, termo_consentimento, comprovante_transferencia, faturas, historico_uso, pericia_grafotecnica, nao_informado]
+  fato_relevante: [ausencia_contrato, contrato_claro, contrato_diverso, saque_unico, uso_reiterado_cartao, desconto_beneficio, nao_informado]
   perfil_consumidor: [idoso, aposentado_pensionista, analfabeto, hipossuficiente]
   meio_contratacao: [fisico, digital, nao_informado]
   status_tese: [acolhida, parcialmente_acolhida, rejeitada, nao_enfrentada, prejudicada]

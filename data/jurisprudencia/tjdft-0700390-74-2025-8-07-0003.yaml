@@ -1,0 +1,54 @@
+id: tjdft-0700390-74-2025-8-07-0003
+identificacao:
+  tribunal: TJDFT
+  processo: 0700390-74.2025.8.07.0003
+  tipo_decisao: acordao
+  orgao_julgador: 1ª TURMA CÍVEL
+  relator: CARLOS PIRES SOARES NETO
+  data_julgamento: 2026-07-22
+  data_publicacao: 2026-08-05
+titulo: Acórdão TJDFT 0700390-74.2025.8.07.0003
+resumo_predator: "PROCESSUAL CIVIL. CONSUMIDOR. APELAÇÃO CÍVEL. APLICAÇÃO DO CDC
+  AOS CONTRATOS BANCÁRIOS. NULIDADE DE CONTRATO. EMPRÉSTIMO CONSIGNADO VIA
+  CARTÃO DE CRÉDITO (RMC). VÍCIO DO CONSENTIMENTO NÃO COMPROVADO. CLÁUSULAS
+  CONTRATUAIS OSTENSIVA E CLARAS. RECURSO CONHECIDO E DESPROVIDO. I. CASO EM
+  EXAME 1. Apelação cível interposta por consumidor beneficiário do INSS contra
+  sentença que julgou improcedentes os pedidos de declaração de inexistência de
+  débito, cessação de descontos, conversão de contrato de cartão de crédito
+  consignado com reserva de margem consignável (RMC) em empréstimo consignado
+  tradicional, repetição de indébito e indenização por danos morais, formulados
+  em face de instituição financeira. Sustenta ter acreditado contratar
+  empréstimo consignado comum, alegando falha no dever de informação e vício de
+  consentimento. II. CASO EM EXAME 2. Há duas questões em discussão: (i) definir
+  se ho"
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2155946/inteiro-teor/08bd423d-d81a-48dc-87e2-1d7d45b9817f
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2155946/inteiro-teor/08bd423d-d81a-48dc-87e2-1d7d45b9817f
+  consultado_em: 2026-08-11
+autoridade: persuasiva
+status: ativo
