@@ -1,0 +1,44 @@
+id: tjdft-0715742-60-2025-8-07-0007
+identificacao:
+  tribunal: TJDFT
+  processo: 0715742-60.2025.8.07.0007
+  tipo_decisao: acordao
+  orgao_julgador: 8ª TURMA CÍVEL
+  relator: CARMEN BITTENCOURT
+  data_julgamento: 2026-07-14
+  data_publicacao: 2026-08-04
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: CONSUMIDOR, CIVIL E PROCESSUAL CIVIL. APELAÇÃO CÍVEL. VIOLAÇÃO
+  AO PRINCÍPIO DA DIALETICIDADE. CONHECIMENTO PARCIAL DO RECURSO. PREJUDICIAL DE
+  PRESCRIÇÃO. RELAÇÃO DE TRATO SUCESSIVO. AFASTADA. MÉRITO. AÇÃO DECLARATÓRIA DE
+  INEXISTÊNCIA DE RELAÇÃO JURÍDICA C/C…
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2150376/inteiro-teor/0c1b6243-b301-4c7a-90c6-b217bb98a222
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2150376/inteiro-teor/0c1b6243-b301-4c7a-90c6-b217bb98a222
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

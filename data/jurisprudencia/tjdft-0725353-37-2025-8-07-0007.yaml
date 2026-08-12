@@ -1,0 +1,43 @@
+id: tjdft-0725353-37-2025-8-07-0007
+identificacao:
+  tribunal: TJDFT
+  processo: 0725353-37.2025.8.07.0007
+  tipo_decisao: acordao
+  orgao_julgador: 6ª TURMA CÍVEL
+  relator: LEONARDO ROSCOE BESSA
+  data_julgamento: 2026-06-03
+  data_publicacao: 2026-07-13
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: APELAÇÃO CÍVEL. DIREITO DO CONSUMIDOR. DIREITO CIVIL. CONTRATO
+  DE CARTÃO DE CRÉDITO CONSIGNADO. RESERVA DE MARGEM CONSIGNÁVEL. FALHA NO DEVER
+  DE INFORMAÇÃO. AUSÊNCIA DE INFORMAÇÃO CLARA E ADEQUADA. VIOLAÇÃO À BOA-FÉ
+  OBJETIVA. NULIDADE. VERIFICADA. PRINCÍPIO…
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2136314/inteiro-teor/bbf70109-393c-4c68-a257-804683a5dbfe
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2136314/inteiro-teor/bbf70109-393c-4c68-a257-804683a5dbfe
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

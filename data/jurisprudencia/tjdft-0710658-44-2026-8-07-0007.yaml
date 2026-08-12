@@ -1,0 +1,43 @@
+id: tjdft-0710658-44-2026-8-07-0007
+identificacao:
+  tribunal: TJDFT
+  processo: 0710658-44.2026.8.07.0007
+  tipo_decisao: acordao
+  orgao_julgador: 7ª TURMA CÍVEL
+  relator: JANSEN FIALHO DE ALMEIDA
+  data_julgamento: 2026-07-22
+  data_publicacao: 2026-08-03
+titulo: "seguro prestamista: dever de informação e consentimento"
+resumo_predator: "Ementa: Direito civil e processual civil. Apelação cível. Ação
+  revisional de contrato bancário. Financiamento de veículo. Julgamento liminar
+  de improcedência. Art. 332 do CPC. Preliminares. Cerceamento de defesa.
+  Inocorrência. Dialeticidade. Presença. Juros…"
+contexto:
+  produtos:
+    - seguro_prestamista
+  temas:
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2155039/inteiro-teor/1291aa5c-0b88-47d3-93c1-f7211fcdd61c
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2155039/inteiro-teor/1291aa5c-0b88-47d3-93c1-f7211fcdd61c
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

@@ -1,0 +1,45 @@
+id: tjdft-0711823-42-2025-8-07-0014
+identificacao:
+  tribunal: TJDFT
+  processo: 0711823-42.2025.8.07.0014
+  tipo_decisao: acordao
+  orgao_julgador: 1ª TURMA CÍVEL
+  relator: CARLOS ALBERTO MARTINS FILHO
+  data_julgamento: 2026-07-08
+  data_publicacao: 2026-07-27
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: DIREITO DO CONSUMIDOR E BANCÁRIO. APELAÇÃO CÍVEL. CARTÃO DE
+  CRÉDITO CONSIGNADO (RMC). CONSUMIDOR IDOSO. ALEGAÇÃO DE VÍCIO DE
+  CONSENTIMENTO. DEVER DE INFORMAÇÃO. OBSERVÂNCIA. CIÊNCIA INEQUÍVOCA DA
+  MODALIDADE CONTRATADA. TERMO DE ADESÃO, AUTORIZAÇÃO PARA…
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2148919/inteiro-teor/0463550a-44d0-4baa-8e39-6a39671f1f64
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2148919/inteiro-teor/0463550a-44d0-4baa-8e39-6a39671f1f64
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

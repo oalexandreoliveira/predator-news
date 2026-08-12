@@ -1,0 +1,44 @@
+id: tjdft-0712270-25-2023-8-07-0006
+identificacao:
+  tribunal: TJDFT
+  processo: 0712270-25.2023.8.07.0006
+  tipo_decisao: acordao
+  orgao_julgador: 4ª TURMA CÍVEL
+  relator: AISTON HENRIQUE DE SOUSA
+  data_julgamento: 2026-07-01
+  data_publicacao: 2026-07-22
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: APELAÇÃO CÍVEL. DIREITO DO CONSUMIDOR E CIVIL. CONTRATO DE
+  CARTÃO DE CRÉDITO CONSIGNADO (RMC). AUSÊNCIA DE PROVA FORMAL DA CONTRATAÇÃO.
+  DEPÓSITO DE VALOR EM CONTA. UTILIZAÇÃO PELO CONSUMIDOR. CONTRATO REAL.
+  APERFEIÇOAMENTO. INEXISTÊNCIA DE DANOS MORAIS E…
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2147492/inteiro-teor/6f824f7b-f4bc-4a40-8254-020e001963fa
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2147492/inteiro-teor/6f824f7b-f4bc-4a40-8254-020e001963fa
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

@@ -1,0 +1,43 @@
+id: tjdft-0706528-57-2025-8-07-0003
+identificacao:
+  tribunal: TJDFT
+  processo: 0706528-57.2025.8.07.0003
+  tipo_decisao: acordao
+  orgao_julgador: 1ª TURMA CÍVEL
+  relator: FABRÍCIO FONTOURA BEZERRA
+  data_julgamento: 2026-07-22
+  data_publicacao: 2026-07-31
+titulo: "seguro prestamista: dever de informação e consentimento"
+resumo_predator: "Ementa: Direito Civil, Do Consumidor E Processual Civil.
+  Apelação Cível. Ação Anulatória C/c Indenizatória. Consórcio Imobiliário.
+  Preliminares. Princípio Da Dialeticidade. Cerceamento De Defesa. Vício De
+  Consentimento. Dano Moral. Recurso Não…"
+contexto:
+  produtos:
+    - seguro_prestamista
+  temas:
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2150132/inteiro-teor/295a92bc-bbcb-4fcb-b85c-68967a2f3cd8
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2150132/inteiro-teor/295a92bc-bbcb-4fcb-b85c-68967a2f3cd8
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

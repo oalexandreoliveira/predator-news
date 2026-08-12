@@ -1,0 +1,45 @@
+id: tjdft-0747844-56-2025-8-07-0001
+identificacao:
+  tribunal: TJDFT
+  processo: 0747844-56.2025.8.07.0001
+  tipo_decisao: acordao
+  orgao_julgador: 3ª TURMA CÍVEL
+  relator: ROBERTO FREITAS FILHO
+  data_julgamento: 2026-06-18
+  data_publicacao: 2026-07-02
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: DIREITO CIVIL E DO CONSUMIDOR. APELAÇÃO CÍVEL. CARTÃO DE
+  CRÉDITO CONSIGNADO (RMC). NULIDADE CONTRATUAL. FALHA NO DEVER DE INFORMAÇÃO.
+  VÍCIO DE CONSENTIMENTO. PRÁTICA ABUSIVA. CONVERSÃO EM EMPRÉSTIMO CONSIGNADO
+  (AFASTADA). RESTITUIÇÃO SIMPLES. RECURSO…
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2140997/inteiro-teor/ebdc47df-d1d6-4e4e-aa68-ed9498d268ec
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2140997/inteiro-teor/ebdc47df-d1d6-4e4e-aa68-ed9498d268ec
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

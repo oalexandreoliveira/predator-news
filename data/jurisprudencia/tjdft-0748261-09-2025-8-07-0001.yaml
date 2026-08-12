@@ -1,0 +1,43 @@
+id: tjdft-0748261-09-2025-8-07-0001
+identificacao:
+  tribunal: TJDFT
+  processo: 0748261-09.2025.8.07.0001
+  tipo_decisao: acordao
+  orgao_julgador: 5ª TURMA CÍVEL
+  relator: FÁBIO EDUARDO MARQUES
+  data_julgamento: 2026-07-23
+  data_publicacao: 2026-08-06
+titulo: "seguro prestamista: dever de informação e consentimento"
+resumo_predator: DIREITO CIVIL E PROCESSUAL CIVIL. APELAÇÃO CÍVEL. AÇÃO
+  REVISIONAL DE CONTRATO BANCÁRIO. CAPITAL DE GIRO. PRELIMINARES DE NULIDADE DA
+  SENTENÇA E CERCEAMENTO DE DEFESA. REJEIÇÃO. JUROS REMUNERATÓRIOS. SEGURO
+  PRESTAMISTA. REGULARIDADE. SENTENÇA…
+contexto:
+  produtos:
+    - seguro_prestamista
+  temas:
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2152030/inteiro-teor/8e08ae20-84b8-4017-b63b-86ad6a18088d
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2152030/inteiro-teor/8e08ae20-84b8-4017-b63b-86ad6a18088d
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

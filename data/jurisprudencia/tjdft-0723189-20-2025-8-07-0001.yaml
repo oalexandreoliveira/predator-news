@@ -1,0 +1,43 @@
+id: tjdft-0723189-20-2025-8-07-0001
+identificacao:
+  tribunal: TJDFT
+  processo: 0723189-20.2025.8.07.0001
+  tipo_decisao: acordao
+  orgao_julgador: 2ª TURMA CÍVEL
+  relator: RENATO SCUSSEL
+  data_julgamento: 2026-05-27
+  data_publicacao: 2026-06-16
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: DIREITO DO CONSUMIDOR E BANCÁRIO. APELAÇÃO CÍVEL. CARTÃO DE
+  CRÉDITO COM RESERVA DE MARGEM CONSIGNÁVEL (RMC). VÍCIO DE INFORMAÇÃO. PRÁTICA
+  ABUSIVA. CONVERSÃO EM EMPRÉSTIMO CONSIGNADO. RESTITUIÇÃO SIMPLES DOS VALORES
+  PAGOS A MAIOR. RECURSO PARCIALMENTE…
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2131909/inteiro-teor/acdd18af-3682-4e42-8b46-d327c0fab9af
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2131909/inteiro-teor/acdd18af-3682-4e42-8b46-d327c0fab9af
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

@@ -1,0 +1,44 @@
+id: tjdft-0704013-52-2025-8-07-0002
+identificacao:
+  tribunal: TJDFT
+  processo: 0704013-52.2025.8.07.0002
+  tipo_decisao: acordao
+  orgao_julgador: 8ª TURMA CÍVEL
+  relator: EUSTÁQUIO DE CASTRO
+  data_julgamento: 2026-06-09
+  data_publicacao: 2026-06-23
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: DIREITO DO CONSUMIDOR. APELAÇÃO CÍVEL. AÇÃO DECLARATÓRIA DE
+  INEXISTÊNCIA DE DÉBITO. DANOS MORAIS. CARTÃO DE CRÉDITO CONSIGNADO. ALEGAÇÃO
+  DE VÍCIO DE CONSENTIMENTO. CONTRATAÇÃO POR MEIO DIGITAL COM BIOMETRIA FACIAL
+  (SELFIE). VALIDADE COMPROVADA. LAUDO…
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2135818/inteiro-teor/43731c4b-7992-4418-96f0-591130aa7a7b
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2135818/inteiro-teor/43731c4b-7992-4418-96f0-591130aa7a7b
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo

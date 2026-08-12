@@ -1,0 +1,45 @@
+id: tjdft-0706300-11-2023-8-07-0017
+identificacao:
+  tribunal: TJDFT
+  processo: 0706300-11.2023.8.07.0017
+  tipo_decisao: acordao
+  orgao_julgador: 7ª TURMA CÍVEL
+  relator: ROBSON BARBOSA DE AZEVEDO
+  data_julgamento: 2026-07-22
+  data_publicacao: 2026-08-03
+titulo: "cartão consignado (RMC): dever de informação e consentimento"
+resumo_predator: "Ementa: DIREITO DO CONSUMIDOR E PROCESSUAL CIVIL. APELAÇÃO
+  CÍVEL. CARTÃO DE CRÉDITO CONSIGNADO (RMC). AUSÊNCIA DE VÍCIO DE CONSENTIMENTO.
+  DEVER DE INFORMAÇÃO OBSERVADO. CONTRATAÇÃO DIGITAL COM MECANISMOS DE
+  SEGURANÇA. INEXISTÊNCIA DE NULIDADE CONTRATUAL,…"
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - dever_informacao
+    - consentimento
+    - vicio_consentimento
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos:
+  - dever_informacao_qualificado
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2155013/inteiro-teor/dc279090-6dce-4917-b01f-2bf2bcddd553
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2155013/inteiro-teor/dc279090-6dce-4917-b01f-2bf2bcddd553
+  consultado_em: 2026-08-12
+autoridade: persuasiva
+status: ativo
