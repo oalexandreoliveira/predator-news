@@ -315,20 +315,26 @@ function decisionCard(decision, thesisLabels) {
 function renderDecisionPage(decision, thesisLabels, foundationLabels, relatedEditions = []) {
   const identification = decision.identificacao;
   const sourceUrl = decision.fonte.url_inteiro_teor || decision.fonte.url_original;
+  const pendingHumanReview = decision.revisao?.status === "automatizada_pendente_revisao_humana";
+  const reviewNotice = pendingHumanReview ? `<aside class="decision-review-notice"><strong>Análise automatizada — revisão humana pendente</strong><p>Este caso já passou pelos controles técnicos e jurídicos automatizados do Predator. O conteúdo será conferido manualmente após a publicação e poderá receber correções.</p></aside>` : "";
   const thesisItems = decision.teses.map((item) => `<li><a href="${BASE}/teses/${escapeHtml(item.slug)}/"><strong>${escapeHtml(thesisLabels.get(item.slug) || humanize(item.slug))}</strong></a><span>${escapeHtml(humanize(item.status))}</span></li>`).join("");
   return shell({
     title: `${decision.titulo} — Predator News`, description: decision.resumo_predator,
     content: `<main class="decision-page"><a class="back" href="${BASE}/jurisprudencia/">← Jurisprudência</a>
       <div class="edition-kicker">${escapeHtml(identification.tribunal)} · ${escapeHtml(identification.processo)}</div>
-      <h1>${escapeHtml(decision.titulo)}</h1><p class="decision-editorial-label">RESUMO EDITORIAL PREDATOR</p><p class="edition-summary">${escapeHtml(decision.resumo_predator)}</p>
+      <h1>${escapeHtml(decision.titulo)}</h1>${reviewNotice}<p class="decision-editorial-label">RESUMO EDITORIAL PREDATOR</p><p class="edition-summary">${escapeHtml(decision.resumo_predator)}</p>
       <dl class="decision-identification">${detailItem("Tribunal", identification.tribunal)}${detailItem("Processo", identification.processo)}${detailItem("Tipo de decisão", identification.tipo_decisao, humanize)}${detailItem("Órgão julgador", identification.orgao_julgador)}${detailItem("Relator", identification.relator)}${detailItem("Data de julgamento", displayDate(identification.data_julgamento))}${detailItem("Data de publicação", displayDate(identification.data_publicacao))}</dl>
       ${listSection("Contexto fático", decision.contexto.fatos_relevantes)}
       ${listSection("Perfil do consumidor", decision.contexto.perfis_consumidor)}
       ${known(decision.contexto.meio_contratacao) ? `<section class="decision-section"><h2>Meio de contratação</h2><p>${escapeHtml(humanize(decision.contexto.meio_contratacao))}</p></section>` : ""}
       ${listSection("Provas e elementos probatórios", decision.provas)}
+      ${decision.questao_juridica ? `<section class="decision-section"><h2>Questão jurídica</h2><p>${escapeHtml(decision.questao_juridica)}</p></section>` : ""}
+      ${decision.ratio_decidendi ? `<section class="decision-section"><h2>Ratio decidendi</h2><p>${escapeHtml(decision.ratio_decidendi)}</p></section>` : ""}
       <section class="decision-section"><h2>Teses enfrentadas</h2><ul class="decision-relations">${thesisItems}</ul></section>
       <section class="decision-section"><h2>Fundamentos identificados</h2><div class="legal-pills">${decision.fundamentos.map((slug) => `<a class="legal-pill" href="${BASE}/fundamentos/${escapeHtml(slug)}/">${escapeHtml(foundationLabels.get(slug) || humanize(slug))}</a>`).join("")}</div></section>
       <section class="decision-section"><h2>Resultados</h2><dl class="decision-results">${detailItem("Contrato", decision.resultado.contrato, humanize)}${detailItem("Conversão", decision.resultado.conversao, humanize)}${detailItem("Repetição do indébito", decision.resultado.repeticao_indebito, humanize)}${detailItem("Dano moral", decision.resultado.dano_moral, humanize)}</dl></section>
+      ${decision.resultado.processual ? `<section class="decision-section"><h2>Resultado processual</h2><p>${escapeHtml(decision.resultado.processual)}</p></section>` : ""}
+      ${listSection("Efeitos materiais", decision.resultado.efeitos_materiais)}
       <section class="decision-section"><h2>Natureza e autoridade</h2><dl class="decision-results">${detailItem("Natureza da fonte", decision.fonte.natureza, humanize)}${detailItem("Autoridade", decision.autoridade, humanize)}</dl></section>
       ${renderDecisionEditionRelations({ editions: relatedEditions, base: BASE })}
       <section class="decision-source"><div><p class="signal">FONTE JURÍDICA</p><h2>Consulte a decisão na origem</h2><p>A síntese acima é conteúdo editorial do Predator e não substitui a leitura do documento oficial.</p></div><a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener">${decision.fonte.url_inteiro_teor ? "Acessar inteiro teor" : "Acessar fonte oficial"} ↗</a></section>

@@ -1,11 +1,11 @@
 import { normalizeCnj } from '../normalization.mjs';
 
 const syntheticMarkers = new Set(['sintetico','sintetica','synthetic','fixture','mock','fake','ficticio','ficticia','dummy','teste','testing']);
-const officialDomains = Object.freeze({ TJCE: 'tjce.jus.br', TJMA: 'tjma.jus.br', TJPI: 'tjpi.jus.br', TJDFT: 'tjdft.jus.br' });
+const officialDomains = Object.freeze({ TJCE: 'tjce.jus.br', TJMA: 'tjma.jus.br', TJPI: 'tjpi.jus.br', TJDFT: 'tjdft.jus.br', TJSC: 'tjsc.jus.br' });
 const fold = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const tokens = value => fold(value).split(/[^a-z0-9]+/).filter(Boolean);
 const containsSyntheticMarker = value => tokens(value).some(token => syntheticMarkers.has(token));
-const fieldMap = candidate => Object.fromEntries((candidate?.field_decisions ?? []).map(field => [field.canonical_path, field.human_value]));
+const fieldMap = candidate => Object.fromEntries((candidate?.field_decisions ?? []).map(field => [field.canonical_path, 'human_value' in field ? field.human_value : field.model_value]));
 
 function structuredCandidate(candidate) {
   if (candidate?.payload) return candidate.payload;
@@ -34,8 +34,9 @@ export function validateSourceIntegrity({ candidate, manifest = null } = {}) {
     if (url.protocol !== 'https:') reasons.push('source_https_required');
     const hostname = url.hostname.toLowerCase();
     if (hostname === 'example.invalid' || hostname.endsWith('.invalid') || hostname.endsWith('.example')) reasons.push('reserved_source_domain');
-    const expected = officialDomains[String(identification.tribunal ?? '').toUpperCase()];
-    if (!expected || (hostname !== expected && !hostname.endsWith(`.${expected}`))) reasons.push('source_domain_mismatch');
+    const official = officialDomains[String(identification.tribunal ?? '').toUpperCase()];
+    const expected = source.recuperado_via === 'jusratio' ? ['jusratio.com.br', official].filter(Boolean) : [official].filter(Boolean);
+    if (!expected.some(domain => hostname === domain || hostname.endsWith(`.${domain}`))) reasons.push('source_domain_mismatch');
   }
   const uniqueReasons = [...new Set(reasons)];
   return Object.freeze({ valid: uniqueReasons.length === 0, reasons: uniqueReasons });

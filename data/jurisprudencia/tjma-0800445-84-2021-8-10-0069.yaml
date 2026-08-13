@@ -1,0 +1,43 @@
+id: tjma-0800445-84-2021-8-10-0069
+identificacao:
+  tribunal: TJMA
+  processo: 0800445-84.2021.8.10.0069
+  tipo_decisao: acordao
+  orgao_julgador: "Quarta Câmara de Direito Privado"
+  relator: "LUIZ GONZAGA ALMEIDA FILHO"
+  data_julgamento: "2023-07-29"
+  data_publicacao: "2023-07-29"
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto de autenticação e documentos eletrônicos foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "O Quarta Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o conjunto de autenticação e documentos eletrônicos. O resultado processual foi preservado conforme o documento recuperado."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","saque","contratacao_digital"]
+  fatos_relevantes: ["saque_unico"]
+  meio_contratacao: digital
+provas: ["contrato","assinatura","comprovante_transferencia","faturas"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","autenticidade_nao_equivale_consentimento"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: null
+  efeitos_materiais: []
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-6739f91ba880b4fc/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-6739f91ba880b4fc/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

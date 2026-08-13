@@ -1,0 +1,43 @@
+id: tjce-3000911-97-2024-8-06-0091
+identificacao:
+  tribunal: TJCE
+  processo: 3000911-97.2024.8.06.0091
+  tipo_decisao: acordao
+  orgao_julgador: "4ª Turma Recursal"
+  relator: "MARCIA OLIVEIRA FERNANDES MENESCAL DE LIMA"
+  data_julgamento: "2024-12-27"
+  data_publicacao: null
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "A 4ª Turma Recursal examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque"]
+  fatos_relevantes: ["uso_reiterado_cartao"]
+  meio_contratacao: nao_informado
+provas: ["contrato","comprovante_transferencia","faturas","historico_uso"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: ["litigância de má-fé examinada"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-17080450/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-17080450/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

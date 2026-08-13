@@ -1,0 +1,44 @@
+id: tjce-0260412-28-2024-8-06-0001
+identificacao:
+  tribunal: TJCE
+  processo: 0260412-28.2024.8.06.0001
+  tipo_decisao: acordao
+  orgao_julgador: "2ª Turma do Núcleo de Justiça 4.0 - Direito Privado"
+  relator: "ROMULO VERAS HOLANDA"
+  data_julgamento: "2025-11-26"
+  data_publicacao: null
+titulo: "Controvérsia sobre cartão consignado decidida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a definir os efeitos da contratação conforme a prova disponível."
+resumo_predator: "A 2ª Turma do Núcleo de Justiça 4.0 - Direito Privado examinou a contratação de cartão de crédito consignado e definiu os efeitos da contratação conforme a prova disponível, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao"]
+  perfis_consumidor: ["aposentado_pensionista"]
+  fatos_relevantes: ["nao_informado"]
+  meio_contratacao: nao_informado
+provas: ["contrato"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos: ["dever_informacao_qualificado","hipervulnerabilidade_consumidor_idoso"]
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: "recurso provido"
+  efeitos_materiais: ["repetição do indébito em dobro","indenização por dano moral"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-31447782/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-31447782/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

@@ -1,0 +1,44 @@
+id: tjce-3044026-50-2024-8-06-0001
+identificacao:
+  tribunal: TJCE
+  processo: 3044026-50.2024.8.06.0001
+  tipo_decisao: acordao
+  orgao_julgador: "5ª Câmara de Direito Privado"
+  relator: "MANTOVANNI COLARES CAVALCANTE"
+  data_julgamento: "2025-11-12"
+  data_publicacao: null
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "A 5ª Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso desprovido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque"]
+  perfis_consumidor: ["aposentado_pensionista"]
+  fatos_relevantes: ["contrato_claro","uso_reiterado_cartao","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato","assinatura","termo_consentimento","historico_uso"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento","hipervulnerabilidade_consumidor_idoso"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: dobro
+  dano_moral: nao_informado
+  processual: "recurso desprovido"
+  efeitos_materiais: ["repetição do indébito em dobro"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-30880728/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-30880728/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

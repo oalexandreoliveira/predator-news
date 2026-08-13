@@ -1,0 +1,43 @@
+id: tjma-0808295-44-2017-8-10-0001
+identificacao:
+  tribunal: TJMA
+  processo: 0808295-44.2017.8.10.0001
+  tipo_decisao: acordao
+  orgao_julgador: "Presidência"
+  relator: "RAIMUNDO MORAES BOGEA"
+  data_julgamento: "2024-03-24"
+  data_publicacao: "2024-03-24"
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "O Presidência examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao"]
+  fatos_relevantes: ["desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: []
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-ed5463a7eeda40f0/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-ed5463a7eeda40f0/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

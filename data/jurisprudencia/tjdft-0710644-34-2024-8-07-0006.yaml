@@ -1,0 +1,43 @@
+id: tjdft-0710644-34-2024-8-07-0006
+identificacao:
+  tribunal: TJDFT
+  processo: 0710644-34.2024.8.07.0006
+  tipo_decisao: acordao
+  orgao_julgador: "2ª TURMA CÍVEL"
+  relator: "RENATO SCUSSEL"
+  data_julgamento: "2025-09-17"
+  data_publicacao: "2025-10-02"
+titulo: "RMC convertida em empréstimo consignado"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
+resumo_predator: "A 2ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao"]
+  fatos_relevantes: ["nao_informado"]
+  meio_contratacao: nao_informado
+provas: ["contrato"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado"]
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: simples
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: ["conversão para empréstimo consignado","restituição simples"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/9731d0d1-fd8e-4d5f-bff3-bd051e618647"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/9731d0d1-fd8e-4d5f-bff3-bd051e618647"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

@@ -1,0 +1,44 @@
+id: tjdft-0713435-48-2025-8-07-0003
+identificacao:
+  tribunal: TJDFT
+  processo: 0713435-48.2025.8.07.0003
+  tipo_decisao: acordao
+  orgao_julgador: "3ª TURMA CÍVEL"
+  relator: "SONÍRIA ROCHA CAMPOS D'ASSUNÇÃO"
+  data_julgamento: "2026-02-05"
+  data_publicacao: null
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto de autenticação e documentos eletrônicos foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "A 3ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o conjunto de autenticação e documentos eletrônicos. No plano processual, houve recurso desprovido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","contratacao_digital","juros_abusivos"]
+  perfis_consumidor: ["aposentado_pensionista"]
+  fatos_relevantes: ["nao_informado"]
+  meio_contratacao: digital
+provas: ["contrato"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado","autenticidade_nao_equivale_consentimento","hipervulnerabilidade_consumidor_idoso"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: dobro
+  dano_moral: nao_informado
+  processual: "recurso desprovido"
+  efeitos_materiais: ["repetição do indébito em dobro"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/82afa42a-5877-477e-a79f-a973e07ea5b0"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/82afa42a-5877-477e-a79f-a973e07ea5b0"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

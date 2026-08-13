@@ -1,0 +1,44 @@
+id: tjdft-0702053-47-2024-8-07-0018
+identificacao:
+  tribunal: TJDFT
+  processo: 0702053-47.2024.8.07.0018
+  tipo_decisao: acordao
+  orgao_julgador: "2ª TURMA CÍVEL"
+  relator: "RENATO SCUSSEL"
+  data_julgamento: "2025-10-29"
+  data_publicacao: null
+titulo: "RMC convertida em empréstimo consignado"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "A destinação econômica do saque foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
+resumo_predator: "A 2ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante a destinação econômica do saque. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","saque"]
+  perfis_consumidor: ["aposentado_pensionista"]
+  fatos_relevantes: ["saque_unico","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","hipervulnerabilidade_consumidor_idoso"]
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: ["conversão para empréstimo consignado","repetição do indébito em dobro"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/016eb33e-6eab-4c28-ab0c-3f6842e20ccb"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/016eb33e-6eab-4c28-ab0c-3f6842e20ccb"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

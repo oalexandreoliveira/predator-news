@@ -1,0 +1,43 @@
+id: tjce-0010911-08-2019-8-06-0117
+identificacao:
+  tribunal: TJCE
+  processo: 0010911-08.2019.8.06.0117
+  tipo_decisao: acordao
+  orgao_julgador: "4ª Câmara de Direito Privado"
+  relator: "DJALMA TEIXEIRA BENEVIDES"
+  data_julgamento: "2025-07-16"
+  data_publicacao: null
+titulo: "Contratação de cartão consignado invalidada"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a invalidar a contratação ou a modalidade impugnada."
+resumo_predator: "A 4ª Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e invalidou a contratação ou a modalidade impugnada, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso parcialmente provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque","juros_abusivos"]
+  fatos_relevantes: ["uso_reiterado_cartao"]
+  meio_contratacao: nao_informado
+provas: ["contrato","faturas","historico_uso"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento"]
+resultado:
+  contrato: anulado
+  conversao: nao_informado
+  repeticao_indebito: dobro
+  dano_moral: nao_informado
+  processual: "recurso parcialmente provido"
+  efeitos_materiais: ["nulidade ou inexistência da modalidade","repetição do indébito em dobro"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-25357571/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-25357571/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

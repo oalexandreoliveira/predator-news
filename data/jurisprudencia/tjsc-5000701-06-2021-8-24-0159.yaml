@@ -1,0 +1,43 @@
+id: tjsc-5000701-06-2021-8-24-0159
+identificacao:
+  tribunal: TJSC
+  processo: 5000701-06.2021.8.24.0159
+  tipo_decisao: acordao
+  orgao_julgador: "3ª Câmara de Direito Comercial"
+  relator: "GILBERTO GOMES DE OLIVEIRA"
+  data_julgamento: "2022-03-03"
+  data_publicacao: "2022-03-03"
+titulo: "Contratação de cartão consignado invalidada"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "A clareza do instrumento e do consentimento documentado foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a invalidar a contratação ou a modalidade impugnada."
+resumo_predator: "A 3ª Câmara de Direito Comercial examinou a contratação de cartão de crédito consignado e invalidou a contratação ou a modalidade impugnada, considerando determinante a clareza do instrumento e do consentimento documentado. O resultado processual foi preservado conforme o documento recuperado."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao"]
+  fatos_relevantes: ["contrato_claro","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato","assinatura","termo_consentimento","faturas"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado"]
+resultado:
+  contrato: anulado
+  conversao: indeferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: null
+  efeitos_materiais: ["nulidade ou inexistência da modalidade"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://eproc1g.tjsc.jus.br/eproc/externo_controlador.php?acao=jurisprudencia@jurisprudencia/download_inteiro_teor&id_jurisprudencia=321756659011298550109446759441"
+  url_inteiro_teor: "https://eproc1g.tjsc.jus.br/eproc/externo_controlador.php?acao=jurisprudencia@jurisprudencia/download_inteiro_teor&id_jurisprudencia=321756659011298550109446759441"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

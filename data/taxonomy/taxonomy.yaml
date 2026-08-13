@@ -15,6 +15,6 @@ families:
   tipo_decisao: [acordao, decisao_monocratica, decisao_terminativa]
   autoridade: [persuasiva]
   tendencia_jurisprudencial: [nao_classificada]
-  tipo_fonte: [jurisprudencia_oficial, informativo_oficial]
-  origem_recuperacao: [portal_tribunal, buscador_web]
+  tipo_fonte: [jurisprudencia_oficial, informativo_oficial, jurisprudencia_agregada_auditavel]
+  origem_recuperacao: [portal_tribunal, buscador_web, jusratio]
   status_entidade: [ativo, em_revisao, arquivado]

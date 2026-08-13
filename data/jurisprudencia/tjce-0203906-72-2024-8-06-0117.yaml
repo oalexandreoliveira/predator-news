@@ -1,0 +1,44 @@
+id: tjce-0203906-72-2024-8-06-0117
+identificacao:
+  tribunal: TJCE
+  processo: 0203906-72.2024.8.06.0117
+  tipo_decisao: acordao
+  orgao_julgador: "3ª Câmara de Direito Privado"
+  relator: "CLEIDE ALVES DE AGUIAR"
+  data_julgamento: "2026-03-04"
+  data_publicacao: null
+titulo: "RMC convertida em empréstimo consignado"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
+resumo_predator: "A 3ª Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","juros_abusivos"]
+  perfis_consumidor: ["aposentado_pensionista"]
+  fatos_relevantes: ["ausencia_contrato","uso_reiterado_cartao","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato","historico_uso"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado","ausencia_uso_cartao_indicio_vicio","uso_reiterado_cartao_indicio_consentimento","hipervulnerabilidade_consumidor_idoso"]
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: ["conversão para empréstimo consignado","repetição do indébito em dobro"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-34445952/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-34445952/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null
