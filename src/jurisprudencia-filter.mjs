@@ -5,7 +5,7 @@ export const normalizeSearch = (value = "") => String(value)
   .replace(/[^a-z0-9]+/g, " ")
   .trim();
 
-export function createDecisionSearchText(decision) {
+export function createDecisionSearchText(decision, { thesisLabels = new Map(), foundationLabels = new Map() } = {}) {
   const identification = decision.identificacao || {};
   const context = decision.contexto || {};
   return normalizeSearch([
@@ -17,8 +17,10 @@ export function createDecisionSearchText(decision) {
     decision.resumo_predator,
     ...(context.produtos || []),
     ...(context.temas || []),
-    ...(decision.teses || []).map((item) => item.slug),
-    ...(decision.fundamentos || []),
+    ...(decision.teses || []).flatMap((item) => [item.slug, thesisLabels.get(item.slug)]),
+    ...(decision.fundamentos || []).flatMap((slug) => [slug, foundationLabels.get(slug)]),
+    decision.questao_juridica,
+    decision.ratio_decidendi,
   ].filter(Boolean).join(" "));
 }
 

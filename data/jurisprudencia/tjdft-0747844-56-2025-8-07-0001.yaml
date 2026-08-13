@@ -7,37 +7,59 @@ identificacao:
   relator: ROBERTO FREITAS FILHO
   data_julgamento: 2026-06-18
   data_publicacao: 2026-07-02
-titulo: "cartão consignado (RMC): dever de informação e consentimento"
-resumo_predator: DIREITO CIVIL E DO CONSUMIDOR. APELAÇÃO CÍVEL. CARTÃO DE
-  CRÉDITO CONSIGNADO (RMC). NULIDADE CONTRATUAL. FALHA NO DEVER DE INFORMAÇÃO.
-  VÍCIO DE CONSENTIMENTO. PRÁTICA ABUSIVA. CONVERSÃO EM EMPRÉSTIMO CONSIGNADO
-  (AFASTADA). RESTITUIÇÃO SIMPLES. RECURSO…
+titulo: Provas do caso confirmam a contratação consignada
+resumo_predator: O acórdão reconheceu a regularidade da contratação. A conclusão
+  decorreu de a documentação e a disponibilização do crédito e também definiu o
+  pedido de conversão para empréstimo consignado, com exame da restituição dos
+  descontos e da responsabilidade por dano moral.
 contexto:
   produtos:
     - rmc
     - cartao_credito_consignado
   temas:
-    - dever_informacao
     - consentimento
-    - vicio_consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - juros_abusivos
   fatos_relevantes:
-    - nao_informado
+    - contrato_claro
   meio_contratacao: nao_informado
 provas:
-  - nao_informado
+  - assinatura
+  - comprovante_transferencia
+  - contrato
 teses:
-  - slug: vicio_consentimento_cartao_consignado
-    status: resultado_nao_informado
   - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
     status: resultado_nao_informado
 fundamentos:
-  - autenticidade_nao_equivale_consentimento
   - dever_informacao_qualificado
   - informacao_sobre_amortizacao_e_custo
+  - autenticidade_nao_equivale_consentimento
+  - assinatura_como_prova_autoria
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+  - credito_em_conta_comprova_liberacao
+  - desconto_minimo_sem_amortizacao_adequada
 resultado:
-  contrato: nao_informado
-  conversao: nao_informado
-  repeticao_indebito: nao_informado
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: simples
   dano_moral: nao_informado
 fonte:
   natureza: jurisprudencia_oficial
@@ -47,7 +69,13 @@ fonte:
   consultado_em: 2026-08-12
 autoridade: persuasiva
 status: ativo
-questao_juridica: O julgamento examinou se a prova do caso demonstra
-  consentimento livre e informado quanto à contratação de cartão consignado; se
-  a instituição explicou de forma clara a natureza, o custo e a amortização do
-  cartão consignado.
+questao_juridica: O colegiado examinou se as informações contratuais foram claras e suficientes.
+ratio_decidendi: O TJDFT reconheceu a regularidade da contratação porque
+  considerou determinantes a documentação e a disponibilização do crédito,
+  avaliados em conjunto com o dever de informação e a transparência da
+  modalidade.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-08-13
+  revisado_em: null
+  revisor: null

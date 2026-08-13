@@ -7,33 +7,51 @@ identificacao:
   relator: AISTON HENRIQUE DE SOUSA
   data_julgamento: 2026-07-01
   data_publicacao: 2026-07-22
-titulo: "cartão consignado (RMC): dever de informação e consentimento"
-resumo_predator: APELAÇÃO CÍVEL. DIREITO DO CONSUMIDOR E CIVIL. CONTRATO DE
-  CARTÃO DE CRÉDITO CONSIGNADO (RMC). AUSÊNCIA DE PROVA FORMAL DA CONTRATAÇÃO.
-  DEPÓSITO DE VALOR EM CONTA. UTILIZAÇÃO PELO CONSUMIDOR. CONTRATO REAL.
-  APERFEIÇOAMENTO. INEXISTÊNCIA DE DANOS MORAIS E…
+titulo: TJDFT delimita efeitos da contratação bancária discutida
+resumo_predator: O acórdão definiu os efeitos jurídicos da controvérsia. A
+  conclusão decorreu de a documentação e a utilização posterior do cartão, com
+  exame da restituição dos descontos e da responsabilidade por dano moral.
 contexto:
   produtos:
     - rmc
     - cartao_credito_consignado
   temas:
     - consentimento
-    - vicio_consentimento
+    - fraude_bancaria
+    - uso_cartao
+    - saque
   fatos_relevantes:
     - nao_informado
   meio_contratacao: nao_informado
 provas:
-  - nao_informado
+  - historico_uso
+  - comprovante_transferencia
+  - contrato
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: resultado_nao_informado
+  - slug: fraude_inexistencia_contratacao
+    status: resultado_nao_informado
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+  - slug: uso_reiterado_confirma_contratacao
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: resultado_nao_informado
 fundamentos:
   - autenticidade_nao_equivale_consentimento
+  - onus_instituicao_provar_contratacao
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+  - conduta_posterior_como_prova
+  - credito_em_conta_comprova_liberacao
 resultado:
   contrato: nao_informado
-  conversao: nao_informado
+  conversao: nao_aplicavel
   repeticao_indebito: nao_informado
-  dano_moral: nao_informado
+  dano_moral: indeferido
 fonte:
   natureza: jurisprudencia_oficial
   recuperado_via: portal_tribunal
@@ -42,5 +60,13 @@ fonte:
   consultado_em: 2026-08-12
 autoridade: persuasiva
 status: ativo
-questao_juridica: O julgamento examinou se a prova do caso demonstra
-  consentimento livre e informado quanto à contratação de cartão consignado.
+questao_juridica: O colegiado examinou se a contratação foi validamente demonstrada.
+ratio_decidendi: O TJDFT definiu os efeitos jurídicos da controvérsia porque
+  considerou determinantes a documentação e a utilização posterior do cartão,
+  avaliados em conjunto com a distribuição do ônus da prova e a execução do
+  negócio.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-08-13
+  revisado_em: null
+  revisor: null
