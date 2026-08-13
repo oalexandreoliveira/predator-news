@@ -1,0 +1,62 @@
+id: tjpi-0801428-88-2024-8-18-0123
+identificacao:
+  tribunal: TJPI
+  processo: 0801428-88.2024.8.18.0123
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Recursal
+  relator: 1ª Cadeira da 1ª Turma Recursal
+  data_julgamento: 2026-03-10
+  data_publicacao: null
+titulo: Contrato não impugnado confirma cartão consignado
+questao_juridica: O julgamento examinou a validade e os efeitos da contratação de cartão consignado no caso concreto, considerando as provas documentais, o dever de informação e os pedidos patrimoniais efetivamente formulados.
+ratio_decidendi: A contratação foi mantida porque o conjunto documental e o comportamento posterior demonstraram autoria, ciência e recebimento ou uso do crédito, afastando vício e cobrança indevida.
+resumo_predator: 1ª Turma Recursal decidiu contrato não impugnado confirma cartão consignado, com recurso desprovido e efeitos materiais preservados separadamente no registro.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - conduta_posterior_como_prova
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso desprovido
+  efeitos_materiais:
+    - Contrato não impugnado confirma cartão consignado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: jusratio
+  url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/30550617/public
+  url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/30550617/public
+  consultado_em: 2026-08-13
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-13
+  revisado_em: 2026-08-13
+  revisor: oalexandreoliveira

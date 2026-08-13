@@ -1,0 +1,68 @@
+id: tjpi-0845367-38-2022-8-18-0140
+identificacao:
+  tribunal: TJPI
+  processo: 0845367-38.2022.8.18.0140
+  tipo_decisao: acordao
+  orgao_julgador: 4ª Câmara Especializada Cível
+  relator: ANTÔNIO SOARES DOS SANTOS
+  data_julgamento: 2025-02-27
+  data_publicacao: null
+titulo: Validade da contratação eletrônica com biometria
+questao_juridica: O julgamento examinou a validade e os efeitos da contratação de cartão consignado no caso concreto, considerando as provas documentais, o dever de informação e os pedidos patrimoniais efetivamente formulados.
+ratio_decidendi: A contratação foi mantida porque o conjunto documental e o comportamento posterior demonstraram autoria, ciência e recebimento ou uso do crédito, afastando vício e cobrança indevida.
+resumo_predator: 4ª Câmara Especializada Cível decidiu validade da contratação eletrônica com biometria, com recurso desprovido e efeitos materiais preservados separadamente no registro.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - contratacao_digital
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - conduta_posterior_como_prova
+  - rastreabilidade_contratacao_digital
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso desprovido
+  efeitos_materiais:
+    - Validade da contratação eletrônica com biometria
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: jusratio
+  url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/22404671/public
+  url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/22404671/public
+  consultado_em: 2026-08-13
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-13
+  revisado_em: 2026-08-13
+  revisor: oalexandreoliveira

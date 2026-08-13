@@ -1,0 +1,65 @@
+id: tjpi-0803525-41-2024-8-18-0162
+identificacao:
+  tribunal: TJPI
+  processo: 0803525-41.2024.8.18.0162
+  tipo_decisao: acordao
+  orgao_julgador: 3ª Turma Recursal
+  relator: 2ª Cadeira da 3ª Turma Recursal
+  data_julgamento: 2026-03-27
+  data_publicacao: null
+titulo: Prescrição afastada e RMC sem amortização invalidada
+questao_juridica: O julgamento examinou a validade e os efeitos da contratação de cartão consignado no caso concreto, considerando as provas documentais, o dever de informação e os pedidos patrimoniais efetivamente formulados.
+ratio_decidendi: A modalidade foi invalidada ou readequada porque a prova não demonstrou consentimento informado suficiente ou revelou desvantagem exagerada, com definição individual dos efeitos restitutórios e morais.
+resumo_predator: 3ª Turma Recursal decidiu prescrição afastada e rmc sem amortização invalidada, com recurso improvido e efeitos materiais preservados separadamente no registro.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+resultado:
+  contrato: anulado
+  conversao: nao_aplicavel
+  repeticao_indebito: simples
+  dano_moral: deferido
+  processual: recurso improvido
+  efeitos_materiais:
+    - Prescrição afastada e RMC sem amortização invalidada
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: jusratio
+  url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/31039284/public
+  url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/31039284/public
+  consultado_em: 2026-08-13
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-13
+  revisado_em: 2026-08-13
+  revisor: oalexandreoliveira

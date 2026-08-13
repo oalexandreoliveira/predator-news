@@ -1,0 +1,62 @@
+{
+  "kind": "authorization_package",
+  "batch_id": "onda-0-etapa-0a-tjpi-2026-08-13",
+  "tribunal": "TJPI",
+  "branch": "codex/national-expansion-matrix",
+  "head": "cbfd247",
+  "digest": "sha256:0a18cbee044e4b38819fcf757a17cedce1f8f995bf276f93c0dbde32d6867548",
+  "readiness": "READY_FOR_AUTHORIZATION",
+  "reviewer_id": "oalexandreoliveira",
+  "decision_count": 17,
+  "processes": [
+    "0701969-70.2019.8.18.0000",
+    "0801782-04.2020.8.18.0140",
+    "0800802-53.2021.8.18.0033",
+    "0801198-82.2021.8.18.0048",
+    "0800844-62.2022.8.18.0132",
+    "0845367-38.2022.8.18.0140",
+    "0849798-47.2024.8.18.0140",
+    "0805737-74.2023.8.18.0031",
+    "0804038-42.2023.8.18.0033",
+    "0812739-88.2025.8.18.0140",
+    "0803090-29.2023.8.18.0089",
+    "0805625-51.2024.8.18.0167",
+    "0801428-88.2024.8.18.0123",
+    "0801646-43.2025.8.18.0136",
+    "0800668-81.2025.8.18.0131",
+    "0803525-41.2024.8.18.0162",
+    "0801258-47.2025.8.18.0167"
+  ],
+  "canonical_targets": [
+    "data/jurisprudencia/tjpi-0701969-70-2019-8-18-0000.yaml",
+    "data/jurisprudencia/tjpi-0801782-04-2020-8-18-0140.yaml",
+    "data/jurisprudencia/tjpi-0800802-53-2021-8-18-0033.yaml",
+    "data/jurisprudencia/tjpi-0801198-82-2021-8-18-0048.yaml",
+    "data/jurisprudencia/tjpi-0800844-62-2022-8-18-0132.yaml",
+    "data/jurisprudencia/tjpi-0845367-38-2022-8-18-0140.yaml",
+    "data/jurisprudencia/tjpi-0849798-47-2024-8-18-0140.yaml",
+    "data/jurisprudencia/tjpi-0805737-74-2023-8-18-0031.yaml",
+    "data/jurisprudencia/tjpi-0804038-42-2023-8-18-0033.yaml",
+    "data/jurisprudencia/tjpi-0812739-88-2025-8-18-0140.yaml",
+    "data/jurisprudencia/tjpi-0803090-29-2023-8-18-0089.yaml",
+    "data/jurisprudencia/tjpi-0805625-51-2024-8-18-0167.yaml",
+    "data/jurisprudencia/tjpi-0801428-88-2024-8-18-0123.yaml",
+    "data/jurisprudencia/tjpi-0801646-43-2025-8-18-0136.yaml",
+    "data/jurisprudencia/tjpi-0800668-81-2025-8-18-0131.yaml",
+    "data/jurisprudencia/tjpi-0803525-41-2024-8-18-0162.yaml",
+    "data/jurisprudencia/tjpi-0801258-47-2025-8-18-0167.yaml"
+  ],
+  "rollback": "remove only canonical files listed in canonical_targets",
+  "projected": {
+    "tjpi_decisions": 24,
+    "organs": 7,
+    "period": "2020-2026",
+    "density": 80,
+    "maturity": "EM_CONSOLIDAÇÃO"
+  },
+  "final_authorization": {
+    "required": true,
+    "bound_to_digest": true,
+    "granted": false
+  }
+}

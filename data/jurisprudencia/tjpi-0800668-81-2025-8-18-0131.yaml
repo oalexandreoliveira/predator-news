@@ -1,0 +1,68 @@
+id: tjpi-0800668-81-2025-8-18-0131
+identificacao:
+  tribunal: TJPI
+  processo: 0800668-81.2025.8.18.0131
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Recursal
+  relator: 2ª Cadeira da 1ª Turma Recursal
+  data_julgamento: 2026-04-12
+  data_publicacao: null
+titulo: Biometria e transferência comprovam contratação digital
+questao_juridica: O julgamento examinou a validade e os efeitos da contratação de cartão consignado no caso concreto, considerando as provas documentais, o dever de informação e os pedidos patrimoniais efetivamente formulados.
+ratio_decidendi: A contratação foi mantida porque o conjunto documental e o comportamento posterior demonstraram autoria, ciência e recebimento ou uso do crédito, afastando vício e cobrança indevida.
+resumo_predator: 1ª Turma Recursal decidiu biometria e transferência comprovam contratação digital, com recurso desprovido e efeitos materiais preservados separadamente no registro.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - contratacao_digital
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - conduta_posterior_como_prova
+  - rastreabilidade_contratacao_digital
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso desprovido
+  efeitos_materiais:
+    - Biometria e transferência comprovam contratação digital
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: jusratio
+  url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/31352254/public
+  url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/31352254/public
+  consultado_em: 2026-08-13
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-13
+  revisado_em: 2026-08-13
+  revisor: oalexandreoliveira
