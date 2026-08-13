@@ -1,0 +1,14 @@
+slug: dano_moral_desconto_consignado
+titulo: Configuração e quantificação do dano moral
+questao_juridica: Os descontos e as circunstâncias da contratação configuram
+  dano moral indenizável?
+sintese: A reparação moral exige análise concreta da repercussão do desconto, da
+  vulnerabilidade atingida e da gravidade da conduta.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - dano_moral_exige_repercussao_concreta
+  - desconto_indevido_em_beneficio
+status: ativo

@@ -1,0 +1,14 @@
+slug: conversao_cartao_em_emprestimo_consignado
+titulo: Conversão do cartão consignado em empréstimo consignado
+questao_juridica: A operação deve ser preservada como cartão consignado ou
+  convertida em empréstimo consignado comum?
+sintese: A conversão pode recompor o negócio conforme sua finalidade econômica
+  quando a modalidade cartão não foi validamente informada ou consentida.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - primazia_realidade_economica_operacao
+  - saque_unico_indicio_mutuo
+status: ativo

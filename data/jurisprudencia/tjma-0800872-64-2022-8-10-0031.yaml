@@ -3,41 +3,89 @@ identificacao:
   tribunal: TJMA
   processo: 0800872-64.2022.8.10.0031
   tipo_decisao: acordao
-  orgao_julgador: "Turma Recursal Cível e Criminal de Chapadinha"
-  relator: "LYANNE POMPEU DE SOUSA BRASIL"
-  data_julgamento: "2023-04-11"
-  data_publicacao: "2023-04-11"
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "O Turma Recursal Cível e Criminal de Chapadinha examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso provido."
+  orgao_julgador: Turma Recursal Cível e Criminal de Chapadinha
+  relator: LYANNE POMPEU DE SOUSA BRASIL
+  data_julgamento: 2023-04-11
+  data_publicacao: 2023-04-11
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a assinatura ou a perícia demonstram autoria e adesão
+  válida ao negócio impugnado; se a contratação observou as cautelas necessárias
+  para demonstrar a manifestação de vontade da pessoa analfabeta; se a operação
+  deve ser preservada como cartão consignado ou convertida em empréstimo
+  consignado comum; se os descontos indevidos devem ser restituídos e, em caso
+  positivo, de forma simples ou em dobro; se o crédito recebido ou o saque
+  realizado comprova a contratação e qual modalidade econômica foi efetivamente
+  pactuada, no contexto de recurso provido.
+ratio_decidendi: O conjunto documental descrito na decisão foi avaliado em
+  conjunto com o dever de informação e a documentação contratual, levando o
+  colegiado a preservar a validade da contratação.
+resumo_predator: O Turma Recursal Cível e Criminal de Chapadinha examinou a
+  contratação de cartão de crédito consignado e preservou a validade da
+  contratação, considerando determinante o conjunto documental descrito na
+  decisão. No plano processual, houve recurso provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao"]
-  fatos_relevantes: ["desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  fatos_relevantes:
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","assinatura","assinatura_rogo","comprovante_transferencia","faturas"]
+provas:
+  - contrato
+  - assinatura
+  - assinatura_rogo
+  - comprovante_transferencia
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: validade_contratacao_analfabeto
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - assinatura_como_prova_autoria
+  - formalidades_contratacao_analfabeto
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - credito_em_conta_comprova_liberacao
 resultado:
   contrato: mantido
   conversao: indeferida
   repeticao_indebito: dobro
   dano_moral: nao_informado
-  processual: "recurso provido"
-  efeitos_materiais: ["repetição do indébito em dobro"]
+  processual: recurso provido
+  efeitos_materiais:
+    - repetição do indébito em dobro
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-a972bc1b2344c8cb/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-a972bc1b2344c8cb/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-a972bc1b2344c8cb/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-a972bc1b2344c8cb/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

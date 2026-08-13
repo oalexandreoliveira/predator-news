@@ -3,42 +3,86 @@ identificacao:
   tribunal: TJDFT
   processo: 0723753-27.2020.8.07.0016
   tipo_decisao: acordao
-  orgao_julgador: "SEGUNDA TURMA RECURSAL"
-  relator: "ARNALDO CORRÊA SILVA"
-  data_julgamento: "2021-09-15"
-  data_publicacao: "2021-09-22"
-titulo: "Validade formal e integração contratual por abusividade"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "A destinação econômica do saque foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a integrou o contrato sem negar sua validade formal."
-resumo_predator: "O SEGUNDA TURMA RECURSAL examinou a contratação de cartão de crédito consignado e integrou o contrato sem negar sua validade formal, considerando determinante a destinação econômica do saque. No plano processual, houve recurso provido."
+  orgao_julgador: SEGUNDA TURMA RECURSAL
+  relator: ARNALDO CORRÊA SILVA
+  data_julgamento: 2021-09-15
+  data_publicacao: 2021-09-22
+titulo: Validade formal e integração contratual por abusividade
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a sistemática de desconto mínimo e encargos torna a
+  dívida excessivamente onerosa ou de duração indefinida; se o crédito recebido
+  ou o saque realizado comprova a contratação e qual modalidade econômica foi
+  efetivamente pactuada; se é possível preservar o contrato e integrar ou
+  revisar suas cláusulas para afastar desvantagem exagerada, no contexto de
+  recurso provido.
+ratio_decidendi: A destinação econômica do saque foi avaliado em conjunto com o
+  dever de informação e a documentação contratual, levando o colegiado a
+  integrou o contrato sem negar sua validade formal.
+resumo_predator: O SEGUNDA TURMA RECURSAL examinou a contratação de cartão de
+  crédito consignado e integrou o contrato sem negar sua validade formal,
+  considerando determinante a destinação econômica do saque. No plano
+  processual, houve recurso provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque","juros_abusivos"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["saque_unico","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - juros_abusivos
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - saque_unico
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","comprovante_transferencia","faturas"]
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
-    status: parcialmente_acolhida
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","hipervulnerabilidade_consumidor_idoso"]
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: rejeitada
+  - slug: integracao_revisao_desvantagem_exagerada
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - desconto_minimo_sem_amortizacao_adequada
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
+  - conservacao_negocio_com_reequilibrio
+  - controle_desvantagem_exagerada
 resultado:
   contrato: anulado
   conversao: nao_informado
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
-  processual: "recurso provido"
-  efeitos_materiais: ["integração contratual por desvantagem exagerada","nulidade ou inexistência da modalidade"]
+  processual: recurso provido
+  efeitos_materiais:
+    - integração contratual por desvantagem exagerada
+    - nulidade ou inexistência da modalidade
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/34c66228-5f27-4755-9ca0-9d8fc794f200"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/34c66228-5f27-4755-9ca0-9d8fc794f200"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/34c66228-5f27-4755-9ca0-9d8fc794f200
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/34c66228-5f27-4755-9ca0-9d8fc794f200
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

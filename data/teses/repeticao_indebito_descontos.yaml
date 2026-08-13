@@ -1,0 +1,14 @@
+slug: repeticao_indebito_descontos
+titulo: Repetição simples ou em dobro do indébito
+questao_juridica: Os descontos indevidos devem ser restituídos e, em caso
+  positivo, de forma simples ou em dobro?
+sintese: A restituição e sua modalidade dependem da ilicitude da cobrança, da
+  boa-fé objetiva e dos critérios temporais aplicáveis ao caso.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+status: ativo

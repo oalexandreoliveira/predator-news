@@ -3,42 +3,101 @@ identificacao:
   tribunal: TJMA
   processo: 0804683-71.2023.8.10.0039
   tipo_decisao: acordao
-  orgao_julgador: "Turma Recursal Cível e Criminal de Bacabal"
-  relator: "RAPHAEL DE JESUS SERRA RIBEIRO AMORIM"
-  data_julgamento: "2025-04-30"
-  data_publicacao: "2025-04-30"
-titulo: "RMC convertida em empréstimo consignado"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
-resumo_predator: "O Turma Recursal Cível e Criminal de Bacabal examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso parcialmente provido."
+  orgao_julgador: Turma Recursal Cível e Criminal de Bacabal
+  relator: RAPHAEL DE JESUS SERRA RIBEIRO AMORIM
+  data_julgamento: 2025-04-30
+  data_publicacao: 2025-04-30
+titulo: RMC convertida em empréstimo consignado
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a instituição comprovou a existência e a autoria do
+  contrato que originou os descontos; se a sistemática de desconto mínimo e
+  encargos torna a dívida excessivamente onerosa ou de duração indefinida; se a
+  operação deve ser preservada como cartão consignado ou convertida em
+  empréstimo consignado comum; se os descontos indevidos devem ser restituídos
+  e, em caso positivo, de forma simples ou em dobro; se os descontos e as
+  circunstâncias da contratação configuram dano moral indenizável; se saques,
+  compras ou faturas reiteradas demonstram ciência e aceitação da modalidade
+  contratada, no contexto de recurso parcialmente provido.
+ratio_decidendi: O uso do cartão em saques ou compras foi avaliado em conjunto
+  com o dever de informação e a documentação contratual, levando o colegiado a
+  determinar a conversão da operação.
+resumo_predator: O Turma Recursal Cível e Criminal de Bacabal examinou a
+  contratação de cartão de crédito consignado e determinou a conversão da
+  operação, considerando determinante o uso do cartão em saques ou compras. No
+  plano processual, houve recurso parcialmente provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque","juros_abusivos"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["ausencia_contrato","uso_reiterado_cartao","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - uso_cartao
+    - saque
+    - juros_abusivos
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - ausencia_contrato
+    - uso_reiterado_cartao
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","faturas","historico_uso"]
+provas:
+  - contrato
+  - faturas
+  - historico_uso
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: acolhida
-fundamentos: ["dever_informacao_qualificado","ausencia_uso_cartao_indicio_vicio","uso_reiterado_cartao_indicio_consentimento","hipervulnerabilidade_consumidor_idoso"]
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: rejeitada
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - onus_instituicao_provar_contratacao
+  - desconto_minimo_sem_amortizacao_adequada
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - dano_moral_exige_repercussao_concreta
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
 resultado:
   contrato: convertido
   conversao: deferida
   repeticao_indebito: dobro
   dano_moral: deferido
-  processual: "recurso parcialmente provido"
-  efeitos_materiais: ["conversão para empréstimo consignado","repetição do indébito em dobro","indenização por dano moral"]
+  processual: recurso parcialmente provido
+  efeitos_materiais:
+    - conversão para empréstimo consignado
+    - repetição do indébito em dobro
+    - indenização por dano moral
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-6cbc439cc64e0b8e/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-6cbc439cc64e0b8e/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-6cbc439cc64e0b8e/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-6cbc439cc64e0b8e/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

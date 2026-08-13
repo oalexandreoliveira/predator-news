@@ -1,0 +1,15 @@
+slug: validade_contratacao_digital
+titulo: Validade da contratação digital
+questao_juridica: Os elementos da contratação eletrônica são suficientes para
+  demonstrar autoria, integridade e consentimento?
+sintese: A validade do negócio digital depende da confiabilidade dos registros
+  de autoria e integridade, sem dispensar a demonstração de consentimento
+  informado.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - autenticidade_nao_equivale_consentimento
+status: ativo

@@ -3,42 +3,90 @@ identificacao:
   tribunal: TJDFT
   processo: 0702425-92.2021.8.07.0020
   tipo_decisao: acordao
-  orgao_julgador: "TERCEIRA TURMA RECURSAL"
-  relator: "ASIEL HENRIQUE DE SOUSA"
-  data_julgamento: "2021-09-15"
-  data_publicacao: "2021-09-22"
-titulo: "Contratação de cartão consignado invalidada"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "A clareza do instrumento e do consentimento documentado foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a invalidar a contratação ou a modalidade impugnada."
-resumo_predator: "O TERCEIRA TURMA RECURSAL examinou a contratação de cartão de crédito consignado e invalidou a contratação ou a modalidade impugnada, considerando determinante a clareza do instrumento e do consentimento documentado. No plano processual, houve recurso provido."
+  orgao_julgador: TERCEIRA TURMA RECURSAL
+  relator: ASIEL HENRIQUE DE SOUSA
+  data_julgamento: 2021-09-15
+  data_publicacao: 2021-09-22
+titulo: Contratação de cartão consignado invalidada
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a assinatura ou a perícia demonstram autoria e adesão
+  válida ao negócio impugnado; se a sistemática de desconto mínimo e encargos
+  torna a dívida excessivamente onerosa ou de duração indefinida; se a operação
+  deve ser preservada como cartão consignado ou convertida em empréstimo
+  consignado comum; se o crédito recebido ou o saque realizado comprova a
+  contratação e qual modalidade econômica foi efetivamente pactuada, no contexto
+  de recurso provido.
+ratio_decidendi: A clareza do instrumento e do consentimento documentado foi
+  avaliado em conjunto com o dever de informação e a documentação contratual,
+  levando o colegiado a invalidar a contratação ou a modalidade impugnada.
+resumo_predator: O TERCEIRA TURMA RECURSAL examinou a contratação de cartão de
+  crédito consignado e invalidou a contratação ou a modalidade impugnada,
+  considerando determinante a clareza do instrumento e do consentimento
+  documentado. No plano processual, houve recurso provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque","juros_abusivos"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["contrato_claro","saque_unico","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - juros_abusivos
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - contrato_claro
+    - saque_unico
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","assinatura","comprovante_transferencia","faturas"]
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: acolhida
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","hipervulnerabilidade_consumidor_idoso"]
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: credito_saque_como_prova_negocio
+    status: rejeitada
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - assinatura_como_prova_autoria
+  - desconto_minimo_sem_amortizacao_adequada
+  - primazia_realidade_economica_operacao
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
 resultado:
   contrato: anulado
   conversao: indeferida
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
-  processual: "recurso provido"
-  efeitos_materiais: ["nulidade ou inexistência da modalidade"]
+  processual: recurso provido
+  efeitos_materiais:
+    - nulidade ou inexistência da modalidade
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/4ad5808c-0b49-4c72-907b-ac58e2f3a58b"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/4ad5808c-0b49-4c72-907b-ac58e2f3a58b"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/4ad5808c-0b49-4c72-907b-ac58e2f3a58b
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/4ad5808c-0b49-4c72-907b-ac58e2f3a58b
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

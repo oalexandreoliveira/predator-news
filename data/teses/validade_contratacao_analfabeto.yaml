@@ -1,0 +1,14 @@
+slug: validade_contratacao_analfabeto
+titulo: Validade da contratação por pessoa analfabeta
+questao_juridica: A contratação observou as cautelas necessárias para demonstrar
+  a manifestação de vontade da pessoa analfabeta?
+sintese: A assinatura a rogo, testemunhas e informação acessível devem ser
+  examinadas concretamente para aferir a validade da contratação.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - formalidades_contratacao_analfabeto
+  - hipervulnerabilidade_consumidor_idoso
+status: ativo

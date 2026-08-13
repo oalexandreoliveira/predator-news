@@ -27,9 +27,13 @@ provas:
   - nao_informado
 teses:
   - slug: vicio_consentimento_cartao_consignado
-    status: nao_enfrentada
+    status: resultado_nao_informado
+  - slug: violacao_dever_informacao_transparencia
+    status: resultado_nao_informado
 fundamentos:
+  - autenticidade_nao_equivale_consentimento
   - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
 resultado:
   contrato: nao_informado
   conversao: nao_informado
@@ -43,3 +47,7 @@ fonte:
   consultado_em: 2026-08-11
 autoridade: persuasiva
 status: ativo
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado.

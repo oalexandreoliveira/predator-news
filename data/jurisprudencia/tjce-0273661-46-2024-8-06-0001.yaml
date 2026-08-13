@@ -3,41 +3,83 @@ identificacao:
   tribunal: TJCE
   processo: 0273661-46.2024.8.06.0001
   tipo_decisao: acordao
-  orgao_julgador: "2ª Turma do Núcleo de Justiça 4.0 - Direito Privado"
-  relator: "RAFAELA BENEVIDES CARACAS PEQUENO"
-  data_julgamento: "2026-02-11"
+  orgao_julgador: 2ª Turma do Núcleo de Justiça 4.0 - Direito Privado
+  relator: RAFAELA BENEVIDES CARACAS PEQUENO
+  data_julgamento: 2026-02-11
   data_publicacao: null
-titulo: "Controvérsia sobre cartão consignado decidida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a definir os efeitos da contratação conforme a prova disponível."
-resumo_predator: "A 2ª Turma do Núcleo de Justiça 4.0 - Direito Privado examinou a contratação de cartão de crédito consignado e definiu os efeitos da contratação conforme a prova disponível, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso desprovido."
+titulo: Controvérsia sobre cartão consignado decidida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a assinatura ou a perícia demonstram autoria e adesão
+  válida ao negócio impugnado; se os descontos indevidos devem ser restituídos
+  e, em caso positivo, de forma simples ou em dobro; se saques, compras ou
+  faturas reiteradas demonstram ciência e aceitação da modalidade contratada, no
+  contexto de recurso desprovido.
+ratio_decidendi: O uso do cartão em saques ou compras foi avaliado em conjunto
+  com o dever de informação e a documentação contratual, levando o colegiado a
+  definir os efeitos da contratação conforme a prova disponível.
+resumo_predator: A 2ª Turma do Núcleo de Justiça 4.0 - Direito Privado examinou
+  a contratação de cartão de crédito consignado e definiu os efeitos da
+  contratação conforme a prova disponível, considerando determinante o uso do
+  cartão em saques ou compras. No plano processual, houve recurso desprovido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque"]
-  fatos_relevantes: ["uso_reiterado_cartao","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - uso_cartao
+    - saque
+  fatos_relevantes:
+    - uso_reiterado_cartao
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","assinatura","faturas","historico_uso"]
+provas:
+  - contrato
+  - assinatura
+  - faturas
+  - historico_uso
 teses:
   - slug: vicio_consentimento_cartao_consignado
-    status: nao_enfrentada
-fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento"]
+    status: resultado_nao_informado
+  - slug: violacao_dever_informacao_transparencia
+    status: resultado_nao_informado
+  - slug: forca_probatoria_assinatura
+    status: resultado_nao_informado
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: resultado_nao_informado
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - assinatura_como_prova_autoria
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
 resultado:
   contrato: nao_informado
   conversao: nao_informado
   repeticao_indebito: dobro
   dano_moral: nao_informado
-  processual: "recurso desprovido"
-  efeitos_materiais: ["repetição do indébito em dobro"]
+  processual: recurso desprovido
+  efeitos_materiais:
+    - repetição do indébito em dobro
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-33680911/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-33680911/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjce-sjuris-33680911/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjce-sjuris-33680911/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

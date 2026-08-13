@@ -3,41 +3,92 @@ identificacao:
   tribunal: TJMA
   processo: 0800438-16.2020.8.10.0138
   tipo_decisao: acordao
-  orgao_julgador: "Turma Recursal Cível e Criminal de Chapadinha"
-  relator: "GALTIERI MENDES DE ARRUDA"
-  data_julgamento: "2022-04-01"
-  data_publicacao: "2022-04-01"
-titulo: "Contratação de cartão consignado invalidada"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "A clareza do instrumento e do consentimento documentado foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a invalidar a contratação ou a modalidade impugnada."
-resumo_predator: "O Turma Recursal Cível e Criminal de Chapadinha examinou a contratação de cartão de crédito consignado e invalidou a contratação ou a modalidade impugnada, considerando determinante a clareza do instrumento e do consentimento documentado. No plano processual, houve recurso desprovido."
+  orgao_julgador: Turma Recursal Cível e Criminal de Chapadinha
+  relator: GALTIERI MENDES DE ARRUDA
+  data_julgamento: 2022-04-01
+  data_publicacao: 2022-04-01
+titulo: Contratação de cartão consignado invalidada
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a assinatura ou a perícia demonstram autoria e adesão
+  válida ao negócio impugnado; se a operação deve ser preservada como cartão
+  consignado ou convertida em empréstimo consignado comum; se os descontos
+  indevidos devem ser restituídos e, em caso positivo, de forma simples ou em
+  dobro; se há elementos concretos e individualizados que autorizem reconhecer
+  abuso processual ou litigância de má-fé; se o crédito recebido ou o saque
+  realizado comprova a contratação e qual modalidade econômica foi efetivamente
+  pactuada, no contexto de recurso desprovido.
+ratio_decidendi: A clareza do instrumento e do consentimento documentado foi
+  avaliado em conjunto com o dever de informação e a documentação contratual,
+  levando o colegiado a invalidar a contratação ou a modalidade impugnada.
+resumo_predator: O Turma Recursal Cível e Criminal de Chapadinha examinou a
+  contratação de cartão de crédito consignado e invalidou a contratação ou a
+  modalidade impugnada, considerando determinante a clareza do instrumento e do
+  consentimento documentado. No plano processual, houve recurso desprovido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao"]
-  fatos_relevantes: ["contrato_claro","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  fatos_relevantes:
+    - contrato_claro
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","assinatura","comprovante_transferencia","faturas"]
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: acolhida
-fundamentos: ["dever_informacao_qualificado"]
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: litigancia_predatoria_prova_individualizada
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: rejeitada
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - assinatura_como_prova_autoria
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - ma_fe_exige_conduta_individualizada
+  - padronizacao_demanda_nao_basta
+  - credito_em_conta_comprova_liberacao
 resultado:
   contrato: anulado
   conversao: indeferida
   repeticao_indebito: dobro
   dano_moral: nao_informado
-  processual: "recurso desprovido"
-  efeitos_materiais: ["nulidade ou inexistência da modalidade","repetição do indébito em dobro","litigância de má-fé examinada"]
+  processual: recurso desprovido
+  efeitos_materiais:
+    - nulidade ou inexistência da modalidade
+    - repetição do indébito em dobro
+    - litigância de má-fé examinada
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-daba792437ccbea6/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-daba792437ccbea6/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-daba792437ccbea6/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-daba792437ccbea6/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

@@ -1,0 +1,15 @@
+slug: forca_probatoria_assinatura
+titulo: Autenticidade e força probatória da assinatura
+questao_juridica: A assinatura ou a perícia demonstram autoria e adesão válida
+  ao negócio impugnado?
+sintese: Assinatura, perícia e demais elementos de autenticação devem ser
+  valorados com o conjunto probatório e não substituem, por si, o dever de
+  informação.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - assinatura_como_prova_autoria
+  - pericia_grafotecnica_define_autenticidade
+status: ativo

@@ -3,42 +3,76 @@ identificacao:
   tribunal: TJDFT
   processo: 0713909-41.2024.8.07.0007
   tipo_decisao: acordao
-  orgao_julgador: "6ª TURMA CÍVEL"
-  relator: "ALFEU MACHADO"
-  data_julgamento: "2025-09-10"
-  data_publicacao: "2025-09-23"
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "A 6ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso desprovido."
+  orgao_julgador: 6ª TURMA CÍVEL
+  relator: ALFEU MACHADO
+  data_julgamento: 2025-09-10
+  data_publicacao: 2025-09-23
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a operação deve ser preservada como cartão consignado ou
+  convertida em empréstimo consignado comum; se saques, compras ou faturas
+  reiteradas demonstram ciência e aceitação da modalidade contratada, no
+  contexto de recurso desprovido.
+ratio_decidendi: O uso do cartão em saques ou compras foi avaliado em conjunto
+  com o dever de informação e a documentação contratual, levando o colegiado a
+  preservar a validade da contratação.
+resumo_predator: A 6ª TURMA CÍVEL examinou a contratação de cartão de crédito
+  consignado e preservou a validade da contratação, considerando determinante o
+  uso do cartão em saques ou compras. No plano processual, houve recurso
+  desprovido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["uso_reiterado_cartao"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - uso_cartao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - uso_reiterado_cartao
   meio_contratacao: nao_informado
-provas: ["contrato","faturas","historico_uso"]
+provas:
+  - contrato
+  - faturas
+  - historico_uso
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento","hipervulnerabilidade_consumidor_idoso"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - primazia_realidade_economica_operacao
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
 resultado:
   contrato: mantido
   conversao: indeferida
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
-  processual: "recurso desprovido"
+  processual: recurso desprovido
   efeitos_materiais: []
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/2a09451b-6c38-4fe9-bc1b-5648af61d2ec"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/2a09451b-6c38-4fe9-bc1b-5648af61d2ec"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/2a09451b-6c38-4fe9-bc1b-5648af61d2ec
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/2a09451b-6c38-4fe9-bc1b-5648af61d2ec
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null
