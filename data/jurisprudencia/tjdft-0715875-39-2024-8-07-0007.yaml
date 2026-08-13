@@ -3,41 +3,86 @@ identificacao:
   tribunal: TJDFT
   processo: 0715875-39.2024.8.07.0007
   tipo_decisao: acordao
-  orgao_julgador: "6ª TURMA CÍVEL"
-  relator: "SONÍRIA ROCHA CAMPOS D'ASSUNÇÃO"
-  data_julgamento: "2025-05-21"
+  orgao_julgador: 6ª TURMA CÍVEL
+  relator: SONÍRIA ROCHA CAMPOS D'ASSUNÇÃO
+  data_julgamento: 2025-05-21
   data_publicacao: null
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "A clareza do instrumento e do consentimento documentado foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "A 6ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante a clareza do instrumento e do consentimento documentado. No plano processual, houve recurso provido."
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a assinatura ou a perícia demonstram autoria e adesão
+  válida ao negócio impugnado; se a sistemática de desconto mínimo e encargos
+  torna a dívida excessivamente onerosa ou de duração indefinida; se a operação
+  deve ser preservada como cartão consignado ou convertida em empréstimo
+  consignado comum; se o crédito recebido ou o saque realizado comprova a
+  contratação e qual modalidade econômica foi efetivamente pactuada, no contexto
+  de recurso provido.
+ratio_decidendi: A clareza do instrumento e do consentimento documentado foi
+  avaliado em conjunto com o dever de informação e a documentação contratual,
+  levando o colegiado a preservar a validade da contratação.
+resumo_predator: A 6ª TURMA CÍVEL examinou a contratação de cartão de crédito
+  consignado e preservou a validade da contratação, considerando determinante a
+  clareza do instrumento e do consentimento documentado. No plano processual,
+  houve recurso provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque","juros_abusivos"]
-  fatos_relevantes: ["contrato_claro","saque_unico","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - juros_abusivos
+  fatos_relevantes:
+    - contrato_claro
+    - saque_unico
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","assinatura","termo_consentimento"]
+provas:
+  - contrato
+  - assinatura
+  - termo_consentimento
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - assinatura_como_prova_autoria
+  - desconto_minimo_sem_amortizacao_adequada
+  - primazia_realidade_economica_operacao
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
 resultado:
   contrato: mantido
   conversao: indeferida
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
-  processual: "recurso provido"
+  processual: recurso provido
   efeitos_materiais: []
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/e55bf1ca-8e13-4a04-b2c0-9f410a2098bf"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/e55bf1ca-8e13-4a04-b2c0-9f410a2098bf"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/e55bf1ca-8e13-4a04-b2c0-9f410a2098bf
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/e55bf1ca-8e13-4a04-b2c0-9f410a2098bf
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

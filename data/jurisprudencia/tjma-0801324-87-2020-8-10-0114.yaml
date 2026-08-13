@@ -3,41 +3,78 @@ identificacao:
   tribunal: TJMA
   processo: 0801324-87.2020.8.10.0114
   tipo_decisao: acordao
-  orgao_julgador: "3ª Câmara Cível"
-  relator: "LOURIVAL DE JESUS SEREJO SOUSA"
-  data_julgamento: "2022-11-21"
-  data_publicacao: "2022-11-21"
-titulo: "RMC convertida em empréstimo consignado"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
-resumo_predator: "A 3ª Câmara Cível examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o conjunto documental descrito na decisão. O resultado processual foi preservado conforme o documento recuperado."
+  orgao_julgador: 3ª Câmara Cível
+  relator: LOURIVAL DE JESUS SEREJO SOUSA
+  data_julgamento: 2022-11-21
+  data_publicacao: 2022-11-21
+titulo: RMC convertida em empréstimo consignado
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a sistemática de desconto mínimo e encargos torna a
+  dívida excessivamente onerosa ou de duração indefinida; se a operação deve ser
+  preservada como cartão consignado ou convertida em empréstimo consignado
+  comum; se os descontos indevidos devem ser restituídos e, em caso positivo, de
+  forma simples ou em dobro.
+ratio_decidendi: O conjunto documental descrito na decisão foi avaliado em
+  conjunto com o dever de informação e a documentação contratual, levando o
+  colegiado a determinar a conversão da operação.
+resumo_predator: A 3ª Câmara Cível examinou a contratação de cartão de crédito
+  consignado e determinou a conversão da operação, considerando determinante o
+  conjunto documental descrito na decisão. O resultado processual foi preservado
+  conforme o documento recuperado.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","juros_abusivos"]
-  fatos_relevantes: ["nao_informado"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - juros_abusivos
+  fatos_relevantes:
+    - nao_informado
   meio_contratacao: nao_informado
-provas: ["contrato"]
+provas:
+  - contrato
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: acolhida
-fundamentos: ["dever_informacao_qualificado"]
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - desconto_minimo_sem_amortizacao_adequada
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
 resultado:
   contrato: convertido
   conversao: deferida
   repeticao_indebito: dobro
   dano_moral: nao_informado
   processual: null
-  efeitos_materiais: ["conversão para empréstimo consignado","repetição do indébito em dobro"]
+  efeitos_materiais:
+    - conversão para empréstimo consignado
+    - repetição do indébito em dobro
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-0b6055708bad3d84/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-0b6055708bad3d84/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjma-acordao-0b6055708bad3d84/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjma-acordao-0b6055708bad3d84/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

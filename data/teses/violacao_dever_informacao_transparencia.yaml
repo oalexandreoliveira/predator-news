@@ -1,0 +1,14 @@
+slug: violacao_dever_informacao_transparencia
+titulo: Violação do dever de informação e transparência
+questao_juridica: A instituição explicou de forma clara a natureza, o custo e a
+  amortização do cartão consignado?
+sintese: A transparência exige informação compreensível sobre reserva de margem,
+  desconto mínimo, encargos e forma de extinção da dívida.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+status: ativo

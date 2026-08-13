@@ -3,41 +3,87 @@ identificacao:
   tribunal: TJCE
   processo: 3000911-97.2024.8.06.0091
   tipo_decisao: acordao
-  orgao_julgador: "4ª Turma Recursal"
-  relator: "MARCIA OLIVEIRA FERNANDES MENESCAL DE LIMA"
-  data_julgamento: "2024-12-27"
+  orgao_julgador: 4ª Turma Recursal
+  relator: MARCIA OLIVEIRA FERNANDES MENESCAL DE LIMA
+  data_julgamento: 2024-12-27
   data_publicacao: null
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "A 4ª Turma Recursal examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso provido."
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a operação deve ser preservada como cartão consignado ou
+  convertida em empréstimo consignado comum; se há elementos concretos e
+  individualizados que autorizem reconhecer abuso processual ou litigância de
+  má-fé; se saques, compras ou faturas reiteradas demonstram ciência e aceitação
+  da modalidade contratada; se o crédito recebido ou o saque realizado comprova
+  a contratação e qual modalidade econômica foi efetivamente pactuada, no
+  contexto de recurso provido.
+ratio_decidendi: O uso do cartão em saques ou compras foi avaliado em conjunto
+  com o dever de informação e a documentação contratual, levando o colegiado a
+  preservar a validade da contratação.
+resumo_predator: A 4ª Turma Recursal examinou a contratação de cartão de crédito
+  consignado e preservou a validade da contratação, considerando determinante o
+  uso do cartão em saques ou compras. No plano processual, houve recurso
+  provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque"]
-  fatos_relevantes: ["uso_reiterado_cartao"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - uso_cartao
+    - saque
+  fatos_relevantes:
+    - uso_reiterado_cartao
   meio_contratacao: nao_informado
-provas: ["contrato","comprovante_transferencia","faturas","historico_uso"]
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
+  - historico_uso
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: litigancia_predatoria_prova_individualizada
+    status: resultado_nao_informado
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - primazia_realidade_economica_operacao
+  - ma_fe_exige_conduta_individualizada
+  - padronizacao_demanda_nao_basta
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
+  - credito_em_conta_comprova_liberacao
 resultado:
   contrato: mantido
   conversao: indeferida
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
-  processual: "recurso provido"
-  efeitos_materiais: ["litigância de má-fé examinada"]
+  processual: recurso provido
+  efeitos_materiais:
+    - litigância de má-fé examinada
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-17080450/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-17080450/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjce-sjuris-17080450/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjce-sjuris-17080450/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

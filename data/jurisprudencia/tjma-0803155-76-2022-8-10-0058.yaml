@@ -3,41 +3,78 @@ identificacao:
   tribunal: TJMA
   processo: 0803155-76.2022.8.10.0058
   tipo_decisao: acordao
-  orgao_julgador: "Quarta Câmara de Direito Privado"
-  relator: "LUIZ GONZAGA ALMEIDA FILHO"
-  data_julgamento: "2023-09-29"
-  data_publicacao: "2023-09-29"
-titulo: "RMC convertida em empréstimo consignado"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
-resumo_predator: "O Quarta Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso parcialmente provido."
+  orgao_julgador: Quarta Câmara de Direito Privado
+  relator: LUIZ GONZAGA ALMEIDA FILHO
+  data_julgamento: 2023-09-29
+  data_publicacao: 2023-09-29
+titulo: RMC convertida em empréstimo consignado
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a operação deve ser preservada como cartão consignado ou
+  convertida em empréstimo consignado comum; se os descontos indevidos devem ser
+  restituídos e, em caso positivo, de forma simples ou em dobro; se os descontos
+  e as circunstâncias da contratação configuram dano moral indenizável, no
+  contexto de recurso parcialmente provido.
+ratio_decidendi: O conjunto documental descrito na decisão foi avaliado em
+  conjunto com o dever de informação e a documentação contratual, levando o
+  colegiado a determinar a conversão da operação.
+resumo_predator: O Quarta Câmara de Direito Privado examinou a contratação de
+  cartão de crédito consignado e determinou a conversão da operação,
+  considerando determinante o conjunto documental descrito na decisão. No plano
+  processual, houve recurso parcialmente provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao"]
-  fatos_relevantes: ["nao_informado"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  fatos_relevantes:
+    - nao_informado
   meio_contratacao: nao_informado
-provas: ["contrato"]
+provas:
+  - contrato
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: acolhida
-fundamentos: ["dever_informacao_qualificado"]
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - dano_moral_exige_repercussao_concreta
 resultado:
   contrato: convertido
   conversao: deferida
   repeticao_indebito: dobro
   dano_moral: deferido
-  processual: "recurso parcialmente provido"
-  efeitos_materiais: ["conversão para empréstimo consignado","repetição do indébito em dobro","indenização por dano moral"]
+  processual: recurso parcialmente provido
+  efeitos_materiais:
+    - conversão para empréstimo consignado
+    - repetição do indébito em dobro
+    - indenização por dano moral
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-b775322c179b6a33/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-b775322c179b6a33/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjma-acordao-b775322c179b6a33/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjma-acordao-b775322c179b6a33/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

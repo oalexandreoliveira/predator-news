@@ -3,41 +3,83 @@ identificacao:
   tribunal: TJCE
   processo: 0010911-08.2019.8.06.0117
   tipo_decisao: acordao
-  orgao_julgador: "4ª Câmara de Direito Privado"
-  relator: "DJALMA TEIXEIRA BENEVIDES"
-  data_julgamento: "2025-07-16"
+  orgao_julgador: 4ª Câmara de Direito Privado
+  relator: DJALMA TEIXEIRA BENEVIDES
+  data_julgamento: 2025-07-16
   data_publicacao: null
-titulo: "Contratação de cartão consignado invalidada"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a invalidar a contratação ou a modalidade impugnada."
-resumo_predator: "A 4ª Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e invalidou a contratação ou a modalidade impugnada, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso parcialmente provido."
+titulo: Contratação de cartão consignado invalidada
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a sistemática de desconto mínimo e encargos torna a
+  dívida excessivamente onerosa ou de duração indefinida; se os descontos
+  indevidos devem ser restituídos e, em caso positivo, de forma simples ou em
+  dobro; se saques, compras ou faturas reiteradas demonstram ciência e aceitação
+  da modalidade contratada, no contexto de recurso parcialmente provido.
+ratio_decidendi: O uso do cartão em saques ou compras foi avaliado em conjunto
+  com o dever de informação e a documentação contratual, levando o colegiado a
+  invalidar a contratação ou a modalidade impugnada.
+resumo_predator: A 4ª Câmara de Direito Privado examinou a contratação de cartão
+  de crédito consignado e invalidou a contratação ou a modalidade impugnada,
+  considerando determinante o uso do cartão em saques ou compras. No plano
+  processual, houve recurso parcialmente provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque","juros_abusivos"]
-  fatos_relevantes: ["uso_reiterado_cartao"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - uso_cartao
+    - saque
+    - juros_abusivos
+  fatos_relevantes:
+    - uso_reiterado_cartao
   meio_contratacao: nao_informado
-provas: ["contrato","faturas","historico_uso"]
+provas:
+  - contrato
+  - faturas
+  - historico_uso
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: acolhida
-fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento"]
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: rejeitada
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - desconto_minimo_sem_amortizacao_adequada
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
 resultado:
   contrato: anulado
   conversao: nao_informado
   repeticao_indebito: dobro
   dano_moral: nao_informado
-  processual: "recurso parcialmente provido"
-  efeitos_materiais: ["nulidade ou inexistência da modalidade","repetição do indébito em dobro"]
+  processual: recurso parcialmente provido
+  efeitos_materiais:
+    - nulidade ou inexistência da modalidade
+    - repetição do indébito em dobro
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-25357571/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-25357571/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjce-sjuris-25357571/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjce-sjuris-25357571/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null
