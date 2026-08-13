@@ -1,0 +1,14 @@
+slug: prescricao_termo_inicial_rmc
+titulo: Prescrição e termo inicial
+questao_juridica: Qual prazo prescricional incide e de quando ele deve ser
+  contado nas pretensões relativas à RMC?
+sintese: O exame prescricional deve identificar a natureza da pretensão e o
+  marco de ciência ou da lesão adotado no julgamento.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - termo_inicial_ciencia_lesao
+  - descontos_sucessivos_e_prescricao
+status: ativo

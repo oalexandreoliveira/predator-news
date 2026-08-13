@@ -1,0 +1,15 @@
+slug: fraude_inexistencia_contratacao
+titulo: Fraude ou inexistência da contratação
+questao_juridica: A instituição comprovou a existência e a autoria do contrato
+  que originou os descontos?
+sintese: A ausência de instrumento idôneo ou a falsidade comprovada pode tornar
+  o negócio inexistente ou inválido e gerar efeitos restitutórios e
+  reparatórios.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - onus_instituicao_provar_contratacao
+  - pericia_grafotecnica_define_autenticidade
+status: ativo

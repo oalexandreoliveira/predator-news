@@ -1,0 +1,14 @@
+slug: abusividade_rmc_perpetuidade_divida
+titulo: Abusividade da RMC e perpetuidade da dívida
+questao_juridica: A sistemática de desconto mínimo e encargos torna a dívida
+  excessivamente onerosa ou de duração indefinida?
+sintese: A estrutura econômica da RMC pode ser controlada quando o desconto
+  mínimo não amortiza adequadamente o saldo e perpetua a obrigação.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - desconto_minimo_sem_amortizacao_adequada
+  - informacao_sobre_amortizacao_e_custo
+status: ativo

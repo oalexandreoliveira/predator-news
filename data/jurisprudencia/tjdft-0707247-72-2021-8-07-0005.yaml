@@ -3,41 +3,101 @@ identificacao:
   tribunal: TJDFT
   processo: 0707247-72.2021.8.07.0005
   tipo_decisao: acordao
-  orgao_julgador: "TERCEIRA TURMA RECURSAL"
-  relator: "CARLOS ALBERTO MARTINS FILHO"
-  data_julgamento: "2022-08-24"
-  data_publicacao: "2022-08-30"
-titulo: "Validade formal e integração contratual por abusividade"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O conjunto de autenticação e documentos eletrônicos foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a integrou o contrato sem negar sua validade formal."
-resumo_predator: "O TERCEIRA TURMA RECURSAL examinou a contratação de cartão de crédito consignado e integrou o contrato sem negar sua validade formal, considerando determinante o conjunto de autenticação e documentos eletrônicos. No plano processual, houve recurso desprovido."
+  orgao_julgador: TERCEIRA TURMA RECURSAL
+  relator: CARLOS ALBERTO MARTINS FILHO
+  data_julgamento: 2022-08-24
+  data_publicacao: 2022-08-30
+titulo: Validade formal e integração contratual por abusividade
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se os elementos da contratação eletrônica são suficientes
+  para demonstrar autoria, integridade e consentimento; se a sistemática de
+  desconto mínimo e encargos torna a dívida excessivamente onerosa ou de duração
+  indefinida; se os descontos e as circunstâncias da contratação configuram dano
+  moral indenizável; se há elementos concretos e individualizados que autorizem
+  reconhecer abuso processual ou litigância de má-fé; se o crédito recebido ou o
+  saque realizado comprova a contratação e qual modalidade econômica foi
+  efetivamente pactuada; se é possível preservar o contrato e integrar ou
+  revisar suas cláusulas para afastar desvantagem exagerada, no contexto de
+  recurso desprovido.
+ratio_decidendi: O conjunto de autenticação e documentos eletrônicos foi
+  avaliado em conjunto com o dever de informação e a documentação contratual,
+  levando o colegiado a integrou o contrato sem negar sua validade formal.
+resumo_predator: O TERCEIRA TURMA RECURSAL examinou a contratação de cartão de
+  crédito consignado e integrou o contrato sem negar sua validade formal,
+  considerando determinante o conjunto de autenticação e documentos eletrônicos.
+  No plano processual, houve recurso desprovido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque","contratacao_digital","juros_abusivos"]
-  fatos_relevantes: ["saque_unico","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - contratacao_digital
+    - juros_abusivos
+  fatos_relevantes:
+    - saque_unico
+    - desconto_beneficio
   meio_contratacao: digital
-provas: ["contrato","comprovante_transferencia","faturas"]
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
-    status: nao_enfrentada
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","autenticidade_nao_equivale_consentimento"]
+    status: resultado_nao_informado
+  - slug: violacao_dever_informacao_transparencia
+    status: resultado_nao_informado
+  - slug: validade_contratacao_digital
+    status: resultado_nao_informado
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: resultado_nao_informado
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+  - slug: litigancia_predatoria_prova_individualizada
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: resultado_nao_informado
+  - slug: integracao_revisao_desvantagem_exagerada
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - rastreabilidade_contratacao_digital
+  - desconto_minimo_sem_amortizacao_adequada
+  - dano_moral_exige_repercussao_concreta
+  - desconto_indevido_em_beneficio
+  - ma_fe_exige_conduta_individualizada
+  - padronizacao_demanda_nao_basta
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
+  - conservacao_negocio_com_reequilibrio
+  - controle_desvantagem_exagerada
 resultado:
   contrato: nao_informado
   conversao: nao_informado
   repeticao_indebito: nao_informado
   dano_moral: deferido
-  processual: "recurso desprovido"
-  efeitos_materiais: ["integração contratual por desvantagem exagerada","indenização por dano moral","litigância de má-fé examinada"]
+  processual: recurso desprovido
+  efeitos_materiais:
+    - integração contratual por desvantagem exagerada
+    - indenização por dano moral
+    - litigância de má-fé examinada
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/843eac73-0866-4540-8150-b845f2773ead"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/843eac73-0866-4540-8150-b845f2773ead"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/843eac73-0866-4540-8150-b845f2773ead
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/843eac73-0866-4540-8150-b845f2773ead
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

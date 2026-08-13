@@ -28,7 +28,20 @@ test("deriva fundamentos usados pelas decisões da tese sem duplicidade", () => 
 });
 
 test("deriva teses relacionadas ao fundamento pela relação direta da tese", () => {
-  assert.deepEqual(thesesByFoundation(theses, "dever_informacao_qualificado").map((item) => item.slug), [thesisSlug]);
+  const related = thesesByFoundation(theses, "dever_informacao_qualificado").map((item) => item.slug);
+  assert.ok(related.includes(thesisSlug));
+  assert.ok(related.includes("violacao_dever_informacao_transparencia"));
+  assert.equal(new Set(related).size, related.length);
+});
+
+test("acervo usa classificação jurídica plural e questões específicas", () => {
+  assert.ok(theses.length >= 15, "o banco não pode comprimir o acervo em uma tese única");
+  assert.ok(foundations.length >= 20, "os fundamentos devem refletir a diversidade dos julgamentos");
+  assert.ok(decisions.filter((item) => item.teses.length > 1).length >= decisions.length * 0.9);
+  assert.ok(new Set(decisions.flatMap((item) => item.teses.map((thesis) => thesis.slug))).size >= 15);
+  assert.ok(new Set(decisions.flatMap((item) => item.fundamentos)).size >= 20);
+  assert.ok(new Set(decisions.map((item) => item.questao_juridica)).size >= 50);
+  assert.equal(decisions.some((item) => item.questao_juridica.startsWith("Validade e efeitos da contratação")), false);
 });
 
 test("deriva tribunais únicos", () => {
@@ -44,7 +57,7 @@ test("calcula a decisão relacionada mais recente", () => {
 });
 
 test("agregado da tese contém contagens corretas e sem duplicações", () => {
-  const aggregate = aggregateThesis(theses[0], decisions, foundations);
+  const aggregate = aggregateThesis(theses.find((item) => item.slug === thesisSlug), decisions, foundations);
   assert.equal(aggregate.decisions.length, decisions.filter(item => item.teses.some(tese => tese.slug === thesisSlug)).length);
   assert.equal(aggregate.tribunals.length, new Set(decisions.filter(item => item.teses.some(tese => tese.slug === thesisSlug)).map(item => item.identificacao.tribunal)).size);
   assert.equal(aggregate.foundations.length, new Set(aggregate.decisions.flatMap(item => item.fundamentos)).size);

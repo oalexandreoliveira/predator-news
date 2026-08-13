@@ -3,24 +3,67 @@ identificacao:
   tribunal: TJMA
   processo: 0800445-84.2021.8.10.0069
   tipo_decisao: acordao
-  orgao_julgador: "Quarta Câmara de Direito Privado"
-  relator: "LUIZ GONZAGA ALMEIDA FILHO"
-  data_julgamento: "2023-07-29"
-  data_publicacao: "2023-07-29"
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O conjunto de autenticação e documentos eletrônicos foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "O Quarta Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o conjunto de autenticação e documentos eletrônicos. O resultado processual foi preservado conforme o documento recuperado."
+  orgao_julgador: Quarta Câmara de Direito Privado
+  relator: LUIZ GONZAGA ALMEIDA FILHO
+  data_julgamento: 2023-07-29
+  data_publicacao: 2023-07-29
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se os elementos da contratação eletrônica são suficientes
+  para demonstrar autoria, integridade e consentimento; se a assinatura ou a
+  perícia demonstram autoria e adesão válida ao negócio impugnado; se a operação
+  deve ser preservada como cartão consignado ou convertida em empréstimo
+  consignado comum; se o crédito recebido ou o saque realizado comprova a
+  contratação e qual modalidade econômica foi efetivamente pactuada.
+ratio_decidendi: O conjunto de autenticação e documentos eletrônicos foi
+  avaliado em conjunto com o dever de informação e a documentação contratual,
+  levando o colegiado a preservar a validade da contratação.
+resumo_predator: O Quarta Câmara de Direito Privado examinou a contratação de
+  cartão de crédito consignado e preservou a validade da contratação,
+  considerando determinante o conjunto de autenticação e documentos eletrônicos.
+  O resultado processual foi preservado conforme o documento recuperado.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque","contratacao_digital"]
-  fatos_relevantes: ["saque_unico"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - contratacao_digital
+  fatos_relevantes:
+    - saque_unico
   meio_contratacao: digital
-provas: ["contrato","assinatura","comprovante_transferencia","faturas"]
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","autenticidade_nao_equivale_consentimento"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - primazia_realidade_economica_operacao
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
 resultado:
   contrato: mantido
   conversao: indeferida
@@ -31,13 +74,13 @@ resultado:
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-6739f91ba880b4fc/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-6739f91ba880b4fc/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjma-acordao-6739f91ba880b4fc/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjma-acordao-6739f91ba880b4fc/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

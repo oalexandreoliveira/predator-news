@@ -1,0 +1,15 @@
+slug: credito_saque_como_prova_negocio
+titulo: Depósito ou saque creditado como prova do negócio
+questao_juridica: O crédito recebido ou o saque realizado comprova a contratação
+  e qual modalidade econômica foi efetivamente pactuada?
+sintese: A disponibilização do numerário comprova uma relação econômica, mas não
+  necessariamente esclarece, isoladamente, a modalidade ou o consentimento
+  informado.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
+fundamentos:
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
+status: ativo

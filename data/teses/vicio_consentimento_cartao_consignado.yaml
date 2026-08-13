@@ -1,13 +1,15 @@
 slug: vicio_consentimento_cartao_consignado
 titulo: Vício de consentimento no cartão consignado
-questao_juridica: A prova formal da contratação demonstra consentimento informado do consumidor sobre a modalidade RMC ou RCC?
-sintese: A amostra reúne decisões que acolhem e rejeitam a alegação conforme a clareza do instrumento, a prova da contratação, o perfil do consumidor e o uso ou recebimento dos valores.
-produtos: [rmc, rcc, cartao_credito_consignado]
+questao_juridica: A prova do caso demonstra consentimento livre e informado
+  quanto à contratação de cartão consignado?
+sintese: A validade do consentimento depende do exame conjunto da informação
+  prestada, do instrumento, do modo de contratação e da conduta posterior do
+  consumidor.
+produtos:
+  - rmc
+  - rcc
+  - cartao_credito_consignado
 fundamentos:
-  - autenticidade_nao_equivale_consentimento
   - dever_informacao_qualificado
-  - ausencia_uso_cartao_indicio_vicio
-  - hipervulnerabilidade_consumidor_idoso
-  - saque_unico_indicio_mutuo
-  - uso_reiterado_cartao_indicio_consentimento
+  - autenticidade_nao_equivale_consentimento
 status: ativo

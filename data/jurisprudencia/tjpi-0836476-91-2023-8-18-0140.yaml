@@ -1,12 +1,72 @@
 id: tjpi-0836476-91-2023-8-18-0140
-identificacao: {tribunal: TJPI, processo: 0836476-91.2023.8.18.0140, tipo_decisao: decisao_terminativa, orgao_julgador: 3ª Câmara Especializada Cível, relator: Lucicleide Pereira Belo, data_julgamento: 2025-05-28, data_publicacao: 2025-05-28}
+identificacao:
+  tribunal: TJPI
+  processo: 0836476-91.2023.8.18.0140
+  tipo_decisao: decisao_terminativa
+  orgao_julgador: 3ª Câmara Especializada Cível
+  relator: Lucicleide Pereira Belo
+  data_julgamento: 2025-05-28
+  data_publicacao: 2025-05-28
 titulo: Uso reiterado e contrato assinado afastam vício
-resumo_predator: Contrato assinado, saques e compras reiteradas foram considerados incompatíveis com a alegação de desconhecimento da modalidade de cartão consignado.
-contexto: {produtos: [rmc, cartao_credito_consignado], temas: [consentimento, uso_cartao, saque], fatos_relevantes: [contrato_claro, uso_reiterado_cartao]}
-provas: [contrato, assinatura, historico_uso]
-teses: [{slug: vicio_consentimento_cartao_consignado, status: rejeitada}]
-fundamentos: [uso_reiterado_cartao_indicio_consentimento, dever_informacao_qualificado]
-resultado: {contrato: mantido, conversao: indeferida, repeticao_indebito: indeferida, dano_moral: indeferido}
-fonte: {natureza: jurisprudencia_oficial, recuperado_via: portal_tribunal, url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/25377554/public, url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/25377554/public, consultado_em: 2026-08-07}
+resumo_predator: Contrato assinado, saques e compras reiteradas foram
+  considerados incompatíveis com a alegação de desconhecimento da modalidade de
+  cartão consignado.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - uso_cartao
+    - saque
+  fatos_relevantes:
+    - contrato_claro
+    - uso_reiterado_cartao
+provas:
+  - contrato
+  - assinatura
+  - historico_uso
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - assinatura_como_prova_autoria
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - dano_moral_exige_repercussao_concreta
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisprudencia.tjpi.jus.br/jurisprudences/25377554/public
+  url_inteiro_teor: https://jurisprudencia.tjpi.jus.br/jurisprudences/25377554/public
+  consultado_em: 2026-08-07
 autoridade: persuasiva
 status: ativo
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a assinatura ou a perícia demonstram autoria e adesão válida ao negócio
+  impugnado; se a operação deve ser preservada como cartão consignado ou
+  convertida em empréstimo consignado comum; se os descontos indevidos devem ser
+  restituídos e, em caso positivo, de forma simples ou em dobro; se os descontos
+  e as circunstâncias da contratação configuram dano moral indenizável; se
+  saques, compras ou faturas reiteradas demonstram ciência e aceitação da
+  modalidade contratada.

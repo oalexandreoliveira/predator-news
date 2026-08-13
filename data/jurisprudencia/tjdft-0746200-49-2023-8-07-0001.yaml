@@ -3,42 +3,87 @@ identificacao:
   tribunal: TJDFT
   processo: 0746200-49.2023.8.07.0001
   tipo_decisao: acordao
-  orgao_julgador: "1ª TURMA CÍVEL"
-  relator: "TEÓFILO CAETANO"
-  data_julgamento: "2024-11-13"
-  data_publicacao: "2024-12-03"
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "A destinação econômica do saque foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "A 1ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante a destinação econômica do saque. No plano processual, houve recurso desprovido."
+  orgao_julgador: 1ª TURMA CÍVEL
+  relator: TEÓFILO CAETANO
+  data_julgamento: 2024-11-13
+  data_publicacao: 2024-12-03
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a sistemática de desconto mínimo e encargos torna a
+  dívida excessivamente onerosa ou de duração indefinida; se a operação deve ser
+  preservada como cartão consignado ou convertida em empréstimo consignado
+  comum; se há elementos concretos e individualizados que autorizem reconhecer
+  abuso processual ou litigância de má-fé; se o crédito recebido ou o saque
+  realizado comprova a contratação e qual modalidade econômica foi efetivamente
+  pactuada, no contexto de recurso desprovido.
+ratio_decidendi: A destinação econômica do saque foi avaliado em conjunto com o
+  dever de informação e a documentação contratual, levando o colegiado a
+  preservar a validade da contratação.
+resumo_predator: A 1ª TURMA CÍVEL examinou a contratação de cartão de crédito
+  consignado e preservou a validade da contratação, considerando determinante a
+  destinação econômica do saque. No plano processual, houve recurso desprovido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque","juros_abusivos"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["saque_unico","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - juros_abusivos
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - saque_unico
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","faturas"]
+provas:
+  - contrato
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","hipervulnerabilidade_consumidor_idoso"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: litigancia_predatoria_prova_individualizada
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - desconto_minimo_sem_amortizacao_adequada
+  - primazia_realidade_economica_operacao
+  - ma_fe_exige_conduta_individualizada
+  - padronizacao_demanda_nao_basta
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
 resultado:
   contrato: mantido
   conversao: indeferida
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
-  processual: "recurso desprovido"
-  efeitos_materiais: ["litigância de má-fé examinada"]
+  processual: recurso desprovido
+  efeitos_materiais:
+    - litigância de má-fé examinada
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/84856867-40e0-41c4-ae2e-c0b43daf5f19"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/84856867-40e0-41c4-ae2e-c0b43daf5f19"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/84856867-40e0-41c4-ae2e-c0b43daf5f19
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/84856867-40e0-41c4-ae2e-c0b43daf5f19
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

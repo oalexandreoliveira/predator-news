@@ -3,42 +3,80 @@ identificacao:
   tribunal: TJCE
   processo: 0268098-71.2024.8.06.0001
   tipo_decisao: acordao
-  orgao_julgador: "4ª Câmara de Direito Privado"
-  relator: "FRANCISCO BEZERRA CAVALCANTE"
-  data_julgamento: "2025-11-05"
+  orgao_julgador: 4ª Câmara de Direito Privado
+  relator: FRANCISCO BEZERRA CAVALCANTE
+  data_julgamento: 2025-11-05
   data_publicacao: null
-titulo: "Controvérsia sobre cartão consignado decidida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a definir os efeitos da contratação conforme a prova disponível."
-resumo_predator: "A 4ª Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e definiu os efeitos da contratação conforme a prova disponível, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso desprovido."
+titulo: Controvérsia sobre cartão consignado decidida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a assinatura ou a perícia demonstram autoria e adesão
+  válida ao negócio impugnado; se a sistemática de desconto mínimo e encargos
+  torna a dívida excessivamente onerosa ou de duração indefinida; se os
+  descontos e as circunstâncias da contratação configuram dano moral
+  indenizável, no contexto de recurso desprovido.
+ratio_decidendi: O conjunto documental descrito na decisão foi avaliado em
+  conjunto com o dever de informação e a documentação contratual, levando o
+  colegiado a definir os efeitos da contratação conforme a prova disponível.
+resumo_predator: A 4ª Câmara de Direito Privado examinou a contratação de cartão
+  de crédito consignado e definiu os efeitos da contratação conforme a prova
+  disponível, considerando determinante o conjunto documental descrito na
+  decisão. No plano processual, houve recurso desprovido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","juros_abusivos"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - juros_abusivos
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","assinatura"]
+provas:
+  - contrato
+  - assinatura
 teses:
   - slug: vicio_consentimento_cartao_consignado
-    status: nao_enfrentada
-fundamentos: ["dever_informacao_qualificado","hipervulnerabilidade_consumidor_idoso"]
+    status: resultado_nao_informado
+  - slug: violacao_dever_informacao_transparencia
+    status: resultado_nao_informado
+  - slug: forca_probatoria_assinatura
+    status: resultado_nao_informado
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: resultado_nao_informado
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - assinatura_como_prova_autoria
+  - desconto_minimo_sem_amortizacao_adequada
+  - dano_moral_exige_repercussao_concreta
+  - desconto_indevido_em_beneficio
 resultado:
   contrato: nao_informado
   conversao: nao_informado
   repeticao_indebito: nao_informado
   dano_moral: deferido
-  processual: "recurso desprovido"
-  efeitos_materiais: ["indenização por dano moral"]
+  processual: recurso desprovido
+  efeitos_materiais:
+    - indenização por dano moral
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-30564318/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-30564318/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjce-sjuris-30564318/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjce-sjuris-30564318/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

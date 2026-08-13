@@ -3,42 +3,98 @@ identificacao:
   tribunal: TJDFT
   processo: 0717680-67.2023.8.07.0005
   tipo_decisao: acordao
-  orgao_julgador: "8ª TURMA CÍVEL"
-  relator: "CARMEN BITTENCOURT"
-  data_julgamento: "2024-12-03"
-  data_publicacao: "2024-12-13"
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "A 8ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o uso do cartão em saques ou compras. O resultado processual foi preservado conforme o documento recuperado."
+  orgao_julgador: 8ª TURMA CÍVEL
+  relator: CARMEN BITTENCOURT
+  data_julgamento: 2024-12-03
+  data_publicacao: 2024-12-13
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se os elementos da contratação eletrônica são suficientes
+  para demonstrar autoria, integridade e consentimento; se a assinatura ou a
+  perícia demonstram autoria e adesão válida ao negócio impugnado; se a operação
+  deve ser preservada como cartão consignado ou convertida em empréstimo
+  consignado comum; se os descontos indevidos devem ser restituídos e, em caso
+  positivo, de forma simples ou em dobro; se os descontos e as circunstâncias da
+  contratação configuram dano moral indenizável; se saques, compras ou faturas
+  reiteradas demonstram ciência e aceitação da modalidade contratada.
+ratio_decidendi: O uso do cartão em saques ou compras foi avaliado em conjunto
+  com o dever de informação e a documentação contratual, levando o colegiado a
+  preservar a validade da contratação.
+resumo_predator: A 8ª TURMA CÍVEL examinou a contratação de cartão de crédito
+  consignado e preservou a validade da contratação, considerando determinante o
+  uso do cartão em saques ou compras. O resultado processual foi preservado
+  conforme o documento recuperado.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque","contratacao_digital"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["uso_reiterado_cartao","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - uso_cartao
+    - saque
+    - contratacao_digital
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - uso_reiterado_cartao
+    - desconto_beneficio
   meio_contratacao: digital
-provas: ["contrato","assinatura","historico_uso"]
+provas:
+  - contrato
+  - assinatura
+  - historico_uso
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento","autenticidade_nao_equivale_consentimento","hipervulnerabilidade_consumidor_idoso"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+  - dano_moral_exige_repercussao_concreta
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
 resultado:
   contrato: mantido
   conversao: indeferida
   repeticao_indebito: dobro
   dano_moral: deferido
   processual: null
-  efeitos_materiais: ["repetição do indébito em dobro","indenização por dano moral"]
+  efeitos_materiais:
+    - repetição do indébito em dobro
+    - indenização por dano moral
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/794ff680-205f-480f-8061-039cc0fca2c0"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/794ff680-205f-480f-8061-039cc0fca2c0"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/794ff680-205f-480f-8061-039cc0fca2c0
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/794ff680-205f-480f-8061-039cc0fca2c0
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

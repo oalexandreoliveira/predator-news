@@ -3,41 +3,80 @@ identificacao:
   tribunal: TJMA
   processo: 0801507-17.2019.8.10.0139
   tipo_decisao: acordao
-  orgao_julgador: "Turma Recursal Cível e Criminal de Chapadinha"
-  relator: "MIRELLA CEZAR FREITAS"
-  data_julgamento: "2025-07-18"
-  data_publicacao: "2025-07-18"
-titulo: "Validade do cartão consignado reconhecida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "A clareza do instrumento e do consentimento documentado foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
-resumo_predator: "O Turma Recursal Cível e Criminal de Chapadinha examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante a clareza do instrumento e do consentimento documentado. No plano processual, houve recurso provido."
+  orgao_julgador: Turma Recursal Cível e Criminal de Chapadinha
+  relator: MIRELLA CEZAR FREITAS
+  data_julgamento: 2025-07-18
+  data_publicacao: 2025-07-18
+titulo: Validade do cartão consignado reconhecida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se a assinatura ou a perícia demonstram autoria e adesão
+  válida ao negócio impugnado; se a operação deve ser preservada como cartão
+  consignado ou convertida em empréstimo consignado comum; se o crédito recebido
+  ou o saque realizado comprova a contratação e qual modalidade econômica foi
+  efetivamente pactuada, no contexto de recurso provido.
+ratio_decidendi: A clareza do instrumento e do consentimento documentado foi
+  avaliado em conjunto com o dever de informação e a documentação contratual,
+  levando o colegiado a preservar a validade da contratação.
+resumo_predator: O Turma Recursal Cível e Criminal de Chapadinha examinou a
+  contratação de cartão de crédito consignado e preservou a validade da
+  contratação, considerando determinante a clareza do instrumento e do
+  consentimento documentado. No plano processual, houve recurso provido.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque"]
-  fatos_relevantes: ["contrato_claro","saque_unico","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+  fatos_relevantes:
+    - contrato_claro
+    - saque_unico
+    - desconto_beneficio
   meio_contratacao: nao_informado
-provas: ["contrato","assinatura","comprovante_transferencia"]
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: rejeitada
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo"]
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - assinatura_como_prova_autoria
+  - primazia_realidade_economica_operacao
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
 resultado:
   contrato: mantido
   conversao: indeferida
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
-  processual: "recurso provido"
+  processual: recurso provido
   efeitos_materiais: []
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-b5b94c624b4df682/inteiro-teor"
-  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-b5b94c624b4df682/inteiro-teor"
-  consultado_em: "2026-08-13"
+  url_original: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-b5b94c624b4df682/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-b5b94c624b4df682/inteiro-teor
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null

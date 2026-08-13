@@ -3,25 +3,67 @@ identificacao:
   tribunal: TJDFT
   processo: 0708982-26.2024.8.07.0009
   tipo_decisao: acordao
-  orgao_julgador: "TERCEIRA TURMA RECURSAL"
-  relator: "MARGARETH CRISTINA BECKER"
-  data_julgamento: "2024-10-21"
-  data_publicacao: "2024-11-06"
-titulo: "Controvérsia sobre cartão consignado decidida"
-questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
-ratio_decidendi: "O conjunto de autenticação e documentos eletrônicos foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a definir os efeitos da contratação conforme a prova disponível."
-resumo_predator: "O TERCEIRA TURMA RECURSAL examinou a contratação de cartão de crédito consignado e definiu os efeitos da contratação conforme a prova disponível, considerando determinante o conjunto de autenticação e documentos eletrônicos. O resultado processual foi preservado conforme o documento recuperado."
+  orgao_julgador: TERCEIRA TURMA RECURSAL
+  relator: MARGARETH CRISTINA BECKER
+  data_julgamento: 2024-10-21
+  data_publicacao: 2024-11-06
+titulo: Controvérsia sobre cartão consignado decidida
+questao_juridica: O julgamento examinou se a prova do caso demonstra
+  consentimento livre e informado quanto à contratação de cartão consignado; se
+  a instituição explicou de forma clara a natureza, o custo e a amortização do
+  cartão consignado; se os elementos da contratação eletrônica são suficientes
+  para demonstrar autoria, integridade e consentimento; se a assinatura ou a
+  perícia demonstram autoria e adesão válida ao negócio impugnado; se o crédito
+  recebido ou o saque realizado comprova a contratação e qual modalidade
+  econômica foi efetivamente pactuada.
+ratio_decidendi: O conjunto de autenticação e documentos eletrônicos foi
+  avaliado em conjunto com o dever de informação e a documentação contratual,
+  levando o colegiado a definir os efeitos da contratação conforme a prova
+  disponível.
+resumo_predator: O TERCEIRA TURMA RECURSAL examinou a contratação de cartão de
+  crédito consignado e definiu os efeitos da contratação conforme a prova
+  disponível, considerando determinante o conjunto de autenticação e documentos
+  eletrônicos. O resultado processual foi preservado conforme o documento
+  recuperado.
 contexto:
-  produtos: ["rmc","cartao_credito_consignado"]
-  temas: ["consentimento","dever_informacao","prova_contratacao","saque","contratacao_digital"]
-  perfis_consumidor: ["aposentado_pensionista"]
-  fatos_relevantes: ["saque_unico","desconto_beneficio"]
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+    - saque
+    - contratacao_digital
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - saque_unico
+    - desconto_beneficio
   meio_contratacao: digital
-provas: ["contrato","assinatura","faturas"]
+provas:
+  - contrato
+  - assinatura
+  - faturas
 teses:
   - slug: vicio_consentimento_cartao_consignado
-    status: nao_enfrentada
-fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","autenticidade_nao_equivale_consentimento","hipervulnerabilidade_consumidor_idoso"]
+    status: resultado_nao_informado
+  - slug: violacao_dever_informacao_transparencia
+    status: resultado_nao_informado
+  - slug: validade_contratacao_digital
+    status: resultado_nao_informado
+  - slug: forca_probatoria_assinatura
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: resultado_nao_informado
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - credito_em_conta_comprova_liberacao
+  - saque_unico_indicio_mutuo
 resultado:
   contrato: nao_informado
   conversao: nao_informado
@@ -32,13 +74,13 @@ resultado:
 fonte:
   natureza: jurisprudencia_agregada_auditavel
   recuperado_via: jusratio
-  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/77733bfe-83ef-496c-898b-c23adb638588"
-  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/77733bfe-83ef-496c-898b-c23adb638588"
-  consultado_em: "2026-08-13"
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/77733bfe-83ef-496c-898b-c23adb638588
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/77733bfe-83ef-496c-898b-c23adb638588
+  consultado_em: 2026-08-13
 autoridade: persuasiva
 status: ativo
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: "2026-08-13"
+  analisado_em: 2026-08-13
   revisado_em: null
   revisor: null
