@@ -178,6 +178,7 @@ html[data-theme="light"] .radar{background:radial-gradient(circle,transparent 0 
 .legal-results-head p{margin:0;color:var(--muted);font-size:12px}.legal-results-head strong{color:var(--signal)}
 .legal-card-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:18px}
 .legal-card{display:flex;flex-direction:column;padding:26px;border:1px solid var(--line);background:var(--surface);transition:border-color .2s ease,transform .2s ease}
+.legal-card[hidden]{display:none!important}
 .legal-card:hover{border-color:color-mix(in srgb,var(--signal) 55%,transparent);transform:translateY(-2px)}
 .legal-card-meta{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:8px 13px;align-items:start;color:var(--muted);font-size:10px;line-height:1.5}
 .legal-card-meta strong{color:var(--signal);letter-spacing:.1em}.legal-card-meta span{overflow-wrap:break-word}.legal-card-meta time{white-space:nowrap}

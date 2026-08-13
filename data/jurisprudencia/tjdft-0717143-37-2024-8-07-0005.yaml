@@ -7,18 +7,15 @@ identificacao:
   relator: JOSE FIRMO REIS SOUB
   data_julgamento: 2026-07-14
   data_publicacao: 2026-07-27
-titulo: "cartão consignado (RMC): dever de informação e consentimento"
-resumo_predator: DIREITO CIVIL E DO CONSUMIDOR. APELAÇÃO. CARTÃO DE CRÉDITO
-  CONSIGNADO (RMC). DESCONTOS EM BENEFÍCIO PREVIDENCIÁRIO. ALEGAÇÃO DE NULIDADE
-  CONTRATUAL. AUSÊNCIA DE ABUSIVIDADE. DECADÊNCIA AFASTADA. SENTENÇA…
+titulo: TJDFT delimita efeitos da contratação bancária discutida
+resumo_predator: O acórdão definiu os efeitos jurídicos da controvérsia. A
+  conclusão decorreu de o conjunto documental descrito no acórdão.
 contexto:
   produtos:
     - rmc
     - cartao_credito_consignado
   temas:
-    - dever_informacao
-    - consentimento
-    - vicio_consentimento
+    - prova_contratacao
   fatos_relevantes:
     - nao_informado
   meio_contratacao: nao_informado
@@ -27,19 +24,11 @@ provas:
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: resultado_nao_informado
-  - slug: violacao_dever_informacao_transparencia
-    status: resultado_nao_informado
-  - slug: prescricao_termo_inicial_rmc
-    status: rejeitada
 fundamentos:
-  - autenticidade_nao_equivale_consentimento
   - dever_informacao_qualificado
-  - informacao_sobre_amortizacao_e_custo
-  - termo_inicial_ciencia_lesao
-  - descontos_sucessivos_e_prescricao
 resultado:
   contrato: nao_informado
-  conversao: nao_informado
+  conversao: nao_aplicavel
   repeticao_indebito: nao_informado
   dano_moral: nao_informado
 fonte:
@@ -50,8 +39,12 @@ fonte:
   consultado_em: 2026-08-12
 autoridade: persuasiva
 status: ativo
-questao_juridica: O julgamento examinou se a prova do caso demonstra
-  consentimento livre e informado quanto à contratação de cartão consignado; se
-  a instituição explicou de forma clara a natureza, o custo e a amortização do
-  cartão consignado; se qual prazo prescricional incide e de quando ele deve ser
-  contado nas pretensões relativas à RMC.
+questao_juridica: O colegiado examinou se a contratação foi validamente demonstrada.
+ratio_decidendi: O TJDFT definiu os efeitos jurídicos da controvérsia porque
+  considerou determinantes o conjunto documental descrito no acórdão, avaliados
+  em conjunto com a distribuição do ônus da prova e a execução do negócio.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-08-13
+  revisado_em: null
+  revisor: null

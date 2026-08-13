@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { loadData } from "./data/load-data.mjs";
 import { aggregateFoundation, aggregateThesis, decisionDate } from "./data/aggregate-legal.mjs";
 import { buildEditorialRelations, globalMenuLinks, legalHomeMetrics } from "./data/editorial-links.mjs";
-import { createDecisionSearchText } from "../src/jurisprudencia-filter.mjs";
+import { createDecisionSearchText, normalizeSearch } from "../src/jurisprudencia-filter.mjs";
 import { renderDecisionEditionRelations, renderEditorialStatement, renderEditionIntegration } from "../src/editorial-components.mjs";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
@@ -287,8 +287,32 @@ function selectFilter(name, label, values, labels = new Map()) {
   return `<label class="legal-filter"><span>${escapeHtml(label)}</span><select data-decision-filter="${escapeHtml(name)}"><option value="">Todos</option>${options}</select></label>`;
 }
 
+export function choosePrimaryThesis(decision) {
+  const text = normalizeSearch([decision.titulo, decision.questao_juridica, decision.ratio_decidendi, decision.resumo_predator].filter(Boolean).join(" "));
+  const weights = new Map([
+    ["fraude_inexistencia_contratacao", ["fraude", "inexistencia", "falsificacao", "nao comprovou"]],
+    ["validade_contratacao_digital", ["digital", "eletronica", "biometria", "selfie"]],
+    ["validade_contratacao_analfabeto", ["analfabeto", "assinatura a rogo", "testemunhas"]],
+    ["integracao_revisao_desvantagem_exagerada", ["integracao", "desvantagem exagerada", "reequilibrio"]],
+    ["prescricao_termo_inicial_rmc", ["prescricao", "prescricional", "trato sucessivo"]],
+    ["conversao_cartao_em_emprestimo_consignado", ["conversao", "converter", "emprestimo consignado"]],
+    ["abusividade_rmc_perpetuidade_divida", ["abusividade", "perpetuidade", "amortizacao", "juros"]],
+    ["violacao_dever_informacao_transparencia", ["dever de informacao", "transparencia", "informacao clara"]],
+    ["forca_probatoria_assinatura", ["assinatura", "grafotecnica", "autenticidade"]],
+    ["uso_reiterado_confirma_contratacao", ["uso reiterado", "compras", "faturas"]],
+    ["credito_saque_como_prova_negocio", ["saque", "deposito", "credito em conta"]],
+    ["repeticao_indebito_descontos", ["repeticao", "restituicao", "indebito"]],
+    ["dano_moral_desconto_consignado", ["dano moral", "indenizacao"]],
+    ["hipervulnerabilidade_consumidor_idoso", ["idoso", "hipervulnerabilidade"]],
+    ["litigancia_predatoria_prova_individualizada", ["litigancia", "ma fe", "predatoria"]],
+    ["vicio_consentimento_cartao_consignado", ["vicio de consentimento", "erro substancial"]],
+  ]);
+  return decision.teses.map((thesis, index) => ({ thesis, index, score: (weights.get(thesis.slug) || []).reduce((score, term) => score + (text.includes(term) ? 1 : 0), 0) - (thesis.slug === "vicio_consentimento_cartao_consignado" ? 0.25 : 0) }))
+    .sort((a, b) => b.score - a.score || a.index - b.index)[0]?.thesis || decision.teses[0];
+}
+
 function decisionCard(decision, thesisLabels) {
-  const primaryThesis = decision.teses[0];
+  const primaryThesis = choosePrimaryThesis(decision);
   const date = decision.identificacao.data_julgamento || decision.identificacao.data_publicacao;
   const filterRecord = {
     tribunal: decision.identificacao.tribunal,
@@ -302,7 +326,7 @@ function decisionCard(decision, thesisLabels) {
     known(decision.resultado.contrato) ? `<span><small>Contrato</small>${escapeHtml(humanize(decision.resultado.contrato))}</span>` : "",
     known(decision.resultado.dano_moral) ? `<span><small>Dano moral</small>${escapeHtml(humanize(decision.resultado.dano_moral))}</span>` : "",
   ].filter(Boolean).join("");
-  return `<article class="legal-card" data-decision-card data-search="${escapeHtml(createDecisionSearchText(decision))}" ${attributes}>
+  return `<article class="legal-card" data-decision-card data-search="${escapeHtml(createDecisionSearchText(decision, { thesisLabels, foundationLabels }))}" ${attributes}>
     <div class="legal-card-meta"><strong>${escapeHtml(decision.identificacao.tribunal)}</strong><span>${escapeHtml(decision.identificacao.orgao_julgador)}</span><time>${escapeHtml(displayDate(date))}</time></div>
     <h2>${escapeHtml(decision.titulo)}</h2><p>${escapeHtml(decision.resumo_predator)}</p>
     <div class="legal-pills">${pills([...decision.contexto.produtos, ...decision.contexto.temas])}</div>
@@ -451,13 +475,13 @@ const jurisprudencePage = shell({
   description: "Decisões selecionadas e estruturadas pelo Predator News para pesquisa em Direito Bancário.",
   content: `<main class="jurisprudence-page"><section class="legal-hero"><p class="signal">INTELIGÊNCIA JURÍDICA</p><h1>Jurisprudência</h1><p>Decisões selecionadas e estruturadas pelo Predator News para pesquisa em Direito Bancário aplicado a aposentados e pensionistas do INSS.</p></section>
     <section class="legal-explorer" aria-labelledby="legal-results-title">
-      <div class="legal-search-row"><label><span>Pesquisar jurisprudência</span><input type="search" data-decision-search placeholder="Processo, tribunal, tema ou fundamento"></label><button type="button" data-clear-filters>Limpar filtros</button></div>
+      <form class="legal-search-row" data-decision-form><label><span>Pesquisar jurisprudência</span><input type="search" data-decision-search placeholder="Processo, tribunal, tese, tema ou fundamento"></label><button type="submit" data-apply-filters>Aplicar filtros</button><button type="button" data-clear-filters>Limpar filtros</button></form>
       <div class="legal-filter-grid">${selectFilter("tribunal", "Tribunal", tribunals)}${selectFilter("produto", "Produto", products)}${selectFilter("tema", "Tema", themes)}${selectFilter("tese", "Tese", theses, thesisLabels)}${selectFilter("statusTese", "Resultado da tese", thesisStatuses)}</div>
       <div class="legal-results-head"><h2 id="legal-results-title">Decisões catalogadas</h2><p aria-live="polite"><strong data-result-count>${decisions.length}</strong> resultado(s)</p></div>
       <div class="legal-card-list">${decisions.map((decision) => decisionCard(decision, thesisLabels)).join("\n")}</div>
       <p class="legal-empty" data-decision-empty hidden>Nenhuma decisão corresponde aos critérios informados.</p>
     </section></main>`,
-  script: `<script type="module">import{matchesDecision}from'${BASE}/assets/jurisprudencia-filter.mjs';const search=document.querySelector('[data-decision-search]'),selects=[...document.querySelectorAll('[data-decision-filter]')],cards=[...document.querySelectorAll('[data-decision-card]')],count=document.querySelector('[data-result-count]'),empty=document.querySelector('[data-decision-empty]');const split=value=>value?value.split('|'):[];function apply(){const filters={query:search.value};selects.forEach(select=>filters[select.dataset.decisionFilter]=select.value);let visible=0;cards.forEach(card=>{const record={search:card.dataset.search,tribunal:card.dataset.tribunal,produtos:split(card.dataset.produtos),temas:split(card.dataset.temas),teses:split(card.dataset.teses),statusTese:split(card.dataset.statusTese)};const show=matchesDecision(record,filters);card.hidden=!show;if(show)visible++});count.textContent=visible;empty.hidden=visible!==0}search.addEventListener('input',apply);selects.forEach(select=>select.addEventListener('change',apply));document.querySelector('[data-clear-filters]').addEventListener('click',()=>{search.value='';selects.forEach(select=>select.value='');apply();search.focus()});</script>`,
+  script: `<script type="module">import{matchesDecision}from'${BASE}/assets/jurisprudencia-filter.mjs';const form=document.querySelector('[data-decision-form]'),search=document.querySelector('[data-decision-search]'),selects=[...document.querySelectorAll('[data-decision-filter]')],cards=[...document.querySelectorAll('[data-decision-card]')],count=document.querySelector('[data-result-count]'),empty=document.querySelector('[data-decision-empty]');const split=value=>value?value.split('|'):[];function apply(){const filters={query:search.value};selects.forEach(select=>filters[select.dataset.decisionFilter]=select.value);let visible=0;cards.forEach(card=>{const record={search:card.dataset.search,tribunal:card.dataset.tribunal,produtos:split(card.dataset.produtos),temas:split(card.dataset.temas),teses:split(card.dataset.teses),statusTese:split(card.dataset.statusTese)};const show=matchesDecision(record,filters);card.hidden=!show;if(show)visible++});count.textContent=visible;empty.hidden=visible!==0}form.addEventListener('submit',event=>{event.preventDefault();apply()});search.addEventListener('input',apply);selects.forEach(select=>select.addEventListener('change',apply));document.querySelector('[data-clear-filters]').addEventListener('click',()=>{search.value='';selects.forEach(select=>select.value='');apply();search.focus()});apply();</script>`,
 });
 await writeFile(join(jurisprudenceDirectory, "index.html"), jurisprudencePage);
 
