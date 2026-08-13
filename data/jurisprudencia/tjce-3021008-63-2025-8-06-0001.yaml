@@ -1,0 +1,43 @@
+id: tjce-3021008-63-2025-8-06-0001
+identificacao:
+  tribunal: TJCE
+  processo: 3021008-63.2025.8.06.0001
+  tipo_decisao: acordao
+  orgao_julgador: "3ª Câmara de Direito Privado"
+  relator: "CLEIDE ALVES DE AGUIAR"
+  data_julgamento: "2026-02-26"
+  data_publicacao: null
+titulo: "RMC convertida em empréstimo consignado"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
+resumo_predator: "A 3ª Câmara de Direito Privado examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso desprovido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque"]
+  fatos_relevantes: ["contrato_claro","uso_reiterado_cartao","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato","assinatura","termo_consentimento","comprovante_transferencia","faturas","historico_uso"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento"]
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: nao_informado
+  dano_moral: deferido
+  processual: "recurso desprovido"
+  efeitos_materiais: ["conversão para empréstimo consignado","indenização por dano moral"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-34187913/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjce-sjuris-34187913/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

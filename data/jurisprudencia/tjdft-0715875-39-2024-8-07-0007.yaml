@@ -1,0 +1,43 @@
+id: tjdft-0715875-39-2024-8-07-0007
+identificacao:
+  tribunal: TJDFT
+  processo: 0715875-39.2024.8.07.0007
+  tipo_decisao: acordao
+  orgao_julgador: "6ª TURMA CÍVEL"
+  relator: "SONÍRIA ROCHA CAMPOS D'ASSUNÇÃO"
+  data_julgamento: "2025-05-21"
+  data_publicacao: null
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "A clareza do instrumento e do consentimento documentado foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "A 6ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante a clareza do instrumento e do consentimento documentado. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","saque","juros_abusivos"]
+  fatos_relevantes: ["contrato_claro","saque_unico","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato","assinatura","termo_consentimento"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: []
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/e55bf1ca-8e13-4a04-b2c0-9f410a2098bf"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/e55bf1ca-8e13-4a04-b2c0-9f410a2098bf"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

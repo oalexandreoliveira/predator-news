@@ -1,0 +1,43 @@
+id: tjma-0802276-39-2017-8-10-0060
+identificacao:
+  tribunal: TJMA
+  processo: 0802276-39.2017.8.10.0060
+  tipo_decisao: acordao
+  orgao_julgador: "5ª Câmara Cível"
+  relator: "RAIMUNDO MORAES BOGEA"
+  data_julgamento: "2023-10-24"
+  data_publicacao: "2023-10-24"
+titulo: "RMC convertida em empréstimo consignado"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
+resumo_predator: "A 5ª Câmara Cível examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","juros_abusivos"]
+  fatos_relevantes: ["nao_informado"]
+  meio_contratacao: nao_informado
+provas: ["contrato","assinatura","faturas"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado"]
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: ["conversão para empréstimo consignado"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-baf3613a17fa4144/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-baf3613a17fa4144/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

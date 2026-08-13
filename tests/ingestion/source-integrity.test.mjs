@@ -15,6 +15,7 @@ const synthetic = JSON.parse(await readFile(new URL('../../ingestion/fixtures/si
 const clone = value => structuredClone(value);
 
 test('caso real do TJCE é aceito como controle positivo',()=>assert.deepEqual(validateSourceIntegrity({candidate:real}),{valid:true,reasons:[]}));
+test('fonte oficial do TJSC é aceita pelo gate de integridade',()=>{const value=clone(real);value.identificacao.tribunal='TJSC';value.identificacao.processo='5000228-24.2019.8.24.0051';value.fonte.url_original='https://eproc1g.tjsc.jus.br/eproc/externo_controlador.php';value.fonte.url_inteiro_teor=value.fonte.url_original;assert.deepEqual(validateSourceIntegrity({candidate:value}),{valid:true,reasons:[]});});
 test('antigo candidato sintético é rejeitado',()=>assert.ok(validateSourceIntegrity({candidate:synthetic}).reasons.includes('synthetic_candidate_forbidden')));
 test('domínio reservado example.invalid é rejeitado',()=>{const value=clone(real);value.fonte.url_original='https://example.invalid/case';assert.ok(validateSourceIntegrity({candidate:value}).reasons.includes('reserved_source_domain'));});
 test('domínio incompatível com o tribunal é rejeitado',()=>{const value=clone(real);value.fonte.url_original='https://www.tjma.jus.br/case';assert.ok(validateSourceIntegrity({candidate:value}).reasons.includes('source_domain_mismatch'));});

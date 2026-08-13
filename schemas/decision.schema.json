@@ -13,11 +13,13 @@
         "tribunal": {"type": "string", "pattern": "^[A-Z0-9]{2,10}$"},
         "processo": {"type": "string", "pattern": "^[0-9]{7}-[0-9]{2}\\.[0-9]{4}\\.[0-9]\\.[0-9]{2}\\.[0-9]{4}$"},
         "tipo_decisao": {"type": "string"}, "orgao_julgador": {"type": "string", "minLength": 2},
-        "relator": {"type": "string", "minLength": 2}, "data_julgamento": {"type": ["string", "null"], "format": "date"},
+        "relator": {"type": ["string", "null"], "minLength": 2}, "data_julgamento": {"type": ["string", "null"], "format": "date"},
         "data_publicacao": {"type": ["string", "null"], "format": "date"}
       }
     },
     "titulo": {"type": "string", "minLength": 10},
+    "questao_juridica": {"type": "string", "minLength": 20},
+    "ratio_decidendi": {"type": "string", "minLength": 20},
     "resumo_predator": {"type": "string", "minLength": 30},
     "contexto": {
       "type": "object", "additionalProperties": false, "required": ["produtos", "temas"],
@@ -32,8 +34,20 @@
     "provas": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "teses": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["slug", "status"], "properties": {"slug": {"type": "string"}, "status": {"type": "string"}}}},
     "fundamentos": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
-    "resultado": {"type": "object", "additionalProperties": false, "required": ["contrato", "conversao", "repeticao_indebito", "dano_moral"], "properties": {"contrato": {"type": "string"}, "conversao": {"type": "string"}, "repeticao_indebito": {"type": "string"}, "dano_moral": {"type": "string"}}},
+    "resultado": {"type": "object", "additionalProperties": false, "required": ["contrato", "conversao", "repeticao_indebito", "dano_moral"], "properties": {"contrato": {"type": "string"}, "conversao": {"type": "string"}, "repeticao_indebito": {"type": "string"}, "dano_moral": {"type": "string"}, "processual": {"type": ["string", "null"]}, "efeitos_materiais": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}}},
     "fonte": {"type": "object", "additionalProperties": false, "required": ["natureza", "recuperado_via", "url_original", "consultado_em"], "properties": {"natureza": {"type": "string"}, "recuperado_via": {"type": "string"}, "url_original": {"type": "string", "format": "uri", "pattern": "^https://"}, "url_inteiro_teor": {"type": ["string", "null"], "format": "uri"}, "consultado_em": {"type": "string", "format": "date"}}},
-    "autoridade": {"type": "string"}, "status": {"type": "string"}
+    "autoridade": {"type": "string"},
+    "status": {"type": "string"},
+    "revisao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {"enum": ["automatizada_pendente_revisao_humana", "confirmada_por_humano", "corrigida_apos_revisao"]},
+        "analisado_em": {"type": ["string", "null"], "format": "date"},
+        "revisado_em": {"type": ["string", "null"], "format": "date"},
+        "revisor": {"type": ["string", "null"]}
+      }
+    }
   }
 }

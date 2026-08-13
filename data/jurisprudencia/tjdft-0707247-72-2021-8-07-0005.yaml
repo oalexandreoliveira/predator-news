@@ -1,0 +1,43 @@
+id: tjdft-0707247-72-2021-8-07-0005
+identificacao:
+  tribunal: TJDFT
+  processo: 0707247-72.2021.8.07.0005
+  tipo_decisao: acordao
+  orgao_julgador: "TERCEIRA TURMA RECURSAL"
+  relator: "CARLOS ALBERTO MARTINS FILHO"
+  data_julgamento: "2022-08-24"
+  data_publicacao: "2022-08-30"
+titulo: "Validade formal e integração contratual por abusividade"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto de autenticação e documentos eletrônicos foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a integrou o contrato sem negar sua validade formal."
+resumo_predator: "O TERCEIRA TURMA RECURSAL examinou a contratação de cartão de crédito consignado e integrou o contrato sem negar sua validade formal, considerando determinante o conjunto de autenticação e documentos eletrônicos. No plano processual, houve recurso desprovido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","saque","contratacao_digital","juros_abusivos"]
+  fatos_relevantes: ["saque_unico","desconto_beneficio"]
+  meio_contratacao: digital
+provas: ["contrato","comprovante_transferencia","faturas"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","autenticidade_nao_equivale_consentimento"]
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: nao_informado
+  dano_moral: deferido
+  processual: "recurso desprovido"
+  efeitos_materiais: ["integração contratual por desvantagem exagerada","indenização por dano moral","litigância de má-fé examinada"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/843eac73-0866-4540-8150-b845f2773ead"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/843eac73-0866-4540-8150-b845f2773ead"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

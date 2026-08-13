@@ -1,0 +1,43 @@
+id: tjma-0000652-45-2017-8-10-0138
+identificacao:
+  tribunal: TJMA
+  processo: 0000652-45.2017.8.10.0138
+  tipo_decisao: acordao
+  orgao_julgador: "Turma Recursal Cível e Criminal de Chapadinha"
+  relator: "MIRELLA CEZAR FREITAS"
+  data_julgamento: "2025-07-18"
+  data_publicacao: "2025-07-18"
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "A clareza do instrumento e do consentimento documentado foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "O Turma Recursal Cível e Criminal de Chapadinha examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante a clareza do instrumento e do consentimento documentado. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","saque"]
+  fatos_relevantes: ["contrato_claro","saque_unico","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato","assinatura","comprovante_transferencia"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: "recurso provido"
+  efeitos_materiais: []
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-16e4db744e4d37dc/inteiro-teor"
+  url_inteiro_teor: "https://api.jusratio.com.br/v1/docs/tjma-acordao-tr-16e4db744e4d37dc/inteiro-teor"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

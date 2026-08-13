@@ -23,7 +23,7 @@ test("deriva decisões relacionadas a fundamento", () => {
 
 test("deriva fundamentos usados pelas decisões da tese sem duplicidade", () => {
   const related = foundationsByThesis(decisions, thesisSlug, foundations);
-  assert.equal(related.length, 5);
+  assert.equal(related.length, new Set(decisionsByThesis(decisions, thesisSlug).flatMap(item => item.fundamentos)).size);
   assert.equal(new Set(related.map((item) => item.slug)).size, related.length);
 });
 
@@ -47,14 +47,14 @@ test("agregado da tese contém contagens corretas e sem duplicações", () => {
   const aggregate = aggregateThesis(theses[0], decisions, foundations);
   assert.equal(aggregate.decisions.length, decisions.filter(item => item.teses.some(tese => tese.slug === thesisSlug)).length);
   assert.equal(aggregate.tribunals.length, new Set(decisions.filter(item => item.teses.some(tese => tese.slug === thesisSlug)).map(item => item.identificacao.tribunal)).size);
-  assert.equal(aggregate.foundations.length, 5);
+  assert.equal(aggregate.foundations.length, new Set(aggregate.decisions.flatMap(item => item.fundamentos)).size);
   assert.equal(new Set(aggregate.decisions.map((item) => item.id)).size, aggregate.decisions.length);
 });
 
 test("entidade sem decisões relacionadas é suportada", () => {
-  const foundation = foundations.find((item) => item.slug === "ausencia_uso_cartao_indicio_vicio");
+  const foundation = { slug: "fundamento-sem-decisoes", titulo: "Sem decisões", formulacao: "Controle de entidade vazia", temas: [], produtos: [], status: "ativo" };
   const aggregate = aggregateFoundation(foundation, decisions, theses);
   assert.equal(aggregate.decisions.length, 0);
   assert.equal(aggregate.latestDecision, null);
-  assert.equal(aggregate.theses.length, 1);
+  assert.equal(aggregate.theses.length, 0);
 });

@@ -1,0 +1,43 @@
+id: tjdft-0703001-82-2025-8-07-0008
+identificacao:
+  tribunal: TJDFT
+  processo: 0703001-82.2025.8.07.0008
+  tipo_decisao: acordao
+  orgao_julgador: "1ª TURMA CÍVEL"
+  relator: "FABRÍCIO FONTOURA BEZERRA"
+  data_julgamento: "2026-02-04"
+  data_publicacao: "2026-03-03"
+titulo: "Validade do cartão consignado reconhecida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O uso do cartão em saques ou compras foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a preservar a validade da contratação."
+resumo_predator: "A 1ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e preservou a validade da contratação, considerando determinante o uso do cartão em saques ou compras. No plano processual, houve recurso desprovido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","uso_cartao","saque","juros_abusivos"]
+  fatos_relevantes: ["uso_reiterado_cartao"]
+  meio_contratacao: nao_informado
+provas: ["contrato","historico_uso"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos: ["dever_informacao_qualificado","uso_reiterado_cartao_indicio_consentimento"]
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: "recurso desprovido"
+  efeitos_materiais: []
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/0761626b-94bb-43c5-b52c-fd2b3d1c0e87"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/0761626b-94bb-43c5-b52c-fd2b3d1c0e87"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

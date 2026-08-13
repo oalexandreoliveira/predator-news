@@ -1,0 +1,44 @@
+id: tjdft-0719478-46-2021-8-07-0001
+identificacao:
+  tribunal: TJDFT
+  processo: 0719478-46.2021.8.07.0001
+  tipo_decisao: acordao
+  orgao_julgador: "5ª TURMA CÍVEL"
+  relator: "JOÃO LUÍS FISCHER DIAS"
+  data_julgamento: "2022-06-22"
+  data_publicacao: "2022-07-07"
+titulo: "Controvérsia sobre cartão consignado decidida"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "A destinação econômica do saque foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a definir os efeitos da contratação conforme a prova disponível."
+resumo_predator: "A 5ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e definiu os efeitos da contratação conforme a prova disponível, considerando determinante a destinação econômica do saque. O resultado processual foi preservado conforme o documento recuperado."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","saque","juros_abusivos"]
+  perfis_consumidor: ["aposentado_pensionista"]
+  fatos_relevantes: ["saque_unico","desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: nao_enfrentada
+fundamentos: ["dever_informacao_qualificado","saque_unico_indicio_mutuo","hipervulnerabilidade_consumidor_idoso"]
+resultado:
+  contrato: nao_informado
+  conversao: nao_informado
+  repeticao_indebito: simples
+  dano_moral: nao_informado
+  processual: null
+  efeitos_materiais: ["restituição simples"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/a83b5b7c-55ce-40e9-92fc-06a9a9aa04f6"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/a83b5b7c-55ce-40e9-92fc-06a9a9aa04f6"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null

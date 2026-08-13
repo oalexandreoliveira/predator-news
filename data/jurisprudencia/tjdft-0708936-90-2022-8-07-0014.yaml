@@ -1,0 +1,44 @@
+id: tjdft-0708936-90-2022-8-07-0014
+identificacao:
+  tribunal: TJDFT
+  processo: 0708936-90.2022.8.07.0014
+  tipo_decisao: acordao
+  orgao_julgador: "6ª TURMA CÍVEL"
+  relator: "ARQUIBALDO CARNEIRO PORTELA"
+  data_julgamento: "2025-08-27"
+  data_publicacao: null
+titulo: "RMC convertida em empréstimo consignado"
+questao_juridica: "Validade e efeitos da contratação de cartão de crédito consignado diante da alegação de vício de consentimento, falha informativa ou abusividade."
+ratio_decidendi: "O conjunto documental descrito na decisão foi avaliado em conjunto com o dever de informação e a documentação contratual, levando o colegiado a determinar a conversão da operação."
+resumo_predator: "A 6ª TURMA CÍVEL examinou a contratação de cartão de crédito consignado e determinou a conversão da operação, considerando determinante o conjunto documental descrito na decisão. No plano processual, houve recurso provido."
+contexto:
+  produtos: ["rmc","cartao_credito_consignado"]
+  temas: ["consentimento","dever_informacao","prova_contratacao","juros_abusivos"]
+  perfis_consumidor: ["aposentado_pensionista"]
+  fatos_relevantes: ["desconto_beneficio"]
+  meio_contratacao: nao_informado
+provas: ["contrato"]
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+fundamentos: ["dever_informacao_qualificado","hipervulnerabilidade_consumidor_idoso"]
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: simples
+  dano_moral: indeferido
+  processual: "recurso provido"
+  efeitos_materiais: ["conversão para empréstimo consignado","restituição simples","dano moral afastado"]
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/fa034efe-1829-4b3a-b12a-29487ac2dc4a"
+  url_inteiro_teor: "https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/fa034efe-1829-4b3a-b12a-29487ac2dc4a"
+  consultado_em: "2026-08-13"
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: "2026-08-13"
+  revisado_em: null
+  revisor: null
