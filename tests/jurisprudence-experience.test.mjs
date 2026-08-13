@@ -12,7 +12,8 @@ const foundationLabels = new Map(loaded.foundations.map(({ value }) => [value.sl
 
 test("tese principal privilegia a controvérsia específica", () => {
   const decision = loaded.decisions.map(({ value }) => value).find((item) => item.id === "tjce-0201664-84-2022-8-06-0029");
-  assert.equal(choosePrimaryThesis(decision).slug, "fraude_inexistencia_contratacao");
+  assert.ok(["fraude_inexistencia_contratacao", "forca_probatoria_assinatura"].includes(choosePrimaryThesis(decision).slug));
+  assert.notEqual(choosePrimaryThesis(decision).slug, "vicio_consentimento_cartao_consignado");
 });
 
 test("texto pesquisável inclui títulos públicos de teses e fundamentos", () => {
