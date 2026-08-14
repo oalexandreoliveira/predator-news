@@ -1,0 +1,11 @@
+{
+  "kind": "final_authorization_grant",
+  "batch_id": "onda-0-etapa-0b-tjsc-2026-08-14",
+  "head": "2acf942a6d0b9466f1657c1844448dfa82c46baa",
+  "digest": "sha256:7c09f5b98ccfc853b1fc3072d3037569a9aeae74c92197bf6652df464574a508",
+  "package": "ingestion/manifests/onda-0-etapa-0b-tjsc-2026-08-14.authorization-package.json",
+  "authorizer": "oalexandreoliveira",
+  "decision": "approve",
+  "scope": "exact_head_digest_package_and_seven_processes",
+  "received_at": "2026-08-14T00:00:00-03:00"
+}
