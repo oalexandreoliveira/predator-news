@@ -1,0 +1,54 @@
+{
+  "kind": "authorization_package",
+  "batch_id": "onda-0-etapa-0b-tjsc-2026-08-14",
+  "tribunal": "TJSC",
+  "wave": "0",
+  "stage": "0B",
+  "branch": "codex/tjsc-wave0b",
+  "head": "2acf942a6d0b9466f1657c1844448dfa82c46baa",
+  "digest": "sha256:7c09f5b98ccfc853b1fc3072d3037569a9aeae74c92197bf6652df464574a508",
+  "algorithm": "sha256",
+  "readiness": "READY_FOR_AUTHORIZATION",
+  "reviewer_id": "oalexandreoliveira",
+  "decision_count": 7,
+  "processes": [
+    "5093865-06.2022.8.24.0930",
+    "5002158-11.2025.8.24.0005",
+    "5035991-29.2023.8.24.0930",
+    "5032158-32.2025.8.24.0930",
+    "5002086-81.2023.8.24.0041",
+    "5094500-50.2023.8.24.0930",
+    "5011111-52.2025.8.24.0008"
+  ],
+  "canonical_targets": [
+    "data/jurisprudencia/tjsc-5093865-06-2022-8-24-0930.yaml",
+    "data/jurisprudencia/tjsc-5002158-11-2025-8-24-0005.yaml",
+    "data/jurisprudencia/tjsc-5035991-29-2023-8-24-0930.yaml",
+    "data/jurisprudencia/tjsc-5032158-32-2025-8-24-0930.yaml",
+    "data/jurisprudencia/tjsc-5002086-81-2023-8-24-0041.yaml",
+    "data/jurisprudencia/tjsc-5094500-50-2023-8-24-0930.yaml",
+    "data/jurisprudencia/tjsc-5011111-52-2025-8-24-0008.yaml"
+  ],
+  "validations": {
+    "reviewed_schema": true,
+    "proposal_schema": true,
+    "decision_schema": true,
+    "cnj": true,
+    "dedup": true,
+    "source_integrity": true,
+    "referential_integrity": true
+  },
+  "projected": {
+    "decisions": 40,
+    "third_chamber_share": 0.75,
+    "maintained": 11,
+    "hhi": 0.5825,
+    "organs": 6
+  },
+  "rollback": "remove somente os sete canonical_targets e reconstruir o site",
+  "final_authorization": {
+    "required": true,
+    "bound_to_digest": true,
+    "granted": false
+  }
+}

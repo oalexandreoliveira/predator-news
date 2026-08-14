@@ -1,0 +1,54 @@
+{
+  "batch_id": "onda-0-etapa-0b-tjsc-2026-08-14",
+  "wave": "0",
+  "stage": "0B",
+  "tribunal": "TJSC",
+  "branch": "codex/tjsc-wave0b",
+  "head": "2acf942a6d0b9466f1657c1844448dfa82c46baa",
+  "baseline": {
+    "decisions": 33,
+    "third_chamber": 30,
+    "maintained": 4,
+    "hhi": 0.8301
+  },
+  "candidates": 7,
+  "reviewed": 7,
+  "approved": 7,
+  "rejected": 0,
+  "pending": 0,
+  "reviewer_id": "oalexandreoliveira",
+  "processes": [
+    "5093865-06.2022.8.24.0930",
+    "5002158-11.2025.8.24.0005",
+    "5035991-29.2023.8.24.0930",
+    "5032158-32.2025.8.24.0930",
+    "5002086-81.2023.8.24.0041",
+    "5094500-50.2023.8.24.0930",
+    "5011111-52.2025.8.24.0008"
+  ],
+  "organs_added": [
+    "5ª Câmara de Direito Comercial",
+    "6ª Câmara de Direito Comercial",
+    "2ª Câmara de Direito Comercial",
+    "4ª Câmara de Direito Comercial"
+  ],
+  "catalog": {
+    "new_theses": 0,
+    "new_foundations": 0
+  },
+  "validations": {
+    "reviewed_schema": true,
+    "proposal_schema": true,
+    "decision_schema": true,
+    "cnj": true,
+    "dedup": true,
+    "source_integrity": true,
+    "referential_integrity": true
+  },
+  "freeze": {
+    "status": "frozen",
+    "algorithm": "sha256",
+    "digest": "sha256:7c09f5b98ccfc853b1fc3072d3037569a9aeae74c92197bf6652df464574a508",
+    "material_change_invalidates": true
+  }
+}
