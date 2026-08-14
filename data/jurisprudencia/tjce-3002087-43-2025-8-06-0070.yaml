@@ -1,0 +1,69 @@
+id: tjce-3002087-43-2025-8-06-0070
+identificacao:
+  tribunal: TJCE
+  processo: 3002087-43.2025.8.06.0070
+  tipo_decisao: acordao
+  orgao_julgador: 6ª Câmara de Direito Privado
+  relator: MARIA MARLEIDE MACIEL MENDES
+  data_julgamento: 2026-03-04
+  data_publicacao: 2026-03-04
+titulo: Informação qualificada protege consumidor idoso e analfabeto
+questao_juridica: A condição de consumidor idoso e analfabeto exige informação qualificada capaz de demonstrar compreensão da RMC, além da mera formalização do instrumento?
+ratio_decidendi: A vulnerabilidade agravada exigia demonstração material de compreensão da modalidade; ausente prova suficiente, reconheceu-se erro substancial, conversão e repetição temporalmente modulada, sem dano moral.
+resumo_predator: 6ª Câmara de Direito Privado examinou de forma individualizada prova, informação e efeitos patrimoniais no cartão consignado, com recurso conhecido e parcialmente provido.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - contrato
+  - assinatura
+teses:
+  - slug: validade_contratacao_analfabeto
+    status: acolhida
+  - slug: hipervulnerabilidade_consumidor_idoso
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - formalidades_contratacao_analfabeto
+  - hipervulnerabilidade_consumidor_idoso
+  - dever_informacao_qualificado
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: simples
+  dano_moral: indeferido
+  processual: recurso conhecido e parcialmente provido
+  efeitos_materiais:
+    - Informação qualificada protege consumidor idoso e analfabeto
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjce-sjuris-34439784/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjce-sjuris-34439784/inteiro-teor
+  consultado_em: 2026-08-14
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-14
+  revisado_em: 2026-08-14
+  revisor: oalexandreoliveira

@@ -1,0 +1,66 @@
+id: tjce-3051806-07-2025-8-06-0001
+identificacao:
+  tribunal: TJCE
+  processo: 3051806-07.2025.8.06.0001
+  tipo_decisao: acordao
+  orgao_julgador: 6ª Câmara de Direito Privado
+  relator: FRANCISCO LUCIANO LIMA RODRIGUES
+  data_julgamento: 2026-03-12
+  data_publicacao: 2026-03-12
+titulo: Biometria e geolocalização afastam fraude e restituição
+questao_juridica: Contrato digital, biometria facial e geolocalização individualizadas satisfazem o ônus de provar a contratação e afastam fraude, repetição e dano moral?
+ratio_decidendi: A documentação eletrônica robusta individualizou a operação e satisfez o ônus probatório da instituição, preservando o contrato e afastando ilicitude, repetição e reparação moral.
+resumo_predator: 6ª Câmara de Direito Privado examinou de forma individualizada prova, informação e efeitos patrimoniais no cartão consignado, com recurso conhecido e desprovido.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - onus_instituicao_provar_contratacao
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso conhecido e desprovido
+  efeitos_materiais:
+    - Biometria e geolocalização afastam fraude e restituição
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjce-sjuris-34690014/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjce-sjuris-34690014/inteiro-teor
+  consultado_em: 2026-08-14
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-14
+  revisado_em: 2026-08-14
+  revisor: oalexandreoliveira

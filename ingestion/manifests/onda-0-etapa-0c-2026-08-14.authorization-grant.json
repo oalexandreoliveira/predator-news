@@ -1,0 +1,11 @@
+{
+  "kind": "final_authorization_grant",
+  "batch_id": "onda-0-etapa-0c-2026-08-14",
+  "head": "7c45ecf2ed9242a0140a2015fece23c82d70f953",
+  "digest": "sha256:858858ed1c57e4e48698e4ea0f65dc15e0496162f3717ef449c204bd36db3883",
+  "package": "ingestion/manifests/onda-0-etapa-0c-2026-08-14.authorization-package.json",
+  "authorizer": "oalexandreoliveira",
+  "decision": "approve",
+  "scope": "exact_head_digest_package_and_six_processes",
+  "received_at": "2026-08-14T11:47:51-03:00"
+}

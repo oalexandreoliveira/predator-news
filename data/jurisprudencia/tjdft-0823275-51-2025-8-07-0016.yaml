@@ -1,0 +1,66 @@
+id: tjdft-0823275-51-2025-8-07-0016
+identificacao:
+  tribunal: TJDFT
+  processo: 0823275-51.2025.8.07.0016
+  tipo_decisao: acordao
+  orgao_julgador: TERCEIRA TURMA RECURSAL
+  relator: EDI MARIA COUTINHO BIZZI
+  data_julgamento: 2026-06-29
+  data_publicacao: 2026-06-29
+titulo: Prova digital, TCE e saque preservam contratos RMC/RCC
+questao_juridica: Biometria, termo de consentimento e saque demonstrado superam sentença de nulidade parcial e comprovam contratação informada de RMC e RCC?
+ratio_decidendi: O conjunto formado por biometria, TCE e saque vinculou autoria, ciência da modalidade e comportamento posterior, justificando a reforma da sentença e a manutenção dos contratos.
+resumo_predator: TERCEIRA TURMA RECURSAL examinou de forma individualizada prova, informação e efeitos patrimoniais no cartão consignado, com recurso conhecido e provido.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - termo_consentimento
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - saque_unico_indicio_mutuo
+  - conduta_posterior_como_prova
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso conhecido e provido
+  efeitos_materiais:
+    - Prova digital, TCE e saque preservam contratos RMC/RCC
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: jusratio
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/8ed90b44-52d1-4143-82a7-89f7e7f2ff1e
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/8ed90b44-52d1-4143-82a7-89f7e7f2ff1e
+  consultado_em: 2026-08-14
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-14
+  revisado_em: 2026-08-14
+  revisor: oalexandreoliveira
