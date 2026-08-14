@@ -1,0 +1,50 @@
+{
+  "kind": "authorization_package",
+  "batch_id": "onda-0-etapa-0c-2026-08-14",
+  "wave": "0",
+  "stage": "0C",
+  "branch": "codex/wave0-stage0c",
+  "head": "7c45ecf2ed9242a0140a2015fece23c82d70f953",
+  "digest": "sha256:858858ed1c57e4e48698e4ea0f65dc15e0496162f3717ef449c204bd36db3883",
+  "algorithm": "sha256",
+  "readiness": "READY_FOR_AUTHORIZATION",
+  "reviewer_id": "oalexandreoliveira",
+  "decision_count": 6,
+  "processes": [
+    "0711235-84.2024.8.07.0009",
+    "0823275-51.2025.8.07.0016",
+    "0200024-39.2023.8.06.0117",
+    "3002087-43.2025.8.06.0070",
+    "0204225-47.2023.8.06.0029",
+    "3051806-07.2025.8.06.0001"
+  ],
+  "canonical_targets": [
+    "data/jurisprudencia/tjdft-0711235-84-2024-8-07-0009.yaml",
+    "data/jurisprudencia/tjdft-0823275-51-2025-8-07-0016.yaml",
+    "data/jurisprudencia/tjce-0200024-39-2023-8-06-0117.yaml",
+    "data/jurisprudencia/tjce-3002087-43-2025-8-06-0070.yaml",
+    "data/jurisprudencia/tjce-0204225-47-2023-8-06-0029.yaml",
+    "data/jurisprudencia/tjce-3051806-07-2025-8-06-0001.yaml"
+  ],
+  "validations": {
+    "reviewed_schema": true,
+    "proposal_schema": true,
+    "decision_schema": true,
+    "cnj": true,
+    "dedup": true,
+    "source_integrity": true,
+    "referential_integrity": true
+  },
+  "projected": {
+    "total_decisions": 194,
+    "tjdft": 58,
+    "tjce": 40,
+    "tjma": 32
+  },
+  "rollback": "remove somente os seis canonical_targets e reconstruir o site",
+  "final_authorization": {
+    "required": true,
+    "bound_to_digest": true,
+    "granted": false
+  }
+}
