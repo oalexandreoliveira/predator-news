@@ -1,0 +1,66 @@
+id: tjce-0200024-39-2023-8-06-0117
+identificacao:
+  tribunal: TJCE
+  processo: 0200024-39.2023.8.06.0117
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma do Núcleo de Justiça 4.0 - Direito Privado
+  relator: FLAVIO VINICIUS BASTOS SOUSA
+  data_julgamento: 2026-04-01
+  data_publicacao: 2026-04-01
+titulo: Prescrição parcial e restituição mista acompanham conversão
+questao_juridica: A falha informativa autoriza converter a RMC e como prescrição parcial, marco temporal da repetição e dano moral compõem os efeitos do julgamento?
+ratio_decidendi: A insuficiência informacional justificou a conversão; os descontos foram submetidos à prescrição quinquenal parcial e a restituição variou conforme o marco temporal aplicável, com dano moral reconhecido e quantificado no caso.
+resumo_predator: 1ª Turma do Núcleo de Justiça 4.0 - Direito Privado examinou de forma individualizada prova, informação e efeitos patrimoniais no cartão consignado, com recurso parcialmente provido.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - contrato
+  - faturas
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: prescricao_termo_inicial_rmc
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - dever_informacao_qualificado
+  - descontos_sucessivos_e_prescricao
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: simples
+  dano_moral: deferido
+  processual: recurso parcialmente provido
+  efeitos_materiais:
+    - Prescrição parcial e restituição mista acompanham conversão
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjce-sjuris-35406086/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjce-sjuris-35406086/inteiro-teor
+  consultado_em: 2026-08-14
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-14
+  revisado_em: 2026-08-14
+  revisor: oalexandreoliveira

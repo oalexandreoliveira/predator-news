@@ -1,0 +1,65 @@
+id: tjdft-0711235-84-2024-8-07-0009
+identificacao:
+  tribunal: TJDFT
+  processo: 0711235-84.2024.8.07.0009
+  tipo_decisao: acordao
+  orgao_julgador: 4ª TURMA CÍVEL
+  relator: JANSEN FIALHO DE ALMEIDA
+  data_julgamento: 2026-03-25
+  data_publicacao: 2026-03-25
+titulo: Biometria facial confirma RCC e afasta conversão
+questao_juridica: A contratação eletrônica com biometria facial comprova autoria e consentimento informado para preservar o RCC e rejeitar conversão, repetição e dano moral?
+ratio_decidendi: A biometria e o instrumento eletrônico individualizado demonstraram adesão válida à modalidade, afastando vício, abusividade, conversão e os efeitos restitutório e moral.
+resumo_predator: 4ª TURMA CÍVEL examinou de forma individualizada prova, informação e efeitos patrimoniais no cartão consignado, com recurso conhecido e não provido.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - prova_contratacao
+  perfis_consumidor:
+    - aposentado_pensionista
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso conhecido e não provido
+  efeitos_materiais:
+    - Biometria facial confirma RCC e afasta conversão
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: jusratio
+  url_original: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/530dedb0-3585-47bf-8d39-7b8fa2aa85c6
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/api/v1/pesquisa/download/530dedb0-3585-47bf-8d39-7b8fa2aa85c6
+  consultado_em: 2026-08-14
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-14
+  revisado_em: 2026-08-14
+  revisor: oalexandreoliveira
