@@ -39,7 +39,7 @@ Os resultados materiais compostos foram preservados em `resultado.efeitos_materi
 
 - `npm run validate:wave1-review`: 77 aprovados, 0 rejeitados, 0 correções, 0 pendentes;
 - `npm run validate:ingestion`: 17 schemas e fixtures válidos;
-- `npm run validate:data`: 271 decisões, 16 teses e 25 fundamentos válidos;
+- `npm run validate:data`: 271 decisões, 16 teses e 25 fundamentos válidos após a integração segura da `main` atualizada;
 - `npm run build`: 32 edições e 349 páginas HTML com links internos válidos;
 - `npm test`: 154 testes aprovados, 0 falhas.
 
