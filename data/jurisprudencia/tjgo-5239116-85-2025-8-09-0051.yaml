@@ -1,0 +1,63 @@
+id: tjgo-5239116-85-2025-8-09-0051
+identificacao:
+  tribunal: TJGO
+  processo: 5239116-85.2025.8.09.0051
+  tipo_decisao: acordao
+  orgao_julgador: 2ª Câmara
+  relator: VICENTE LOPES DA ROCHA JÚNIOR
+  data_julgamento: 2025-11-27
+  data_publicacao: 2025-11-27
+titulo: "Conversão do cartão consignado: assinatura, biometria, geolocalização e TED"
+questao_juridica: contratação digital válida pode ser convertida sem gerar cobrança indevida?
+ratio_decidendi: O colegiado valorou assinatura, biometria, geolocalização e TED e, com base nesse conjunto individualizado, concluiu por contratação válida; conversão mantida; dobro e dano afastados.
+resumo_predator: "2ª Câmara, sob relatoria de VICENTE LOPES DA ROCHA JÚNIOR, julgou agravo interno desprovido. No plano material, decidiu: contratação válida; conversão mantida; dobro e dano afastados. A prova determinante foi assinatura, biometria, geolocalização e TED."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - assinatura
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - conservacao_negocio_com_reequilibrio
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: agravo interno desprovido
+  efeitos_materiais:
+    - contratação válida
+    - conversão mantida
+    - dobro e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-52391168520258090051/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-52391168520258090051/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

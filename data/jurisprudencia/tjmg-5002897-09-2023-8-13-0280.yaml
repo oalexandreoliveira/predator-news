@@ -1,0 +1,57 @@
+id: tjmg-5002897-09-2023-8-13-0280
+identificacao:
+  tribunal: TJMG
+  processo: 5002897-09.2023.8.13.0280
+  tipo_decisao: acordao
+  orgao_julgador: 2º Núcleo 4.0
+  relator: Wauner Batista Ferreira Machado (JD 2G)
+  data_julgamento: 2025-09-22
+  data_publicacao: 2025-09-22
+titulo: "Validade da contratação consignada: biometria; IP; geolocalização"
+questao_juridica: prova digital e cláusulas claras afastam conversão/revisão?
+ratio_decidendi: O colegiado valorou biometria; IP; geolocalização e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão/revisão, dobro e dano afastados.
+resumo_predator: "2º Núcleo 4.0, sob relatoria de Wauner Batista Ferreira Machado (JD 2G), julgou apelação desprovida. No plano material, decidiu: contrato mantido; conversão/revisão, dobro e dano afastados. A prova determinante foi biometria; IP; geolocalização."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: integracao_revisao_desvantagem_exagerada
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - controle_desvantagem_exagerada
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - conversão/revisão, dobro e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=131935&sequencial=2&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=131935&sequencial=2&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

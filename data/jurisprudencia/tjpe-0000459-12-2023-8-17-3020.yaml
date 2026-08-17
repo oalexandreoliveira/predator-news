@@ -1,0 +1,69 @@
+id: tjpe-0000459-12-2023-8-17-3020
+identificacao:
+  tribunal: TJPE
+  processo: 0000459-12.2023.8.17.3020
+  tipo_decisao: acordao
+  orgao_julgador: 5ª Câmara Cível
+  relator: FABIO EUGENIO DANTAS DE OLIVEIRA LIMA
+  data_julgamento: 2024-04-18
+  data_publicacao: 2024-04-18
+titulo: "Conversão do cartão consignado: ausência de compras, TED e descontos"
+questao_juridica: Como a prova-chave (ausência de compras, TED e descontos) sustenta os resultados materiais (conversão; restituição temporalmente modulada; compensação; moral) efetivamente decididos?
+ratio_decidendi: O colegiado valorou ausência de compras, TED e descontos e, com base nesse conjunto individualizado, concluiu por conversão; simples/dobro por período; compensação; moral.
+resumo_predator: "5ª Câmara Cível, sob relatoria de FABIO EUGENIO DANTAS DE OLIVEIRA LIMA, julgou apelação parcialmente provida. No plano material, decidiu: conversão; simples/dobro por período; compensação; moral. A prova determinante foi ausência de compras, TED e descontos."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - saque
+    - uso_cartao
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: parcialmente_acolhida
+fundamentos:
+  - uso_reiterado_cartao_indicio_consentimento
+  - restituicao_conforme_boa_fe_objetiva
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: mista
+  dano_moral: deferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - conversão
+    - simples/dobro por período
+    - compensação
+    - moral
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-586788-00004591220238173020/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-586788-00004591220238173020/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

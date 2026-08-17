@@ -1,0 +1,63 @@
+id: tjgo-5551992-80-2024-8-09-0100
+identificacao:
+  tribunal: TJGO
+  processo: 5551992-80.2024.8.09.0100
+  tipo_decisao: acordao
+  orgao_julgador: 4ª Câmara
+  relator: MARIA CRISTINA COSTA MORGADO
+  data_julgamento: 2025-12-11
+  data_publicacao: 2025-12-11
+titulo: "Conversão do cartão consignado: desconto mínimo e ausência de amortização"
+questao_juridica: como modular restituição em contrato abusivo que perpetua dívida?
+ratio_decidendi: O colegiado valorou desconto mínimo e ausência de amortização e, com base nesse conjunto individualizado, concluiu por conversão; simples antes do marco e dobro depois; dano moral.
+resumo_predator: "4ª Câmara, sob relatoria de MARIA CRISTINA COSTA MORGADO, julgou apelação parcialmente provida. No plano material, decidiu: conversão; simples antes do marco e dobro depois; dano moral. A prova determinante foi desconto mínimo e ausência de amortização."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - desconto_beneficio
+    - juros_abusivos
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: fisico
+provas:
+  - contrato
+teses:
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: parcialmente_acolhida
+fundamentos:
+  - informacao_sobre_amortizacao_e_custo
+  - dever_informacao_qualificado
+  - restituicao_conforme_boa_fe_objetiva
+  - hipervulnerabilidade_consumidor_idoso
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: mista
+  dano_moral: deferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - conversão
+    - simples antes do marco e dobro depois
+    - dano moral
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-55519928020248090100/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-55519928020248090100/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

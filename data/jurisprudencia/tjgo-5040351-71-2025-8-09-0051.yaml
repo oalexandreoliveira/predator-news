@@ -1,0 +1,64 @@
+id: tjgo-5040351-71-2025-8-09-0051
+identificacao:
+  tribunal: TJGO
+  processo: 5040351-71.2025.8.09.0051
+  tipo_decisao: acordao
+  orgao_julgador: 9ª Câmara
+  relator: PERICLES DI MONTEZUMA CASTRO MOURA
+  data_julgamento: 2025-12-05
+  data_publicacao: 2025-12-05
+titulo: "Validade da contratação consignada: biometria, crédito e gravação audiovisual"
+questao_juridica: vídeo de esclarecimento comprova consentimento no RCC?
+ratio_decidendi: O colegiado valorou biometria, crédito e gravação audiovisual e, com base nesse conjunto individualizado, concluiu por RCC mantido; conversão, repetição e dano afastados.
+resumo_predator: "9ª Câmara, sob relatoria de PERICLES DI MONTEZUMA CASTRO MOURA, julgou agravo interno desprovido. No plano material, decidiu: RCC mantido; conversão, repetição e dano afastados. A prova determinante foi biometria, crédito e gravação audiovisual."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+    - rcc
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - termo_consentimento
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - dever_informacao_qualificado
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: agravo interno desprovido
+  efeitos_materiais:
+    - RCC mantido
+    - conversão, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50403517120258090051/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50403517120258090051/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

@@ -1,0 +1,72 @@
+id: tjpe-0003726-02-2022-8-17-2640
+identificacao:
+  tribunal: TJPE
+  processo: 0003726-02.2022.8.17.2640
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Câmara Regional de Caruaru
+  relator: DAMIAO SEVERIANO DE SOUSA
+  data_julgamento: 2023-12-22
+  data_publicacao: 2023-12-22
+titulo: "Conversão do cartão consignado: crédito inicial sem compras e descontos sucessivos"
+questao_juridica: Como a prova-chave (crédito inicial sem compras e descontos sucessivos) sustenta os resultados materiais (prescrição rejeitada; conversão; dobro modulado; moral afastado) efetivamente decididos?
+ratio_decidendi: O colegiado valorou crédito inicial sem compras e descontos sucessivos e, com base nesse conjunto individualizado, concluiu por prescrição rejeitada; conversão; dobro modulado; moral afastado.
+resumo_predator: "1ª Câmara Regional de Caruaru, sob relatoria de DAMIAO SEVERIANO DE SOUSA, julgou apelação parcialmente provida. No plano material, decidiu: prescrição rejeitada; conversão; dobro modulado; moral afastado. A prova determinante foi crédito inicial sem compras e descontos sucessivos."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - saque
+    - uso_cartao
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: prescricao_termo_inicial_rmc
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - descontos_sucessivos_e_prescricao
+  - uso_reiterado_cartao_indicio_consentimento
+  - informacao_sobre_amortizacao_e_custo
+  - restituicao_conforme_boa_fe_objetiva
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: mista
+  dano_moral: indeferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - prescrição rejeitada
+    - conversão
+    - dobro modulado
+    - moral afastado
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-540338-00037260220228172640/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-540338-00037260220228172640/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

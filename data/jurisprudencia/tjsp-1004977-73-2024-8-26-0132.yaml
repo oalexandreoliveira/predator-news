@@ -1,0 +1,65 @@
+id: tjsp-1004977-73-2024-8-26-0132
+identificacao:
+  tribunal: TJSP
+  processo: 1004977-73.2024.8.26.0132
+  tipo_decisao: acordao
+  orgao_julgador: 15ª Câmara
+  relator: Rodolfo Pellizari
+  data_julgamento: 2025-06-10
+  data_publicacao: 2025-06-10
+titulo: "Validade da contratação consignada: assinatura eletrônica, documentos e depósito"
+questao_juridica: Ausência de ICP-Brasil compromete assinatura eletrônica confirmada por autoria, integridade e crédito?
+ratio_decidendi: O colegiado valorou assinatura eletrônica, documentos e depósito e, com base nesse conjunto individualizado, concluiu por contrato mantido; perícia, restituição e moral afastados.
+resumo_predator: "15ª Câmara, sob relatoria de Rodolfo Pellizari, julgou apelação desprovida. No plano material, decidiu: contrato mantido; perícia, restituição e moral afastados. A prova determinante foi assinatura eletrônica, documentos e depósito."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - fraude_bancaria
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+  - pericia_grafotecnica
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - credito_em_conta_comprova_liberacao
+  - restituicao_conforme_boa_fe_objetiva
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - perícia, restituição e moral afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=19329093&cdForo=0
+  url_inteiro_teor: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=19329093&cdForo=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

@@ -1,0 +1,62 @@
+id: tjpe-0047290-61-2024-8-17-8201
+identificacao:
+  tribunal: TJPE
+  processo: 0047290-61.2024.8.17.8201
+  tipo_decisao: acordao
+  orgao_julgador: 2ª Turma Justiça Eficiente, 3º Gab.
+  relator: PATRICK DE MELO GARIOLLI
+  data_julgamento: 2026-03-02
+  data_publicacao: 2026-03-02
+titulo: "Inexistência da contratação consignada: contratação remota sem trilha informacional suficiente"
+questao_juridica: Como a prova-chave (contratação remota sem trilha informacional suficiente) sustenta os resultados materiais (inexistência/invalidade; dobro) efetivamente decididos?
+ratio_decidendi: O colegiado valorou contratação remota sem trilha informacional suficiente e, com base nesse conjunto individualizado, concluiu por inexistência/invalidade; dobro; atualização não cumulativa.
+resumo_predator: "2ª Turma Justiça Eficiente, 3º Gab., sob relatoria de PATRICK DE MELO GARIOLLI, julgou pretensão invalidante acolhida. No plano material, decidiu: inexistência/invalidade; dobro; atualização não cumulativa. A prova determinante foi contratação remota sem trilha informacional suficiente."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: validade_contratacao_digital
+    status: rejeitada
+  - slug: forca_probatoria_assinatura
+    status: rejeitada
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - autenticidade_nao_equivale_consentimento
+  - onus_instituicao_provar_contratacao
+resultado:
+  contrato: inexistente
+  conversao: nao_aplicavel
+  repeticao_indebito: dobro
+  dano_moral: nao_informado
+  processual: pretensão invalidante acolhida
+  efeitos_materiais:
+    - inexistência/invalidade
+    - dobro
+    - atualização não cumulativa
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-872675-00472906120248178201/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-872675-00472906120248178201/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

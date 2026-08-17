@@ -1,0 +1,64 @@
+id: tjpe-0016552-41-2016-8-17-1130
+identificacao:
+  tribunal: TJPE
+  processo: 0016552-41.2016.8.17.1130
+  tipo_decisao: acordao
+  orgao_julgador: 2ª Câmara Cível
+  relator: RUY TREZENA PATU JÚNIOR
+  data_julgamento: 2023-05-24
+  data_publicacao: 2023-05-24
+titulo: "Validade da contratação consignada: termo assinado, saque, faturas e uso"
+questao_juridica: Como a prova-chave (termo assinado, saque, faturas e uso) sustenta os resultados materiais (contrato mantido; conversão rejeitada) efetivamente decididos?
+ratio_decidendi: O colegiado valorou termo assinado, saque, faturas e uso e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão e danos rejeitados.
+resumo_predator: "2ª Câmara Cível, sob relatoria de RUY TREZENA PATU JÚNIOR, julgou recurso bancário provido. No plano material, decidiu: contrato mantido; conversão e danos rejeitados. A prova determinante foi termo assinado, saque, faturas e uso."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
+  - historico_uso
+teses:
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - conduta_posterior_como_prova
+  - informacao_sobre_amortizacao_e_custo
+  - conservacao_negocio_com_reequilibrio
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso bancário provido
+  efeitos_materiais:
+    - contrato mantido
+    - conversão e danos rejeitados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www.tjpe.jus.br/consultajurisprudenciaweb/downloadInteiroTeor?codProc=711646&tipoJuris=1141&orig=FISICO
+  url_inteiro_teor: https://www.tjpe.jus.br/consultajurisprudenciaweb/downloadInteiroTeor?codProc=711646&tipoJuris=1141&orig=FISICO
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

@@ -1,0 +1,62 @@
+id: tjmg-5039935-38-2023-8-13-0027
+identificacao:
+  tribunal: TJMG
+  processo: 5039935-38.2023.8.13.0027
+  tipo_decisao: acordao
+  orgao_julgador: 6º Núcleo 4.0
+  relator: Richardson Xavier Brant (JD 2G)
+  data_julgamento: 2026-03-09
+  data_publicacao: 2026-03-09
+titulo: "Validade da contratação consignada: IP; SMS; biometria; depósito"
+questao_juridica: documentos eletrônicos satisfazem o ônus diante de fraude negada?
+ratio_decidendi: O colegiado valorou IP; SMS; biometria; depósito e, com base nesse conjunto individualizado, concluiu por existência e descontos reconhecidos; fraude e dano afastados.
+resumo_predator: "6º Núcleo 4.0, sob relatoria de Richardson Xavier Brant (JD 2G), julgou apelação desprovida. No plano material, decidiu: existência e descontos reconhecidos; fraude e dano afastados. A prova determinante foi IP; SMS; biometria; depósito."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - fraude_bancaria
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: rejeitada
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - onus_instituicao_provar_contratacao
+  - rastreabilidade_contratacao_digital
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - existência e descontos reconhecidos
+    - fraude e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=389265&sequencial=2&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=389265&sequencial=2&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

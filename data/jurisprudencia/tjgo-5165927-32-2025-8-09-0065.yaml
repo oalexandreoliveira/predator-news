@@ -1,0 +1,63 @@
+id: tjgo-5165927-32-2025-8-09-0065
+identificacao:
+  tribunal: TJGO
+  processo: 5165927-32.2025.8.09.0065
+  tipo_decisao: acordao
+  orgao_julgador: 6ª Câmara
+  relator: ROBERTA NASSER LEONE
+  data_julgamento: 2026-02-25
+  data_publicacao: 2026-02-25
+titulo: "Validade da contratação consignada: selfie, depósito e múltiplos saques"
+questao_juridica: múltiplos saques demonstram ciência e qual prazo incide em descontos sucessivos?
+ratio_decidendi: O colegiado valorou selfie, depósito e múltiplos saques e, com base nesse conjunto individualizado, concluiu por prescrição afastada; contrato mantido; repetição e dano afastados.
+resumo_predator: "6ª Câmara, sob relatoria de ROBERTA NASSER LEONE, julgou apelação desprovida. No plano material, decidiu: prescrição afastada; contrato mantido; repetição e dano afastados. A prova determinante foi selfie, depósito e múltiplos saques."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+teses:
+  - slug: prescricao_termo_inicial_rmc
+    status: rejeitada
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - descontos_sucessivos_e_prescricao
+  - uso_reiterado_cartao_indicio_consentimento
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - prescrição afastada
+    - contrato mantido
+    - repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-51659273220258090065/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-51659273220258090065/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

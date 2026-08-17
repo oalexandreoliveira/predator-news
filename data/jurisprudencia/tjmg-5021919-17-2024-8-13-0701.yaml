@@ -1,0 +1,59 @@
+id: tjmg-5021919-17-2024-8-13-0701
+identificacao:
+  tribunal: TJMG
+  processo: 5021919-17.2024.8.13.0701
+  tipo_decisao: acordao
+  orgao_julgador: 20ª Câmara
+  relator: Christian Gomes Lima (JD)
+  data_julgamento: 2026-02-12
+  data_publicacao: 2026-02-12
+titulo: "Validade da contratação consignada: biometria; geolocalização; TCE"
+questao_juridica: TCE destacado comprova dever de informação?
+ratio_decidendi: O colegiado valorou biometria; geolocalização; TCE e, com base nesse conjunto individualizado, concluiu por contrato mantido; repetição e dano afastados.
+resumo_predator: "20ª Câmara, sob relatoria de Christian Gomes Lima (JD), julgou apelação desprovida. No plano material, decidiu: contrato mantido; repetição e dano afastados. A prova determinante foi biometria; geolocalização; TCE."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - termo_consentimento
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - dever_informacao_qualificado
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=450137&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=450137&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

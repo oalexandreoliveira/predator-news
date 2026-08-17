@@ -1,0 +1,69 @@
+id: tjmg-5052575-85-2023-8-13-0702
+identificacao:
+  tribunal: TJMG
+  processo: 5052575-85.2023.8.13.0702
+  tipo_decisao: acordao
+  orgao_julgador: 12ª Câmara
+  relator: Joemilson Donizetti Lopes
+  data_julgamento: 2026-03-04
+  data_publicacao: 2026-03-04
+titulo: "Validade da contratação consignada: biometria; TCE; TED; uso reiterado"
+questao_juridica: cadeia completa e uso afastam erro substancial?
+ratio_decidendi: O colegiado valorou biometria; TCE; TED; uso reiterado e, com base nesse conjunto individualizado, concluiu por contrato mantido; restituição e dano afastados.
+resumo_predator: "12ª Câmara, sob relatoria de Joemilson Donizetti Lopes, julgou apelação desprovida. No plano material, decidiu: contrato mantido; restituição e dano afastados. A prova determinante foi biometria; TCE; TED; uso reiterado."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - contrato
+  - termo_consentimento
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - restituição e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=1009&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=1009&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

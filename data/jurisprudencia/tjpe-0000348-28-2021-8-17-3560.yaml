@@ -1,0 +1,58 @@
+id: tjpe-0000348-28-2021-8-17-3560
+identificacao:
+  tribunal: TJPE
+  processo: 0000348-28.2021.8.17.3560
+  tipo_decisao: acordao
+  orgao_julgador: 5ª Câmara Cível
+  relator: FABIO EUGENIO DANTAS DE OLIVEIRA LIMA
+  data_julgamento: 2024-09-04
+  data_publicacao: 2024-09-04
+titulo: "Validade da contratação consignada: autorização expressa no instrumento"
+questao_juridica: Como a prova-chave (autorização expressa no instrumento) sustenta os resultados materiais (descontos mantidos por maioria) efetivamente decididos?
+ratio_decidendi: O colegiado valorou autorização expressa no instrumento e, com base nesse conjunto individualizado, concluiu por descontos mantidos.
+resumo_predator: "5ª Câmara Cível, sob relatoria de FABIO EUGENIO DANTAS DE OLIVEIRA LIMA, julgou apelação desprovida por maioria. No plano material, decidiu: descontos mantidos. A prova determinante foi autorização expressa no instrumento."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - contrato
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - dever_informacao_qualificado
+  - assinatura_como_prova_autoria
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: apelação desprovida por maioria
+  efeitos_materiais:
+    - descontos mantidos
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-655974-00003482820218173560/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-655974-00003482820218173560/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

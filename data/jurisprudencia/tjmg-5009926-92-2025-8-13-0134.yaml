@@ -1,0 +1,67 @@
+id: tjmg-5009926-92-2025-8-13-0134
+identificacao:
+  tribunal: TJMG
+  processo: 5009926-92.2025.8.13.0134
+  tipo_decisao: acordao
+  orgao_julgador: 17ª Câmara
+  relator: Mauro Pena Rocha (JD)
+  data_julgamento: 2026-03-18
+  data_publicacao: 2026-03-18
+titulo: "Invalidade da contratação consignada: biometria; informação insuficiente"
+questao_juridica: biometria isolada supre informação qualificada?
+ratio_decidendi: O colegiado valorou biometria; informação insuficiente e, com base nesse conjunto individualizado, concluiu por nulidade; dobro; dano moral de R$ 20 mil.
+resumo_predator: "17ª Câmara, sob relatoria de Mauro Pena Rocha (JD), julgou apelação provida. No plano material, decidiu: nulidade; dobro; dano moral de R$ 20 mil. A prova determinante foi biometria; informação insuficiente."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - nao_informado
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+  - slug: hipervulnerabilidade_consumidor_idoso
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - dever_informacao_qualificado
+  - autenticidade_nao_equivale_consentimento
+  - hipervulnerabilidade_consumidor_idoso
+  - desconto_indevido_em_beneficio
+  - restituicao_conforme_boa_fe_objetiva
+resultado:
+  contrato: anulado
+  conversao: nao_aplicavel
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: apelação provida
+  efeitos_materiais:
+    - nulidade
+    - dobro
+    - dano moral de R$ 20 mil
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=453368&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=453368&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

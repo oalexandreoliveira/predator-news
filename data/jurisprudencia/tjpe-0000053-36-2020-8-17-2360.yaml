@@ -1,0 +1,64 @@
+id: tjpe-0000053-36-2020-8-17-2360
+identificacao:
+  tribunal: TJPE
+  processo: 0000053-36.2020.8.17.2360
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Câmara Regional de Caruaru
+  relator: LUCIANO DE CASTRO CAMPOS
+  data_julgamento: 2024-03-22
+  data_publicacao: 2024-03-22
+titulo: "Conversão do cartão consignado: transferências comprovadas, sem informação sobre amortização"
+questao_juridica: Como a prova-chave (transferências comprovadas, sem informação sobre amortização) sustenta os resultados materiais (prescrição rejeitada; conversão; moral afastado) efetivamente decididos?
+ratio_decidendi: O colegiado valorou transferências comprovadas, sem informação sobre amortização e, com base nesse conjunto individualizado, concluiu por prescrição rejeitada; conversão; moral afastado.
+resumo_predator: "1ª Câmara Regional de Caruaru, sob relatoria de LUCIANO DE CASTRO CAMPOS, julgou embargos julgados sem alteração substancial. No plano material, decidiu: prescrição rejeitada; conversão; moral afastado. A prova determinante foi transferências comprovadas, sem informação sobre amortização."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: prescricao_termo_inicial_rmc
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - credito_em_conta_comprova_liberacao
+  - informacao_sobre_amortizacao_e_custo
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: nao_informado
+  dano_moral: indeferido
+  processual: embargos julgados sem alteração substancial
+  efeitos_materiais:
+    - prescrição rejeitada
+    - conversão
+    - moral afastado
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-507634-00000533620208172360/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-507634-00000533620208172360/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

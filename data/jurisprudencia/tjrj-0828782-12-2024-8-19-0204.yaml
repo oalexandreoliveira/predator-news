@@ -1,0 +1,64 @@
+id: tjrj-0828782-12-2024-8-19-0204
+identificacao:
+  tribunal: TJRJ
+  processo: 0828782-12.2024.8.19.0204
+  tipo_decisao: acordao
+  orgao_julgador: 8ª Câmara
+  relator: Des(a). ANTONIO DA ROCHA LOURENCO NETO
+  data_julgamento: 2025-11-25
+  data_publicacao: 2025-11-25
+titulo: "Validade da contratação consignada: contrato assinado e depósito; sem compras"
+questao_juridica: ausência de compras invalida contrato formal com saque inicial?
+ratio_decidendi: O colegiado valorou contrato assinado e depósito; sem compras e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão, dobro e dano afastados.
+resumo_predator: "8ª Câmara, sob relatoria de Des(a). ANTONIO DA ROCHA LOURENCO NETO, julgou apelação desprovida. No plano material, decidiu: contrato mantido; conversão, dobro e dano afastados. A prova determinante foi contrato assinado e depósito; sem compras."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - credito_em_conta_comprova_liberacao
+  - conduta_posterior_como_prova
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - conversão, dobro e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004D5A98F21C37BB90D34C08F7F18449DCDC51A0C073D39
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004D5A98F21C37BB90D34C08F7F18449DCDC51A0C073D39
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

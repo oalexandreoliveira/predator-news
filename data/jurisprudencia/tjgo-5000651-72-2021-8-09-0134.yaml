@@ -1,0 +1,63 @@
+id: tjgo-5000651-72-2021-8-09-0134
+identificacao:
+  tribunal: TJGO
+  processo: 5000651-72.2021.8.09.0134
+  tipo_decisao: acordao
+  orgao_julgador: 6ª Câmara
+  relator: PERICLES DI MONTEZUMA CASTRO MOURA
+  data_julgamento: 2025-06-12
+  data_publicacao: 2025-06-12
+titulo: "Validade da contratação consignada: termo assinado e saques complementares"
+questao_juridica: uso habitual por saques basta ao distinguishing da Súmula 63?
+ratio_decidendi: O colegiado valorou termo assinado e saques complementares e, com base nesse conjunto individualizado, concluiu por RMC mantida; conversão, repetição e dano afastados.
+resumo_predator: "6ª Câmara, sob relatoria de PERICLES DI MONTEZUMA CASTRO MOURA, julgou recurso do banco provido; do consumidor prejudicado. No plano material, decidiu: RMC mantida; conversão, repetição e dano afastados. A prova determinante foi termo assinado e saques complementares."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - conduta_posterior_como_prova
+  - uso_reiterado_cartao_indicio_consentimento
+  - onus_instituicao_provar_contratacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso do banco provido; do consumidor prejudicado
+  efeitos_materiais:
+    - RMC mantida
+    - conversão, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50006517220218090134/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50006517220218090134/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

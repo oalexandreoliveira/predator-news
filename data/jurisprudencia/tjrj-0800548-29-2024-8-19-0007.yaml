@@ -1,0 +1,67 @@
+id: tjrj-0800548-29-2024-8-19-0007
+identificacao:
+  tribunal: TJRJ
+  processo: 0800548-29.2024.8.19.0007
+  tipo_decisao: acordao
+  orgao_julgador: 8ª Câmara
+  relator: Des(a). MARCIA FERREIRA ALVARENGA
+  data_julgamento: 2025-11-11
+  data_publicacao: 2025-11-11
+titulo: "Conversão do cartão consignado: TED e desconto mínimo; empréstimo disfarçado"
+questao_juridica: crédito por TED e dívida perpétua descaracterizam RMC?
+ratio_decidendi: O colegiado valorou TED e desconto mínimo; empréstimo disfarçado e, com base nesse conjunto individualizado, concluiu por conversão/readequação; dano moral.
+resumo_predator: "8ª Câmara, sob relatoria de Des(a). MARCIA FERREIRA ALVARENGA, julgou apelação provida. No plano material, decidiu: conversão/readequação; dano moral. A prova determinante foi TED e desconto mínimo; empréstimo disfarçado."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - saque
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: hipervulnerabilidade_consumidor_idoso
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - primazia_realidade_economica_operacao
+  - informacao_sobre_amortizacao_e_custo
+  - controle_desvantagem_exagerada
+  - hipervulnerabilidade_consumidor_idoso
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: nao_informado
+  dano_moral: deferido
+  processual: apelação provida
+  efeitos_materiais:
+    - conversão/readequação
+    - dano moral
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004EADF0ADEB96B6741AE95E0B7D23A45D8C51A05405834
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004EADF0ADEB96B6741AE95E0B7D23A45D8C51A05405834
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

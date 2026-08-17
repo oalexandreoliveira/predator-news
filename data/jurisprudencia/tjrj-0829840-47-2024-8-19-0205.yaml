@@ -1,0 +1,67 @@
+id: tjrj-0829840-47-2024-8-19-0205
+identificacao:
+  tribunal: TJRJ
+  processo: 0829840-47.2024.8.19.0205
+  tipo_decisao: acordao
+  orgao_julgador: 18ª Câmara
+  relator: Des(a). MARIA REGINA FONSECA NOVA ALVES
+  data_julgamento: 2025-06-03
+  data_publicacao: 2025-06-03
+titulo: "Validade da contratação consignada: assinatura, TCE, saques e compras"
+questao_juridica: uso efetivo afasta erro e conversão?
+ratio_decidendi: O colegiado valorou assinatura, TCE, saques e compras e, com base nesse conjunto individualizado, concluiu por contrato mantido; restituição e dano afastados.
+resumo_predator: "18ª Câmara, sob relatoria de Des(a). MARIA REGINA FONSECA NOVA ALVES, julgou apelação desprovida. No plano material, decidiu: contrato mantido; restituição e dano afastados. A prova determinante foi assinatura, TCE, saques e compras."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - assinatura
+  - termo_consentimento
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - conduta_posterior_como_prova
+  - uso_reiterado_cartao_indicio_consentimento
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - restituição e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004A2C22D50B63E1E84CC2FE1EE189C6527C5190F083809
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004A2C22D50B63E1E84CC2FE1EE189C6527C5190F083809
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

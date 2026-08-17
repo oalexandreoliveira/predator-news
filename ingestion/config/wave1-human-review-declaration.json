@@ -1,0 +1,38 @@
+{
+  "artifact_kind": "predator_human_review_declaration",
+  "schema_version": "1.0.0",
+  "batch_id": "onda-1-etapa-1h-a-2026-08-17",
+  "selection_commit": "3d76c1a0254b6a033374aae4933032b416c24367",
+  "scope_digest": "sha256:1946bfda9d6e1c082448821a342b60e6279d3a76e3b4fdcfe701a0bc2f624c52",
+  "candidate_count": 77,
+  "reviewer_identity": "Alexandre Oliveira",
+  "manifestation_date": "2026-08-17",
+  "recorded_at": "2026-08-17T10:48:52.496-03:00",
+  "decision": "APPROVE_ALL_AS_SUBMITTED",
+  "attestations": {
+    "individual_review_completed": true,
+    "procedural_result_fidelity": true,
+    "material_results_fidelity": true,
+    "legal_question_fidelity": true,
+    "evidence_sufficient": true,
+    "all_proposed_theses_and_orientations_accepted": true,
+    "all_proposed_foundations_accepted": true,
+    "rejected_candidates": 0,
+    "candidates_needing_correction": 0
+  },
+  "mechanical_effects_authorized": {
+    "decision": "APPROVE",
+    "result_fidelity": "YES",
+    "legal_question_fidelity": "YES",
+    "evidence_sufficient": "YES",
+    "thesis_decision": "ACCEPT",
+    "foundation_decision": "ACCEPT",
+    "review_state": "HUMAN_APPROVED"
+  },
+  "governance_limit": "HUMAN_APPROVED authorizes only the next materialization/proposal phase; it is not final promotion authorization.",
+  "preexisting_invalid_attempt": {
+    "count": 1,
+    "candidate_id": "cand-tjgo-5000651-72-2021-8-09-0134",
+    "reason": "Approval fields existed without reviewer identity and with a non-ISO timestamp; the validator rejected the form and no human approval was produced."
+  }
+}

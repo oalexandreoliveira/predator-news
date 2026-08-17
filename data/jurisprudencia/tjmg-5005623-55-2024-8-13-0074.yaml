@@ -1,0 +1,63 @@
+id: tjmg-5005623-55-2024-8-13-0074
+identificacao:
+  tribunal: TJMG
+  processo: 5005623-55.2024.8.13.0074
+  tipo_decisao: acordao
+  orgao_julgador: 12ª Câmara
+  relator: Maria Lúcia Cabral Caruso
+  data_julgamento: 2026-03-05
+  data_publicacao: 2026-03-05
+titulo: "Validade da contratação consignada: biometria; IP; geolocalização; crédito"
+questao_juridica: prova técnica sem ICP-Brasil é suficiente?
+ratio_decidendi: O colegiado valorou biometria; IP; geolocalização; crédito e, com base nesse conjunto individualizado, concluiu por contrato mantido; descontos legítimos.
+resumo_predator: "12ª Câmara, sob relatoria de Maria Lúcia Cabral Caruso, julgou apelação desprovida. No plano material, decidiu: contrato mantido; descontos legítimos. A prova determinante foi biometria; IP; geolocalização; crédito."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - saque
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - descontos legítimos
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=3074&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=3074&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

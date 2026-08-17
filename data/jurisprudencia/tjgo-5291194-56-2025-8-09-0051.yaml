@@ -1,0 +1,65 @@
+id: tjgo-5291194-56-2025-8-09-0051
+identificacao:
+  tribunal: TJGO
+  processo: 5291194-56.2025.8.09.0051
+  tipo_decisao: acordao
+  orgao_julgador: 7ª Câmara
+  relator: ANA CRISTINA RIBEIRO PETERNELLA FRANÇA
+  data_julgamento: 2026-02-27
+  data_publicacao: 2026-02-27
+titulo: "Validade da contratação consignada: biometria, geolocalização, TCE e faturas de compras"
+questao_juridica: amortização fixa do RCC afasta perpetuidade e Súmula 63?
+ratio_decidendi: O colegiado valorou biometria, geolocalização, TCE e faturas de compras e, com base nesse conjunto individualizado, concluiu por RCC mantido; conversão, repetição e dano afastados.
+resumo_predator: "7ª Câmara, sob relatoria de ANA CRISTINA RIBEIRO PETERNELLA FRANÇA, julgou agravo interno desprovido. No plano material, decidiu: RCC mantido; conversão, repetição e dano afastados. A prova determinante foi biometria, geolocalização, TCE e faturas de compras."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+    - rcc
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - uso_cartao
+    - juros_abusivos
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - termo_consentimento
+  - faturas
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - uso_reiterado_cartao_indicio_consentimento
+  - informacao_sobre_amortizacao_e_custo
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: agravo interno desprovido
+  efeitos_materiais:
+    - RCC mantido
+    - conversão, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-52911945620258090051/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-52911945620258090051/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

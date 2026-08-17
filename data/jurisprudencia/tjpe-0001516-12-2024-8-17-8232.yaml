@@ -1,0 +1,70 @@
+id: tjpe-0001516-12-2024-8-17-8232
+identificacao:
+  tribunal: TJPE
+  processo: 0001516-12.2024.8.17.8232
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Justiça Eficiente
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2025-12-22
+  data_publicacao: 2025-12-22
+titulo: "Conversão do cartão consignado: biometria/vídeo sem informação qualificada; crédito recebido"
+questao_juridica: Como a prova-chave (biometria/vídeo sem informação qualificada; crédito recebido) sustenta os resultados materiais (conversão; dobro; compensação; moral de R$ 5 mil) efetivamente decididos?
+ratio_decidendi: O colegiado valorou biometria/vídeo sem informação qualificada; crédito recebido e, com base nesse conjunto individualizado, concluiu por conversão; dobro; compensação; moral.
+resumo_predator: "1ª Turma Justiça Eficiente, sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou recurso bancário parcialmente provido. No plano material, decidiu: conversão; dobro; compensação; moral. A prova determinante foi biometria/vídeo sem informação qualificada; crédito recebido."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: parcialmente_acolhida
+  - slug: forca_probatoria_assinatura
+    status: parcialmente_acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - restituicao_conforme_boa_fe_objetiva
+  - dever_informacao_qualificado
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: recurso bancário parcialmente provido
+  efeitos_materiais:
+    - conversão
+    - dobro
+    - compensação
+    - moral
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-809809-00015161220248178232/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-809809-00015161220248178232/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

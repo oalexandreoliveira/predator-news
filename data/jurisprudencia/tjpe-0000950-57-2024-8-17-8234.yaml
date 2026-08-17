@@ -1,0 +1,58 @@
+id: tjpe-0000950-57-2024-8-17-8234
+identificacao:
+  tribunal: TJPE
+  processo: 0000950-57.2024.8.17.8234
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Justiça Eficiente
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2026-01-07
+  data_publicacao: 2026-01-07
+titulo: "Validade da contratação consignada: biometria, saque/crédito e conduta processual individual"
+questao_juridica: Como a prova-chave (biometria, saque/crédito e conduta processual individual) sustenta os resultados materiais (contrato mantido; multa por má-fé mantida) efetivamente decididos?
+ratio_decidendi: O colegiado valorou biometria, saque/crédito e conduta processual individual e, com base nesse conjunto individualizado, concluiu por contrato e multa por má-fé mantidos.
+resumo_predator: "1ª Turma Justiça Eficiente, sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou recurso desprovido. No plano material, decidiu: contrato e multa por má-fé mantidos. A prova determinante foi biometria, saque/crédito e conduta processual individual."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_analfabeto
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_analfabeto
+    status: acolhida
+  - slug: litigancia_predatoria_prova_individualizada
+    status: acolhida
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - ma_fe_exige_conduta_individualizada
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso desprovido
+  efeitos_materiais:
+    - contrato e multa por má-fé mantidos
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-798947-00009505720248178234/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-798947-00009505720248178234/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

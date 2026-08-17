@@ -1,0 +1,68 @@
+id: tjsp-1162898-94-2024-8-26-0100
+identificacao:
+  tribunal: TJSP
+  processo: 1162898-94.2024.8.26.0100
+  tipo_decisao: acordao
+  orgao_julgador: Núcleo 4.0-T. VII
+  relator: Gustavo Santini Teodoro
+  data_julgamento: 2026-02-04
+  data_publicacao: 2026-02-04
+titulo: "Conversão do cartão consignado: contrato existente, crédito e informação econômica insuficiente"
+questao_juridica: Autoria formal impede conversão quando não se prova compreensão da amortização e do custo do produto?
+ratio_decidendi: O colegiado valorou contrato existente, crédito e informação econômica insuficiente e, com base nesse conjunto individualizado, concluiu por conversão; compensação; restituição; moral afastado.
+resumo_predator: "Núcleo 4.0-T. VII, sob relatoria de Gustavo Santini Teodoro, julgou apelação parcialmente provida. No plano material, decidiu: conversão; compensação; restituição; moral afastado. A prova determinante foi contrato existente, crédito e informação econômica insuficiente."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - comprovante_transferencia
+teses:
+  - slug: forca_probatoria_assinatura
+    status: parcialmente_acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - dever_informacao_qualificado
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: nao_informado
+  dano_moral: indeferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - conversão
+    - compensação
+    - restituição
+    - moral afastado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20111841&cdForo=0
+  url_inteiro_teor: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20111841&cdForo=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

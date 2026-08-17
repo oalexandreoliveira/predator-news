@@ -1,0 +1,72 @@
+id: tjsp-1033980-33-2024-8-26-0016
+identificacao:
+  tribunal: TJSP
+  processo: 1033980-33.2024.8.26.0016
+  tipo_decisao: acordao
+  orgao_julgador: 6ª Turma Recursal Cível
+  relator: Vera Lúcia Calviño de Campos
+  data_julgamento: 2025-11-14
+  data_publicacao: 2025-11-14
+titulo: "Validade da contratação consignada: selfie, geolocalização, TED, compras e faturas"
+questao_juridica: Dossiê eletrônico completo e uso reiterado dispensam perícia e afastam fraude e “dívida eterna”?
+ratio_decidendi: O colegiado valorou selfie, geolocalização, TED, compras e faturas e, com base nesse conjunto individualizado, concluiu por contrato mantido; fraude, perícia, conversão e moral afastados.
+resumo_predator: "6ª Turma Recursal Cível, sob relatoria de Vera Lúcia Calviño de Campos, julgou recurso inominado desprovido. No plano material, decidiu: contrato mantido; fraude, perícia, conversão e moral afastados. A prova determinante foi selfie, geolocalização, TED, compras e faturas."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - fraude_bancaria
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
+  - historico_uso
+  - pericia_grafotecnica
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: rejeitada
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - conduta_posterior_como_prova
+  - uso_reiterado_cartao_indicio_consentimento
+  - pericia_grafotecnica_define_autenticidade
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso inominado desprovido
+  efeitos_materiais:
+    - contrato mantido
+    - fraude, perícia, conversão e moral afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=2135357&cdForo=9061
+  url_inteiro_teor: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=2135357&cdForo=9061
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira
