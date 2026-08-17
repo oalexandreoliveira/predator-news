@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "predator-human-review-form-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["artifact_kind", "schema_version", "publishable", "batch_id", "candidate_id", "tribunal", "review_state", "selection_source", "candidate_snapshot", "input_hash", "human_review"],
+  "properties": {
+    "artifact_kind": { "const": "predator_human_review_form" },
+    "schema_version": { "const": "1.0.0" },
+    "publishable": { "const": false },
+    "batch_id": { "const": "onda-1-etapa-1h-a-2026-08-17" },
+    "candidate_id": { "type": "string", "pattern": "^cand-(tjmg|tjrj|tjgo|tjpe|tjsp)-[0-9-]+$" },
+    "tribunal": { "enum": ["TJMG", "TJRJ", "TJGO", "TJPE", "TJSP"] },
+    "review_state": { "enum": ["PENDING_HUMAN_REVIEW", "HUMAN_REVIEW_IN_PROGRESS", "HUMAN_APPROVED", "HUMAN_REJECTED", "HUMAN_REVIEW_NEEDS_CORRECTION", "INVALID_HUMAN_REVIEW"] },
+    "selection_source": { "type": "string", "minLength": 1 },
+    "candidate_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "selection", "legal_model", "evidence"],
+      "properties": {
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tribunal", "process", "organ", "rapporteur", "judgment_date"],
+          "properties": {
+            "tribunal": { "type": "string" }, "process": { "type": "string" }, "organ": { "type": "string" },
+            "rapporteur": { "type": ["string", "null"] }, "judgment_date": { "type": ["string", "null"] }
+          }
+        },
+        "selection": {
+          "type": "object", "additionalProperties": false,
+          "required": ["class", "preliminary_decision", "marginal_contribution", "contrast_group"],
+          "properties": {
+            "class": { "enum": ["A", "B"] }, "preliminary_decision": { "const": "PROMOVER" },
+            "marginal_contribution": { "type": "string" }, "contrast_group": { "type": ["string", "null"] }
+          }
+        },
+        "legal_model": {
+          "type": "object", "additionalProperties": false,
+          "required": ["procedural_result", "material_results", "key_evidence", "legal_question", "proposed_theses", "proposed_foundations"],
+          "properties": {
+            "procedural_result": { "type": "string" }, "material_results": { "type": "string" },
+            "key_evidence": { "type": "string" }, "legal_question": { "type": "string" },
+            "proposed_theses": { "type": "array", "items": { "type": "string" } },
+            "proposed_foundations": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "evidence": {
+          "type": "object", "additionalProperties": false,
+          "required": ["url", "document_id", "locator", "identity_verified", "full_text_available", "verified_at"],
+          "properties": {
+            "url": { "type": "string", "format": "uri" }, "document_id": { "type": "string" }, "locator": { "type": "string" },
+            "identity_verified": { "const": true }, "full_text_available": { "const": true }, "verified_at": { "type": "string", "format": "date" }
+          }
+        }
+      }
+    },
+    "input_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "human_review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["decision", "result_fidelity", "legal_question_fidelity", "evidence_sufficient", "theses", "foundations", "reviewer_notes", "reviewer_identity", "reviewed_at"],
+      "properties": {
+        "decision": { "type": ["string", "null"], "enum": [null, "APPROVE", "REJECT", "NEEDS_CORRECTION"] },
+        "result_fidelity": { "type": ["string", "null"], "enum": [null, "YES", "NO"] },
+        "legal_question_fidelity": { "type": ["string", "null"], "enum": [null, "YES", "NO"] },
+        "evidence_sufficient": { "type": ["string", "null"], "enum": [null, "YES", "NO"] },
+        "theses": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["candidate", "decision", "corrected_orientation"], "properties": { "candidate": { "type": "string" }, "decision": { "type": ["string", "null"], "enum": [null, "ACCEPT", "REJECT", "ADJUST_ORIENTATION"] }, "corrected_orientation": { "type": ["string", "null"] } } } },
+        "foundations": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["candidate", "decision"], "properties": { "candidate": { "type": "string" }, "decision": { "type": ["string", "null"], "enum": [null, "ACCEPT", "REJECT"] } } } },
+        "reviewer_notes": { "type": ["string", "null"] }, "reviewer_identity": { "type": ["string", "null"] }, "reviewed_at": { "type": ["string", "null"], "format": "date-time" }
+      }
+    }
+  }
+}

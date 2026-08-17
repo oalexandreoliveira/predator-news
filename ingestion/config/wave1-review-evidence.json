@@ -1,0 +1,710 @@
+{
+  "schema_version": "1.0.0",
+  "generated_for": "onda-1-etapa-1h-a",
+  "sources": {
+    "TJMG": [
+      {
+        "process": "5009926-92.2025.8.13.0134",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=453368&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000254533680001",
+        "document_locator": "tjmg-acordao-10000254533680001",
+        "organ": "17ª CÂMARA CÍVEL",
+        "rapporteur": "Mauro Pena Rocha (JD)",
+        "judgment_date": "2026-03-18",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5052575-85.2023.8.13.0702",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=1009&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000260010095001",
+        "document_locator": "tjmg-acordao-10000260010095001",
+        "organ": "12ª CÂMARA CÍVEL",
+        "rapporteur": "Joemilson Donizetti Lopes",
+        "judgment_date": "2026-03-04",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5005623-55.2024.8.13.0074",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=3074&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000260030747001",
+        "document_locator": "tjmg-acordao-10000260030747001",
+        "organ": "12ª CÂMARA CÍVEL",
+        "rapporteur": "Maria Lúcia Cabral Caruso",
+        "judgment_date": "2026-03-05",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5005017-54.2024.8.13.0647",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=492464&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000254924640001",
+        "document_locator": "tjmg-acordao-10000254924640001",
+        "organ": "12ª CÂMARA CÍVEL",
+        "rapporteur": "Régia Ferreira de Lima",
+        "judgment_date": "2026-01-29",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5032317-51.2024.8.13.0433",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=322548&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000253225486001",
+        "document_locator": "tjmg-acordao-10000253225486001",
+        "organ": "21ª CÂMARA CÍVEL",
+        "rapporteur": "Luziene Barbosa Lima",
+        "judgment_date": "2025-11-19",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5006959-19.2025.8.13.0702",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=503764&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000255037640001",
+        "document_locator": "tjmg-acordao-10000255037640001",
+        "organ": "18ª CÂMARA CÍVEL",
+        "rapporteur": "Sérgio André da Fonseca Xavier",
+        "judgment_date": "2026-03-17",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5039935-38.2023.8.13.0027",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=389265&sequencial=2&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000253892657002",
+        "document_locator": "tjmg-acordao-10000253892657002",
+        "organ": "6º Núcleo de Justiça 4.0 - Cível Privado",
+        "rapporteur": "Richardson Xavier Brant (JD 2G)",
+        "judgment_date": "2026-03-09",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5021919-17.2024.8.13.0701",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=450137&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000254501372001",
+        "document_locator": "tjmg-acordao-10000254501372001",
+        "organ": "20ª CÂMARA CÍVEL",
+        "rapporteur": "Christian Gomes Lima (JD)",
+        "judgment_date": "2026-02-12",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5002897-09.2023.8.13.0280",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=131935&sequencial=2&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000251319356002",
+        "document_locator": "tjmg-acordao-10000251319356002",
+        "organ": "2º Núcleo de Justiça 4.0 - Cível Privado",
+        "rapporteur": "Wauner Batista Ferreira Machado (JD 2G)",
+        "judgment_date": "2025-09-22",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5020400-59.2024.8.13.0231",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=463907&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000254639073001",
+        "document_locator": "tjmg-acordao-10000254639073001",
+        "organ": "21ª CÂMARA CÍVEL",
+        "rapporteur": "José Eustáquio Lucas Pereira",
+        "judgment_date": "2026-03-11",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5013762-45.2024.8.13.0672",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=108362&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000261083620001",
+        "document_locator": "tjmg-acordao-10000261083620001",
+        "organ": "7º Núcleo de Justiça 4.0 - Cível Privado",
+        "rapporteur": "Rodrigo Moraes Lamounier Parreiras (JD2G)",
+        "judgment_date": "2026-07-07",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5001138-88.2025.8.13.0005",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=78765&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000260787650001",
+        "document_locator": "tjmg-acordao-10000260787650001",
+        "organ": "8º Núcleo de Justiça 4.0 - Cível Privado",
+        "rapporteur": "Sérgio Henrique Cordeiro Caldas Fernandes (JD2G)",
+        "judgment_date": "2026-05-26",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5003648-41.2025.8.13.0210",
+        "url": "https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=121590&sequencial=1&sequencialAcordao=0",
+        "document_id": "tjmg-acordao-10000261215909001",
+        "document_locator": "tjmg-acordao-10000261215909001",
+        "organ": "6º Núcleo de Justiça 4.0 - Cível Privado",
+        "rapporteur": "Clayton Rosa de Resende (JD Convocado)",
+        "judgment_date": "2026-08-03",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      }
+    ],
+    "TJRJ": [
+      {
+        "process": "0800888-39.2025.8.19.0006",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004A420B61EA430E729B0587689026026FCC51A395C4453",
+        "document_id": "tjrj-acordao-5840074",
+        "document_locator": "tjrj-acordao-5840074",
+        "organ": "OITAVA CAMARA DE DIREITO PRIVADO (ANTIGA 17ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). ANTONIO DA ROCHA LOURENCO NETO",
+        "judgment_date": "2026-03-17",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0821147-83.2024.8.19.0202",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004B4F68009D550F822F2030187544DBA34C51A151E3621",
+        "document_id": "tjrj-acordao-5768176",
+        "document_locator": "tjrj-acordao-5768176",
+        "organ": "SEGUNDA CAMARA DE DIREITO PRIVADO (ANTIGA 3ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). RENATA MACHADO COTTA",
+        "judgment_date": "2025-12-09",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0803978-04.2025.8.19.0023",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=00043906E65E5C86249BE8EAA0A10CD72686C51A395D5016",
+        "document_id": "tjrj-acordao-5840347",
+        "document_locator": "tjrj-acordao-5840347",
+        "organ": "QUINTA CAMARA DE DIREITO PRIVADO (ANTIGA 24ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). CLAUDIA MARIA DE OLIVEIRA MOTTA",
+        "judgment_date": "2026-03-11",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0005900-57.2021.8.19.0087",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004FAF6ABB83BDDBF3546A87AF0D0B680DCC51A44524709",
+        "document_id": "tjrj-acordao-5865324",
+        "document_locator": "tjrj-acordao-5865324",
+        "organ": "DECIMA OITAVA CAMARA DE DIREITO PRIVADO (ANTIGA 15ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). JDS. GUILHERME PEDROSA LOPES",
+        "judgment_date": "2026-04-08",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0829840-47.2024.8.19.0205",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004A2C22D50B63E1E84CC2FE1EE189C6527C5190F083809",
+        "document_id": "tjrj-acordao-5561861",
+        "document_locator": "tjrj-acordao-5561861",
+        "organ": "DECIMA OITAVA CAMARA DE DIREITO PRIVADO (ANTIGA 15ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). MARIA REGINA FONSECA NOVA ALVES",
+        "judgment_date": "2025-06-03",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0802348-38.2024.8.19.0025",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=000463317BC9A369ACF8A0FE7808F0DD23F0C51A34301113",
+        "document_id": "tjrj-acordao-5826497",
+        "document_locator": "tjrj-acordao-5826497",
+        "organ": "DECIMA QUARTA CAMARA DE DIREITO PRIVADO (ANTIGA 9ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). ADOLPHO CORREA DE ANDRADE MELLO JUNIOR",
+        "judgment_date": "2026-03-04",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0828782-12.2024.8.19.0204",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004D5A98F21C37BB90D34C08F7F18449DCDC51A0C073D39",
+        "document_id": "tjrj-acordao-5748145",
+        "document_locator": "tjrj-acordao-5748145",
+        "organ": "OITAVA CAMARA DE DIREITO PRIVADO (ANTIGA 17ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). ANTONIO DA ROCHA LOURENCO NETO",
+        "judgment_date": "2025-11-25",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0804597-94.2022.8.19.0036",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=000461C91DB01194E9DC79DF226EB984AA6CC51A492B5849",
+        "document_id": "tjrj-acordao-5875216",
+        "document_locator": "tjrj-acordao-5875216",
+        "organ": "DECIMA CAMARA DE DIREITO PRIVADO (ANTIGA 1ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). FABIO DUTRA",
+        "judgment_date": "2026-04-09",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0805161-90.2023.8.19.0213",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004ED2EBC40D57EAF884602C0AA33DF6DDCC51A05184F17",
+        "document_id": "tjrj-acordao-5731889",
+        "document_locator": "tjrj-acordao-5731889",
+        "organ": "DECIMA SEXTA CAMARA DE DIREITO PRIVADO (ANTIGA 4ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). DES. REGINA HELENA FABREGAS FERREIRA",
+        "judgment_date": "2025-11-06",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0834486-03.2024.8.19.0205",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=00041F2A6A12009D211443F8A6214C317D76C51A04444A2B",
+        "document_id": "tjrj-acordao-5731487",
+        "document_locator": "tjrj-acordao-5731487",
+        "organ": "QUINTA CAMARA DE DIREITO PRIVADO (ANTIGA 24ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). CLAUDIA MARIA DE OLIVEIRA MOTTA",
+        "judgment_date": "2025-11-05",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0800548-29.2024.8.19.0007",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004EADF0ADEB96B6741AE95E0B7D23A45D8C51A05405834",
+        "document_id": "tjrj-acordao-5732292",
+        "document_locator": "tjrj-acordao-5732292",
+        "organ": "OITAVA CAMARA DE DIREITO PRIVADO (ANTIGA 17ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). MARCIA FERREIRA ALVARENGA",
+        "judgment_date": "2025-11-11",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0802134-84.2025.8.19.0066",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004B244E99AD6F9A1C69C287948ED9C6E39C51A37570E36",
+        "document_id": "tjrj-acordao-5833930",
+        "document_locator": "tjrj-acordao-5833930",
+        "organ": "NONA CAMARA DE DIREITO PRIVADO (ANTIGA 2ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). FERNANDA FERNANDES COELHO ARRABIDA PAES",
+        "judgment_date": "2026-03-11",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0800968-84.2025.8.19.0076",
+        "url": "https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004F0703192C67CAAE7298370047A0A719FC51B085C1E49",
+        "document_id": "tjrj-acordao-5945656",
+        "document_locator": "tjrj-acordao-5945656",
+        "organ": "DECIMA CAMARA DE DIREITO PRIVADO (ANTIGA 1ª CÂMARA CÍVEL)",
+        "rapporteur": "Des(a). FABIO DUTRA",
+        "judgment_date": "2026-07-09",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      }
+    ],
+    "TJGO": [
+      {
+        "process": "5790872-76.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-57908727620258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-57908727620258090051",
+        "document_locator": "tjgo-acordao-57908727620258090051",
+        "organ": "8ª Câmara Cível",
+        "rapporteur": "JOSÉ RICARDO M. MACHADO",
+        "judgment_date": "2026-02-10",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5551992-80.2024.8.09.0100",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-55519928020248090100/inteiro-teor",
+        "document_id": "tjgo-acordao-55519928020248090100",
+        "document_locator": "tjgo-acordao-55519928020248090100",
+        "organ": "4ª Câmara Cível",
+        "rapporteur": "MARIA CRISTINA COSTA MORGADO",
+        "judgment_date": "2025-12-11",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5090996-03.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-50909960320258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-50909960320258090051",
+        "document_locator": "tjgo-acordao-50909960320258090051",
+        "organ": "11ª Câmara Cível",
+        "rapporteur": "WILTON MULLER SALOMÃO",
+        "judgment_date": "2025-10-23",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "6032787-59.2024.8.09.0083",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-60327875920248090083/inteiro-teor",
+        "document_id": "tjgo-acordao-60327875920248090083",
+        "document_locator": "tjgo-acordao-60327875920248090083",
+        "organ": "8ª Câmara Cível",
+        "rapporteur": "JOSÉ RICARDO M. MACHADO",
+        "judgment_date": "2025-08-04",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5481493-87.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-54814938720258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-54814938720258090051",
+        "document_locator": "tjgo-acordao-54814938720258090051",
+        "organ": "5ª Câmara Cível",
+        "rapporteur": "FERNANDO DE MELLO XAVIER",
+        "judgment_date": "2026-02-12",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5617916-54.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-56179165420258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-56179165420258090051",
+        "document_locator": "tjgo-acordao-56179165420258090051",
+        "organ": "10ª Câmara Cível",
+        "rapporteur": "EDUARDO ABDON MOURA",
+        "judgment_date": "2026-03-18",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5653830-13.2022.8.09.0011",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-56538301320228090011/inteiro-teor",
+        "document_id": "tjgo-acordao-56538301320228090011",
+        "document_locator": "tjgo-acordao-56538301320228090011",
+        "organ": "2ª Câmara Cível",
+        "rapporteur": "SIRLEI MARTINS DA COSTA",
+        "judgment_date": "2025-09-30",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5165927-32.2025.8.09.0065",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-51659273220258090065/inteiro-teor",
+        "document_id": "tjgo-acordao-51659273220258090065",
+        "document_locator": "tjgo-acordao-51659273220258090065",
+        "organ": "6ª Câmara Cível",
+        "rapporteur": "ROBERTA NASSER LEONE",
+        "judgment_date": "2026-02-25",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5239116-85.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-52391168520258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-52391168520258090051",
+        "document_locator": "tjgo-acordao-52391168520258090051",
+        "organ": "2ª Câmara Cível",
+        "rapporteur": "VICENTE LOPES DA ROCHA JÚNIOR",
+        "judgment_date": "2025-11-27",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5126909-80.2024.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-51269098020248090051/inteiro-teor",
+        "document_id": "tjgo-acordao-51269098020248090051",
+        "document_locator": "tjgo-acordao-51269098020248090051",
+        "organ": "9ª Câmara Cível",
+        "rapporteur": "TELMA APARECIDA ALVES MARQUES",
+        "judgment_date": "2025-05-08",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5040351-71.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-50403517120258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-50403517120258090051",
+        "document_locator": "tjgo-acordao-50403517120258090051",
+        "organ": "9ª Câmara Cível",
+        "rapporteur": "PERICLES DI MONTEZUMA CASTRO MOURA",
+        "judgment_date": "2025-12-05",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5051741-38.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-50517413820258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-50517413820258090051",
+        "document_locator": "tjgo-acordao-50517413820258090051",
+        "organ": "4ª Câmara Cível",
+        "rapporteur": "MARIA CRISTINA COSTA MORGADO",
+        "judgment_date": "2025-11-19",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5291194-56.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-52911945620258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-52911945620258090051",
+        "document_locator": "tjgo-acordao-52911945620258090051",
+        "organ": "7ª Câmara Cível",
+        "rapporteur": "ANA CRISTINA RIBEIRO PETERNELLA FRANÇA",
+        "judgment_date": "2026-02-27",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5200227-62.2025.8.09.0051",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-52002276220258090051/inteiro-teor",
+        "document_id": "tjgo-acordao-52002276220258090051",
+        "document_locator": "tjgo-acordao-52002276220258090051",
+        "organ": "5ª Câmara Cível",
+        "rapporteur": "ALGOMIRO CARVALHO NETO",
+        "judgment_date": "2025-12-02",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "5000651-72.2021.8.09.0134",
+        "url": "https://api.jusratio.com.br/v1/docs/tjgo-acordao-50006517220218090134/inteiro-teor",
+        "document_id": "tjgo-acordao-50006517220218090134",
+        "document_locator": "tjgo-acordao-50006517220218090134",
+        "organ": "6ª Câmara Cível",
+        "rapporteur": "PERICLES DI MONTEZUMA CASTRO MOURA",
+        "judgment_date": "2025-06-12",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      }
+    ],
+    "TJPE": [
+      {
+        "process": "0009646-06.2024.8.17.8227",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-851272-00096460620248178227/inteiro-teor",
+        "document_id": "tjpe-acordao-851272-00096460620248178227",
+        "document_locator": "tjpe-acordao-851272-00096460620248178227",
+        "organ": "3º Gabinete da 1ª Turma Justiça Eficiente do I Colégio Recursal do Recife",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2026-05-19",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0000162-82.2024.8.17.8221",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-816763-00001628220248178221/inteiro-teor",
+        "document_id": "tjpe-acordao-816763-00001628220248178221",
+        "document_locator": "tjpe-acordao-816763-00001628220248178221",
+        "organ": "3º Gabinete da 1ª Turma Justiça Eficiente do I Colégio Recursal do Recife",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2026-03-05",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0047290-61.2024.8.17.8201",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-872675-00472906120248178201/inteiro-teor",
+        "document_id": "tjpe-acordao-872675-00472906120248178201",
+        "document_locator": "tjpe-acordao-872675-00472906120248178201",
+        "organ": "3º Gabinete da 2ª Turma Justiça Eficiente do I Colégio Recursal do Recife",
+        "rapporteur": "PATRICK DE MELO GARIOLLI",
+        "judgment_date": "2026-03-02",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0000121-48.2025.8.17.8232",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-821184-00001214820258178232/inteiro-teor",
+        "document_id": "tjpe-acordao-821184-00001214820258178232",
+        "document_locator": "tjpe-acordao-821184-00001214820258178232",
+        "organ": "2º Gabinete da 2ª Turma Justiça Eficiente do I Colégio Recursal do Recife",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2026-03-01",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0070153-50.2025.8.17.2001",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-1002232-00701535020258172001/inteiro-teor",
+        "document_id": "tjpe-acordao-1002232-00701535020258172001",
+        "document_locator": "tjpe-acordao-1002232-00701535020258172001",
+        "organ": "Núcleo 4.0 2º Grau - ECECC - 2ª Turma - 1º Gabinete",
+        "rapporteur": "CANDIDO JOSE DA FONTE SARAIVA DE MORAES",
+        "judgment_date": "2026-07-31",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0001688-20.2025.8.17.8231",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-923728-00016882020258178231/inteiro-teor",
+        "document_id": "tjpe-acordao-923728-00016882020258178231",
+        "document_locator": "tjpe-acordao-923728-00016882020258178231",
+        "organ": "3º Gabinete da Primeira Turma Recursal Juizados - JECRC - Garanhuns",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2026-04-23",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0001117-79.2025.8.17.8221",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-906952-00011177920258178221/inteiro-teor",
+        "document_id": "tjpe-acordao-906952-00011177920258178221",
+        "document_locator": "tjpe-acordao-906952-00011177920258178221",
+        "organ": "3º Gabinete da 1ª Turma Recursal do I Colégio Recursal da Capital",
+        "rapporteur": "ABELARDO TADEU DA SILVA SANTOS",
+        "judgment_date": "2026-05-20",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0016918-95.2025.8.17.8201",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-866762-00169189520258178201/inteiro-teor",
+        "document_id": "tjpe-acordao-866762-00169189520258178201",
+        "document_locator": "tjpe-acordao-866762-00169189520258178201",
+        "organ": "3º Gabinete da 1ª Turma Justiça Eficiente do I Colégio Recursal do Recife",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2026-03-05",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0016552-41.2016.8.17.1130",
+        "url": "https://www.tjpe.jus.br/consultajurisprudenciaweb/downloadInteiroTeor?codProc=711646&tipoJuris=1141&orig=FISICO",
+        "document_id": "tjpe-acordao-711646-00165524120168171130",
+        "document_locator": "tjpe-acordao-711646-00165524120168171130",
+        "organ": "2ª Câmara Cível",
+        "rapporteur": "RUY TREZENA PATU JÚNIOR",
+        "judgment_date": "2023-05-24",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0000950-57.2024.8.17.8234",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-798947-00009505720248178234/inteiro-teor",
+        "document_id": "tjpe-acordao-798947-00009505720248178234",
+        "document_locator": "tjpe-acordao-798947-00009505720248178234",
+        "organ": "3º Gabinete da 1ª Turma Justiça Eficiente do I Colégio Recursal do Recife",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2026-01-07",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0020443-27.2021.8.17.8201",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-363298-00204432720218178201/inteiro-teor",
+        "document_id": "tjpe-acordao-363298-00204432720218178201",
+        "document_locator": "tjpe-acordao-363298-00204432720218178201",
+        "organ": "2º Gabinete da 1ª Turma Recursal do I Colégio Recursal da Capital",
+        "rapporteur": "ABELARDO TADEU DA SILVA SANTOS",
+        "judgment_date": "2022-03-11",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0001516-12.2024.8.17.8232",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-809809-00015161220248178232/inteiro-teor",
+        "document_id": "tjpe-acordao-809809-00015161220248178232",
+        "document_locator": "tjpe-acordao-809809-00015161220248178232",
+        "organ": "1º Gabinete da 1ª Turma Justiça Eficiente do I Colégio Recursal do Recife",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2025-12-22",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0003246-42.2025.8.17.8226",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-846759-00032464220258178226/inteiro-teor",
+        "document_id": "tjpe-acordao-846759-00032464220258178226",
+        "document_locator": "tjpe-acordao-846759-00032464220258178226",
+        "organ": "3º Gabinete da Primeira Turma Recursal Juizados - JECRC - Petrolina",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2026-04-16",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0000348-28.2021.8.17.3560",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-655974-00003482820218173560/inteiro-teor",
+        "document_id": "tjpe-acordao-655974-00003482820218173560",
+        "document_locator": "tjpe-acordao-655974-00003482820218173560",
+        "organ": "Gabinete do Des. Luiz Gustavo Mendonça de Araújo (5ª CC)",
+        "rapporteur": "FABIO EUGENIO DANTAS DE OLIVEIRA LIMA",
+        "judgment_date": "2024-09-04",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0001098-97.2021.8.17.8226",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-352533-00010989720218178226/inteiro-teor",
+        "document_id": "tjpe-acordao-352533-00010989720218178226",
+        "document_locator": "tjpe-acordao-352533-00010989720218178226",
+        "organ": "1º Gabinete da Primeira Turma Recursal Juizados - JECRC - Petrolina",
+        "rapporteur": "ANA CAROLINA FERNANDES PAIVA",
+        "judgment_date": "2021-09-27",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0003726-02.2022.8.17.2640",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-540338-00037260220228172640/inteiro-teor",
+        "document_id": "tjpe-acordao-540338-00037260220228172640",
+        "document_locator": "tjpe-acordao-540338-00037260220228172640",
+        "organ": "Gabinete do Des. José Severino Barbosa (1ª TCRC)",
+        "rapporteur": "DAMIAO SEVERIANO DE SOUSA",
+        "judgment_date": "2023-12-22",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0029554-40.2023.8.17.2001",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-683900-00295544020238172001/inteiro-teor",
+        "document_id": "tjpe-acordao-683900-00295544020238172001",
+        "document_locator": "tjpe-acordao-683900-00295544020238172001",
+        "organ": "Gabinete do Des. Humberto Costa Vasconcelos Júnior (4ª CC)",
+        "rapporteur": "ELIO BRAZ MENDES",
+        "judgment_date": "2024-07-15",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0061191-14.2020.8.17.2001",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-647520-00611911420208172001/inteiro-teor",
+        "document_id": "tjpe-acordao-647520-00611911420208172001",
+        "document_locator": "tjpe-acordao-647520-00611911420208172001",
+        "organ": "Núcleo 4.0 2º Grau - ECECC - 1ª Turma - 3º Gabinete",
+        "rapporteur": "JOSE JUNIOR FLORENTINO DOS SANTOS MENDONCA",
+        "judgment_date": "2024-09-02",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0000053-36.2020.8.17.2360",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-507634-00000533620208172360/inteiro-teor",
+        "document_id": "tjpe-acordao-507634-00000533620208172360",
+        "document_locator": "tjpe-acordao-507634-00000533620208172360",
+        "organ": "Gabinete do Des. Luciano de Castro Campos (1ª TCRC)",
+        "rapporteur": "LUCIANO DE CASTRO CAMPOS",
+        "judgment_date": "2024-03-22",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0000678-17.2021.8.17.2140",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-443464-00006781720218172140/inteiro-teor",
+        "document_id": "tjpe-acordao-443464-00006781720218172140",
+        "document_locator": "tjpe-acordao-443464-00006781720218172140",
+        "organ": "7ª Câmara Cível Especializada - 2º Gabinete",
+        "rapporteur": "ANDRE VICENTE PIRES ROSA",
+        "judgment_date": "2024-11-04",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0000459-12.2023.8.17.3020",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-586788-00004591220238173020/inteiro-teor",
+        "document_id": "tjpe-acordao-586788-00004591220238173020",
+        "document_locator": "tjpe-acordao-586788-00004591220238173020",
+        "organ": "Gabinete do Des. Sílvio Neves Baptista Filho (5ª CC)",
+        "rapporteur": "FABIO EUGENIO DANTAS DE OLIVEIRA LIMA",
+        "judgment_date": "2024-04-18",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      },
+      {
+        "process": "0003379-91.2022.8.17.2470",
+        "url": "https://api.jusratio.com.br/v1/docs/tjpe-acordao-590498-00033799120228172470/inteiro-teor",
+        "document_id": "tjpe-acordao-590498-00033799120228172470",
+        "document_locator": "tjpe-acordao-590498-00033799120228172470",
+        "organ": "Gabinete do Des. Agenor Ferreira de Lima Filho",
+        "rapporteur": "AGENOR FERREIRA DE LIMA FILHO",
+        "judgment_date": "2024-04-29",
+        "verified_at": "2026-08-17",
+        "verification": "EXACT_IDENTITY_RECOVERY"
+      }
+    ],
+    "TJSP": []
+  }
+}
+
+

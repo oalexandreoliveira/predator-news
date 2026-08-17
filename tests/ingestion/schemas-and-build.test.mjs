@@ -7,7 +7,7 @@ import addFormats from 'ajv-formats';
 test('schemas operacionais compilam e rejeitam documento vazio', async () => {
   const directory = new URL('../../ingestion/schemas/', import.meta.url);
   const files = (await readdir(directory)).filter(file => file.endsWith('.json'));
-  assert.equal(files.length, 16);
+  assert.equal(files.length, 17);
   for (const file of files) {
     const ajv = new Ajv2020({ allErrors: true }); addFormats(ajv);
     const validate = ajv.compile(JSON.parse(await readFile(new URL(file, directory), 'utf8')));
