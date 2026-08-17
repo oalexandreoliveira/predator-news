@@ -1,0 +1,67 @@
+id: tjmg-5032317-51-2024-8-13-0433
+identificacao:
+  tribunal: TJMG
+  processo: 5032317-51.2024.8.13.0433
+  tipo_decisao: acordao
+  orgao_julgador: 21ª Câmara
+  relator: Luziene Barbosa Lima
+  data_julgamento: 2025-11-19
+  data_publicacao: 2025-11-19
+titulo: "Inexistência da contratação consignada: assinatura e TCE sem ciência material"
+questao_juridica: formalidade documental demonstra compreensão do produto?
+ratio_decidendi: O colegiado valorou assinatura e TCE sem ciência material e, com base nesse conjunto individualizado, concluiu por nulidade e inexistência mantidas; dobro; dano moral.
+resumo_predator: "21ª Câmara, sob relatoria de Luziene Barbosa Lima, julgou recursos desprovidos. No plano material, decidiu: nulidade e inexistência mantidas; dobro; dano moral. A prova determinante foi assinatura e TCE sem ciência material."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: fisico
+provas:
+  - assinatura
+  - termo_consentimento
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+  - slug: hipervulnerabilidade_consumidor_idoso
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - dever_informacao_qualificado
+  - autenticidade_nao_equivale_consentimento
+  - hipervulnerabilidade_consumidor_idoso
+  - restituicao_conforme_boa_fe_objetiva
+resultado:
+  contrato: inexistente
+  conversao: nao_aplicavel
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: recursos desprovidos
+  efeitos_materiais:
+    - nulidade e inexistência mantidas
+    - dobro
+    - dano moral
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=322548&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=322548&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

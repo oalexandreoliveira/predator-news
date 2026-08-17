@@ -1,0 +1,66 @@
+id: tjpe-0003379-91-2022-8-17-2470
+identificacao:
+  tribunal: TJPE
+  processo: 0003379-91.2022.8.17.2470
+  tipo_decisao: acordao
+  orgao_julgador: 5ª Câmara Cível
+  relator: AGENOR FERREIRA DE LIMA FILHO
+  data_julgamento: 2024-04-29
+  data_publicacao: 2024-04-29
+titulo: "Conversão do cartão consignado: descontos prolongados e saques"
+questao_juridica: Como a prova-chave (descontos prolongados e saques) sustenta os resultados materiais (prescrição rejeitada; conversão; dobro; compensação; moral de R$ 5 mil) efetivamente decididos?
+ratio_decidendi: O colegiado valorou descontos prolongados e saques e, com base nesse conjunto individualizado, concluiu por prescrição rejeitada; conversão; dobro; compensação; moral de R$ 5 mil.
+resumo_predator: "5ª Câmara Cível, sob relatoria de AGENOR FERREIRA DE LIMA FILHO, julgou apelação parcialmente provida. No plano material, decidiu: prescrição rejeitada; conversão; dobro; compensação; moral de R$ 5 mil. A prova determinante foi descontos prolongados e saques."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+teses:
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+  - slug: prescricao_termo_inicial_rmc
+    status: acolhida
+fundamentos:
+  - descontos_sucessivos_e_prescricao
+  - restituicao_conforme_boa_fe_objetiva
+  - controle_desvantagem_exagerada
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - prescrição rejeitada
+    - conversão
+    - dobro
+    - compensação
+    - moral de R$ 5 mil
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-590498-00033799120228172470/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-590498-00033799120228172470/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

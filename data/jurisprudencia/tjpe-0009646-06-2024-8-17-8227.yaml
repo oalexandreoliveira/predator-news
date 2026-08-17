@@ -1,0 +1,65 @@
+id: tjpe-0009646-06-2024-8-17-8227
+identificacao:
+  tribunal: TJPE
+  processo: 0009646-06.2024.8.17.8227
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Justiça Eficiente, 3º Gab.
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2026-05-19
+  data_publicacao: 2026-05-19
+titulo: "Invalidade da contratação consignada: ausência de uso e informação; descontos"
+questao_juridica: Como a prova-chave (ausência de uso e informação; descontos) sustenta os resultados materiais (invalidade; dobro; moral) efetivamente decididos?
+ratio_decidendi: O colegiado valorou ausência de uso e informação; descontos e, com base nesse conjunto individualizado, concluiu por invalidade; dobro; moral.
+resumo_predator: "1ª Turma Justiça Eficiente, 3º Gab., sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou recurso do consumidor provido. No plano material, decidiu: invalidade; dobro; moral. A prova determinante foi ausência de uso e informação; descontos."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - uso_cartao
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - historico_uso
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+  - slug: hipervulnerabilidade_consumidor_idoso
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - dever_informacao_qualificado
+  - hipervulnerabilidade_consumidor_idoso
+  - desconto_indevido_em_beneficio
+resultado:
+  contrato: anulado
+  conversao: nao_aplicavel
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: recurso do consumidor provido
+  efeitos_materiais:
+    - invalidade
+    - dobro
+    - moral
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-851272-00096460620248178227/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-851272-00096460620248178227/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

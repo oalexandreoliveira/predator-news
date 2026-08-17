@@ -1,0 +1,61 @@
+id: tjpe-0003246-42-2025-8-17-8226
+identificacao:
+  tribunal: TJPE
+  processo: 0003246-42.2025.8.17.8226
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Recursal de Petrolina
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2026-04-16
+  data_publicacao: 2026-04-16
+titulo: "Validade da contratação consignada: instrumento com RMC expressa"
+questao_juridica: Como a prova-chave (instrumento com RMC expressa) sustenta os resultados materiais (contrato mantido; dobro rejeitado) efetivamente decididos?
+ratio_decidendi: O colegiado valorou instrumento com RMC expressa e, com base nesse conjunto individualizado, concluiu por contrato mantido; dobro rejeitado.
+resumo_predator: "1ª Turma Recursal de Petrolina, sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou recurso desprovido. No plano material, decidiu: contrato mantido; dobro rejeitado. A prova determinante foi instrumento com RMC expressa."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - fraude_bancaria
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: fisico
+provas:
+  - contrato
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: rejeitada
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos:
+  - dever_informacao_qualificado
+  - onus_instituicao_provar_contratacao
+  - conservacao_negocio_com_reequilibrio
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso desprovido
+  efeitos_materiais:
+    - contrato mantido
+    - dobro rejeitado
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-846759-00032464220258178226/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-846759-00032464220258178226/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

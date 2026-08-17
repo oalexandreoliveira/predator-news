@@ -1,0 +1,66 @@
+id: tjpe-0020443-27-2021-8-17-8201
+identificacao:
+  tribunal: TJPE
+  processo: 0020443-27.2021.8.17.8201
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Recursal da Capital
+  relator: ABELARDO TADEU DA SILVA SANTOS
+  data_julgamento: 2022-03-11
+  data_publicacao: 2022-03-11
+titulo: "Validade da contratação consignada: entrega, compras regulares, saques e faturas"
+questao_juridica: Como a prova-chave (entrega, compras regulares, saques e faturas) sustenta os resultados materiais (contrato mantido) efetivamente decididos?
+ratio_decidendi: O colegiado valorou entrega, compras regulares, saques e faturas e, com base nesse conjunto individualizado, concluiu por contrato mantido.
+resumo_predator: "1ª Turma Recursal da Capital, sob relatoria de ABELARDO TADEU DA SILVA SANTOS, julgou recurso desprovido. No plano material, decidiu: contrato mantido. A prova determinante foi entrega, compras regulares, saques e faturas."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - comprovante_transferencia
+  - faturas
+  - historico_uso
+teses:
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+fundamentos:
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
+  - informacao_sobre_amortizacao_e_custo
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso desprovido
+  efeitos_materiais:
+    - contrato mantido
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-363298-00204432720218178201/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-363298-00204432720218178201/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

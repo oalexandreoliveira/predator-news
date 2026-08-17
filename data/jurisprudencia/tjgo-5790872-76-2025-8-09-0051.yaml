@@ -1,0 +1,69 @@
+id: tjgo-5790872-76-2025-8-09-0051
+identificacao:
+  tribunal: TJGO
+  processo: 5790872-76.2025.8.09.0051
+  tipo_decisao: acordao
+  orgao_julgador: 8ª Câmara
+  relator: JOSÉ RICARDO M. MACHADO
+  data_julgamento: 2026-02-10
+  data_publicacao: 2026-02-10
+titulo: "Conversão do cartão consignado: biometria e crédito, sem compras"
+questao_juridica: contratação digital válida impede conversão quando não houve uso típico?
+ratio_decidendi: O colegiado valorou biometria e crédito, sem compras e, com base nesse conjunto individualizado, concluiu por contratação reconhecida; conversão; restituição ajustada; dano readequado.
+resumo_predator: "8ª Câmara, sob relatoria de JOSÉ RICARDO M. MACHADO, julgou apelação parcialmente provida. No plano material, decidiu: contratação reconhecida; conversão; restituição ajustada; dano readequado. A prova determinante foi biometria e crédito, sem compras."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: parcialmente_acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - ausencia_uso_cartao_indicio_vicio
+  - informacao_sobre_amortizacao_e_custo
+  - conservacao_negocio_com_reequilibrio
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - contratação reconhecida
+    - conversão
+    - restituição ajustada
+    - dano readequado
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-57908727620258090051/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-57908727620258090051/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

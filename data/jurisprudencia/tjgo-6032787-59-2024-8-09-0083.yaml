@@ -1,0 +1,67 @@
+id: tjgo-6032787-59-2024-8-09-0083
+identificacao:
+  tribunal: TJGO
+  processo: 6032787-59.2024.8.09.0083
+  tipo_decisao: acordao
+  orgao_julgador: 8ª Câmara
+  relator: JOSÉ RICARDO M. MACHADO
+  data_julgamento: 2025-08-04
+  data_publicacao: 2025-08-04
+titulo: "Validade da contratação consignada: biometria, geolocalização, IP, selfie, TED e compras"
+questao_juridica: cadeia digital e compras afastam a Súmula 63?
+ratio_decidendi: O colegiado valorou biometria, geolocalização, IP, selfie, TED e compras e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão, repetição e dano afastados.
+resumo_predator: "8ª Câmara, sob relatoria de JOSÉ RICARDO M. MACHADO, julgou recurso do banco provido; do consumidor desprovido. No plano material, decidiu: contrato mantido; conversão, repetição e dano afastados. A prova determinante foi biometria, geolocalização, IP, selfie, TED e compras."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - uso_reiterado_cartao_indicio_consentimento
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso do banco provido; do consumidor desprovido
+  efeitos_materiais:
+    - contrato mantido
+    - conversão, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-60327875920248090083/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-60327875920248090083/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

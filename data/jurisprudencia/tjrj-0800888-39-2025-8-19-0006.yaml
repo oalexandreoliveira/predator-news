@@ -1,0 +1,70 @@
+id: tjrj-0800888-39-2025-8-19-0006
+identificacao:
+  tribunal: TJRJ
+  processo: 0800888-39.2025.8.19.0006
+  tipo_decisao: acordao
+  orgao_julgador: 8ª Câmara
+  relator: Des(a). ANTONIO DA ROCHA LOURENCO NETO
+  data_julgamento: 2026-03-17
+  data_publicacao: 2026-03-17
+titulo: "Validade da contratação consignada: assinatura, biometria, geolocalização, TED, compras e saques"
+questao_juridica: cadeia digital e uso demonstram consentimento informado?
+ratio_decidendi: O colegiado valorou assinatura, biometria, geolocalização, TED, compras e saques e, com base nesse conjunto individualizado, concluiu por contrato mantido; repetição e dano afastados.
+resumo_predator: "8ª Câmara, sob relatoria de Des(a). ANTONIO DA ROCHA LOURENCO NETO, julgou apelação desprovida. No plano material, decidiu: contrato mantido; repetição e dano afastados. A prova determinante foi assinatura, biometria, geolocalização, TED, compras e saques."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - termo_consentimento
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - uso_reiterado_cartao_indicio_consentimento
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004A420B61EA430E729B0587689026026FCC51A395C4453
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004A420B61EA430E729B0587689026026FCC51A395C4453
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

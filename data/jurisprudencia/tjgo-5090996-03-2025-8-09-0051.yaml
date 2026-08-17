@@ -1,0 +1,62 @@
+id: tjgo-5090996-03-2025-8-09-0051
+identificacao:
+  tribunal: TJGO
+  processo: 5090996-03.2025.8.09.0051
+  tipo_decisao: acordao
+  orgao_julgador: 11ª Câmara
+  relator: WILTON MULLER SALOMÃO
+  data_julgamento: 2025-10-23
+  data_publicacao: 2025-10-23
+titulo: "Conversão do cartão consignado: saque tratado como empréstimo; refinanciamento"
+questao_juridica: abusividade contratual gera necessariamente dano moral?
+ratio_decidendi: O colegiado valorou saque tratado como empréstimo; refinanciamento e, com base nesse conjunto individualizado, concluiu por conversão; dobro; dano afastado.
+resumo_predator: "11ª Câmara, sob relatoria de WILTON MULLER SALOMÃO, julgou primeiro recurso parcialmente provido; segundo desprovido. No plano material, decidiu: conversão; dobro; dano afastado. A prova determinante foi saque tratado como empréstimo; refinanciamento."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+    - juros_abusivos
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+teses:
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: indeferido
+  processual: primeiro recurso parcialmente provido; segundo desprovido
+  efeitos_materiais:
+    - conversão
+    - dobro
+    - dano afastado
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50909960320258090051/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50909960320258090051/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

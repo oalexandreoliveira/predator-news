@@ -1,0 +1,68 @@
+id: tjsp-1002348-40-2025-8-26-0505
+identificacao:
+  tribunal: TJSP
+  processo: 1002348-40.2025.8.26.0505
+  tipo_decisao: acordao
+  orgao_julgador: Núcleo 4.0-T. III
+  relator: Gilberto Franceschini
+  data_julgamento: 2026-03-10
+  data_publicacao: 2026-03-10
+titulo: "Validade da contratação consignada: biometria, IP, código, contrato e depósito não devolvido"
+questao_juridica: Taxa no teto, distinção entre CET e juros e demora superior a três anos afastam abusividade e vício?
+ratio_decidendi: O colegiado valorou biometria, IP, código, contrato e depósito não devolvido e, com base nesse conjunto individualizado, concluiu por contrato e juros mantidos; conversão, restituição e moral afastados.
+resumo_predator: "Núcleo 4.0-T. III, sob relatoria de Gilberto Franceschini, julgou apelação desprovida. No plano material, decidiu: contrato e juros mantidos; conversão, restituição e moral afastados. A prova determinante foi biometria, IP, código, contrato e depósito não devolvido."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - juros_abusivos
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - credito_em_conta_comprova_liberacao
+  - informacao_sobre_amortizacao_e_custo
+  - restituicao_conforme_boa_fe_objetiva
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato e juros mantidos
+    - conversão, restituição e moral afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20261213&cdForo=0
+  url_inteiro_teor: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20261213&cdForo=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

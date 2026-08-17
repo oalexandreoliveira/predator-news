@@ -1,0 +1,68 @@
+id: tjpe-0070153-50-2025-8-17-2001
+identificacao:
+  tribunal: TJPE
+  processo: 0070153-50.2025.8.17.2001
+  tipo_decisao: acordao
+  orgao_julgador: Núcleo 4.0 de 2º grau, 2ª Turma/1º Gab.
+  relator: CANDIDO JOSE DA FONTE SARAIVA DE MORAES
+  data_julgamento: 2026-07-31
+  data_publicacao: 2026-07-31
+titulo: "Validade da contratação consignada: assinatura eletrônica, biometria, IP, selfie, faturas pagas e crédito"
+questao_juridica: Como a prova-chave (assinatura eletrônica, biometria, IP, selfie, faturas pagas e crédito) sustenta os resultados materiais (contrato mantido; pedidos improcedentes) efetivamente decididos?
+ratio_decidendi: O colegiado valorou assinatura eletrônica, biometria, IP, selfie, faturas pagas e crédito e, com base nesse conjunto individualizado, concluiu por contrato mantido; pedidos rejeitados.
+resumo_predator: "Núcleo 4.0 de 2º grau, 2ª Turma/1º Gab., sob relatoria de CANDIDO JOSE DA FONTE SARAIVA DE MORAES, julgou recurso bancário provido. No plano material, decidiu: contrato mantido; pedidos rejeitados. A prova determinante foi assinatura eletrônica, biometria, IP, selfie, faturas pagas e crédito."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - fraude_bancaria
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+  - faturas
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - conduta_posterior_como_prova
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso bancário provido
+  efeitos_materiais:
+    - contrato mantido
+    - pedidos rejeitados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-1002232-00701535020258172001/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-1002232-00701535020258172001/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

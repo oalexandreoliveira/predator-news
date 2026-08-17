@@ -1,0 +1,65 @@
+id: tjpe-0001688-20-2025-8-17-8231
+identificacao:
+  tribunal: TJPE
+  processo: 0001688-20.2025.8.17.8231
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Recursal de Garanhuns
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2026-04-23
+  data_publicacao: 2026-04-23
+titulo: "Conversão do cartão consignado: contrato RCC e ausência de uso consciente"
+questao_juridica: Como a prova-chave (contrato RCC e ausência de uso consciente) sustenta os resultados materiais (conversão; moral; recurso bancário desprovido) efetivamente decididos?
+ratio_decidendi: O colegiado valorou contrato RCC e ausência de uso consciente e, com base nesse conjunto individualizado, concluiu por conversão; moral.
+resumo_predator: "1ª Turma Recursal de Garanhuns, sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou recurso bancário desprovido. No plano material, decidiu: conversão; moral. A prova determinante foi contrato RCC e ausência de uso consciente."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+    - rcc
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - historico_uso
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - dever_informacao_qualificado
+  - ausencia_uso_cartao_indicio_vicio
+  - primazia_realidade_economica_operacao
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: nao_informado
+  dano_moral: deferido
+  processual: recurso bancário desprovido
+  efeitos_materiais:
+    - conversão
+    - moral
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-923728-00016882020258178231/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-923728-00016882020258178231/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

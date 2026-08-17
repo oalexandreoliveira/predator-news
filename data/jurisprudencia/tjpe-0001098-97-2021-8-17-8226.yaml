@@ -1,0 +1,60 @@
+id: tjpe-0001098-97-2021-8-17-8226
+identificacao:
+  tribunal: TJPE
+  processo: 0001098-97.2021.8.17.8226
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Recursal de Petrolina
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2021-09-27
+  data_publicacao: 2021-09-27
+titulo: "Validade da contratação consignada: termo, transferências, saques e compras"
+questao_juridica: Como a prova-chave (termo, transferências, saques e compras) sustenta os resultados materiais (contrato mantido) efetivamente decididos?
+ratio_decidendi: O colegiado valorou termo, transferências, saques e compras e, com base nesse conjunto individualizado, concluiu por contrato mantido.
+resumo_predator: "1ª Turma Recursal de Petrolina, sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou recurso desprovido. No plano material, decidiu: contrato mantido. A prova determinante foi termo, transferências, saques e compras."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: fisico
+provas:
+  - contrato
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos:
+  - conduta_posterior_como_prova
+  - credito_em_conta_comprova_liberacao
+  - uso_reiterado_cartao_indicio_consentimento
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso desprovido
+  efeitos_materiais:
+    - contrato mantido
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-352533-00010989720218178226/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-352533-00010989720218178226/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

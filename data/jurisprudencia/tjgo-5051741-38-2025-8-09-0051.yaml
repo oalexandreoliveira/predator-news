@@ -1,0 +1,62 @@
+id: tjgo-5051741-38-2025-8-09-0051
+identificacao:
+  tribunal: TJGO
+  processo: 5051741-38.2025.8.09.0051
+  tipo_decisao: acordao
+  orgao_julgador: 4ª Câmara
+  relator: MARIA CRISTINA COSTA MORGADO
+  data_julgamento: 2025-11-19
+  data_publicacao: 2025-11-19
+titulo: "Validade da contratação consignada: assinatura eletrônica, TCE e saque"
+questao_juridica: saque isolado, com TCE, demonstra ciência suficiente para distinguishing?
+ratio_decidendi: O colegiado valorou assinatura eletrônica, TCE e saque e, com base nesse conjunto individualizado, concluiu por RMC mantida; nulidade, repetição e dano afastados.
+resumo_predator: "4ª Câmara, sob relatoria de MARIA CRISTINA COSTA MORGADO, julgou apelação desprovida. No plano material, decidiu: RMC mantida; nulidade, repetição e dano afastados. A prova determinante foi assinatura eletrônica, TCE e saque."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - assinatura
+  - termo_consentimento
+  - comprovante_transferencia
+teses:
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - saque_unico_indicio_mutuo
+  - dever_informacao_qualificado
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - RMC mantida
+    - nulidade, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50517413820258090051/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-50517413820258090051/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

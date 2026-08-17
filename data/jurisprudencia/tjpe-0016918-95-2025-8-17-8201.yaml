@@ -1,0 +1,62 @@
+id: tjpe-0016918-95-2025-8-17-8201
+identificacao:
+  tribunal: TJPE
+  processo: 0016918-95.2025.8.17.8201
+  tipo_decisao: acordao
+  orgao_julgador: 1ª Turma Justiça Eficiente
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2026-03-05
+  data_publicacao: 2026-03-05
+titulo: "Validade da contratação consignada: assinatura a rogo, biometria, TED, selfie e reconhecimento em audiência"
+questao_juridica: Como a prova-chave (assinatura a rogo, biometria, TED, selfie e reconhecimento em audiência) sustenta os resultados materiais (contrato de analfabeta mantido) efetivamente decididos?
+ratio_decidendi: O colegiado valorou assinatura a rogo, biometria, TED, selfie e reconhecimento em audiência e, com base nesse conjunto individualizado, concluiu por contrato mantido.
+resumo_predator: "1ª Turma Justiça Eficiente, sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou recurso da consumidora desprovido. No plano material, decidiu: contrato mantido. A prova determinante foi assinatura a rogo, biometria, TED, selfie e reconhecimento em audiência."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_analfabeto
+    - saque
+  perfis_consumidor:
+    - analfabeto
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - assinatura_rogo
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_analfabeto
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos:
+  - formalidades_contratacao_analfabeto
+  - rastreabilidade_contratacao_digital
+  - conduta_posterior_como_prova
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: recurso da consumidora desprovido
+  efeitos_materiais:
+    - contrato mantido
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-866762-00169189520258178201/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-866762-00169189520258178201/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

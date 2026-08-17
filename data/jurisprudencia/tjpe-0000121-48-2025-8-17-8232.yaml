@@ -1,0 +1,62 @@
+id: tjpe-0000121-48-2025-8-17-8232
+identificacao:
+  tribunal: TJPE
+  processo: 0000121-48.2025.8.17.8232
+  tipo_decisao: acordao
+  orgao_julgador: 2ª Turma Justiça Eficiente, 2º Gab.
+  relator: ANA CAROLINA FERNANDES PAIVA
+  data_julgamento: 2026-03-01
+  data_publicacao: 2026-03-01
+titulo: "Invalidade da contratação consignada: descontos sucessivos e falha informacional"
+questao_juridica: Como a prova-chave (descontos sucessivos e falha informacional) sustenta os resultados materiais (prescrição rejeitada; dobro; moral afastado) efetivamente decididos?
+ratio_decidendi: O colegiado valorou descontos sucessivos e falha informacional e, com base nesse conjunto individualizado, concluiu por prescrição rejeitada; dobro; moral afastado.
+resumo_predator: "2ª Turma Justiça Eficiente, 2º Gab., sob relatoria de ANA CAROLINA FERNANDES PAIVA, julgou sentença mantida. No plano material, decidiu: prescrição rejeitada; dobro; moral afastado. A prova determinante foi descontos sucessivos e falha informacional."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: prescricao_termo_inicial_rmc
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - descontos_sucessivos_e_prescricao
+  - dever_informacao_qualificado
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: anulado
+  conversao: nao_aplicavel
+  repeticao_indebito: dobro
+  dano_moral: indeferido
+  processual: sentença mantida
+  efeitos_materiais:
+    - prescrição rejeitada
+    - dobro
+    - moral afastado
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-821184-00001214820258178232/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-821184-00001214820258178232/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

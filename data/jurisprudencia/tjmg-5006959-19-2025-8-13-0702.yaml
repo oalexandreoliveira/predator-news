@@ -1,0 +1,65 @@
+id: tjmg-5006959-19-2025-8-13-0702
+identificacao:
+  tribunal: TJMG
+  processo: 5006959-19.2025.8.13.0702
+  tipo_decisao: acordao
+  orgao_julgador: 18ª Câmara
+  relator: Sérgio André da Fonseca Xavier
+  data_julgamento: 2026-03-17
+  data_publicacao: 2026-03-17
+titulo: "Validade da contratação consignada: biometria; trilha; saques e compras"
+questao_juridica: uso múltiplo confirma conhecimento da modalidade?
+ratio_decidendi: O colegiado valorou biometria; trilha; saques e compras e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão, repetição e dano afastados.
+resumo_predator: "18ª Câmara, sob relatoria de Sérgio André da Fonseca Xavier, julgou apelação do banco provida; recurso do consumidor prejudicado. No plano material, decidiu: contrato mantido; conversão, repetição e dano afastados. A prova determinante foi biometria; trilha; saques e compras."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - uso_reiterado_cartao_indicio_consentimento
+  - conduta_posterior_como_prova
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação do banco provida; recurso do consumidor prejudicado
+  efeitos_materiais:
+    - contrato mantido
+    - conversão, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=503764&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=503764&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

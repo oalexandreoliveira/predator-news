@@ -1,0 +1,66 @@
+id: tjpe-0000678-17-2021-8-17-2140
+identificacao:
+  tribunal: TJPE
+  processo: 0000678-17.2021.8.17.2140
+  tipo_decisao: acordao
+  orgao_julgador: 2ª Câmara Cível
+  relator: ANDRE VICENTE PIRES ROSA
+  data_julgamento: 2024-11-04
+  data_publicacao: 2024-11-04
+titulo: "Invalidade da contratação consignada: formalidade irregular para analfabeto e ausência de uso"
+questao_juridica: Como a prova-chave (formalidade irregular para analfabeto e ausência de uso) sustenta os resultados materiais (invalidade; dobro; moral de R$ 5 mil) efetivamente decididos?
+ratio_decidendi: O colegiado valorou formalidade irregular para analfabeto e ausência de uso e, com base nesse conjunto individualizado, concluiu por invalidade; dobro; moral de R$ 5 mil.
+resumo_predator: "2ª Câmara Cível, sob relatoria de ANDRE VICENTE PIRES ROSA, julgou apelação provida. No plano material, decidiu: invalidade; dobro; moral de R$ 5 mil. A prova determinante foi formalidade irregular para analfabeto e ausência de uso."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_analfabeto
+    - uso_cartao
+  perfis_consumidor:
+    - analfabeto
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - historico_uso
+teses:
+  - slug: validade_contratacao_analfabeto
+    status: rejeitada
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+  - slug: litigancia_predatoria_prova_individualizada
+    status: rejeitada
+fundamentos:
+  - formalidades_contratacao_analfabeto
+  - ausencia_uso_cartao_indicio_vicio
+  - padronizacao_demanda_nao_basta
+resultado:
+  contrato: anulado
+  conversao: nao_aplicavel
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: apelação provida
+  efeitos_materiais:
+    - invalidade
+    - dobro
+    - moral de R$ 5 mil
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-443464-00006781720218172140/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-443464-00006781720218172140/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

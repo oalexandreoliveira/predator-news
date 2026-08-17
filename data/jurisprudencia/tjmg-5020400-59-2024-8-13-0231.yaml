@@ -1,0 +1,59 @@
+id: tjmg-5020400-59-2024-8-13-0231
+identificacao:
+  tribunal: TJMG
+  processo: 5020400-59.2024.8.13.0231
+  tipo_decisao: acordao
+  orgao_julgador: 21ª Câmara
+  relator: José Eustáquio Lucas Pereira
+  data_julgamento: 2026-03-11
+  data_publicacao: 2026-03-11
+titulo: "Validade da contratação consignada: biometria; geolocalização; aceite"
+questao_juridica: aplicação concreta do Tema 73 diante de informação suficiente
+ratio_decidendi: O colegiado valorou biometria; geolocalização; aceite e, com base nesse conjunto individualizado, concluiu por nulidade, repetição e dano afastados.
+resumo_predator: "21ª Câmara, sob relatoria de José Eustáquio Lucas Pereira, julgou apelação provida. No plano material, decidiu: nulidade, repetição e dano afastados. A prova determinante foi biometria; geolocalização; aceite."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - nao_informado
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - dever_informacao_qualificado
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação provida
+  efeitos_materiais:
+    - nulidade, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=463907&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=25&ttriCodigo=1&codigoOrigem=0&numero=463907&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

@@ -1,0 +1,66 @@
+id: tjrj-0800968-84-2025-8-19-0076
+identificacao:
+  tribunal: TJRJ
+  processo: 0800968-84.2025.8.19.0076
+  tipo_decisao: acordao
+  orgao_julgador: 10ª Câmara
+  relator: Des(a). FABIO DUTRA
+  data_julgamento: 2026-07-09
+  data_publicacao: 2026-07-09
+titulo: "Conversão do cartão consignado: amortização insuficiente; informação deficiente"
+questao_juridica: irregularidade contratual gera necessariamente dano moral?
+ratio_decidendi: O colegiado valorou amortização insuficiente; informação deficiente e, com base nesse conjunto individualizado, concluiu por conversão; dobro; dano moral afastado.
+resumo_predator: "10ª Câmara, sob relatoria de Des(a). FABIO DUTRA, julgou apelação parcialmente provida. No plano material, decidiu: conversão; dobro; dano moral afastado. A prova determinante foi amortização insuficiente; informação deficiente."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - nao_informado
+teses:
+  - slug: prescricao_termo_inicial_rmc
+    status: parcialmente_acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - termo_inicial_ciencia_lesao
+  - informacao_sobre_amortizacao_e_custo
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: indeferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - conversão
+    - dobro
+    - dano moral afastado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004F0703192C67CAAE7298370047A0A719FC51B085C1E49
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004F0703192C67CAAE7298370047A0A719FC51B085C1E49
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

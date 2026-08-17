@@ -1,0 +1,66 @@
+id: tjrj-0834486-03-2024-8-19-0205
+identificacao:
+  tribunal: TJRJ
+  processo: 0834486-03.2024.8.19.0205
+  tipo_decisao: acordao
+  orgao_julgador: 5ª Câmara
+  relator: Des(a). CLAUDIA MARIA DE OLIVEIRA MOTTA
+  data_julgamento: 2025-11-05
+  data_publicacao: 2025-11-05
+titulo: "Conversão do cartão consignado: ausência de entrega/uso; crédito como mútuo"
+questao_juridica: falta de má-fé limita restituição apesar do vício?
+ratio_decidendi: O colegiado valorou ausência de entrega/uso; crédito como mútuo e, com base nesse conjunto individualizado, concluiu por conversão; restituição simples; dano moral.
+resumo_predator: "5ª Câmara, sob relatoria de Des(a). CLAUDIA MARIA DE OLIVEIRA MOTTA, julgou apelação parcialmente provida. No plano material, decidiu: conversão; restituição simples; dano moral. A prova determinante foi ausência de entrega/uso; crédito como mútuo."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - ausencia_uso_cartao_indicio_vicio
+  - dever_informacao_qualificado
+  - restituicao_conforme_boa_fe_objetiva
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: simples
+  dano_moral: deferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - conversão
+    - restituição simples
+    - dano moral
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=00041F2A6A12009D211443F8A6214C317D76C51A04444A2B
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=00041F2A6A12009D211443F8A6214C317D76C51A04444A2B
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

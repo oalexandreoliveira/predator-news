@@ -1,0 +1,69 @@
+id: tjsp-1002898-63-2024-8-26-0022
+identificacao:
+  tribunal: TJSP
+  processo: 1002898-63.2024.8.26.0022
+  tipo_decisao: acordao
+  orgao_julgador: Núcleo 4.0-T. II
+  relator: Marcio Bonetti
+  data_julgamento: 2026-04-14
+  data_publicacao: 2026-04-14
+titulo: "Validade da contratação consignada: biometria, geolocalização, fotografia e termo"
+questao_juridica: Ausência de compras invalida RCC quando termo e autenticação são claros, e rolagem sem prazo é abusiva por si?
+ratio_decidendi: O colegiado valorou biometria, geolocalização, fotografia e termo e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão, restituição e moral afastados.
+resumo_predator: "Núcleo 4.0-T. II, sob relatoria de Marcio Bonetti, julgou apelação desprovida. No plano material, decidiu: contrato mantido; conversão, restituição e moral afastados. A prova determinante foi biometria, geolocalização, fotografia e termo."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+    - rcc
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - uso_cartao
+    - juros_abusivos
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: digital
+provas:
+  - contrato
+  - historico_uso
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - dever_informacao_qualificado
+  - uso_reiterado_cartao_indicio_consentimento
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - conversão, restituição e moral afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20394761&cdForo=0
+  url_inteiro_teor: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20394761&cdForo=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

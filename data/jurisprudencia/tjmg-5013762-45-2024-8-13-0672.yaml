@@ -1,0 +1,57 @@
+id: tjmg-5013762-45-2024-8-13-0672
+identificacao:
+  tribunal: TJMG
+  processo: 5013762-45.2024.8.13.0672
+  tipo_decisao: acordao
+  orgao_julgador: 7º Núcleo 4.0
+  relator: Rodrigo Moraes Lamounier Parreiras (JD2G)
+  data_julgamento: 2026-07-07
+  data_publicacao: 2026-07-07
+titulo: "Validade da contratação consignada: hash; IP; geolocalização"
+questao_juridica: trilha digital e clareza impedem conversão?
+ratio_decidendi: O colegiado valorou hash; IP; geolocalização e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão e dano afastados.
+resumo_predator: "7º Núcleo 4.0, sob relatoria de Rodrigo Moraes Lamounier Parreiras (JD2G), julgou apelação provida. No plano material, decidiu: contrato mantido; conversão e dano afastados. A prova determinante foi hash; IP; geolocalização."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - dever_informacao_qualificado
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação provida
+  efeitos_materiais:
+    - contrato mantido
+    - conversão e dano afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=108362&sequencial=1&sequencialAcordao=0
+  url_inteiro_teor: https://www5.tjmg.jus.br/jurisprudencia/relatorioEspelhoAcordao.do?inteiroTeor=true&ano=26&ttriCodigo=1&codigoOrigem=0&numero=108362&sequencial=1&sequencialAcordao=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

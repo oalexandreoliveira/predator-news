@@ -1,0 +1,66 @@
+id: tjpe-0029554-40-2023-8-17-2001
+identificacao:
+  tribunal: TJPE
+  processo: 0029554-40.2023.8.17.2001
+  tipo_decisao: acordao
+  orgao_julgador: 4ª Câmara Cível
+  relator: ELIO BRAZ MENDES
+  data_julgamento: 2024-07-15
+  data_publicacao: 2024-07-15
+titulo: "Conversão do cartão consignado: poucas compras, saque predominante e informação insuficiente"
+questao_juridica: Como a prova-chave (poucas compras, saque predominante e informação insuficiente) sustenta os resultados materiais (conversão; dobro do excesso; moral afastado) efetivamente decididos?
+ratio_decidendi: O colegiado valorou poucas compras, saque predominante e informação insuficiente e, com base nesse conjunto individualizado, concluiu por conversão; dobro do excesso; moral afastado.
+resumo_predator: "4ª Câmara Cível, sob relatoria de ELIO BRAZ MENDES, julgou apelação parcialmente provida. No plano material, decidiu: conversão; dobro do excesso; moral afastado. A prova determinante foi poucas compras, saque predominante e informação insuficiente."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+fundamentos:
+  - uso_reiterado_cartao_indicio_consentimento
+  - primazia_realidade_economica_operacao
+  - dano_moral_exige_repercussao_concreta
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: indeferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - conversão
+    - dobro do excesso
+    - moral afastado
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-683900-00295544020238172001/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-683900-00295544020238172001/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

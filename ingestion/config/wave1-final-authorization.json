@@ -1,0 +1,14 @@
+{
+  "artifact_kind": "predator_wave1_final_authorization",
+  "decision": "APPROVE",
+  "authorizer": "Alexandre Oliveira",
+  "authorized_at": "2026-08-17",
+  "decision_count": 77,
+  "review_commit": "3d76c1a0254b6a033374aae4933032b416c24367",
+  "review_digest": "sha256:1946bfda9d6e1c082448821a342b60e6279d3a76e3b4fdcfe701a0bc2f624c52",
+  "materialization_head": "78f9a028e39d4cf7bce4bc28532866bb991f09d1",
+  "package_digest": "sha256:eaad106352c4c4e25983f758fbea485b5407454ce9cd19405706970da3fe4964",
+  "scope": "Os mesmos 77 registros HUMAN_APPROVED, sem reservas, redundantes ou substituições.",
+  "source": "Manifestação humana expressa de Alexandre Oliveira no prompt operacional de 17 de agosto de 2026.",
+  "material_change_invalidates": true
+}

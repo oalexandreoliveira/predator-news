@@ -1,0 +1,68 @@
+id: tjrj-0005900-57-2021-8-19-0087
+identificacao:
+  tribunal: TJRJ
+  processo: 0005900-57.2021.8.19.0087
+  tipo_decisao: acordao
+  orgao_julgador: 18ª Câmara
+  relator: Des(a). JDS. GUILHERME PEDROSA LOPES
+  data_julgamento: 2026-04-08
+  data_publicacao: 2026-04-08
+titulo: "Conversão do cartão consignado: extratos sem compras ou saques"
+questao_juridica: ausência de uso mais informação deficiente impõe conversão?
+ratio_decidendi: O colegiado valorou extratos sem compras ou saques e, com base nesse conjunto individualizado, concluiu por conversão; dobro; compensação eventual; dano moral.
+resumo_predator: "18ª Câmara, sob relatoria de Des(a). JDS. GUILHERME PEDROSA LOPES, julgou apelação parcialmente provida. No plano material, decidiu: conversão; dobro; compensação eventual; dano moral. A prova determinante foi extratos sem compras ou saques."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - saque
+    - uso_cartao
+  perfis_consumidor: []
+  fatos_relevantes:
+    - uso_reiterado_cartao
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+  - historico_uso
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+fundamentos:
+  - ausencia_uso_cartao_indicio_vicio
+  - dever_informacao_qualificado
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_indevido_em_beneficio
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: apelação parcialmente provida
+  efeitos_materiais:
+    - conversão
+    - dobro
+    - compensação eventual
+    - dano moral
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004FAF6ABB83BDDBF3546A87AF0D0B680DCC51A44524709
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=0004FAF6ABB83BDDBF3546A87AF0D0B680DCC51A44524709
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

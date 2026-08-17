@@ -1,0 +1,63 @@
+id: tjrj-0802348-38-2024-8-19-0025
+identificacao:
+  tribunal: TJRJ
+  processo: 0802348-38.2024.8.19.0025
+  tipo_decisao: acordao
+  orgao_julgador: 14ª Câmara
+  relator: Des(a). ADOLPHO CORREA DE ANDRADE MELLO JUNIOR
+  data_julgamento: 2026-03-04
+  data_publicacao: 2026-03-04
+titulo: "Validade da contratação consignada: biometria, geolocalização, IP e TED"
+questao_juridica: prova digital não impugnada legitima descontos?
+ratio_decidendi: O colegiado valorou biometria, geolocalização, IP e TED e, com base nesse conjunto individualizado, concluiu por contrato mantido; descontos legítimos.
+resumo_predator: "14ª Câmara, sob relatoria de Des(a). ADOLPHO CORREA DE ANDRADE MELLO JUNIOR, julgou apelação desprovida. No plano material, decidiu: contrato mantido; descontos legítimos. A prova determinante foi biometria, geolocalização, IP e TED."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - saque
+    - desconto_beneficio
+  perfis_consumidor: []
+  fatos_relevantes:
+    - desconto_beneficio
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+  processual: apelação desprovida
+  efeitos_materiais:
+    - contrato mantido
+    - descontos legítimos
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=000463317BC9A369ACF8A0FE7808F0DD23F0C51A34301113
+  url_inteiro_teor: https://www3.tjrj.jus.br/gedcacheweb/default.aspx?UZIP=1&GEDID=000463317BC9A369ACF8A0FE7808F0DD23F0C51A34301113
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

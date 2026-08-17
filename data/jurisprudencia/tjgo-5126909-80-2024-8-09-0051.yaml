@@ -1,0 +1,62 @@
+id: tjgo-5126909-80-2024-8-09-0051
+identificacao:
+  tribunal: TJGO
+  processo: 5126909-80.2024.8.09.0051
+  tipo_decisao: acordao
+  orgao_julgador: 9ª Câmara
+  relator: TELMA APARECIDA ALVES MARQUES
+  data_julgamento: 2025-05-08
+  data_publicacao: 2025-05-08
+titulo: "Validade da contratação consignada: biometria e dois saques via TED"
+questao_juridica: saques complementares configuram aquiescência à RMC?
+ratio_decidendi: O colegiado valorou biometria e dois saques via TED e, com base nesse conjunto individualizado, concluiu por contrato mantido; conversão, repetição e dano afastados.
+resumo_predator: "9ª Câmara, sob relatoria de TELMA APARECIDA ALVES MARQUES, julgou apelação provida. No plano material, decidiu: contrato mantido; conversão, repetição e dano afastados. A prova determinante foi biometria e dois saques via TED."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - contratacao_digital
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - assinatura_como_prova_autoria
+  - conduta_posterior_como_prova
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: apelação provida
+  efeitos_materiais:
+    - contrato mantido
+    - conversão, repetição e dano afastados
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjgo-acordao-51269098020248090051/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjgo-acordao-51269098020248090051/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

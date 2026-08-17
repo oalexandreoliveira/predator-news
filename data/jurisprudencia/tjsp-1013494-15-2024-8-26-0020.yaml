@@ -1,0 +1,68 @@
+id: tjsp-1013494-15-2024-8-26-0020
+identificacao:
+  tribunal: TJSP
+  processo: 1013494-15.2024.8.26.0020
+  tipo_decisao: acordao
+  orgao_julgador: 20ª Câmara
+  relator: Maria Salete Corrêa Dias
+  data_julgamento: 2026-03-20
+  data_publicacao: 2026-03-20
+titulo: "Validade da contratação consignada: assinatura, biometria, IP, termo e saque"
+questao_juridica: Trilha digital e aproveitamento do saque justificam reformar sentença que havia convertido o produto?
+ratio_decidendi: O colegiado valorou assinatura, biometria, IP, termo e saque e, com base nesse conjunto individualizado, concluiu por validade restaurada; conversão e moral afastados.
+resumo_predator: "20ª Câmara, sob relatoria de Maria Salete Corrêa Dias, julgou recurso bancário provido. No plano material, decidiu: validade restaurada; conversão e moral afastados. A prova determinante foi assinatura, biometria, IP, termo e saque."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - dever_informacao
+    - contratacao_digital
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: digital
+provas:
+  - contrato
+  - assinatura
+  - comprovante_transferencia
+teses:
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: rejeitada
+fundamentos:
+  - rastreabilidade_contratacao_digital
+  - dever_informacao_qualificado
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+  processual: recurso bancário provido
+  efeitos_materiais:
+    - validade restaurada
+    - conversão e moral afastados
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20309173&cdForo=0
+  url_inteiro_teor: https://esaj.tjsp.jus.br/cjsg/getArquivo.do?cdAcordao=20309173&cdForo=0
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira

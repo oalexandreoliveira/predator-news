@@ -1,0 +1,62 @@
+id: tjpe-0061191-14-2020-8-17-2001
+identificacao:
+  tribunal: TJPE
+  processo: 0061191-14.2020.8.17.2001
+  tipo_decisao: acordao
+  orgao_julgador: Núcleo 4.0/5ª Câmara Cível
+  relator: JOSE JUNIOR FLORENTINO DOS SANTOS MENDONCA
+  data_julgamento: 2024-09-02
+  data_publicacao: 2024-09-02
+titulo: "Conversão do cartão consignado: pagamento mínimo indefinido e crédito sujeito a comprovação"
+questao_juridica: Como a prova-chave (pagamento mínimo indefinido e crédito sujeito a comprovação) sustenta os resultados materiais (readequação; dobro; compensação; moral de R$ 10 mil) efetivamente decididos?
+ratio_decidendi: O colegiado valorou pagamento mínimo indefinido e crédito sujeito a comprovação e, com base nesse conjunto individualizado, concluiu por readequação; dobro; compensação; moral de R$ 10 mil.
+resumo_predator: "Núcleo 4.0/5ª Câmara Cível, sob relatoria de JOSE JUNIOR FLORENTINO DOS SANTOS MENDONCA, julgou apelação provida. No plano material, decidiu: readequação; dobro; compensação; moral de R$ 10 mil. A prova determinante foi pagamento mínimo indefinido e crédito sujeito a comprovação."
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - prova_contratacao
+    - saque
+  perfis_consumidor: []
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+teses:
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: acolhida
+  - slug: integracao_revisao_desvantagem_exagerada
+    status: acolhida
+fundamentos:
+  - informacao_sobre_amortizacao_e_custo
+  - controle_desvantagem_exagerada
+  - conservacao_negocio_com_reequilibrio
+resultado:
+  contrato: convertido
+  conversao: deferida
+  repeticao_indebito: dobro
+  dano_moral: deferido
+  processual: apelação provida
+  efeitos_materiais:
+    - readequação
+    - dobro
+    - compensação
+    - moral de R$ 10 mil
+fonte:
+  natureza: jurisprudencia_agregada_auditavel
+  recuperado_via: jusratio
+  url_original: https://api.jusratio.com.br/v1/docs/tjpe-acordao-647520-00611911420208172001/inteiro-teor
+  url_inteiro_teor: https://api.jusratio.com.br/v1/docs/tjpe-acordao-647520-00611911420208172001/inteiro-teor
+  consultado_em: 2026-08-17
+autoridade: persuasiva
+status: ativo
+revisao:
+  status: confirmada_por_humano
+  analisado_em: 2026-08-17
+  revisado_em: 2026-08-17
+  revisor: Alexandre Oliveira
