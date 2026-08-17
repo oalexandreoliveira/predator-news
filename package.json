@@ -9,6 +9,7 @@
     "simulate:review": "node scripts/ingestion/run-simulated-review.mjs",
     "prepare:wave1-review": "node scripts/ingestion/prepare-wave1-human-review.mjs",
     "validate:wave1-review": "node scripts/ingestion/validate-wave1-human-review.mjs",
+    "apply:wave1-human-approval": "node scripts/ingestion/apply-wave1-human-approval.mjs",
     "simulate:promotion": "node scripts/ingestion/run-simulated-promotion.mjs",
     "simulate:readiness": "node scripts/ingestion/run-dataset-002-dry-run.mjs",
     "simulate:controlled-promotion": "node scripts/ingestion/run-controlled-promotion.mjs",

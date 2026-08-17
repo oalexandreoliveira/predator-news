@@ -25,6 +25,13 @@ const splitTerms = value => value.split(';').map(term => term.trim()).filter(Boo
 const sha = value => `sha256:${createHash('sha256').update(JSON.stringify(value)).digest('hex')}`;
 const candidateId = (tribunal, process) => `cand-${tribunal.toLowerCase()}-${process.replaceAll('.', '-')}`;
 
+try {
+  const existingIndex = JSON.parse(await readFile(indexPath, 'utf8'));
+  if (existingIndex.state === 'HUMAN_REVIEW_COMPLETE') throw new Error('human review is complete; refusing to regenerate and overwrite reviewed forms');
+} catch (error) {
+  if (!['ENOENT'].includes(error.code) && !String(error.message).includes('Unexpected end of JSON input')) throw error;
+}
+
 function tables(markdown) {
   const result = [];
   let table = [];
