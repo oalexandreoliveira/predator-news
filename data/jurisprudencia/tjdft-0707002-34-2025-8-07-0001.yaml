@@ -1,31 +1,37 @@
-id: tjdft-0717143-37-2024-8-07-0005
+id: tjdft-0707002-34-2025-8-07-0001
 identificacao:
   tribunal: TJDFT
-  processo: 0717143-37.2024.8.07.0005
+  processo: 0707002-34.2025.8.07.0001
   tipo_decisao: acordao
   orgao_julgador: 8ª TURMA CÍVEL
-  relator: JOSE FIRMO REIS SOUB
-  data_julgamento: 2026-07-14
-  data_publicacao: 2026-07-27
+  relator: CARMEN BITTENCOURT
+  data_julgamento: 2026-07-28
+  data_publicacao: 2026-08-31
 titulo: TJDFT delimita efeitos da contratação bancária discutida
 resumo_predator: O acórdão definiu os efeitos jurídicos da controvérsia. A
-  conclusão decorreu de o conjunto documental descrito no acórdão.
+  conclusão decorreu de o conjunto documental descrito no acórdão, com exame da
+  restituição dos descontos.
 contexto:
   produtos:
-    - rmc
-    - cartao_credito_consignado
+    - seguro_prestamista
   temas:
-    - prova_contratacao
+    - juros_abusivos
   fatos_relevantes:
     - nao_informado
   meio_contratacao: nao_informado
 provas:
-  - nao_informado
+  - contrato
 teses:
   - slug: vicio_consentimento_cartao_consignado
     status: resultado_nao_informado
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: rejeitada
 fundamentos:
-  - dever_informacao_qualificado
+  - autenticidade_nao_equivale_consentimento
+  - restituicao_conforme_boa_fe_objetiva
+  - desconto_minimo_sem_amortizacao_adequada
 resultado:
   contrato: nao_informado
   conversao: nao_aplicavel
@@ -34,9 +40,9 @@ resultado:
 fonte:
   natureza: jurisprudencia_oficial
   recuperado_via: portal_tribunal
-  url_original: https://jurisdf.tjdft.jus.br/acordaos/2150504/inteiro-teor/12245e71-59b7-4248-b52a-de938db5311a
-  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2150504/inteiro-teor/12245e71-59b7-4248-b52a-de938db5311a
-  consultado_em: 2026-08-12
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2157104/inteiro-teor/a201f40b-6e81-48df-9c31-2e2c08b68f74
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2157104/inteiro-teor/a201f40b-6e81-48df-9c31-2e2c08b68f74
+  consultado_em: 2026-09-03
 autoridade: persuasiva
 status: ativo
 questao_juridica: O colegiado examinou se a contratação foi validamente demonstrada.

@@ -1,31 +1,35 @@
-id: tjdft-0717143-37-2024-8-07-0005
+id: tjdft-0707102-63-2024-8-07-0020
 identificacao:
   tribunal: TJDFT
-  processo: 0717143-37.2024.8.07.0005
+  processo: 0707102-63.2024.8.07.0020
   tipo_decisao: acordao
-  orgao_julgador: 8ª TURMA CÍVEL
-  relator: JOSE FIRMO REIS SOUB
-  data_julgamento: 2026-07-14
-  data_publicacao: 2026-07-27
+  orgao_julgador: 4ª TURMA CÍVEL
+  relator: MÁRIO-ZAM BELMIRO
+  data_julgamento: 2026-08-05
+  data_publicacao: 2026-09-01
 titulo: TJDFT delimita efeitos da contratação bancária discutida
 resumo_predator: O acórdão definiu os efeitos jurídicos da controvérsia. A
   conclusão decorreu de o conjunto documental descrito no acórdão.
 contexto:
   produtos:
-    - rmc
-    - cartao_credito_consignado
+    - seguro_prestamista
   temas:
-    - prova_contratacao
+    - dever_informacao
+    - juros_abusivos
   fatos_relevantes:
     - nao_informado
   meio_contratacao: nao_informado
 provas:
-  - nao_informado
+  - contrato
 teses:
-  - slug: vicio_consentimento_cartao_consignado
+  - slug: violacao_dever_informacao_transparencia
+    status: resultado_nao_informado
+  - slug: abusividade_rmc_perpetuidade_divida
     status: resultado_nao_informado
 fundamentos:
   - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - desconto_minimo_sem_amortizacao_adequada
 resultado:
   contrato: nao_informado
   conversao: nao_aplicavel
@@ -34,15 +38,15 @@ resultado:
 fonte:
   natureza: jurisprudencia_oficial
   recuperado_via: portal_tribunal
-  url_original: https://jurisdf.tjdft.jus.br/acordaos/2150504/inteiro-teor/12245e71-59b7-4248-b52a-de938db5311a
-  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2150504/inteiro-teor/12245e71-59b7-4248-b52a-de938db5311a
-  consultado_em: 2026-08-12
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2162950/inteiro-teor/7f1604c9-bc72-4d15-b908-fb22198498ec
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2162950/inteiro-teor/7f1604c9-bc72-4d15-b908-fb22198498ec
+  consultado_em: 2026-09-03
 autoridade: persuasiva
 status: ativo
-questao_juridica: O colegiado examinou se a contratação foi validamente demonstrada.
+questao_juridica: O colegiado examinou se as informações contratuais foram claras e suficientes.
 ratio_decidendi: O TJDFT definiu os efeitos jurídicos da controvérsia porque
   considerou determinantes o conjunto documental descrito no acórdão, avaliados
-  em conjunto com a distribuição do ônus da prova e a execução do negócio.
+  em conjunto com o dever de informação e a transparência da modalidade.
 revisao:
   status: automatizada_pendente_revisao_humana
   analisado_em: 2026-09-03
