@@ -1,0 +1,87 @@
+id: tjdft-0702740-11-2025-8-07-0011
+identificacao:
+  tribunal: TJDFT
+  processo: 0702740-11.2025.8.07.0011
+  tipo_decisao: acordao
+  orgao_julgador: 7ª TURMA CÍVEL
+  relator: SONÍRIA ROCHA CAMPOS D'ASSUNÇÃO
+  data_julgamento: 2026-09-02
+  data_publicacao: 2026-09-08
+titulo: Provas do caso confirmam a contratação consignada
+resumo_predator: O acórdão reconheceu a regularidade da contratação. A conclusão
+  decorreu de os registros eletrônicos e a biometria e também definiu o pedido
+  de conversão para empréstimo consignado, com exame da restituição dos
+  descontos e da responsabilidade por dano moral.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - contratacao_digital
+    - uso_cartao
+    - saque
+    - juros_abusivos
+  fatos_relevantes:
+    - contrato_claro
+  meio_contratacao: digital
+provas:
+  - assinatura
+  - historico_uso
+  - comprovante_transferencia
+  - contrato
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: conversao_cartao_em_emprestimo_consignado
+    status: resultado_nao_informado
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: resultado_nao_informado
+  - slug: uso_reiterado_confirma_contratacao
+    status: acolhida
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: resultado_nao_informado
+fundamentos:
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - autenticidade_nao_equivale_consentimento
+  - rastreabilidade_contratacao_digital
+  - primazia_realidade_economica_operacao
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+  - conduta_posterior_como_prova
+  - credito_em_conta_comprova_liberacao
+  - desconto_minimo_sem_amortizacao_adequada
+resultado:
+  contrato: mantido
+  conversao: indeferida
+  repeticao_indebito: indeferida
+  dano_moral: indeferido
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2168210/inteiro-teor/11872f37-f9d5-423a-89ac-b31fda65f33e
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2168210/inteiro-teor/11872f37-f9d5-423a-89ac-b31fda65f33e
+  consultado_em: 2026-09-10
+autoridade: persuasiva
+status: ativo
+questao_juridica: O colegiado examinou se as informações contratuais foram
+  claras e suficientes, se os registros digitais comprovavam autoria e
+  consentimento.
+ratio_decidendi: O TJDFT reconheceu a regularidade da contratação porque
+  considerou determinantes os registros eletrônicos e a biometria, avaliados em
+  conjunto com o dever de informação e a transparência da modalidade.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-09-10
+  revisado_em: null
+  revisor: null
