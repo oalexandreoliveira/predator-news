@@ -1,0 +1,79 @@
+id: tjdft-0707797-62-2024-8-07-0005
+identificacao:
+  tribunal: TJDFT
+  processo: 0707797-62.2024.8.07.0005
+  tipo_decisao: acordao
+  orgao_julgador: 3ª TURMA CÍVEL
+  relator: MARILIA DE AVILA E SILVA SAMPAIO
+  data_julgamento: 2026-09-02
+  data_publicacao: 2026-09-17
+titulo: Falha informacional compromete a contratação consignada
+resumo_predator: O acórdão reconheceu vício relevante na contratação. A
+  conclusão decorreu de a documentação e a utilização posterior do cartão, com
+  exame da restituição dos descontos e da responsabilidade por dano moral.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+    - rcc
+  temas:
+    - consentimento
+    - dever_informacao
+    - fraude_bancaria
+    - uso_cartao
+    - juros_abusivos
+  fatos_relevantes:
+    - contrato_diverso
+  meio_contratacao: nao_informado
+  perfis_consumidor:
+    - idoso
+provas:
+  - historico_uso
+  - contrato
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: resultado_nao_informado
+  - slug: hipervulnerabilidade_consumidor_idoso
+    status: acolhida
+  - slug: uso_reiterado_confirma_contratacao
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+fundamentos:
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - onus_instituicao_provar_contratacao
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+  - hipervulnerabilidade_consumidor_idoso
+  - conduta_posterior_como_prova
+  - desconto_minimo_sem_amortizacao_adequada
+resultado:
+  contrato: inexistente
+  conversao: nao_aplicavel
+  repeticao_indebito: nao_informado
+  dano_moral: indeferido
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2172415/inteiro-teor/4b61da29-a83a-4f22-ac96-76c175c6b610
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2172415/inteiro-teor/4b61da29-a83a-4f22-ac96-76c175c6b610
+  consultado_em: 2026-09-19
+autoridade: persuasiva
+status: ativo
+questao_juridica: O colegiado examinou se as informações contratuais foram claras e suficientes.
+ratio_decidendi: O TJDFT reconheceu vício relevante na contratação porque
+  considerou determinantes a documentação e a utilização posterior do cartão,
+  avaliados em conjunto com o dever de informação e a transparência da
+  modalidade.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-09-19
+  revisado_em: null
+  revisor: null
