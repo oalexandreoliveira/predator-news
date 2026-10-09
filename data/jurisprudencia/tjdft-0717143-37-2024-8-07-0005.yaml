@@ -9,23 +9,27 @@ identificacao:
   data_publicacao: 2026-07-27
 titulo: TJDFT delimita efeitos da contratação bancária discutida
 resumo_predator: O acórdão definiu os efeitos jurídicos da controvérsia. A
-  conclusão decorreu de o conjunto documental descrito no acórdão.
+  conclusão decorreu de o conjunto documental descrito no acórdão, com exame da
+  restituição dos descontos e da responsabilidade por dano moral.
 contexto:
   produtos:
     - rmc
     - cartao_credito_consignado
   temas:
-    - prova_contratacao
+    - consentimento
   fatos_relevantes:
     - nao_informado
   meio_contratacao: nao_informado
 provas:
-  - nao_informado
+  - contrato
 teses:
-  - slug: vicio_consentimento_cartao_consignado
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
     status: resultado_nao_informado
 fundamentos:
-  - dever_informacao_qualificado
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
 resultado:
   contrato: nao_informado
   conversao: nao_aplicavel
@@ -45,6 +49,6 @@ ratio_decidendi: O TJDFT definiu os efeitos jurídicos da controvérsia porque
   em conjunto com a distribuição do ônus da prova e a execução do negócio.
 revisao:
   status: automatizada_pendente_revisao_humana
-  analisado_em: 2026-10-08
+  analisado_em: 2026-10-09
   revisado_em: null
   revisor: null
