@@ -1,0 +1,76 @@
+id: tjdft-0725045-98-2025-8-07-0007
+identificacao:
+  tribunal: TJDFT
+  processo: 0725045-98.2025.8.07.0007
+  tipo_decisao: acordao
+  orgao_julgador: 8ª TURMA CÍVEL
+  relator: ROBSON TEIXEIRA DE FREITAS
+  data_julgamento: 2026-10-27
+  data_publicacao: 2026-11-13
+titulo: Provas do caso confirmam a contratação consignada
+resumo_predator: O acórdão reconheceu a regularidade da contratação. A conclusão
+  decorreu de os registros eletrônicos e a biometria, com exame da restituição
+  dos descontos e da responsabilidade por dano moral.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - contratacao_digital
+    - prova_contratacao
+    - fraude_bancaria
+    - saque
+  fatos_relevantes:
+    - contrato_claro
+  meio_contratacao: digital
+provas:
+  - assinatura
+  - comprovante_transferencia
+  - contrato
+teses:
+  - slug: vicio_consentimento_cartao_consignado
+    status: rejeitada
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: forca_probatoria_assinatura
+    status: acolhida
+  - slug: fraude_inexistencia_contratacao
+    status: rejeitada
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+fundamentos:
+  - autenticidade_nao_equivale_consentimento
+  - rastreabilidade_contratacao_digital
+  - assinatura_como_prova_autoria
+  - onus_instituicao_provar_contratacao
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+  - credito_em_conta_comprova_liberacao
+resultado:
+  contrato: mantido
+  conversao: nao_aplicavel
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2195789/inteiro-teor/5305812f-d92d-4088-90e0-3b556eb13e68
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2195789/inteiro-teor/5305812f-d92d-4088-90e0-3b556eb13e68
+  consultado_em: 2026-11-14
+autoridade: persuasiva
+status: ativo
+questao_juridica: O colegiado examinou se a contratação foi validamente
+  demonstrada, se os registros digitais comprovavam autoria e consentimento.
+ratio_decidendi: O TJDFT reconheceu a regularidade da contratação porque
+  considerou determinantes os registros eletrônicos e a biometria, avaliados em
+  conjunto com a distribuição do ônus da prova e a execução do negócio.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-11-14
+  revisado_em: null
+  revisor: null
