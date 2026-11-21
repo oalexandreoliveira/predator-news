@@ -1,0 +1,69 @@
+id: tjdft-0719780-36-2025-8-07-0001
+identificacao:
+  tribunal: TJDFT
+  processo: 0719780-36.2025.8.07.0001
+  tipo_decisao: acordao
+  orgao_julgador: 7ª TURMA CÍVEL
+  relator: FÁTIMA RAFAEL
+  data_julgamento: 2026-11-04
+  data_publicacao: 2026-11-19
+titulo: Falha informacional compromete a contratação consignada
+resumo_predator: O acórdão reconheceu vício relevante na contratação. A
+  conclusão decorreu de a documentação e a disponibilização do crédito, com
+  exame da restituição dos descontos e da responsabilidade por dano moral.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - saque
+    - juros_abusivos
+  fatos_relevantes:
+    - contrato_diverso
+  meio_contratacao: nao_informado
+provas:
+  - comprovante_transferencia
+  - contrato
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: acolhida
+  - slug: dano_moral_desconto_consignado
+    status: rejeitada
+  - slug: credito_saque_como_prova_negocio
+    status: rejeitada
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: acolhida
+fundamentos:
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+  - credito_em_conta_comprova_liberacao
+  - desconto_minimo_sem_amortizacao_adequada
+resultado:
+  contrato: inexistente
+  conversao: nao_aplicavel
+  repeticao_indebito: dobro
+  dano_moral: indeferido
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2198893/inteiro-teor/127fef9e-95a2-4a19-b6cb-2321f2e53066
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2198893/inteiro-teor/127fef9e-95a2-4a19-b6cb-2321f2e53066
+  consultado_em: 2026-11-21
+autoridade: persuasiva
+status: ativo
+questao_juridica: O colegiado examinou se as informações contratuais foram claras e suficientes.
+ratio_decidendi: O TJDFT reconheceu vício relevante na contratação porque
+  considerou determinantes a documentação e a disponibilização do crédito,
+  avaliados em conjunto com o dever de informação e a transparência da
+  modalidade.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-11-21
+  revisado_em: null
+  revisor: null
