@@ -1,0 +1,75 @@
+id: tjdft-0716425-12-2025-8-07-0003
+identificacao:
+  tribunal: TJDFT
+  processo: 0716425-12.2025.8.07.0003
+  tipo_decisao: acordao
+  orgao_julgador: 8ª TURMA CÍVEL
+  relator: ROBSON TEIXEIRA DE FREITAS
+  data_julgamento: 2026-11-03
+  data_publicacao: 2026-11-16
+titulo: Provas do caso confirmam a contratação consignada
+resumo_predator: O acórdão reconheceu a regularidade da contratação. A conclusão
+  decorreu de os registros eletrônicos e a biometria, com exame da restituição
+  dos descontos e da responsabilidade por dano moral.
+contexto:
+  produtos:
+    - rmc
+    - cartao_credito_consignado
+  temas:
+    - consentimento
+    - dever_informacao
+    - contratacao_digital
+    - saque
+    - juros_abusivos
+  fatos_relevantes:
+    - contrato_claro
+  meio_contratacao: digital
+provas:
+  - assinatura
+  - comprovante_transferencia
+  - contrato
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: rejeitada
+  - slug: validade_contratacao_digital
+    status: acolhida
+  - slug: repeticao_indebito_descontos
+    status: rejeitada
+  - slug: dano_moral_desconto_consignado
+    status: resultado_nao_informado
+  - slug: credito_saque_como_prova_negocio
+    status: acolhida
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: resultado_nao_informado
+fundamentos:
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - rastreabilidade_contratacao_digital
+  - restituicao_conforme_boa_fe_objetiva
+  - dano_moral_exige_repercussao_concreta
+  - credito_em_conta_comprova_liberacao
+  - desconto_minimo_sem_amortizacao_adequada
+resultado:
+  contrato: mantido
+  conversao: nao_aplicavel
+  repeticao_indebito: indeferida
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2198179/inteiro-teor/9d7881d4-d40b-41db-a4b5-49e3a5bfa42c
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2198179/inteiro-teor/9d7881d4-d40b-41db-a4b5-49e3a5bfa42c
+  consultado_em: 2026-11-24
+autoridade: persuasiva
+status: ativo
+questao_juridica: O colegiado examinou se as informações contratuais foram
+  claras e suficientes, se os registros digitais comprovavam autoria e
+  consentimento.
+ratio_decidendi: O TJDFT reconheceu a regularidade da contratação porque
+  considerou determinantes os registros eletrônicos e a biometria, avaliados em
+  conjunto com o dever de informação e a transparência da modalidade.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-11-24
+  revisado_em: null
+  revisor: null
