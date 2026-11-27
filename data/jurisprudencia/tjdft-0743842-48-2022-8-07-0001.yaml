@@ -1,0 +1,58 @@
+id: tjdft-0743842-48-2022-8-07-0001
+identificacao:
+  tribunal: TJDFT
+  processo: 0743842-48.2022.8.07.0001
+  tipo_decisao: acordao
+  orgao_julgador: 7ª TURMA CÍVEL
+  relator: SONÍRIA ROCHA CAMPOS D'ASSUNÇÃO
+  data_julgamento: 2026-11-11
+  data_publicacao: 2026-11-25
+titulo: TJDFT delimita efeitos da contratação bancária discutida
+resumo_predator: O acórdão definiu os efeitos jurídicos da controvérsia. A
+  conclusão decorreu de o conjunto documental descrito no acórdão e da
+  responsabilidade por dano moral.
+contexto:
+  produtos:
+    - seguro_prestamista
+  temas:
+    - dever_informacao
+    - juros_abusivos
+  fatos_relevantes:
+    - nao_informado
+  meio_contratacao: nao_informado
+provas:
+  - contrato
+teses:
+  - slug: violacao_dever_informacao_transparencia
+    status: resultado_nao_informado
+  - slug: dano_moral_desconto_consignado
+    status: resultado_nao_informado
+  - slug: abusividade_rmc_perpetuidade_divida
+    status: resultado_nao_informado
+fundamentos:
+  - dever_informacao_qualificado
+  - informacao_sobre_amortizacao_e_custo
+  - dano_moral_exige_repercussao_concreta
+  - desconto_minimo_sem_amortizacao_adequada
+resultado:
+  contrato: nao_informado
+  conversao: nao_aplicavel
+  repeticao_indebito: nao_informado
+  dano_moral: nao_informado
+fonte:
+  natureza: jurisprudencia_oficial
+  recuperado_via: portal_tribunal
+  url_original: https://jurisdf.tjdft.jus.br/acordaos/2201353/inteiro-teor/23e193ae-e007-40c2-a2f7-bdfd5b2d808e
+  url_inteiro_teor: https://jurisdf.tjdft.jus.br/acordaos/2201353/inteiro-teor/23e193ae-e007-40c2-a2f7-bdfd5b2d808e
+  consultado_em: 2026-11-27
+autoridade: persuasiva
+status: ativo
+questao_juridica: O colegiado examinou se as informações contratuais foram claras e suficientes.
+ratio_decidendi: O TJDFT definiu os efeitos jurídicos da controvérsia porque
+  considerou determinantes o conjunto documental descrito no acórdão, avaliados
+  em conjunto com o dever de informação e a transparência da modalidade.
+revisao:
+  status: automatizada_pendente_revisao_humana
+  analisado_em: 2026-11-27
+  revisado_em: null
+  revisor: null
